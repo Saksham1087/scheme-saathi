@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    // User profiles: owner-only. Consent timestamps live here.
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    // Scheme + partner catalogs: public read, admin write.
+    match /schemes/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /partners/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Applications: applicant can create/read own documents only.
+    // Status transitions happen server-side (Cloud Functions / admin),
+    // never through direct client writes.
+    match /applications/{appId} {
+      allow read: if isOwner(resource.data.uid);
+      allow create: if isOwner(request.resource.data.uid)
+                    && request.resource.data.status == 'submitted';
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

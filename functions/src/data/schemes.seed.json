@@ -1,0 +1,50 @@
+[
+  {
+    "id": "micro-finance",
+    "name": { "en": "Micro Finance Scheme", "hi": "माइक्रो फाइनेंस योजना" },
+    "description": {
+      "en": "Collateral-free concessional credit for tiny self-employment projects.",
+      "hi": "छोटे रोज़गार प्रोजेक्ट के लिए बिना गारंटी रियायती ऋण।"
+    },
+    "type": "micro",
+    "maxProjectCost": 140000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 6.5, "max": 9 },
+    "tenureRangeMonths": { "min": 12, "max": 60 },
+    "moratorium": { "minMonths": 3, "maxMonths": 6, "interestAccrues": false },
+    "source": "seed"
+  },
+  {
+    "id": "term-loan",
+    "name": { "en": "Term Loan Scheme", "hi": "टर्म लोन योजना" },
+    "description": {
+      "en": "Concessional term loan for larger manufacturing, service and agri-business ventures.",
+      "hi": "बड़े निर्माण, सेवा और कृषि-व्यापार उद्यमों के लिए रियायती टर्म लोन।"
+    },
+    "type": "term",
+    "maxProjectCost": 5000000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 8, "max": 12.5 },
+    "tenureRangeMonths": { "min": 36, "max": 120 },
+    "moratorium": { "minMonths": 3, "maxMonths": 12, "interestAccrues": true },
+    "source": "seed"
+  },
+  {
+    "id": "education-loan",
+    "name": { "en": "Education Loan Scheme", "hi": "शिक्षा ऋण योजना" },
+    "description": {
+      "en": "Course-cost based concessional education finance for SC students.",
+      "hi": "एससी छात्रों के लिए कोर्स लागत आधारित रियायती शिक्षा वित्त।"
+    },
+    "type": "education",
+    "maxProjectCost": 5000000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 6.5, "max": 9 },
+    "tenureRangeMonths": { "min": 12, "max": 96 },
+    "moratorium": { "minMonths": 6, "maxMonths": 12, "interestAccrues": false },
+    "source": "seed"
+  }
+]

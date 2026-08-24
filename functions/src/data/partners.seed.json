@@ -1,0 +1,169 @@
+[
+  {
+    "id": "bsc-lucknow",
+    "name": "Bhartiya SC Development Corp (SCA)",
+    "type": "SCA",
+    "address": "12, Ashok Marg, Hazratganj",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "geo": { "lat": 26.8497, "lng": 80.9409 },
+    "phone": "+91-522-400-1100",
+    "schemeCategories": ["micro", "term"],
+    "npaFlag": "low",
+    "fundUtilizationPct": 62,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
+      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    ],
+    "avgProcessingDays": 30
+  },
+  {
+    "id": "sbi-kanpur-main",
+    "name": "State Bank of India — Kanpur Main",
+    "type": "PSB",
+    "address": "Mall Road, Near Gwaltoli",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "geo": { "lat": 26.4609, "lng": 80.3219 },
+    "phone": "+91-512-250-2200",
+    "schemeCategories": ["micro", "term", "education"],
+    "npaFlag": "low",
+    "fundUtilizationPct": 48,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
+      { "en": "Project proposal / admission letter", "hi": "प्रोजेक्ट प्रस्ताव / प्रवेश पत्र" }
+    ],
+    "avgProcessingDays": 45
+  },
+  {
+    "id": "pnb-patna-gandhi",
+    "name": "Punjab National Bank — Gandhi Maidan",
+    "type": "PSB",
+    "address": "Exhibition Rd, Gandhi Maidan",
+    "city": "Patna",
+    "state": "Bihar",
+    "geo": { "lat": 25.6146, "lng": 85.138 },
+    "phone": "+91-612-250-3300",
+    "schemeCategories": ["term", "education"],
+    "npaFlag": "medium",
+    "fundUtilizationPct": 71,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    ],
+    "avgProcessingDays": 40
+  },
+  {
+    "id": "rrb-gorakhpur-kshetriya",
+    "name": "Purvanchal Gramin Bank (RRB)",
+    "type": "RRB",
+    "address": "Civil Lines, Betiahata",
+    "city": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "geo": { "lat": 26.7606, "lng": 83.3732 },
+    "phone": "+91-551-220-4400",
+    "schemeCategories": ["micro"],
+    "npaFlag": "low",
+    "fundUtilizationPct": 35,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
+      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    ],
+    "avgProcessingDays": 25
+  },
+  {
+    "id": "rrb-marathwada",
+    "name": "Marathwada Gramin Bank (RRB)",
+    "type": "RRB",
+    "address": "Aurangabad Cidco N-4",
+    "city": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "geo": { "lat": 19.8762, "lng": 75.3433 },
+    "phone": "+91-240-248-5500",
+    "schemeCategories": ["micro", "term"],
+    "npaFlag": "medium",
+    "fundUtilizationPct": 58,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    ],
+    "avgProcessingDays": 35
+  },
+  {
+    "id": "nbfc-sarthak-mfi",
+    "name": "Sarthak Micro Finance Ltd",
+    "type": "NBFC_MFI",
+    "address": "Shop 4, Kalyan Complex, Pimple Saudagar",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "geo": { "lat": 18.5913, "lng": 73.7389 },
+    "phone": "+91-20-6789-6600",
+    "schemeCategories": ["micro"],
+    "npaFlag": "high",
+    "fundUtilizationPct": 88,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    ],
+    "avgProcessingDays": 15
+  },
+  {
+    "id": "tscdfc-chennai",
+    "name": "Tamil Nadu SC Dev Corporation (SCA)",
+    "type": "SCA",
+    "address": "Chepauk, Anna Salai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "geo": { "lat": 13.0655, "lng": 80.2641 },
+    "phone": "+91-44-2852-7700",
+    "schemeCategories": ["micro", "term", "education"],
+    "npaFlag": "low",
+    "fundUtilizationPct": 54,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
+      { "en": "Project proposal / admission letter", "hi": "प्रोजेक्ट प्रस्ताव / प्रवेश पत्र" }
+    ],
+    "avgProcessingDays": 30
+  },
+  {
+    "id": "boi-nagpur-sitabuldi",
+    "name": "Bank of India — Sitabuldi",
+    "type": "PSB",
+    "address": "Sitabuldi Main Market",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "geo": { "lat": 21.1497, "lng": 79.0882 },
+    "phone": "+91-712-253-8800",
+    "schemeCategories": ["term", "education"],
+    "npaFlag": "low",
+    "fundUtilizationPct": 41,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    ],
+    "avgProcessingDays": 42
+  },
+  {
+    "id": "ssc-bhilai-corp",
+    "name": "Chhattisgarh SC Finance Corp (SCA)",
+    "type": "SCA",
+    "address": "Sector 27, Bhilai Nagar",
+    "city": "Bhilai",
+    "state": "Chhattisgarh",
+    "geo": { "lat": 21.2094, "lng": 81.4309 },
+    "phone": "+91-788-235-9900",
+    "schemeCategories": ["micro", "term"],
+    "npaFlag": "medium",
+    "fundUtilizationPct": 77,
+    "docsRequired": [
+      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
+      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
+      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    ],
+    "avgProcessingDays": 33
+  }
+]

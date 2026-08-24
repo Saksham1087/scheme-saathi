@@ -1,0 +1,19 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Sensitive demographic documents. Private by default:
+    // only the uploading user touches their own files.
+    // Partner review access later = signed URLs minted by a trusted
+    // Cloud Function, never broadened client rules.
+    match /documents/{uid}/{fileName} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow delete: if request.auth != null && request.auth.uid == uid;
+      allow write: if request.auth != null
+                   && request.auth.uid == uid
+                   && request.resource.size < 10 * 1024 * 1024
+                   && fileName.matches('.*\\.(pdf|jpg|jpeg|png)$');
+    }
+  }
+}
