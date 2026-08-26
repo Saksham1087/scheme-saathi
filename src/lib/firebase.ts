@@ -38,20 +38,35 @@ export const db = getFirestore(firebaseApp)
 export const functions = getFunctions(firebaseApp)
 export const storage = getStorage(firebaseApp)
 
-const useEmulators =
-  !useEnvConfig ||
-  (import.meta.env.DEV && import.meta.env.VITE_USE_EMULATORS !== "false")
+async function isReachable(url: string): Promise<boolean> {
+  try {
+    const res = await fetch(url, { method: "HEAD" })
+    return res.ok || res.status === 200 || res.status === 404
+  } catch {
+    return false
+  }
+}
 
-if (useEmulators) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const anyWindow = window as any
-  if (!anyWindow.__schemesaathi_emulators_connected) {
-    anyWindow.__schemesaathi_emulators_connected = true
+async function tryConnectEmulators() {
+  const shouldUseEmulators =
+    import.meta.env.VITE_USE_EMULATORS === "true" && import.meta.env.DEV
+
+  if (!shouldUseEmulators) return
+
+  if (await isReachable("http://127.0.0.1:9099")) {
     connectAuthEmulator(auth, "http://127.0.0.1:9099", {
       disableWarnings: true,
     })
+  }
+  if (await isReachable("http://127.0.0.1:8080")) {
     connectFirestoreEmulator(db, "127.0.0.1", 8080)
+  }
+  if (await isReachable("http://127.0.0.1:5001")) {
     connectFunctionsEmulator(functions, "127.0.0.1", 5001)
+  }
+  if (await isReachable("http://127.0.0.1:9199")) {
     connectStorageEmulator(storage, "127.0.0.1", 9199)
   }
 }
+
+tryConnectEmulators()

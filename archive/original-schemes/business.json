@@ -1,0 +1,330 @@
+[
+  {
+    "slug": "stand-up-india",
+    "name": { "en": "Stand-Up India Scheme", "hi": "स्टैंड-अप इंडिया योजना" },
+    "ministry": "Ministry of Finance",
+    "department": "Department of Financial Services",
+    "category": ["business"],
+    "description": {
+      "en": "Stand-Up India Scheme facilitates bank loans between ₹10 lakh and ₹1 crore to at least one Scheduled Caste (SC) or Scheduled Tribe (SD) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise. This scheme aims to support first-generation entrepreneurs from underrepresented communities.",
+      "hi": "स्टैंड-अप इंडिया योजना कम से कम एक अनुसूचित जाति (एससी) या अनुसूचित जनजाति (एसटी) उधारकर्ता और प्रत्येक बैंक शाखा में कम से कम एक महिला उधारकर्ता को हरित उद्यम स्थापित करने के लिए ₹10 लाख से ₹1 करोड़ के बीच बैंक ऋण प्रदान करती है।"
+    },
+    "shortDescription": {
+      "en": "Bank loans of ₹10 lakh to ₹1 crore for SC/ST and women entrepreneurs to start greenfield enterprises.",
+      "hi": "एससी/एसटी और महिला उद्यमियों को हरित उद्यम शुरू करने के लिए ₹10 लाख से ₹1 करोड़ तक का बैंक ऋण।"
+    },
+    "purpose": "Setting up a new greenfield enterprise in manufacturing, services, or trading sector",
+    "targetBeneficiaries": ["SC/ST entrepreneurs", "Women entrepreneurs", "First-generation entrepreneurs"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 1000000,
+      "maxAmount": 10000000,
+      "interestRate": { "min": 10.25, "max": 12.5 },
+      "repaymentMonths": { "min": 60, "max": 84 }
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "categories": ["SC", "ST", "Women"],
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card, PAN Card, Voter ID, or Passport", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Address Proof", "description": "Utility bill, Aadhaar, or Passport", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Caste Certificate", "description": "SC/ST caste certificate from competent authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Business Plan", "description": "Detailed project report with financial projections", "mandatory": true, "format": "PDF" },
+      { "name": "Education Qualification", "description": "Minimum educational qualification certificates", "mandatory": false, "format": "PDF/JPEG" },
+      { "name": "Category Certificate", "description": "For women applicants, gender certificate", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through Stand-Up India portal or any scheduled commercial bank branch. Fill the online application form, upload required documents, and submit. The bank will verify and process the loan within 30 days.",
+    "channelPartnerTypes": ["Banks", "NBFCs", "SIDBI", "NABARD"],
+    "officialUrl": "https://www.standupmitra.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pm-mudra-yojana",
+    "name": { "en": "Pradhan Mantri MUDRA Yojana (PMMY)", "hi": "प्रधानमंत्री मुद्रा योजना (पीएमएमवाई)" },
+    "ministry": "Ministry of Finance",
+    "department": "Department of Financial Services",
+    "category": ["business"],
+    "description": {
+      "en": "PMMY provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises. Loans are categorized into Shishu (up to ₹50,000), Kishore (₹50,001 to ₹5 lakh), and Tarun (₹5,00,001 to ₹10 lakh) based on the stage of growth and funding needs.",
+      "hi": "पीएमएमवाई गैर-कॉर्पोरेट, गैर-कृषि छोटे/सूक्ष्म उद्यमों को ₹10 लाख तक का ऋण प्रदान करता है। ऋण को विकास के चरण और वित्तपोषण की आवश्यकताओं के आधार पर शिशु (₹50,000 तक), किशोर (₹50,001 से ₹5 लाख) और तरुण (₹5,00,001 से ₹10 लाख) में वर्गीकृत किया जाता है।"
+    },
+    "shortDescription": {
+      "en": "Loans up to ₹10 lakh for non-corporate, non-farm small/micro enterprises in three categories.",
+      "hi": "गैर-कॉर्पोरेट, गैर-कृषि छोटे/सूक्ष्म उद्यमों के लिए तीन श्रेणियों में ₹10 लाख तक का ऋण।"
+    },
+    "purpose": "Setting up or expanding micro and small non-farm enterprises",
+    "targetBeneficiaries": ["Small entrepreneurs", "Micro-enterprise owners", "Non-farm sector workers"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 50000,
+      "maxAmount": 1000000,
+      "interestRate": { "min": 10, "max": 12 },
+      "repaymentMonths": { "min": 24, "max": 60 }
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card, PAN Card, Voter ID", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Address Proof", "description": "Utility bill, Aadhaar, or Passport", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Business Plan", "description": "Brief project report or business plan", "mandatory": true, "format": "PDF" },
+      { "name": "Photographs", "description": "Passport-size photographs of applicant", "mandatory": true, "format": "JPEG" },
+      { "name": "Quotation of Assets", "description": "Quotation of machinery or assets to be purchased", "mandatory": false, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply online through Udyamimitra portal or visit any nearby bank, NBFC, or MFI. Submit required documents and wait for loan processing.",
+    "channelPartnerTypes": ["Banks", "NBFCs", "MFIs"],
+    "officialUrl": "https://www.mudra.org.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "prime-minister-employment-generation-programme",
+    "name": { "en": "Prime Minister Employment Generation Programme (PMEGP)", "hi": "प्रधानमंत्री रोजगार उत्पादन कार्यक्रम (पीएमईजीपी)" },
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "Khadi and Village Industries Commission",
+    "category": ["business", "employment"],
+    "description": {
+      "en": "PMEGP is a credit-linked subsidy programme for generating employment opportunities through establishment of micro-enterprises in the non-farm sector. The scheme provides subsidy from 25% to 35% of the project cost.",
+      "hi": "पीएमईजीपी गैर-कृषि क्षेत्र में सूक्ष्म उद्यमों की स्थापना के माध्यम से रोजगार के अवसर पैदा करने के लिए एक क्रेडिट-लिंक्ड सब्सिडी कार्यक्रम है।"
+    },
+    "shortDescription": {
+      "en": "Credit-linked subsidy for establishing micro-enterprises in non-farm sector with 25-35% subsidy.",
+      "hi": "गैर-कृषि क्षेत्र में सूक्ष्म उद्यम स्थापित करने के लिए 25-35% सब्सिडी के साथ क्रेडिट-लिंक्ड सब्सिडी।"
+    },
+    "purpose": "Establishment of micro-enterprises in non-farm sector",
+    "targetBeneficiaries": ["Unemployed youth", "Artisans", "Traditional craftspeople", "Self-help group members"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 100000,
+      "maxAmount": 2500000,
+      "interestRate": { "min": 10, "max": 12 }
+    },
+    "eligibilityRules": {
+      "minAge": 18,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card, PAN Card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Address Proof", "description": "Utility bill or Aadhaar", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Education Certificate", "description": "Minimum 8th standard pass certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Detailed project report with financials", "mandatory": true, "format": "PDF" },
+      { "name": "Caste Certificate", "description": "For SC/ST/OBC applicants for higher subsidy", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply online through KVIC portal or District Industries Centre. Submit project report and required documents. Loan sanctioned through banks with subsidy component.",
+    "channelPartnerTypes": ["Banks", "KVIC", "DIC", "KVIB"],
+    "officialUrl": "https://www.kvic.org.in/pmegp-home.php",
+    "source": "official",
+    "lastUpdated": "2025-05-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "credit-guarantee-fund-trust-mudra",
+    "name": { "en": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)", "hi": "सूक्ष्म और लघु उद्यमों के लिए ऋण गारंटी निधि ट्रस्ट (सीजीटीएमएसई)" },
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "category": ["business"],
+    "description": {
+      "en": "CGTMSE provides credit guarantee coverage to lending institutions for loans extended to micro and small enterprises without requiring collateral or third-party guarantee. This facilitates flow of credit to MSE sector.",
+      "hi": "सीजीटीएमएसई बिना किसी संपार्श्विक या तृतीय-पक्ष गारंटी के सूक्ष्म और लघु उद्यमों को दिए गए ऋणों के लिए ऋणदाता संस्थानों को ऋण गारंटी कवरेज प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Credit guarantee for micro and small enterprises without collateral requirement.",
+      "hi": "बिना संपार्श्विक आवश्यकता के सूक्ष्म और लघु उद्यमों के लिए ऋण गारंटी।"
+    },
+    "purpose": "Providing collateral-free credit to MSE sector",
+    "targetBeneficiaries": ["Micro enterprises", "Small enterprises", "Manufacturing units", "Service enterprises"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 100000,
+      "maxAmount": 50000000,
+      "interestRate": { "min": 10, "max": 14 }
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card, PAN Card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Business Registration", "description": "MSME registration certificate (Udyam)", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Financial Statements", "description": "Last 3 years financial statements", "mandatory": true, "format": "PDF" },
+      { "name": "Project Report", "description": "Detailed project report", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through any CGTMSE-registered lending institution. Submit required documents along with loan application. The bank processes the loan under CGTMSE guarantee cover.",
+    "channelPartnerTypes": ["Banks", "NBFCs", "SIDBI"],
+    "officialUrl": "https://www.cgtmse.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "udyam-registration",
+    "name": { "en": "Udyam Registration for MSMEs", "hi": "सूक्ष्म, लघु और मध्यम उद्यमों के लिए उद्यम पंजीकरण" },
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "category": ["business"],
+    "description": {
+      "en": "Udyam Registration is a government registration for MSMEs that provides a unique identity number and access to various government benefits including subsidies, priority sector lending, and tax exemptions.",
+      "hi": "उद्यम पंजीकरण सूक्ष्म, लघु और मध्यम उद्यमों के लिए एक सरकारी पंजीकरण है जो एक अद्वितीय पहचान संख्या और सब्सिडी, प्राथमिकता क्षेत्र ऋण और कर छूट सहित विभिन्न सरकारी लाभों तक पहुंच प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Government registration for MSMEs providing unique ID and access to subsidies and benefits.",
+      "hi": "सूक्ष्म, लघु और मध्यम उद्यमों के लिए सरकारी पंजीकरण जो अद्वितीय आईडी और सब्सिडी तक पहुंच प्रदान करता है।"
+    },
+    "purpose": "Formal registration of MSMEs for availing government benefits",
+    "targetBeneficiaries": ["Manufacturing enterprises", "Service enterprises", "Small traders"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "existingBusiness": true
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Aadhaar of the enterprise owner", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "PAN Card", "description": "PAN of the enterprise or owner", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account Details", "description": "Bank statement or cancelled cheque", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Register online at udyamregistration.gov.in. Complete the Aadhaar-based registration form. Receive Udyam Registration Certificate with unique Udyam Number.",
+    "channelPartnerTypes": ["DIC", "MSME District Industries Centres"],
+    "officialUrl": "https://udyamregistration.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "samridhi-yojana",
+    "name": { "en": "PMEGP Samridhi Yojana", "hi": "पीएमईजीपी समृद्धि योजना" },
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "category": ["business"],
+    "description": {
+      "en": "Enhanced version of PMEGP providing higher subsidies and simplified processes for micro-enterprise establishment. Focuses on SC/ST, women, and minority entrepreneurs.",
+      "hi": "सूक्ष्म उद्यम स्थापना के लिए उच्च सब्सिडी और सरल प्रक्रियाओं के साथ पीएमईजीपी का उन्नत संस्करण।"
+    },
+    "shortDescription": {
+      "en": "Enhanced PMEGP with higher subsidies for SC/ST, women, and minority entrepreneurs.",
+      "hi": "एससी/एसटी, महिला और अल्पसंख्यक उद्यमियों के लिए उच्च सब्सिडी के साथ उन्नत पीएमईजीपी।"
+    },
+    "purpose": "Establishment of micro-enterprises with enhanced subsidy support",
+    "targetBeneficiaries": ["SC/ST entrepreneurs", "Women entrepreneurs", "Minority entrepreneurs", "Youth"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 200000,
+      "maxAmount": 5000000,
+      "interestRate": { "min": 10, "max": 12 }
+    },
+    "eligibilityRules": {
+      "minAge": 18,
+      "existingBusiness": false,
+      "categories": ["SC", "ST", "Women", "Minority"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card, PAN Card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Caste Certificate", "description": "SC/ST/OBC/Minority certificate", "mandatory": false, "format": "PDF/JPEG" },
+      { "name": "Education Certificate", "description": "Minimum 8th standard pass", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Detailed project report", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through KVIC portal or District Industries Centre. Enhanced subsidy of 35% for SC/ST/Women in North East and other aspirational districts.",
+    "channelPartnerTypes": ["KVIC", "Banks", "DIC"],
+    "officialUrl": "https://www.kvic.org.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "sagar-mitra-yojana",
+    "name": { "en": "Sagar Mitra Yojana", "hi": "सागर मित्र योजना" },
+    "ministry": "Ministry of Fisheries, Animal Husbandry and Dairying",
+    "category": ["business", "agriculture"],
+    "description": {
+      "en": "Scheme to support coastal fisher communities in establishing small-scale fish processing and marketing enterprises. Provides subsidized loans and training.",
+      "hi": "तटीय मछुआरा समुदायों को छोटे पैमाने पर मछली प्रसंस्करण और विपणन उद्यम स्थापित करने में सहायता प्रदान करने की योजना।"
+    },
+    "shortDescription": {
+      "en": "Support for coastal fisher communities in fish processing and marketing enterprises.",
+      "hi": "मछली प्रसंस्करण और विपणन उद्यमों में तटीय मछुआरा समुदायों के लिए सहायता।"
+    },
+    "purpose": "Fish processing and marketing enterprise development",
+    "targetBeneficiaries": ["Fishermen", "Coastal communities", "Fish processors"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 200000,
+      "maxAmount": 3000000,
+      "interestRate": { "min": 7, "max": 10 }
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "occupations": ["Fisherman", "Fish processor"],
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Identity Proof", "description": "Aadhaar Card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Fisher ID Card", "description": "Fisherman identity card from state fisheries dept", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Business plan for fish processing unit", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through state fisheries department or national portal. Training provided before loan disbursement.",
+    "channelPartnerTypes": ["Banks", "State Fisheries Departments", "NABARD"],
+    "officialUrl": "https://www.india.gov.in/sagar-mitra-yojana",
+    "source": "official",
+    "lastUpdated": "2025-03-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "transforming-india-summit-startup",
+    "name": { "en": "Startup India Seed Fund Scheme", "hi": "स्टार्टअप इंडिया सीड फंड योजना" },
+    "ministry": "Department for Promotion of Industry and Internal Trade",
+    "category": ["business"],
+    "description": {
+      "en": "Provides financial assistance to startups for proof of concept, prototype development, product trials, and market entry. Fund of Funds managed by DPIIT.",
+      "hi": "प्रूफ ऑफ कॉन्सेप्ट, प्रोटोटाइप विकास, उत्पाद परीक्षण और बाजार प्रवेश के लिए स्टार्टअप्स को वित्तीय सहायता प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Financial assistance for startups for proof of concept, prototype development, and market entry.",
+      "hi": "प्रूफ ऑफ कॉन्सेप्ट और बाजार प्रवेश के लिए स्टार्टअप्स को वित्तीय सहायता।"
+    },
+    "purpose": "Supporting early-stage startups with seed funding",
+    "targetBeneficiaries": ["Tech startups", "Innovative entrepreneurs", "DPIIT-recognized startups"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 2000000,
+      "maxAmount": 20000000
+    },
+    "eligibilityRules": {
+      "minAge": 18,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "DPIIT Recognition", "description": "DPIIT startup recognition certificate", "mandatory": true, "format": "PDF" },
+      { "name": "PAN Card", "description": "Company or founder PAN", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Pitch Deck", "description": "Startup pitch deck with business model", "mandatory": true, "format": "PDF" },
+      { "name": "Financial Projections", "description": "3-year financial projections", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through Startup India portal. Selected startups receive funding through approved incubators.",
+    "channelPartnerTypes": ["Incubators", "Accelerators", "DPIIT"],
+    "officialUrl": "https://www.startupindia.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-10",
+    "verified": true,
+    "isActive": true
+  }
+]

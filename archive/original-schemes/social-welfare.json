@@ -1,0 +1,240 @@
+[
+  {
+    "slug": "national-scheduled-caste-finance-dev-corporation",
+    "name": { "en": "National Scheduled Caste Finance and Development Corporation (NSFDC)", "hi": "राष्ट्रीय अनुसूचित जाति वित्त और विकास निगम (एनएसएफडीसी)" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["social-welfare"],
+    "description": {
+      "en": "Provides loans at concessional rates to SC families for income-generating activities. Covers education, housing, and self-employment projects for economic upliftment of SC communities.",
+      "hi": "आय उत्पन्न करने वाली गतिविधियों के लिए एससी परिवारों को रियायती दरों पर ऋण प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Concessional loans for SC families for education, housing, and self-employment.",
+      "hi": "शिक्षा, आवास और स्वरोजगार के लिए एससी परिवारों के लिए रियायती ऋण।"
+    },
+    "purpose": "Economic upliftment of SC communities through concessional finance",
+    "targetBeneficiaries": ["SC families", "SC entrepreneurs", "SC students"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 50000,
+      "maxAmount": 5000000,
+      "interestRate": { "min": 2, "max": 6 }
+    },
+    "eligibilityRules": {
+      "categories": ["SC"],
+      "maxIncome": 300000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Business/project report", "mandatory": true, "format": "PDF" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through NSFDC portal or state SC welfare department. Loan sanctioned through empaneled banks with NSFDC guarantee.",
+    "channelPartnerTypes": ["Banks", "NSFDC", "State SC Welfare Departments"],
+    "officialUrl": "https://nsfdc.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-backward-classes-finance-dev-corporation",
+    "name": { "en": "National Backward Classes Finance and Development Corporation (NBCFDC)", "hi": "राष्ट्रीय पिछड़ा वर्ग वित्त और विकास निगम (एनबीसीएफडीसी)" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["social-welfare"],
+    "description": {
+      "en": "Provides loans at concessional rates to OBC families for income-generating activities, education, and self-employment. Supports economic development of Other Backward Classes.",
+      "hi": "आय उत्पन्न करने वाली गतिविधियों, शिक्षा और स्वरोजगार के लिए ओबीसी परिवारों को रियायती दरों पर ऋण प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Concessional loans for OBC families for education and self-employment.",
+      "hi": "शिक्षा और स्वरोजगार के लिए ओबीसी परिवारों के लिए रियायती ऋण।"
+    },
+    "purpose": "Economic development of Other Backward Classes",
+    "targetBeneficiaries": ["OBC families", "OBC entrepreneurs", "OBC students"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 50000,
+      "maxAmount": 5000000,
+      "interestRate": { "min": 2, "max": 6 }
+    },
+    "eligibilityRules": {
+      "categories": ["OBC"],
+      "maxIncome": 300000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "OBC caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Business/project report", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through NBCFDC portal or state OBC welfare department. Loan processed through empaneled banks.",
+    "channelPartnerTypes": ["Banks", "NBCFDC", "State OBC Welfare Departments"],
+    "officialUrl": "https://nbcfdc.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pre-matric-scholarship-minority",
+    "name": { "en": "Pre-Matric Scholarship for Minority Students", "hi": "अल्पसंख्यक छात्रों के लिए मैट्रिक से पहले छात्रवृत्ति" },
+    "ministry": "Ministry of Minority Affairs",
+    "category": ["social-welfare", "education"],
+    "description": {
+      "en": "Scholarship for minority community students in classes I to X to support their education and prevent dropout. Provides maintenance and tuition support.",
+      "hi": "कक्षा I से X में अल्पसंख्यक समुदाय के छात्रों को उनकी शिक्षा को सहारा देने और ड्रॉपआउट को रोकने के लिए छात्रवृत्ति।"
+    },
+    "shortDescription": {
+      "en": "Scholarship for minority students in classes I-X for education support.",
+      "hi": "शिक्षा सहायता के लिए कक्षा I-X में अल्पसंख्यक छात्रों के लिए छात्रवृत्ति।"
+    },
+    "purpose": "Supporting education of minority community students",
+    "targetBeneficiaries": ["Muslim students", "Christian students", "Sikh students", "Buddhist students", "Jain students", "Parsi students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000,
+      "maxAmount": 10000
+    },
+    "eligibilityRules": {
+      "categories": ["Minority"],
+      "maxIncome": 200000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Minority Certificate", "description": "Community certificate from competent authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Previous Marksheet", "description": "Previous class marksheet", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through National Scholarship Portal. School verifies and submits to district minority welfare officer.",
+    "channelPartnerTypes": ["Schools", "Minority Welfare Departments", "NSP"],
+    "officialUrl": "https://scholarships.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "scheme-for-empowerment-pwds",
+    "name": { "en": "Scheme for Empowerment of Persons with Disabilities (Divyangjan)", "hi": "विकलांग व्यक्तियों के सशक्तिकरण के लिए योजना (दिव्यांगजन)" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["social-welfare"],
+    "description": {
+      "en": "Comprehensive scheme covering education, rehabilitation, skill development, and economic empowerment of persons with disabilities. Includes scholarships, assistive devices, and employment support.",
+      "hi": "विकलांग व्यक्तियों की शिक्षा, पुनर्वास, कौशल विकास और आर्थिक सशक्तिकरण को कवर करने वाली व्यापक योजना।"
+    },
+    "shortDescription": {
+      "en": "Education, rehabilitation, and economic empowerment for persons with disabilities.",
+      "hi": "विकलांग व्यक्तियों के लिए शिक्षा, पुनर्वास और आर्थिक सशक्तिकरण।"
+    },
+    "purpose": "Empowerment and rehabilitation of persons with disabilities",
+    "targetBeneficiaries": ["Persons with disabilities", "Divyangjan", "PwD students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5000,
+      "maxAmount": 500000
+    },
+    "eligibilityRules": {
+      "disabilityRequired": true,
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Disability Certificate", "description": "UDID card or disability certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Medical Certificate", "description": "Medical fitness certificate", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through UDID portal or district disability welfare office. Scholarship disbursed through DBT to student's bank account.",
+    "channelPartnerTypes": ["District Disability Welfare Offices", "NSDC", "Educational Institutions"],
+    "officialUrl": "https://disabilityaffairs.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-minorities-development-finance-corporation",
+    "name": { "en": "National Minorities Development Finance Corporation (NMDFC)", "hi": "राष्ट्रीय अल्पसंख्यक विकास वित्त निगम (एनएमडीएफसी)" },
+    "ministry": "Ministry of Minority Affairs",
+    "category": ["social-welfare", "business"],
+    "description": {
+      "en": "Provides concessional loans to minority communities for income-generating activities. Covers skill development, self-employment, and educational pursuits for economic upliftment.",
+      "hi": "आय उत्पन्न करने वाली गतिविधियों के लिए अल्पसंख्यक समुदायों को रियायती ऋण प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Concessional loans for minority communities for self-employment and skill development.",
+      "hi": "स्वरोजगार और कौशल विकास के लिए अल्पसंख्यक समुदायों के लिए रियायती ऋण।"
+    },
+    "purpose": "Economic upliftment of minority communities",
+    "targetBeneficiaries": ["Muslims", "Christians", "Sikhs", "Buddhists", "Jains", "Parsis"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 50000,
+      "maxAmount": 5000000,
+      "interestRate": { "min": 3, "max": 8 }
+    },
+    "eligibilityRules": {
+      "categories": ["Minority"],
+      "maxIncome": 300000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Minority Certificate", "description": "Community certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Project Report", "description": "Business/project report", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through NMDFC portal or state minority welfare department. Loan processed through state Channelizing Agencies.",
+    "channelPartnerTypes": ["Banks", "State Minority Welfare Departments", "Channelizing Agencies"],
+    "officialUrl": "https://nmdfc.org.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "rashtriya-mahila-kosh",
+    "name": { "en": "Rashtriya Mahila Kosh", "hi": "राष्ट्रीय महिला कोष" },
+    "ministry": "Ministry of Women and Child Development",
+    "category": ["social-welfare"],
+    "description": {
+      "en": "Provides micro-credit to poor women through intermediary NGOs. Supports women-led micro-enterprises and livelihood activities across the country.",
+      "hi": "मध्यस्थ गैर-सरकारी संगठनों के माध्यम से गरीब महिलाओं को सूक्ष्म-ऋण प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Micro-credit for poor women through NGOs for livelihood activities.",
+      "hi": "जीविका गतिविधियों के लिए गैर-सरकारी संगठनों के माध्यम से गरीब महिलाओं को सूक्ष्म-ऋण।"
+    },
+    "purpose": "Financial inclusion of poor women through micro-credit",
+    "targetBeneficiaries": ["Women below poverty line", "Women entrepreneurs", "Self-help group members"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 5000,
+      "maxAmount": 100000,
+      "interestRate": { "min": 6, "max": 10 }
+    },
+    "eligibilityRules": {
+      "gender": "female",
+      "maxIncome": 100000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Woman's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "BPL certificate or income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Joint bank account", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through intermediary NGOs. RMK provides bulk loans to NGOs who on-lend to women beneficiaries.",
+    "channelPartnerTypes": ["NGOs", "SHGs", "MFIs"],
+    "officialUrl": "https://wcd.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-15",
+    "verified": true,
+    "isActive": true
+  }
+]

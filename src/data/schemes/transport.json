@@ -1,0 +1,1239 @@
+[
+  {
+    "slug": "aksphssy",
+    "name": {
+      "en": "Asangathit Karmakar Samachar-Patr Hawker Cycle Sahayata Yojana",
+      "hi": ""
+    },
+    "ministry": "Chhattisgarh State started this scheme \"Asangathit Karmakar Samachar-Patr Hawker Cycle Sahayata Yoja",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "Labor Department of Chhattisgarh State started this scheme \"Asangathit Karmakar Samachar-Patr Hawker Cycle Sahayata Yojana\" for unorganized worker on 10 September 2010. Under this scheme, One cycle will be provided free of cost to each unorganized  beneficiary. The main objective of the scheme to empower the unorganized Samaachaar-Patr Hokar worker through provide them free cycle.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Labor Department of Chhattisgarh State started this scheme \"Asangathit Karmakar Samachar-Patr Hawker Cycle Sahayata Yojana\" for unorganized worker ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "unorganized newspaper delivery workers (hawker) registered in any district of the state",
+      "this scheme if they receive benefits from a parallel scheme",
+      "for this scheme if they receive benefits from a parallel scheme"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Self-employed",
+        "Salaried"
+      ],
+      "purposes": [
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhar card",
+        "description": "Aadhar card",
+        "mandatory": true
+      },
+      {
+        "name": "Permanent residence certificate",
+        "description": "Permanent residence certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account details",
+        "description": "Bank account details",
+        "mandatory": true
+      },
+      {
+        "name": "Registration card",
+        "description": "Registration card",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Unregistered Applicant : All the applicant have to visit the official website Chhattisgarh Labour Department. On the home page click on \" Apply \" under \"Chhattisgarh Unorganized Workers State Social Security Board\". Enter the following details Select Group Name : \"Asangathit Marmakaar Mandal\" Select Service : \"Asangathit Shramik Panjikaran\" What do you want to do : \"Aavedan\" Click next. Check the eligibility criteria for registration in Chhattisgarh Unorganized Workers State Social Security Board and click next. Fill out the online \"Registration form\". Submit. ﻿ ﻿ Already Registered Applicant : All the applicant have to visit the official website Chhattisgarh Labour Department. On the home page click on \" Apply \" under \"Chhattisgarh Unorganized Workers State Social Security Board\". Enter the following details Select Group Name : \"Asangathit Marmakaar Mandal\" Select Service : \"Yojana\" What do you want to do : \"Aavedan\" Click next. Select your district name and provide old/new registration number and click next. Select the scheme name. Fill out the online with required details. Submit.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "bsmssy",
+    "name": {
+      "en": "Bihar State Madarsa Strengthening Scheme",
+      "hi": ""
+    },
+    "ministry": "Bihar, to improve the quality of education in recognized Madarsas",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The scheme \"Bihar State Madarsa Strengthening Scheme\" was launched by the Minority Welfare Department, Government of Bihar, to improve the quality of education in recognized Madarsas. Under this scheme, the state government provides essential facilities and infrastructure to Madarsas recognized by the Bihar State Madarsa Board, as well as other government Madarsas.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Bihar State Madarsa Strengthening Scheme\" was launched by the Minority Welfare Department, Government of Bihar, to improve the quality ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "any disciplinary actions in the past three years",
+      "at least two years",
+      "all relevant state regulations and guidelines for educational institutions"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Bihar"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Student",
+        "Salaried"
+      ],
+      "purposes": [
+        "education",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Approval letter received from Madrasa Board Origin",
+        "description": "Approval letter received from Madrasa Board Original copy of L",
+        "mandatory": true
+      },
+      {
+        "name": "C of the land belonging to the Zonal Officer A cop",
+        "description": "C of the land belonging to the Zonal Officer A copy of the proceedings of the Madrasa Management Committee related to the approval of the proposed plan Maximum 5 photographs of the current building/st",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: Visit the District Minority Welfare Office located at the district headquarters. Step 2: Collect the application form for the scheme from the District Minority Welfare Office, fill it out accurately, and attach all necessary documents. Step 3: Submit the completed application form at the office and regularly follow up on the status of your application for any further requirements or updates. Note: For additional information, please contact the District Minority Welfare Office located at the District Headquarters.",
+    "channelPartnerTypes": [
+      "Office",
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "badp",
+    "name": {
+      "en": "Border Areas Development Department",
+      "hi": ""
+    },
+    "ministry": "India, if necessary, by relaxation of guidelines and yardsticks with the approval of the competent a",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The main objective of the BADP is to meet the special developmental needs and well-being of the people living in remote and inaccessible areas situated near the International Boundary (IB) and to provide the border areas with essential infrastructure by convergence of BADS/other Central/State/UT/Local Schemes and through a participatory approach especially in six thematic areas - Basic Infrastructure, Health Infrastructure, Education, Agriculture & Water Resources, Financial Inclusion and Skill Development. In border areas, the provision of essential infrastructure facilities and opportunities for sustainable living would help integrate these areas with the hinterland, create a positive perception of care by the country and encourage people to stay on in the border areas, leading to safe and secure borders. ﻿ The following basic principles will guide the implementation of the BADP: a) Projects for developing infrastructure in strategically important villages/towns (as identified by Border Guarding Forces) will be given priority. b) Border Guarding Forces (BGFs) will be co-opted as part of the decision making process at all levels (Planning/ Execution / Monitoring). c) Keeping in view the limited availability of funds under BADS, the State/UT Level Screening Committee (SLSC/UTLSC) will ensure convergence with schemes of line Ministries and State/UT Governments and other available resources to ensure holistic development of the strategically important villages/ towns in the border areas. d) MHA will work in close collaboration with, inter-alia, M/o Agriculture & Farmers Welfare, M/o DoNER, M/o Health & Family Welfare, M/o Human Resource Development, M/o Jai Shakti, M/o New and Renewable Energy, M/o Power, M/o Rural Development, M/o Skill Development & Entrepreneurship, M/o MSME, M/o Women & Child Development, M/o Youth Affairs & Sports etc. to promote infrastructure development, improved connectivity, better social services and to provide sustainable livelihood opportunities in the border areas. e) Works/projects will be evaluated regularly through Social Audit mechanism, besides Prabhari Officers in addition to ongoing mechanisms of State/UT/ Central Governments. f) Saturation / coverage through ongoing developmental schemes of various Ministries of Government of India, if necessary, by relaxation of guidelines and yardsticks with the approval of the competent authority. g) Medium-Term perspective — Four/Five Year Perspective Action Plan would be prepared for development of identified habitations by pooling resources as mentioned in sub clause (c) above. For the subsequent years, the Annual Plan would be drawn up within the overall perspective plan and inclusive of objectives carried forward, modifications necessitated due to lessons learnt and other developments. The Annual Plans would be a subset of the same. For the first year, along with a prospective plan, an annual plan would also be submitted. The States would strive to achieve saturation of beneficiaries and creation of infrastructure under various Government Schemes by 2023. h) Competition among Districts: The Districts would be challenged to compete among themselves on the basis of incremental changes and their performance would be recognized and rewarded. i) Comprehensive Development: For comprehensive development of border districts, BADP will have two components - first will be saturation of beneficiaries and ensuring creation of infrastructure in border districts through convergence of various Government Schemes, and second part will be Border Area Development Scheme(BADS) for convergence and filling up gaps to achieve desired levels of development.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The main objective of the BADP is to meet the special developmental needs and well-being of the people living in remote and inaccessible areas situ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "project financing; it will now be converted to a programme which seeks comprehensive development",
+      "BADP and the 10 km distance towards the interior will be calculated from this zero line",
+      "mapping of the villages/ towns on the BADP Online Management System (BADP OMS)"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "poultry",
+        "trading",
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "The Central Government is supplementing the effort",
+        "description": "The Central Government is supplementing the efforts of the State Governments in this direction through special Central assistance for special area programs such as Hill Area Development Program (HADP)",
+        "mandatory": true
+      },
+      {
+        "name": "Broadly speaking",
+        "description": "Broadly speaking",
+        "mandatory": true
+      },
+      {
+        "name": "development planning is of two types",
+        "description": "development planning is of two types: the central planning and the indicative planning: the former is practiced in a centralized economy where the role of the state is dominant in the socio-economic l",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "dp-cmsguy",
+    "name": {
+      "en": "Development Of Playfield Under CMSGUY",
+      "hi": ""
+    },
+    "ministry": "Assam",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The \"Development of Playfield\" Scheme is a Component under the Umbrella Scheme of \"Chief Minister Samagra Gramya Unnayan Yojna (CMSGUY)\" by the Govt. of Assam. CMSGUY was launched by Hon'ble Chief Minister Sarbananda Sonowal on 5th February 2017 in Guwahati. The scheme is being implemented in a mega-mission mode across Assam. CMSGUY will be implemented through a saturation model by covering each revenue village through focused interventions in direct economic activities, logistic support including market linkages, and community support. ﻿ The scheme \"Development of Playfield\" is an Infrastructure Development Scheme by the Assam Youth Development Mission Society (AYDMS) formed under Chief Minister Samagra Gramya Unnayan Yojna (CMSGUY). AYDMS has decided to develop one playfield for the promotion of Games and Sports in the State through the Sports & Youth Welfare Department, Govt. of Assam. It has been decided to develop 500 Football Playfields during 2017-18 in the first phase of operation of the scheme. It has been proposed to develop one football playground and playing facilities like Volleyball Courts having a dressing room, store-cum-office, and toilet facilities. A boundary wall will also be provided for the protection of the playground.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Development of Playfield\" Scheme is a Component under the Umbrella Scheme of \"Chief Minister Samagra Gramya Unnayan Yojna (CMSGUY)\" by the Gov...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "development",
+      "take up the scheme for the up-gradation of their playgrounds",
+      "the movement of the players",
+      "the construction of the dressing room",
+      "the Children"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "poultry",
+        "manufacturing",
+        "education",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Self",
+        "description": "Self-Attested documents in support of the mandatory fields of the Application Form",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of Address of the School/College/Club/Sports",
+        "description": "Proof of Address of the School/College/Club/SportsAssociation/Panchayat/Institution Bank Details of the School/College/Club/SportsAssociation/Panchayat/Institution (Account Number",
+        "mandatory": true
+      },
+      {
+        "name": "Name of Bank",
+        "description": "Name of Bank",
+        "mandatory": true
+      },
+      {
+        "name": "Name of Branch",
+        "description": "Name of Branch",
+        "mandatory": true
+      },
+      {
+        "name": "IFS Code",
+        "description": "IFS Code",
+        "mandatory": true
+      },
+      {
+        "name": "Bank Balance as on date with Bank certificate) Lan",
+        "description": "Bank Balance as on date with Bank certificate) Land Holding Certificate Playfield issued by the Competent Authority In case of Club/Sports Associations",
+        "mandatory": true
+      },
+      {
+        "name": "the Registration Certificate under the Societies A",
+        "description": "the Registration Certificate under the Societies Act",
+        "mandatory": true
+      },
+      {
+        "name": "1860 Photograph of the Playground with Counter Sig",
+        "description": "1860 Photograph of the Playground with Counter Signature of District Sports Officer Estimated Cost / Fund Required",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Interested Schools, Colleges, Clubs, and other Sports Organizations can apply to the District Sports Officers (DSOs) in the format prescribed in Annexure-I of the scheme guidelines.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "e-yuvase-yuvac",
+    "name": {
+      "en": "E-YUVA Scheme: E-YUVA Centers",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "“Empowering Youth for Undertaking Value Added Innovative Translational Research (E-YUVA)” scheme was started by the Biotechnology Industry Research Assistance Council (BIRAC) to promote a culture of applied research and need-oriented (societal or industry) entrepreneurial innovation among young students and researchers. The scheme provides funding support (through fellowship and research grant), technical and business mentoring, exposure to bio incubation model, orientation to an entrepreneurial culture, etc. to students at various levels including undergraduates, post-graduates, and post-doctoral. E-YUVA Centers (EYCs): The BIRAC’s E-YUVA scheme is implemented through dedicated hubs called “E-YUVA Centers (EYCs)” housed within the University/Institute set up and mentored by a BIRAC BioNEST-supported bio-incubator. EYCs act as anchors and extend requisite support and mentoring to students. Each EYC has a BIRAC-supported pre-incubation space which offers infrastructure and equipment for basic research and experimentation by selected students. Advanced research needs are fulfilled through Bio-incubator Connect. BIRAC-supported EYCs encompass the following: Pre-incubation space (3,000 sq. ft. or more) Manage Fellowships for students Conduct Entrepreneurial Awareness Workshops for students Roles and Responsibilities of EYCs: View and process online applications received for fellowship Screen applications for eligibility and suitability for the scheme Carry out online Technical Review of eligible applications through Subject Experts (Reviewers) Shortlist proposals for interview(F2F/skype/telephonic) by an Expert Panel Communicate decision to applicants at each step of selection Seek BIRAC approval on the final selection of fellows or their eligibility Issue fellowship award letters to the selected candidates on behalf of BIRAC Release fellowship and research grant received from BIRAC Provide mentorship, handholding, and access to facilities at EYC and EYC Knowledge Partner for BIRAC’s Innovation and E-YUVA Fellows Monitor the targeted milestones Organize periodic review meetings Provide mentorship and handholding for domain expertise, entrepreneurship, and activities including but not limited to IP management, mobilizing resources, and other business development-related activities Provide platforms/opportunities for interaction with experts. Provide periodic updates and reports on the progress of Fellows to BIRAC Conduct entrepreneurial workshops Any other activity required for effective implementation of fellowships on mutual consent with BIRAC. Tenure of EY Centres: EYCs will be engaged for an initial duration of 3 years, extendable further based on performance review. The performance of the EYCs would be evaluated annually. E-Yuva Knowledge Partner: For the mentoring of Innovation Fellows and for providing overall guidance to EYCs, BIRAC will assign engagement with BioNEST-supported Bio-incubators. Each EYC will be formally associated with a BioNEST-supported bio incubator, which shall provide necessary handholding and mentoring to EYCs and Innovation Fellows. The knowledge partner will engage with the fellows throughout the award period and provide overall guidance. Bio-incubators will act as brand ambassadors for the program and will help in its outreach.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "“Empowering Youth for Undertaking Value Added Innovative Translational Research (E-YUVA)” scheme was started by the Biotechnology Industry Research...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "apply",
+      "technical support",
+      "fellows",
+      "BIRAC EYC until a dedicated staff is appointed for the same",
+      "to apply"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 15000,
+      "maxAmount": 75000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 3,
+      "occupations": [
+        "Farmer",
+        "Salaried"
+      ],
+      "purposes": [
+        "agriculture",
+        "education",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Registration/Recognition certificate of the Univer",
+        "description": "Registration/Recognition certificate of the University/Institution 2",
+        "mandatory": true
+      },
+      {
+        "name": "Other relevant document",
+        "description": "Other relevant document",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Process: Step 01: Applications for EYCs need to be routed through the Head of the University/Institution. Step 02: The applicant University/Institution allows only online submission of proposals. Step 03: For proposal submission, the applicant University/Institution can register & apply on the BIRAC website “ www.birac.nic.in ”. Criteria for selection of BIRAC’s E-Yuva Centers: The BIRAC EYC Committee will be responsible for the selection of the new centers taking following criteria into consideration: Allocation of dedicated space & relevant infrastructure ready for use. Past experience of conducting innovation-promoting/entrepreneurial programs desirable Number of Startups formed by the students (in biotech or any other area) Number of Patents filed from the University/ Institution No. of Industry projects handled or Industry connects Funds received or raised for supporting Innovations Accessibility to experts/mentors Willingness & commitment from the Head of the University/Institution to support the program Availability of IP, regulatory, and business support to the EYC fellows. The Institute should be willing to support EYC fellows to facilitate networking through individuals/groups. Connects with bio incubators and other organizations actively promoting Entrepreneurship Note: BIRAC encourages applications from Tier II/III cities for EYCs. Selection Process: The EYC Committee will be responsible for the evaluation and selection process. After the eligibility check, the proposals received will be evaluated by the EYC Expert Committee on various parameters mentioned in the previous section. The shortlisted proposals will be called for presentation at BIRAC. On the basis of the presentation, the Committee will recommend the proposals for a site visit or direct consideration. After the site visit (if recommended) the recommendations of the site visit committee would be presented to the EYC committee chair for final decision on funding. Once recommended for support, GLA signing will be done with the applicant after financial due diligence.",
+    "channelPartnerTypes": [
+      "Center",
+      "center",
+      "dic"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "fbpmp",
+    "name": {
+      "en": "Free Bus Pass for Media Persons",
+      "hi": ""
+    },
+    "ministry": "Information & Publicity",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The \"Free Bus Pass for Media Persons\" scheme, introduced by the Department of Information & Publicity, Union Territory of Puducherry, aims to provide a free bus pass facility to media persons working in Puducherry in Puducherry Road Transport Corporation buses (except town buses) to undertake journeys for their professional requirements.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Free Bus Pass for Media Persons\" scheme, introduced by the Department of Information & Publicity, Union Territory of Puducherry, aims to provi...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "not less than five years"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Puducherry"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "For Fresh Application Nativity/Residence Certificate ( Form",
+        "description": "For Fresh Application Nativity/Residence Certificate ( Form-II )",
+        "mandatory": true
+      },
+      {
+        "name": "issued by the Officer of the Revenue Department no",
+        "description": "issued by the Officer of the Revenue Department not below the rank of a Deputy Tahsildar",
+        "mandatory": true
+      },
+      {
+        "name": "Three stamp",
+        "description": "Three stamp-sized photographs",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Service Certificate ( Form",
+        "description": "Service Certificate ( Form-II ) showing the designation",
+        "mandatory": true
+      },
+      {
+        "name": "the nature of the post (full",
+        "description": "the nature of the post (full-time or part-time)",
+        "mandatory": true
+      },
+      {
+        "name": "period of service",
+        "description": "period of service",
+        "mandatory": true
+      },
+      {
+        "name": "and the place of work from the former employer",
+        "description": "and the place of work from the former employer",
+        "mandatory": true
+      },
+      {
+        "name": "For Renewal Application An attested copy of the ex",
+        "description": "For Renewal Application An attested copy of the expired Bus Pass",
+        "mandatory": true
+      },
+      {
+        "name": "One stamp",
+        "description": "One stamp-sized photograph",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "For both Fresh Applications and Renewal Applications, the applicant should write a formal letter, attach copies of all the mandatory documents (self-attest, if required), and submit the same to - The Director Department of Information & Publicity 18, Belcombe Street, Puducherry - 605 001 +91-413-2334398, 2336415, 2337078 info.pon@nic.in *The Office Timings are Monday to Friday, 08:45 am to 01:00 pm & 02:00 pm to 05:45 pm.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "hriday",
+    "name": {
+      "en": "HRIDAY: Heritage City Development & Augmentation Yojana",
+      "hi": ""
+    },
+    "ministry": "Tourism",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "Launched on 21st January 2015, the scheme \"National Heritage City Development and Augmentation Yojana\", also known as \"HRIDAY\" is a central sector scheme by the Ministry of Tourism. The scheme was introduced to bring together urban planning, economic growth, and heritage conservation in an inclusive manner & to preserve the heritage character of the city. The mission period of the scheme ended on 31st March 2019. The scheme supported the development of core heritage-linked civic infrastructure projects, which include the revitalization of urban infrastructure for areas around the heritage, religious, cultural, and tourism assets of the cities. These initiatives include the development of water supply, sanitation, drainage, waste management, approach roads, footpaths, street lights, tourist conveniences, electricity wiring, landscaping, and such citizen services.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Launched on 21st January 2015, the scheme \"National Heritage City Development and Augmentation Yojana\", also known as \"HRIDAY\" is a central sector ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "avail the benefits of this scheme"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "There are no document requirements for this scheme",
+        "description": "There are no document requirements for this scheme",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "The citizens need not apply to this scheme.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "iats",
+    "name": {
+      "en": "Infrastructure and Technology Support",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The sub-scheme “Infrastructure and Technology Support” aims to develop world-class infrastructure in the country to support handicraft production, enhance product quality, and reduce costs to enable it to compete in the global market. For the development of the handicrafts sector and benefit of handicrafts artisans, various components like Urban Haat, Emporia, Marketing and Sourcing Hub, Handicraft Museum, Craft-Based Resource Centre, Common Facility Centre, Raw Material Depot, Crafts Village etc. ﻿ The objective of this component is to setup a permanent marketing infrastructure in towns/ metropolitan cities to provide direct marketing facilities to the handicrafts artisans/handloom weavers.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The sub-scheme “Infrastructure and Technology Support” aims to develop world-class infrastructure in the country to support handicraft production, ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "implementation of infrastructure projects",
+      "Local statutory bodies",
+      "for implementation of infrastructure projects"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "crafts"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "For Fresh Proposals",
+        "description": "For Fresh Proposals: Proposal in prescribed proforma",
+        "mandatory": true
+      },
+      {
+        "name": "Recommendation letter of Field office/Regional Off",
+        "description": "Recommendation letter of Field office/Regional Office",
+        "mandatory": true
+      },
+      {
+        "name": "Valid Registration Certificate",
+        "description": "Valid Registration Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Article & Memorandum of Association",
+        "description": "Article & Memorandum of Association",
+        "mandatory": true
+      },
+      {
+        "name": "Bye",
+        "description": "Bye-Laws",
+        "mandatory": true
+      },
+      {
+        "name": "Three years Balance Sheet & audited statement of a",
+        "description": "Three years Balance Sheet & audited statement of accounts",
+        "mandatory": true
+      },
+      {
+        "name": "Annual Report of last Year",
+        "description": "Annual Report of last Year",
+        "mandatory": true
+      },
+      {
+        "name": "Affidavit in respect of Non",
+        "description": "Affidavit in respect of Non-Corrupt Practice and validity of Registration",
+        "mandatory": true
+      },
+      {
+        "name": "Land ownership document/ Lease agreement for the p",
+        "description": "Land ownership document/ Lease agreement for the proposed project/Detailed Project Report",
+        "mandatory": true
+      },
+      {
+        "name": "Feasibility report of the project to be certified ",
+        "description": "Feasibility report of the project to be certified by a scheduled commercial bank",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "For the Implementing Agencies: The proposals in the prescribed proforma along with all the (self-attested) supporting documents in hard copy should reach the concerned Handicraft Service Center (HSC) , O/o the DC (HC) in time. ﻿ NOTE 1: The proposal sent earlier without any invitation or received after the timeline/last date, mentioned above, will not be entertained. NOTE 2: Incomplete proposals without the mandatory enclosures and proposals that are not clearly recommended and received after the due date will not be considered.",
+    "channelPartnerTypes": [
+      "Center",
+      "dic"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "ngin",
+    "name": {
+      "en": "New Generation Innovation Network",
+      "hi": ""
+    },
+    "ministry": "Tripura with the vision to create an ecosystem to promote innovations in educational institutions an",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The Scheme “New Generation Innovation Network (NGIN)” was launched by the Directorate of Information Technology, Government of Tripura with the vision to create an ecosystem to promote innovations in educational institutions and transform student ideas & concepts into successful business enterprises. Objective of the Scheme: The main objective of the scheme is to create an ecosystem that promotes innovation in educational institutions and also to encourage students, research scholars, and alumni to share their ideas to solve chosen. Innovation centre shall provide an ecosystem to convert the ideas into proof of concept and upgrade them to a level of commercial value. After successful incubation, encourage and lead the teams towards setting up a business enterprise. Duration of the Scheme: The duration of the scheme will be the same as the duration of the Tripura IT/ITeS Start-up Scheme (3 years). After that, the institute will explore other sources of funding. Implementation strategy: The Scheme will be implemented in a phased manner. Initially, the scheme will cover Technical Degree Colleges subsequently Polytechnic Institutes and Govt. Degree College will be covered. The scheme will be implemented by the Directorate of Information Technology in collaboration with the Host Institute. Funds available for the Tripura Information Technology/Information Technology Enabled Scheme (IT/ITeS) Start-up Scheme will be utilized for the implementation of the NGIN Scheme. Institutions will be selected based on their infrastructure, quality of faculty, and excellence in education. State and Institute Level Innovation Council: State Level Committee: State level Start-up council will act as State level committee for the selection, evaluation, and monitoring of the scheme. The committee reviews all selected institutions where the NGIN centre could be established. Institute Level Committee: An Institute Level Innovation Committee will be formed in the host institute to monitor the implementation of the scheme and selection of the students.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Scheme “New Generation Innovation Network (NGIN)” was launched by the Directorate of Information Technology, Government of Tripura with the vis...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "this scheme",
+      "be made available in the Educational institutions: Minimum 1000 sq",
+      "host an incubation centre on a college/ institution campus",
+      "accommodate up to 5 start projects/teams/start-ups simultaneously",
+      "be made available on the college/institution campus"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 1,
+      "maxAmount": 10
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Tripura",
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "General"
+      ],
+      "minAge": 5,
+      "occupations": [
+        "Student",
+        "Self-employed"
+      ],
+      "purposes": [
+        "manufacturing",
+        "trading",
+        "education",
+        "transport",
+        "energy"
+      ],
+      "education": [
+        "Graduate"
+      ]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Details of the Principal of the Institute 2",
+        "description": "Details of the Principal of the Institute 2",
+        "mandatory": true
+      },
+      {
+        "name": "List/Details of Management Committee Members of th",
+        "description": "List/Details of Management Committee Members of the institute 3",
+        "mandatory": true
+      },
+      {
+        "name": "Documents in support of Infrastructure details 4",
+        "description": "Documents in support of Infrastructure details 4",
+        "mandatory": true
+      },
+      {
+        "name": "List/Details of Faculty 5",
+        "description": "List/Details of Faculty 5",
+        "mandatory": true
+      },
+      {
+        "name": "List/details of Research Activities in the institu",
+        "description": "List/details of Research Activities in the institute 6",
+        "mandatory": true
+      },
+      {
+        "name": "Any other document",
+        "description": "Any other document",
+        "mandatory": true
+      },
+      {
+        "name": "as required",
+        "description": "as required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 01: The eligible Technical Institutes need to fill out the application form. The format for the application is provided in Annexure-1 . Step 02: The filled application form will be collected with necessary documents from the Head of the Institution. Step 03: Polytechnic Institute & General Govt. Degree Colleges will be selected on the basis of the number of IT-related courses offered by the college and the strength of the student in those courses should be more than 100. Step 04: The committee reviews all applications where the NGIN centre could be established.",
+    "channelPartnerTypes": [
+      "centre"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "gcrsp-p2",
+    "name": {
+      "en": "Phase-II Of The Grid Connected Rooftop Solar Programme",
+      "hi": ""
+    },
+    "ministry": "New & Renewable Energy (MNRE)",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "Phase-II of the Grid Connected Rooftop Solar Programme, is introduced by Ministry of New & Renewable Energy (MNRE), Government of India with Jammu & Kashmir Energy Development Agency (JAKEDA) as a nodal agency in the U.T of Jammu & Kashmir for achieving cumulative capacity  of 220MW under 20MW  Residential Scheme and 200 MW Jammu Solar City “ Solar City Mission ” respectively. Objectives: The key objectives of the programme are: To promote grid connected RTS in all consumer segments, viz., residential, institutional, social, Govt., commercial, industrial etc. To bring DISCOMs at forefront as key drivers for rapid deployment of RTS. To create awareness, capacity building, human resource development, etc. To promote sustainable business models. To create additional RTS capacity of 38000 MW in the country by 31.12.2022 out of which a capacity of 4000 MW in residential sector with Central Financial Assistance and 34000 MW in other sectors (i.e., Social, Government, educational, PSUs, Statutory /Autonomous bodies, Private Commercial, Industrial Sectors etc.) by suitably incentivizing DISCOMs. To promote domestic manufacturing of solar cells and module.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Phase-II of the Grid Connected Rooftop Solar Programme, is introduced by Ministry of New & Renewable Energy (MNRE), Government of India with Jammu ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the installation of a solar rooftop system",
+      "solar rooftop installation from the owner"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "housing",
+        "energy"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "copy of the latest electricity bill",
+        "description": "copy of the latest electricity bill",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "The applicants willing to install rooftop solar system under simplified procedure will be required to apply through National Portal. In order to register at National Portal the applicant will require an active mobile number and an active e-mail id. The applicant will also have to download SANDES APP for received OTP. The entire process has been explained in the following steps. Step-1: Download SANDES app and register on the National Portal by selecting the local Distribution Company or Electricity department, as the case may be, referred as DISCOM, and enter Electricity connection number / Consumer number  mentioned in electricity bill), email id and mobile number. The registration process involves OTP authentication of mobile number and activation through email id. While sending activation link on email, the entire procedure will also be communicated to the applicant. Step-2: After successful registration the applicant can proceed for submitting application for installation of grid connected rooftop solar system at residential house. The information already entered at the time of registration will be prefilled in the application form and the applicant will have to enter details such as, name on electricity bill, address, capacity of proposed rooftop solar system and details of existing rooftop solar system capacity installed, if any. The applicant also has to upload copy of latest electricity bill. On submission of application, the applicant will get a copy of application on email and it can also be downloaded after login to the portal. Step-3: Application will be forwarded to the DISCOM for technical feasibility approval as per prevailing regulations. The applicant is advised to initiate installation of the rooftop solar system only after getting the feasibility approval from DISCOM. The technical feasibility approval or rejection, as the case may be, will be informed to the applicant through email. Step-4. On receipt of feasibility approval from DISCOM, the applicant can proceed to install rooftop solar system. It is mandatory to get the rooftop solar system installed from any of the vendor registered/empaneled with DISCOM. Ministry has specified minimum technical specifications and standards for rooftops solar systems, which are to be followed. The applicant will have the option to choose equipment of higher quality/efficiency. The domestically manufactured solar modules using domestically manufactured solar cells listed in the ALMM should only be used by the applicant. In addition, the inverter should also be BIS certified. In order to protect the interest of the applicant an agreement to be signed between applicant and the vendor and a model format of the agreement is available on National Portal under Help Document section. It is mandatory for the vendor to provide comprehensive maintenance of the rooftop solar plant installed by the firm for at least 5 years. Step-5: On completion of installation of rooftop solar system, the applicant has to submit project completion details for net-metering and approval (The project completion details will include wattage, make and numbers of solar modules, make and wattage of inverter, name of vendor that has installed the system, uploading of photograph of system, etc). Applicant also has to apply for net-metering. The net-metering application will forwarded to DISCOM and applicant has to follow instructions of DISCOM regarding payment of net-metering charges, signing of net-metering agreement, etc., as applicable. Step-6: DISCOM officials will install the net-meter and inspect the system for fulfilment of minimum technical specifications and standards. Step-7: Upon successful inspection and installation of net-meter, commissioning certificate would be generated online by DISCOM. Step-8: Applicant has to submit bank details and upload copy of cancelled cheque. The fund handling agency will release the central Government subsidy directly into the bank account. The details of central Government subsidy available under simplified procedure may be checked on the National Portal. Note: The applicant shall also check various informative material placed at Help Document section of the portal for better understanding of the procedure.",
+    "channelPartnerTypes": [
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "sgfaarsaaowdfrs",
+    "name": {
+      "en": "Scheme for Grant of Financial Assistance for Administering Road Safety Advocacy and Awards for the Outstanding Work Done in the Field of Road Safety",
+      "hi": ""
+    },
+    "ministry": "Road Transport and Highways",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The scheme “Scheme for Grant of Financial Assistance for Administering Road Safety Advocacy and Awards for the Outstanding Work Done in the Field of Road Safety” was launched by the Ministry of Road Transport and Highways, Government of India. The objective of the Scheme is to stimulate and encourage opportunities for various agencies through participation, in order to create awareness on road safety. The Scheme will work in alignment with the following objectives of the National Road Safety Policy- To evolve a shared vision of priorities and strategies in promoting road safety. To foster cooperative federalism through support initiatives and mechanisms with the States on a continuous basis. To develop and ensure credible plans for financial assistance to various stakeholders for administering road safety programmes and raising awareness about road safety issues through education, training, and publicity campaigns. To design strategic, long-term policies, programme, and initiatives, and monitor their progress and their efficacy. The lessons learned through monitoring and feedback will be used for making innovative improvements. To create a knowledge base through best practices and good governance in sustainable and equitable development. To facilitate recognition and award to partners for their initiatives and recommendable work in the field of road safety.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme “Scheme for Grant of Financial Assistance for Administering Road Safety Advocacy and Awards for the Outstanding Work Done in the Field o...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "or recognized as a University or Deemed University by UGC Act",
+      "grants-in-aid for programme)",
+      "form a JV (Joint Venture)",
+      "the terms and conditions jointly and severally",
+      "arriving at the eligible maximum financial assistance"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 1,
+      "maxAmount": 5
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "poultry",
+        "education"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Registration/Incorporation certificate NGO Registration Certificate issued by respective State Power",
+        "description": "Registration/Incorporation certificate NGO Registration Certificate issued by respective State Power of Attorney for Lead Member of Consortium Self-declaration Affidavit by Authorized Person that the ",
+        "mandatory": true
+      },
+      {
+        "name": "duly certified by a Chartered Accountant (CA) Certificate from a Chartered Accountant highlighting t",
+        "description": "duly certified by a Chartered Accountant (CA) Certificate from a Chartered Accountant highlighting the value of projects executed in the last 3 years Work Order/ Letter of Award/ Contract for projects",
+        "mandatory": true
+      },
+      {
+        "name": "approach",
+        "description": "approach",
+        "mandatory": true
+      },
+      {
+        "name": "and methodology to deliver the proposed program De",
+        "description": "and methodology to deliver the proposed program Details on targets for each milestone Any other relevant documents",
+        "mandatory": true
+      },
+      {
+        "name": "if required",
+        "description": "if required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Register of NGO/Trust/Cooperative Society/Firm: Step 01: The Applicant Agency desirous of implementing the road safety programme shall submit the proposal online. Step 02: All Applicant Agency who wish to apply may visit Morth NGO Grant Portal. ( https://rsa.morth.gov.in/auth/users/login.cshtml ) Step 03: Click on “Register Here”, and fill out the form providing the User and Password, which NGO wish to use for future reference. Step 04: Further, provide the NGO Darpan ID and PAN Card of the NGO/Trust/Cooperative Society/Firm registered on the NITI Aayog’s Darpan Portal. On providing the above-stated information press the TAB button, this will fetch all the desired details from the NITI Aayog Portal. Step 05: Every Agency need to verify themselves, by providing OTP generated to Registered Mailing Address “Email Address”, Please note, don’t press the Generate OTP Button more than once, multiple presses will trigger multiple OTPs, from which the latest one is to be shared. On a single press, an OTP mail will be triggered to the address. Step 06: The triggered OTP must be provided in the column provided to confirm the registration. Please note: Mail once triggered might take a few minutes to deliver. Don’t press the Generate OTP button twice or refresh the page. If there is any uncertainty in the records being fetched from NITI Aayog, please login into the Darpan Portal and make the required changes. Drafting and submitting Proposal: Step 01: Login on Portal: Click on the “NGO Login Button”, and provide “User ID” and “Password”. Step 02: Go to Bank Records and Enter Bank Details. (Provide Bank details of the NGO which is mandatory to fill the form, until the bank details are not provided the application form cannot be submitted.) Step 03: Go to Road Safety Advocacy and fill out the application form. Step 04: Once the Proposal is submitted you can trace the status of your request from the “Application Status” Tab. And from the “Home” Tab from the NAV bar. ( User Manual to Apply Grants for Financial Assistance ) The proposals shall be evaluated based on the following criteria: 1.\tGeographical coverage of the programme 2.\tAlignment with the themes proposed under the Scheme 3.\tPast experience of the participating agency in the similar programmes Note 01: The agency shall work in close coordination with ROs of MoRTH (Road wing, NHAI and NHIDCL). State and District level officials and shall also provide them with regular updates on the progress of the programme. Note 02: The agency shall publicize the awareness programme/ campaign being carried out in various media and social media platforms for the purpose of assessment of impact. Note 03: Selected programme shall be publicized on the social media accounts of the Ministry of Road Transport and Highways. Note 04: The agency should ensure that coverage of the programme gets highlighted/ published in local newspapers. Note 05: The agency shall upload monthly progress reports on the MoRTH portal. Timelines for Receipt of Applications and Completion of the Projects: The Scheme shall remain in operation till 31.03.2026. As such, it shall not be feasible to release any financial assistance after 31.03.2026 under this Scheme. The agency will be required to complete the work before 31.12.2025 in order to avail of the full eligible grant amount. The proposal may be submitted on an ongoing basis, which shall be considered and decided on a monthly basis. Procedure for Selection of Award to the Agencies involved in Road safety advocacy and allied activities: The awards shall be given for the calendar year. The Individuals and Agencies shall file nominations for the award to the Principal Secretary (T)/Transport Commissioner/Transport Secretary of the State/UT Government. The State Government can also nominate any agency/ individual on its own if it is of the opinion that such an agency/ individual has done commendable work in the field of road safety. The Transport Department of State/ UT shall recommend the names of a maximum of five Agencies to this Ministry as per the format prescribed in Annexure 'E' . Date of Awards: The awards will be given away on a date, time and venue to be decided by the Government of India.",
+    "channelPartnerTypes": [
+      "Bank",
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "swsvy",
+    "name": {
+      "en": "Shahari Waqf Sampatti Vikas Yojana",
+      "hi": ""
+    },
+    "ministry": "Minority Affairs",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The scheme \"Shahari Waqf Sampatti Vikas Yojana\" has been implemented by the Central Waqf Council since 1974-75, with annual grant-in-aid provided by the Ministry of Minority Affairs, Government of India. The scheme aims to augment the resources of Waqf institutions and enhance the realization of their objectives. The scheme has now been further extended until 2025-26. Objective: To improve the financial position of the auqaf and the Waqf Boards and to enable them to enlarge the area of their welfare work, this Yojana has been formulated with a view to protect vacant Waqf land from encroachers and to develop economically viable projects on these properties for generating more income and /or to widen welfare activities.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Shahari Waqf Sampatti Vikas Yojana\" has been implemented by the Central Waqf Council since 1974-75, with annual grant-in-aid provided b...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "interest free loan",
+      "the development of Waqf properties located in urban areas",
+      "strengthen their financial position and expand the scope of their welfare and charitable activities",
+      "contribute to overall progress and development of the society",
+      "the extent or scope for urbanization of that area and other relevant consideration"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 2,
+      "maxAmount": 2
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "poultry",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Site plan of the land to be developed indicating b",
+        "description": "Site plan of the land to be developed indicating boundaries",
+        "mandatory": true
+      },
+      {
+        "name": "Plan of construction prepared by a qualified Engin",
+        "description": "Plan of construction prepared by a qualified Engineer/Architect",
+        "mandatory": true
+      },
+      {
+        "name": "duly sanctioned by the Municipal/Competent authori",
+        "description": "duly sanctioned by the Municipal/Competent authority or other plan prepared by Experts",
+        "mandatory": true
+      },
+      {
+        "name": "Details item wise estimate of cost of construction",
+        "description": "Details item wise estimate of cost of construction or other cases",
+        "mandatory": true
+      },
+      {
+        "name": "A statement showing the profitability of the schem",
+        "description": "A statement showing the profitability of the scheme",
+        "mandatory": true
+      },
+      {
+        "name": "A statement of the market value of the Waqf proper",
+        "description": "A statement of the market value of the Waqf property proposed to be developed",
+        "mandatory": true
+      },
+      {
+        "name": "duly prepared by an Approved Valuer",
+        "description": "duly prepared by an Approved Valuer",
+        "mandatory": true
+      },
+      {
+        "name": "Revenue Authority",
+        "description": "Revenue Authority",
+        "mandatory": true
+      },
+      {
+        "name": "Copies of documents",
+        "description": "Copies of documents",
+        "mandatory": true
+      },
+      {
+        "name": "such as Waqf deed",
+        "description": "such as Waqf deed",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Process: Step 1: The agency seeking a loan under the scheme should apply to the concerned Waqf Board (WB) using the prescribed application form , providing all necessary details. Step 2: Download the application form from the official website or obtain it from the relevant Waqf Board office. Ensure that all required information is accurately filled in. Step 3: Submit the completed application form along with the necessary supporting documents to the following address: To, The Secretary, Central Waqf Council, Central Waqf Bhawan, P-13 & 14, Sector-6, Pushp Vihar, Opposite Family Court, Saket, New Delhi – 110017 Post-Application Process: Step 1: WB shall consider the application including the feasibility of the project from all angles. The applications found eligible shall be forwarded to Central Waqf Council (CWC) for consideration. Step 2: The application in CWC will be examined by a Screening Committee and the report of the Screening Committee shall be placed before Waqf Development Committee (WDC) for its recommendation for approved of Chairman, CWC. Step 3: CWC will release the approved loan amount in accordance with the applicable procedure and provisions as laid down in General Financial Rules (GFR) notified by the Ministry of Finance in this regard. Step 4: The loans for the amount of more than ₹75 Lakh shall be disbursed in installments to those applicants for whom the funds have been released by the Ministry as Grant in aid. The loans for amount of ₹75 Lakh or less shall be disbursed in installments from the revolving fund created by repayment of loan granted in previous years. Step 5: First installment of up to 50% of the loan amount will be disbursed initially on submission of requisite documents by the loanee institution in compliance of the provisions of GFR. The remaining amount of the loan will be released in appropriate installments after receipt of UC and satisfactory progress report from the concerned institutions; Note 1: For approved projects, WBs/ waqf institutions will also be required to submit loan agreement. Security for obtaining loans will be furnished through memorandum of Deposit of Title Deed OR State Government Guarantee OR Bank Guarantee OR State Waqf Board Guarantee; and Note 2: For all the approved projects, CWC will levy a charge of 8% of disbursed loan amount towards administrative processing cost and the above amount will have to be deposited in advance by WB/ waqf institution before loan amount is released. Note 3: Compliance with the provisions of GFRs and all other applicable Government of India orders / instructions / notifications / guidelines pertaining to release and recovery of loans shall be the responsibility of the CWC after the release of grants in aid by the Ministry.",
+    "channelPartnerTypes": [
+      "office",
+      "Bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "tcdapsotcb",
+    "name": {
+      "en": "Travel Concession To The Differently Abled Persons In State Owned Transport Corporation Buses",
+      "hi": ""
+    },
+    "ministry": "Tamil Nadu introduced Differently Abled Persons In Stated Owned Transport Corporation buses",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The Government of Tamil Nadu introduced Differently Abled Persons In Stated Owned Transport Corporation buses. i) All visually impaired persons are given travel concession to travel up to 100 Km. to and fro without any condition and free of cost. ii) Free-of-cost travel concession is allowed to intellectually disabled persons to travel with one escort. iii) The speech and hearing impaired and locomotor differently-abled persons are given travel concession free of cost up to 100 Kms to go to schools/colleges/hospitals/training centers/work spots from their residence and return. iv) Free travel concession is provided to children with disabilities to attend early intervention centers and pre-schools along with one escort/parent. There is no income ceiling to avail concessions in (i) to (iv).",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Government of Tamil Nadu introduced Differently Abled Persons In Stated Owned Transport Corporation buses. i) All visually impaired persons are...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [],
+      "education": [],
+      "disabilityRequired": true
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "National identity card for differently abled",
+        "description": "National identity card for differently abled",
+        "mandatory": true
+      },
+      {
+        "name": "Certificate  from the educational  institution",
+        "description": "Certificate  from the educational  institution",
+        "mandatory": true
+      },
+      {
+        "name": "(except  for the Blind) Bonafide certificate from ",
+        "description": "(except  for the Blind) Bonafide certificate from concerned authority/employer",
+        "mandatory": true
+      },
+      {
+        "name": "For 75% concession every time a Xerox copy of the ",
+        "description": "For 75% concession every time a Xerox copy of the Identity card is to be given to the conductor and the original shall be shown if required",
+        "mandatory": true
+      },
+      {
+        "name": "For availing 75% concession for the escort",
+        "description": "For availing 75% concession for the escort",
+        "mandatory": true
+      },
+      {
+        "name": "a certificate from Government Doctor should be sub",
+        "description": "a certificate from Government Doctor should be submitted",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "The Applicant should contact District Differently Abled Welfare Officer and submit an application at the address of Assistant Director (DAW), O/o. The Commissionerate for Welfare of the Differently Abled, No.5, Kamarajar salai, Chennai – 600 005.  Ph: 044-28444940 District Collector / Managing Director of the Metropolitan / State Transport Corporation.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "tnztbtsfw",
+    "name": {
+      "en": "Zero Ticket Bus Travel Scheme for Women",
+      "hi": ""
+    },
+    "ministry": "Social Welfare and Women Empowerment announced a scheme whereby women travelers can travel without p",
+    "category": [
+      "transport"
+    ],
+    "description": {
+      "en": "The Zero Ticket Bus Travel Scheme. The government of Tamil Nadu under the Department of Social Welfare and Women Empowerment announced a scheme whereby women travelers can travel without paying any fare in government-run normal-fare buses (for short distances of up to 30 kilometers) in cities and towns in the state. Women are issued zero tickets (a fareless ticket) when they travel in these buses. ﻿ Among the women passengers who use the Zero-Ticket Travel Scheme (ZTBT), around 52% of them are below the age of 40. The fact that more than 48% of women users are more than 40 years of age indicates the extent to which this scheme benefits older women. There are no major differences in these proportions across districts. ZTBT Scheme users are those with educational qualifications of less than fifth grade (5 years of school education). They comprise almost 44% of the sample users",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Zero Ticket Bus Travel Scheme. The government of Tamil Nadu under the Department of Social Welfare and Women Empowerment announced a scheme whe...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "service"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Any one of the below",
+        "description": "Any one of the below-mentioned documents will be shown by Women Beneficiary to the Bus Conductor at the time of traveling to avail of the benefit of the Tamil Nadu Zero Ticket Bus Travel Scheme for Wo",
+        "mandatory": true
+      },
+      {
+        "name": "Voter Identity Card",
+        "description": "Voter Identity Card",
+        "mandatory": true
+      },
+      {
+        "name": "School Identity Card",
+        "description": "School Identity Card",
+        "mandatory": true
+      },
+      {
+        "name": "College Identity Card",
+        "description": "College Identity Card",
+        "mandatory": true
+      },
+      {
+        "name": "Employee Identity Card",
+        "description": "Employee Identity Card",
+        "mandatory": true
+      },
+      {
+        "name": "Or Any Other Photographed Identity Card",
+        "description": "Or Any Other Photographed Identity Card",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "No formal application is needed. Women simply board the bus and request a zero-value ticket from the conductor.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  }
+]

@@ -74,6 +74,7 @@ export interface MatchResultItem {
   rateRange: Scheme["rateRange"]
   moratorium: Scheme["moratorium"]
   tenureRangeMonths: Scheme["tenureRangeMonths"]
+  applyUrl?: string
 }
 
 export interface MatchContextInput {
@@ -178,6 +179,7 @@ export function evaluateMatches(
       rateRange: scheme.rateRange,
       moratorium: scheme.moratorium,
       tenureRangeMonths: scheme.tenureRangeMonths,
+      applyUrl: scheme.applyUrl,
     }
   })
 

@@ -19,6 +19,9 @@ import { InfoNote } from "@/components/literacy/InfoNote"
 import { computeLoan } from "@/lib/emi"
 import { fmtINR } from "@/lib/format"
 import { useCalculatorStore } from "@/stores/calculatorStore"
+import { RepaymentChart } from "@/components/RepaymentChart"
+import { MoratoriumTimeline } from "@/components/MoratoriumTimeline"
+import { MoratoriumDisplay } from "@/components/MoratoriumDisplay"
 import schemesSeed from "@seed/schemes.seed.json"
 
 function SliderRow({
@@ -92,6 +95,11 @@ export default function CalculatorPage() {
     ],
   )
 
+  const moratoriumInterest = useMemo(
+    () => result.schedule.filter((r) => r.phase === "moratorium").reduce((s, r) => s + r.interest, 0),
+    [result],
+  )
+
   const schemeName = calc.schemeId
     ? (schemesSeed.find((s) => s.id === calc.schemeId)?.name.en ?? null)
     : null
@@ -107,6 +115,9 @@ export default function CalculatorPage() {
       </h1>
       <p className="mt-1 text-sm text-muted-foreground mb-8">
         {t("calculator.subtitle")}
+        <Button variant="ghost" size="sm" className="ml-3" onClick={() => calc.reset()}>
+          Reset
+        </Button>
       </p>
 
       {schemeName && (
@@ -213,6 +224,34 @@ export default function CalculatorPage() {
               </Card>
             ))}
           </dl>
+
+          <Card className="bg-card">
+            <CardContent className="pt-5 pb-4 px-4">
+              <p className="text-xs text-muted-foreground mb-3">Repayment breakdown</p>
+              <RepaymentChart
+                principal={result.effectivePrincipal}
+                interest={result.totalInterest}
+              />
+            </CardContent>
+          </Card>
+
+          {calc.moratoriumMonths > 0 && (
+            <Card className="bg-card">
+              <CardContent className="pt-5 pb-4 px-4 space-y-4">
+                <MoratoriumTimeline
+                  moratoriumMonths={calc.moratoriumMonths}
+                  tenureMonths={calc.tenureMonths}
+                />
+                <MoratoriumDisplay
+                  moratoriumMonths={calc.moratoriumMonths}
+                  interestAccrues={calc.moratoriumInterestAccrues}
+                  moratoriumInterest={moratoriumInterest}
+                  effectivePrincipal={result.effectivePrincipal}
+                  originalPrincipal={calc.principal}
+                />
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
 

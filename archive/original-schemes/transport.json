@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "pm-svanidhi",
+    "name": { "en": "PM SVANidhi (PM Street Vendor's AtmaNirbhar Nidhi)", "hi": "पीएम स्वनिधि (प्रधानमंत्री स्ट्रीट वेंडर्स आत्मनिर्भर निधि)" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["transport", "business", "employment"],
+    "description": {
+      "en": "Working capital loan facility for street vendors including those using transport carts (pushcarts, auto-rickshaws, e-rickshaws). Provides micro-credit up to ₹50,000 for urban street vendors.",
+      "hi": "परिवहन गाड़ियों (ठेले, ऑटो-रिक्शा, ई-रिक्शा) सहित स्ट्रीट वेंडर्स के लिए कार्यशील पूंजी ऋण सुविधा। शहरी स्ट्रीट वेंडर्स के लिए ₹50,000 तक का माइक्रो-क्रेडिट।"
+    },
+    "shortDescription": {
+      "en": "Working capital loans up to ₹50,000 for urban street vendors including transport vendors.",
+      "hi": "परिवहन विक्रेताओं सहित शहरी स्ट्रीट वेंडर्स के लिए ₹50,000 तक कार्यशील पूंजी ऋण।"
+    },
+    "purpose": "Providing working capital to street vendors for sustaining their livelihood",
+    "targetBeneficiaries": ["Street vendors", "Transport cart operators", "Pushcart vendors", "Auto-rickshaw drivers"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 10000,
+      "maxAmount": 50000,
+      "interestRate": { "min": 7, "max": 12 },
+      "repaymentMonths": { "min": 12, "max": 12 }
+    },
+    "eligibilityRules": {
+      "minIncome": 0,
+      "occupations": ["Street vendor", "Transport operator"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Vendor's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Vending Certificate", "description": "Certificate of vending from local authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" },
+      { "name": "Photograph", "description": "Recent passport-size photograph", "mandatory": true, "format": "JPEG" }
+    ],
+    "applicationProcess": "Apply through lending institutions or PM SVANidhi portal. First loan: ₹10,000. Enhanced limit on timely repayment. Digital transactions incentivized.",
+    "channelPartnerTypes": ["Banks", "NBFCs", "MFIs", "SFBs"],
+    "officialUrl": "https://pmsvanidhi.mohua.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pm-swasthya-scheme-ambulance",
+    "name": { "en": "National Ambulance Service (EMRI)", "hi": "राष्ट्रीय एम्बुलेंस सेवा (ईएमआरआई)" },
+    "ministry": "Ministry of Health and Family Welfare",
+    "category": ["transport", "health"],
+    "description": {
+      "en": "Free ambulance service for emergency medical transport. 108 toll-free number provides ambulance services across the country for medical emergencies.",
+      "hi": "आपातकालीन चिकित्सा परिवहन के लिए मुफ्त एम्बुलेंस सेवा। 108 टोल-फ्री नंबर पूरे देश में चिकित्सा आपात स्थितियों के लिए एम्बुलेंस सेवाएं प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Free emergency ambulance service via 108 toll-free number.",
+      "hi": "108 टोल-फ्री नंबर के माध्यम से मुफ्त आपातकालीन एम्बुलेंस सेवा।"
+    },
+    "purpose": "Providing emergency medical transport services",
+    "targetBeneficiaries": ["General public", "Accident victims", "Medical emergency patients"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [],
+    "applicationProcess": "Dial 108 for emergency ambulance service. Available 24/7 across the country.",
+    "channelPartnerTypes": ["State Health Departments", "EMRI", "Hospitals"],
+    "officialUrl": "https://www.emri.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "vehicle-loan-subsidy-sc-st",
+    "name": { "en": "Vehicle Loan Subsidy for SC/ST", "hi": "एससी/एसटी के लिए वाहन ऋण सब्सिडी" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["transport"],
+    "description": {
+      "en": "Subsidized vehicle loans for SC/ST entrepreneurs for commercial transport purposes. Covers auto-rickshaws, tempos, goods carriers, and other commercial vehicles.",
+      "hi": "वाणिज्यिक परिवहन उद्देश्यों के लिए एससी/एसटी उद्यमियों के लिए सब्सिडी वाले वाहन ऋण। ऑटो-रिक्शा, टेम्पो, मालवाहक और अन्य वाणिज्यिक वाहनों को कवर करता है।"
+    },
+    "shortDescription": {
+      "en": "Subsidized vehicle loans for SC/ST entrepreneurs for commercial transport.",
+      "hi": "वाणिज्यिक परिवहन के लिए एससी/एसटी उद्यमियों के लिए सब्सिडी वाले वाहन ऋण।"
+    },
+    "purpose": "Enabling SC/ST entrepreneurs in commercial transport business",
+    "targetBeneficiaries": ["SC entrepreneurs", "ST entrepreneurs", "Commercial drivers"],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 200000,
+      "maxAmount": 5000000,
+      "interestRate": { "min": 4, "max": 8 },
+      "coverageMaxPct": 50
+    },
+    "eligibilityRules": {
+      "categories": ["SC", "ST"],
+      "minAge": 18,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC/ST caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Driving License", "description": "Valid driving license", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Vehicle Quotation", "description": "Quotation from authorized dealer", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through NSDFC or state SC/ST welfare department. Bank processes loan with government subsidy component.",
+    "channelPartnerTypes": ["NSDFC", "Banks", "State SC/ST Welfare Departments"],
+    "officialUrl": "https://nsdfc.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "fame-india-scheme-electric-vehicles",
+    "name": { "en": "FAME India Scheme (Faster Adoption and Manufacturing of Electric Vehicles)", "hi": "फेम इंडिया योजना (इलेक्ट्रिक वाहनों के तेजी से अपनाने और निर्माण)" },
+    "ministry": "Ministry of Heavy Industries",
+    "category": ["transport"],
+    "description": {
+      "en": "FAME II provides demand incentives for purchase of electric vehicles including e-rickshaws, electric buses, and electric four-wheelers. Aims to reduce pollution and promote electric mobility.",
+      "hi": "फेम II ई-रिक्शा, इलेक्ट्रिक बसों और इलेक्ट्रिक चार-पहिया वाहनों सहित इलेक्ट्रिक वाहनों की खरीद के लिए मांग प्रोत्साहन प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Demand incentives for electric vehicles including e-rickshaws and buses.",
+      "hi": "ई-रिक्शा और बसों सहित इलेक्ट्रिक वाहनों के लिए मांग प्रोत्साहन।"
+    },
+    "purpose": "Promoting electric vehicle adoption and manufacturing",
+    "targetBeneficiaries": ["EV buyers", "Public transport operators", "E-rickshaw drivers"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 10000,
+      "maxAmount": 150000,
+      "coverageMaxPct": 25
+    },
+    "eligibilityRules": {
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Buyer's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "PAN Card", "description": "Buyer's PAN card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Vehicle Invoice", "description": "Electric vehicle purchase invoice", "mandatory": true, "format": "PDF" },
+      { "name": "Bank Account", "description": "Bank account details for subsidy", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Purchase electric vehicle from FAME-approved dealer. Subsidy automatically deducted at point of sale. Dealer claims reimbursement from government.",
+    "channelPartnerTypes": ["EV Manufacturers", "FAME Dealers", "State Transport Departments"],
+    "officialUrl": "https://fame2.heavyindustries.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "driving-license-skill-india",
+    "name": { "en": "Skill India Driving License Scheme", "hi": "स्किल इंडिया ड्राइविंग लाइसेंस योजना" },
+    "ministry": "Ministry of Skill Development and Entrepreneurship",
+    "category": ["transport", "employment"],
+    "description": {
+      "en": "Free driving license and skill training for unemployed youth. Provides certified driving training for LMV, HMV, and two-wheeler categories with job placement assistance.",
+      "hi": "बेरोजगार युवाओं के लिए मुफ्त ड्राइविंग लाइसेंस और कौशल प्रशिक्षण। रोजगार सहायता के साथ एलएमवी, एचएमवी और दोपहिया श्रेणियों के लिए प्रमाणित ड्राइविंग प्रशिक्षण।"
+    },
+    "shortDescription": {
+      "en": "Free driving training and license for unemployed youth with job placement.",
+      "hi": "रोजगार सहायता के साथ बेरोजगार युवाओं के लिए मुफ्त ड्राइविंग प्रशिक्षण और लाइसेंस।"
+    },
+    "purpose": "Skill development and employment through driving training",
+    "targetBeneficiaries": ["Unemployed youth", "SC/ST youth", "BPL families"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5000,
+      "maxAmount": 15000
+    },
+    "eligibilityRules": {
+      "minAge": 18,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Education Certificate", "description": "Minimum 8th standard pass", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Medical Certificate", "description": "Fitness certificate from registered medical practitioner", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Photograph", "description": "Passport-size photographs", "mandatory": true, "format": "JPEG" }
+    ],
+    "applicationProcess": "Apply through NSDC-affiliated training centers. Complete training program. Appear for RTO test. Receive license and placement assistance.",
+    "channelPartnerTypes": ["NSDC", "Skill Development Centers", "RTO"],
+    "officialUrl": "https://www.skillindia.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-10",
+    "verified": true,
+    "isActive": true
+  }
+]

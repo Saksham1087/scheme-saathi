@@ -1,0 +1,21 @@
+{
+  "total": 3400,
+  "processed": 3400,
+  "regexExtracted": 3400,
+  "llmExtracted": 0,
+  "defaulted": 0,
+  "errors": 0,
+  "confidenceDistribution": {
+    "high": 3400,
+    "medium": 0,
+    "low": 0
+  },
+  "fieldCoverage": {
+    "states": 2689,
+    "categories": 719,
+    "income": 560,
+    "age": 876,
+    "occupations": 2532,
+    "purposes": 2779
+  }
+}

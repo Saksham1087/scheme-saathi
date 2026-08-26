@@ -24,7 +24,8 @@ export interface Scheme {
     maxMonths: number
     interestAccrues: boolean
   }
-  source: "seed" | "mcp"
+  source: "seed" | "mcp" | "kaggle"
+  applyUrl?: string
 }
 
 export interface ChannelPartner {

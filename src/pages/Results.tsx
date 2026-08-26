@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import { ArrowRight, Check, Calculator, MapPin } from "lucide-react"
+import { ArrowRight, Check, Calculator, MapPin, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -136,6 +136,22 @@ export default function Results() {
                     <MapPin className="mr-1.5 size-4" />
                     {t("results.partnersCta")}
                   </Button>
+                  {m.applyUrl && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                    >
+                      <a
+                        href={m.applyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-1.5 size-4" />
+                        {t("results.applyCta")}
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

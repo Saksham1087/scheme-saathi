@@ -43,6 +43,7 @@ export default function PartnersPage() {
   const [includeFlagged, setIncludeFlagged] = useState(false)
   const [userLoc, setUserLoc] = useState(DEFAULT_LOCATION)
   const [focusId, setFocusId] = useState<string | null>(null)
+  const [isDemoData, setIsDemoData] = useState(true)
 
   // URL param preset from Results CTA (?type=micro|term|education)
   useEffect(() => {
@@ -61,12 +62,15 @@ export default function PartnersPage() {
         if (!cancelled) {
           setPartners(
             snap.empty
-              ? loadSeedPartners()
-              : snap.docs.map((d) => ({ ...(d.data() as ChannelPartner), id: d.id })),
+              ? (setIsDemoData(true), loadSeedPartners())
+              : (setIsDemoData(false), snap.docs.map((d) => ({ ...(d.data() as ChannelPartner), id: d.id }))),
           )
         }
       } catch {
-        if (!cancelled) setPartners(loadSeedPartners())
+        if (!cancelled) {
+          setIsDemoData(true)
+          setPartners(loadSeedPartners())
+        }
       }
     }
     void load()
@@ -134,6 +138,10 @@ export default function PartnersPage() {
       <p className="mt-1 text-sm text-muted-foreground mb-7">
         {t("partners.subtitle")}
       </p>
+
+      <div className="mb-5 rounded-lg bg-accent/10 border border-accent/20 px-4 py-2.5 text-sm text-muted-foreground">
+        {isDemoData && t("partners.demoNotice")}
+      </div>
 
       {/* Filters */}
       <div className="mb-5 flex flex-wrap items-center gap-2">

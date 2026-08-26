@@ -2,9 +2,11 @@ import { NavLink, Link, Outlet, useNavigate } from "react-router-dom"
 import { LogOut, MapPin } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
-import { useLocaleStore } from "@/stores/localeStore"
 import { useAuthStore } from "@/stores/authStore"
 import { auth } from "@/lib/firebase"
+import { LanguageSelector } from "@/components/LanguageSelector"
+import { AccessibilityControls } from "@/components/AccessibilityControls"
+import { ComparisonBar } from "@/components/ComparisonBar"
 
 function Wordmark() {
   return (
@@ -17,36 +19,6 @@ function Wordmark() {
         Scheme<span className="text-accent">Sathi</span>
       </span>
     </Link>
-  )
-}
-
-function LanguageToggle() {
-  const { lang, setLang } = useLocaleStore()
-  return (
-    <div
-      role="group"
-      aria-label="Language"
-      className="flex rounded-md border border-border overflow-hidden text-sm font-semibold"
-    >
-      <button
-        onClick={() => setLang("en")}
-        aria-pressed={lang === "en"}
-        className={`px-2.5 py-1.5 transition-colors ${
-          lang === "en" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-        }`}
-      >
-        EN
-      </button>
-      <button
-        onClick={() => setLang("hi")}
-        aria-pressed={lang === "hi"}
-        className={`px-2.5 py-1.5 transition-colors ${
-          lang === "hi" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-        }`}
-      >
-        हिंदी
-      </button>
-    </div>
   )
 }
 
@@ -84,7 +56,7 @@ export function AppShell() {
             ))}
           </nav>
           <div className="ml-auto lg:ml-0 flex items-center gap-3">
-            <LanguageToggle />
+            <LanguageSelector />
             {user ? (
               <Button
                 variant="ghost"
@@ -99,7 +71,8 @@ export function AppShell() {
                 {t("nav.login")}
               </Button>
             )}
-          </div>
+      <ComparisonBar />
+    </div>
         </div>
         <nav
           aria-label={t("nav.home")}
@@ -136,6 +109,7 @@ export function AppShell() {
             <MapPin className="size-4 shrink-0 mt-0.5 text-accent" />
             {t("home.privacyNote")}
           </p>
+          <AccessibilityControls />
         </div>
       </footer>
     </div>

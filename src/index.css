@@ -150,3 +150,39 @@
     transform: rotate(-4deg) scale(1);
   }
 }
+
+/* Accessibility: font size scale */
+.font-small {
+  font-size: 14px;
+}
+.font-medium {
+  font-size: 16px;
+}
+.font-large {
+  font-size: 20px;
+}
+
+/* Accessibility: high contrast mode */
+.high-contrast {
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #e0e0e0;
+  --secondary-foreground: #000000;
+  --muted: #f0f0f0;
+  --muted-foreground: #333333;
+  --accent: #cc8800;
+  --accent-foreground: #000000;
+  --border: #333333;
+  --input: #666666;
+  --ring: #000000;
+}
+
+.high-contrast .stamp {
+  mask-image: none;
+}

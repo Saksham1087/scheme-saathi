@@ -34,7 +34,107 @@
     "educationCardTitle": "Education Loan Scheme",
     "educationCardBody": "For students pursuing higher studies in India or abroad, based on course cost.",
     "privacyNote": "Your caste category and income details are used only to check eligibility. Nothing is shared with advertisers or analytics tools.",
-    "literacyTeaser": "New to loans? Plain-language notes explain every term as you go."
+    "literacyTeaser": "New to loans? Plain-language notes explain every term as you go.",
+    "howItWorks": {
+      "title": "How it works",
+      "intro": "Under the Channel Finance System you cannot apply straight to a ministry. Your application travels a fixed route:"
+    },
+    "features": {
+      "heading": "Everything you need in one place",
+      "smartMatching": {
+        "title": "Smart Scheme Matching",
+        "desc": "Answer a few questions about your project and profile. We match you against every eligible scheme in seconds."
+      },
+      "calculator": {
+        "title": "EMI & Cost Calculator",
+        "desc": "See your monthly repayment, total interest, and amortisation schedule before you commit."
+      },
+      "partnerLocator": {
+        "title": "Partner Locator",
+        "desc": "Find the nearest Channel Partner that handles your scheme category, with distance and capacity info."
+      },
+      "voiceAssistant": {
+        "title": "Voice Assistant",
+        "desc": "Speak in your language to describe your project. Our AI guides you through every step."
+      },
+      "digilocker": {
+        "title": "DigiLocker Integration",
+        "desc": "Securely fetch your Aadhaar, income certificate and caste certificate — no manual uploads needed."
+      }
+    },
+    "popularSchemes": {
+      "heading": "Popular schemes",
+      "viewAll": "View all schemes",
+      "svanidhi": {
+        "name": "PM SVANidhi",
+        "ministry": "Ministry of Housing & Urban Affairs",
+        "desc": "Working capital loan up to ₹50,000 for street vendors to enlarge their business."
+      },
+      "mudra": {
+        "name": "MUDRA Yojana",
+        "ministry": "Ministry of Finance",
+        "desc": "Loans up to ₹10 lakh for non-farm income-generating activities in manufacturing, services and trading."
+      },
+      "standUp": {
+        "name": "Stand-Up India",
+        "ministry": "Ministry of Finance",
+        "desc": "Term loans from ₹10 lakh to ₹1 crore for SC/ST and women entrepreneurs."
+      },
+      "postMatric": {
+        "name": "Post-Matric Scholarship for SC",
+        "ministry": "Ministry of Social Justice & Empowerment",
+        "desc": "Financial assistance for SC students pursuing post-matriculation education."
+      }
+    },
+    "financialLiteracy": {
+      "heading": "Financial literacy"
+    },
+    "faq": {
+      "heading": "Frequently asked questions",
+      "whoCanApply": {
+        "q": "Who can apply through SchemeSathi?",
+        "a": "Any SC beneficiary looking for a loan under the SC Channel Finance System. You must have a project or course cost estimate and basic profile information."
+      },
+      "directApplication": {
+        "q": "Can I apply directly to the government?",
+        "a": "No. Under the Channel Finance System, applications go only through registered Channel Partners — State Channelizing Agencies, banks, or NBFC-MFIs."
+      },
+      "channelPartner": {
+        "q": "What is a Channel Partner?",
+        "a": "A Channel Partner is a registered institution (SCA, PSB, RRB, or NBFC-MFI) that verifies your documents, appraises your project, and forwards your application to the government."
+      },
+      "documents": {
+        "q": "What documents do I need?",
+        "a": "Typically you need Aadhaar, caste certificate, income certificate, project cost estimate, and education certificates. Specific requirements vary by scheme."
+      },
+      "trackStatus": {
+        "q": "How do I track my application?",
+        "a": "Log in to SchemeSathi and go to Track Application. You can see the current status, which partner it is routed to, and any actions needed."
+      },
+      "schemeCost": {
+        "q": "Is there a cost for using SchemeSathi?",
+        "a": "SchemeSathi is free to use. There are no fees for matching, calculating, or finding partners. You only pay the loan processing charges set by your Channel Partner."
+      }
+    },
+    "trust": {
+      "heading": "Built on trust",
+      "governance": {
+        "title": "Government-backed",
+        "desc": "All schemes listed are official programmes under the SC Channel Finance System, governed by the Ministry of Social Justice & Empowerment."
+      },
+      "dataSource": {
+        "title": "Verified data",
+        "desc": "Scheme information is sourced from official government publications and updated regularly for accuracy."
+      },
+      "dataPrivacy": {
+        "title": "Your data stays yours",
+        "desc": "We never share your personal information with advertisers, analytics tools, or third parties. You can delete your data anytime."
+      },
+      "channelFinance": {
+        "title": "Channel finance only",
+        "desc": "Funds always flow through registered Channel Partners — never directly. This ensures proper verification and support at every step."
+      }
+    }
   },
   "intake": {
     "title": "Tell us about your plan",
@@ -96,6 +196,7 @@
     "blockersHeading": "Why it does not fit yet",
     "calcCta": "Calculate EMI",
     "partnersCta": "Find partners",
+    "applyCta": "Apply now",
     "restartCta": "Start over",
     "empty": "No match yet. Start with a few questions about your plan."
   },
@@ -151,6 +252,8 @@
     "highNpaBadge": "High NPA / overdue — verify before applying",
     "docsRequired": "Documents to carry",
     "callNow": "Call",
+    "directions": "Get directions",
+    "demoNotice": "This is demo data. Real partner data will be available once connected to the backend.",
     "emptyList": "No partners match these filters.",
     "loadError": "Partner list unavailable. Run the seed script or start emulators.",
     "typeNames": {
@@ -214,22 +317,391 @@
     "term": "Term Loan",
     "education": "Education Loan"
   },
+  "schemes": {
+    "title": "Explore Schemes",
+    "subtitle": "Browse all available schemes. Filter by category, loan amount, or search by name.",
+    "loadMore": "Load more schemes",
+    "empty": {
+      "title": "No schemes found",
+      "description": "Try adjusting your search or filters."
+    },
+    "search": {
+      "placeholder": "Search by name, ministry, or purpose…",
+      "ariaLabel": "Search schemes",
+      "clear": "Clear search"
+    },
+    "filter": {
+      "title": "Filters",
+      "results": "schemes",
+      "category": "Category",
+      "loanAmount": "Loan amount",
+      "clearAll": "Clear filters",
+      "anyAmount": "Any amount",
+      "upTo1L": "Up to ₹1 L",
+      "1to5L": "₹1 L – ₹5 L",
+      "5to10L": "₹5 L – ₹10 L",
+      "10Lto1Cr": "₹10 L – ₹1 Cr",
+      "above1Cr": "Above ₹1 Cr"
+    },
+    "categories": {
+      "all": "All categories",
+      "business": "Business",
+      "education": "Education",
+      "agriculture": "Agriculture",
+      "transport": "Transport",
+      "housing": "Housing",
+      "health": "Health",
+      "socialWelfare": "Social Welfare",
+      "employment": "Employment"
+    },
+    "detail": {
+      "notFound": "Scheme not found",
+      "notFoundDesc": "The scheme you're looking for doesn't exist or has been removed.",
+      "backToList": "Back to schemes",
+      "verified": "Verified",
+      "calcEmi": "Calculate EMI",
+      "findPartner": "Find a partner",
+      "officialSite": "Official site",
+      "overview": "Overview",
+      "purpose": "Purpose",
+      "beneficiaries": "Target beneficiaries",
+      "financialAssistance": "Financial assistance",
+      "loanRange": "Loan range",
+      "interestRate": "Interest rate",
+      "repaymentTenure": "Repayment tenure",
+      "moratorium": "Moratorium period",
+      "eligibility": "Eligibility",
+      "eligibleCategories": "Eligible categories",
+      "incomeCeiling": "Income ceiling",
+      "eligibleStates": "Eligible states",
+      "eligibleOccupations": "Eligible occupations",
+      "documents": "Required documents",
+      "applicationProcess": "Application process",
+      "sourceTrust": "Source & trust",
+      "source": "Data source",
+      "lastUpdated": "Last updated",
+      "officialUrl": "Official URL",
+      "disclaimer": "This information is sourced from official government publications. Always verify details with the official scheme portal before applying."
+    }
+  },
+  "planner": {
+    "title": "Project cost planner",
+    "description": "Build an itemized cost estimate for your project. Use this to determine how much funding you need.",
+    "items": "items",
+    "addItem": "Add item",
+    "removeItem": "Remove item",
+    "category": "Category",
+    "description": "Description",
+    "descriptionPlaceholder": "e.g. Sewing machine",
+    "amount": "Amount (₹)",
+    "total": "Total estimated cost",
+    "categories": {
+      "equipment": "Equipment",
+      "raw_materials": "Raw materials",
+      "rent": "Rent / deposit",
+      "working_capital": "Working capital",
+      "other": "Other"
+    }
+  },
+  "checklist": {
+    "title": "Document checklist",
+    "readyCount": "{{ready}}/{{total}} mandatory documents ready",
+    "markReady": "Mark {{name}} as ready",
+    "markNotReady": "Mark {{name}} as not ready",
+    "required": "Required",
+    "optional": "Optional",
+    "reminder": "Documents will be verified at the partner location. Bring original copies.",
+    "incompleteNotice": "This list may be incomplete. Check with your Channel Partner for the full list."
+  },
+  "comparison": {
+    "title": "Compare Schemes",
+    "subtitle": "Comparing {{count}} schemes",
+    "dimension": "Dimension",
+    "ministry": "Ministry / Department",
+    "purpose": "Purpose",
+    "loanRange": "Loan range",
+    "interestRate": "Interest rate",
+    "repaymentTenure": "Repayment tenure",
+    "moratorium": "Moratorium period",
+    "eligibleCategories": "Eligible categories",
+    "incomeCeiling": "Income ceiling",
+    "requiredDocs": "Required documents",
+    "dataSource": "Data source",
+    "compareCount": "Compare ({{count}}/{{max}})",
+    "add": "Add {{name}} to comparison",
+    "remove": "Remove {{name}} from comparison",
+    "limitReached": "Maximum 4 schemes. Remove one first.",
+    "emptyTitle": "Select schemes to compare",
+    "emptyDesc": "Pick 2–4 schemes from the Schemes page to see a side-by-side comparison of eligibility, amounts, interest rates, and documents.",
+    "browseSchemes": "Browse schemes",
+    "backToSchemes": "Back to schemes",
+    "clearAll": "Clear all"
+  },
+  "journey": {
+    "title": "Application Journey",
+    "notFound": "Journey not found",
+    "backToSchemes": "Back to schemes",
+    "progress": "Step {{current}} of {{total}} completed",
+    "milestone": "Milestone",
+    "currentStep": "Current step",
+    "saveNotice": "Your progress is saved automatically. You can resume this journey anytime.",
+    "steps": {
+      "identified": "Scheme identified",
+      "eligibility": "Eligibility checked",
+      "documents": "Documents prepared",
+      "partner": "Partner identified",
+      "started": "Application started",
+      "submitted": "Application submitted",
+      "review": "Under review",
+      "decision": "Decision received"
+    },
+    "descriptions": {
+      "scheme-identified": "You've found a scheme that matches your needs. Review the details and proceed to check your eligibility.",
+      "eligibility-checked": "Verify that you meet all eligibility criteria before gathering documents.",
+      "documents-prepared": "Collect and prepare all required documents. Mark each document as ready in the checklist.",
+      "partner-identified": "Find a Channel Partner near you who can help process your application.",
+      "application-started": "Begin filling out the application form with your Channel Partner.",
+      "application-submitted": "Your application has been submitted. Keep the acknowledgment receipt safe.",
+      "under-review": "Your application is being reviewed by the authorities. This typically takes a few weeks.",
+      "decision": "A decision has been made on your application."
+    },
+    "actions": {
+      "checkEligibility": "Check eligibility",
+      "prepareDocs": "Prepare documents",
+      "findPartner": "Find a partner",
+      "startApplication": "Start application"
+    }
+  },
+  "dashboard": {
+    "loginRequired": "Sign in to view your dashboard",
+    "loginPrompt": "Your dashboard keeps track of saved schemes, active applications, and personalized recommendations.",
+    "goToLogin": "Go to login",
+    "greeting": "Hello, {{name}}!",
+    "subtitle": "Here's an overview of your scheme applications and recommendations.",
+    "viewAll": "View all",
+    "findPartner": "Find partner",
+    "newCalculation": "New calculation",
+    "retakeAssessment": "Retake",
+    "browseSchemes": "Browse schemes",
+    "newAssessment": "New assessment",
+    "sections": {
+      "recommended": "Recommended for you",
+      "saved": "Saved schemes",
+      "applications": "Active applications",
+      "partners": "Saved partners",
+      "calculations": "Recent calculations",
+      "assessments": "Assessment history"
+    },
+    "empty": {
+      "recommended": "No recommendations yet. Take an assessment to get started.",
+      "saved": "No saved schemes yet. Explore schemes to find ones that fit.",
+      "applications": "No active applications. Choose a scheme and start your journey.",
+      "partners": "No saved partners. Find a partner to help with your application.",
+      "calculations": "No recent calculations. Try our calculators to plan your project.",
+      "assessments": "No assessment history. Take your first assessment to get personalized recommendations."
+    },
+    "cta": {
+      "takeAssessment": "Take assessment",
+      "exploreSchemes": "Explore schemes",
+      "startApplication": "Start application",
+      "findPartner": "Find a partner",
+      "tryCalculator": "Try calculator"
+    }
+  },
+  "assistant": {
+    "title": "AI Scheme Assistant",
+    "subtitle": "Tell me what you need and I'll find the right schemes for you.",
+    "placeholder": "Type your message...",
+    "questions": {
+      "purpose": "What is the purpose of the loan? (e.g., business, education, agriculture, housing, transport)",
+      "amount": "How much loan amount are you looking for? (in ₹)",
+      "income": "What is your annual household income? (in ₹)",
+      "category": "Which category interests you most?",
+      "recommend": "Let me find schemes that match your needs...",
+      "complete": "I've found matching schemes for you. Check the results!"
+    },
+    "followups": {
+      "amount": "You can say a number like '5 lakh' or '500000'",
+      "income": "This helps determine your eligibility for income-based schemes"
+    },
+    "responses": {
+      "purposeRecognized": "Got it! Now, how much loan amount are you looking for?",
+      "purposeUnknown": "I didn't quite catch that. Could you tell me the purpose? (e.g., business, education, agriculture)",
+      "amountReceived": "Great! What is your annual household income?",
+      "amountInvalid": "Please enter a valid amount in numbers (e.g., 500000 or 5 lakh)",
+      "incomeReceived": "Thanks! Which category interests you most?",
+      "incomeInvalid": "Please enter a valid income amount in numbers",
+      "matchFound": "I found {{count}} schemes that match your needs: {{schemes}}. Visit the Schemes page to see details!",
+      "noMatch": "I couldn't find exact matches, but visit the Schemes page to explore all available options.",
+      "idle": "I'm here to help! Tell me about your requirements."
+    }
+  },
+  "digilocker": {
+    "connect": "Connect DigiLocker",
+    "connected": "Connected",
+    "fetchDocs": "Fetch documents",
+    "disconnect": "Disconnect",
+    "fetching": "Fetching documents from DigiLocker...",
+    "success": "Documents fetched successfully",
+    "error": "Failed to connect to DigiLocker"
+  },
+  "voice": {
+    "start": "Start voice input",
+    "stop": "Stop listening",
+    "notSupported": "Voice input is not supported in this browser",
+    "listening": "Listening...",
+    "error": "Voice recognition error. Please type instead."
+  },
+  "admin": {
+    "roleBadge": "Admin",
+    "backToApp": "Back to app",
+    "nav": {
+      "schemes": "Schemes",
+      "partners": "Partners",
+      "analytics": "Analytics",
+      "users": "Users"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "flagged": "Flagged"
+    },
+    "schemes": {
+      "title": "Manage Schemes",
+      "addScheme": "Add scheme",
+      "search": "Search schemes...",
+      "allCategories": "All categories",
+      "name": "Name",
+      "category": "Category",
+      "status": "Status",
+      "source": "Source",
+      "actions": "Actions"
+    },
+    "partners": {
+      "title": "Manage Partners",
+      "addPartner": "Add partner",
+      "search": "Search partners...",
+      "name": "Name",
+      "type": "Type",
+      "city": "City",
+      "status": "Status"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "totalSchemes": "Total Schemes",
+      "totalUsers": "Total Users",
+      "totalApplications": "Total Applications"
+    }
+  },
+  "financing": {
+    "title": "Financing breakdown",
+    "description": "See how your project cost can be split between loan, subsidy, and your own contribution.",
+    "ownContribution": "Your contribution",
+    "loanAmount": "Loan amount",
+    "subsidyAmount": "Subsidy / grant",
+    "totalProjectCost": "Total project cost",
+    "gap": "Funding gap",
+    "gapDesc": "Amount you still need to arrange.",
+    "percentages": {
+      "own": "Your share",
+      "loan": "Loan share",
+      "subsidy": "Subsidy share"
+    }
+  },
+  "recommend": {
+    "title": "Your Recommendations",
+    "indicative": "Scores are indicative and do not guarantee approval. Final eligibility is determined by your Channel Partner.",
+    "startOver": "Start over",
+    "schemesFound": "schemes matched your profile",
+    "noMatchTitle": "No exact matches found",
+    "noMatchDesc": "Based on your profile, we couldn't find schemes with full eligibility. Here are the closest alternatives — you may still qualify through your Channel Partner.",
+    "alternatives": "Closest alternatives",
+    "eligible": "Eligible",
+    "notEligible": "Not eligible",
+    "matchScore": "Match",
+    "loanRange": "Loan range",
+    "interestRate": "Interest",
+    "whyRecommended": "Why this was recommended",
+    "whyNotFit": "Why it doesn't fully fit",
+    "calcEmi": "Calculate EMI",
+    "viewDetails": "View details",
+    "assessmentTitle": "Find the right scheme for you",
+    "assessmentSubtitle": "Answer a few questions and we'll match you against every eligible scheme.",
+    "findSchemes": "Find my schemes",
+    "steps": {
+      "income": {
+        "title": "Family income",
+        "description": "What is your annual family income?"
+      },
+      "category": {
+        "title": "Social category",
+        "description": "Which social category do you belong to?"
+      },
+      "state": {
+        "title": "Your state",
+        "description": "Which state do you live in?"
+      },
+      "age": {
+        "title": "Your age",
+        "description": "What is your current age?"
+      },
+      "occupation": {
+        "title": "Occupation",
+        "description": "What is your current occupation?"
+      },
+      "gender": {
+        "title": "Gender",
+        "description": "Some schemes are specific to a gender. This helps narrow your matches."
+      },
+      "disability": {
+        "title": "Disability status",
+        "description": "Some schemes are specifically for persons with disabilities."
+      },
+      "purpose": {
+        "title": "Project purpose",
+        "description": "What is this loan for?"
+      }
+    },
+    "incomeLabel": "Annual family income (₹)",
+    "incomeHint": "Total household income before taxes.",
+    "categoryLabel": "Select your category",
+    "stateLabel": "Select your state",
+    "statePlaceholder": "Choose a state",
+    "ageLabel": "Your age",
+    "occupationLabel": "Select your occupation",
+    "genderLabel": "Select your gender",
+    "genderHint": "Optional — helps match gender-specific schemes.",
+    "genders": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other / Prefer not to say"
+    },
+    "disabilityLabel": "Do you have a disability?",
+    "disabilityHint": "Optional — some schemes are specifically for persons with disabilities.",
+    "disabilityOptions": {
+      "yes": "Yes, I have a disability",
+      "no": "No"
+    },
+    "purposeLabel": "What is this loan for?",
+    "projectCostLabel": "Estimated project cost (₹)",
+    "occupations": {
+      "agriculture": "Agriculture / farming",
+      "manufacturing": "Manufacturing",
+      "service": "Service business",
+      "trading": "Trading / retail",
+      "student": "Student",
+      "self-employed": "Self-employed",
+      "employed": "Salaried employee",
+      "other": "Other"
+    }
+  },
   "auth": {
     "title": "Log in to SchemeSathi",
-    "phoneTab": "Phone OTP",
     "emailTab": "Email & password",
-    "phoneLabel": "Mobile number",
-    "phoneHint": "Include country code, e.g. +919876543210 (emulator: any number, code 123456)",
-    "sendOtp": "Send code",
-    "codeLabel": "6-digit code",
-    "verifyOtp": "Verify & log in",
     "emailLabel": "Email",
     "passwordLabel": "Password",
     "emailSignIn": "Log in",
     "emailSignUp": "Create account",
-    "otpSent": "Code sent to {{phone}}",
-    "recaptchaTitle": "Security check",
-    "errorInvalidPhone": "Enter a valid phone number with country code.",
     "errorGeneric": "Something went wrong. Please try again.",
     "googleButton": "Continue with Google",
     "orContinue": "or"

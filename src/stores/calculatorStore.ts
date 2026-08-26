@@ -4,6 +4,7 @@ import type { LoanParams } from "@/types/calculator"
 interface CalculatorState extends LoanParams {
   schemeId: string | null
   patch: (fields: Partial<CalculatorState>) => void
+  reset: () => void
 }
 
 const defaults = {
@@ -22,4 +23,5 @@ const defaults = {
 export const useCalculatorStore = create<CalculatorState>()((set) => ({
   ...defaults,
   patch: (fields) => set(fields),
+  reset: () => set({ ...defaults }),
 }))

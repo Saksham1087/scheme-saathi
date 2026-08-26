@@ -70,7 +70,7 @@ export function normalizeMcpEntry(raw: McpSchemePayload): Scheme | null {
       maxMonths: raw.moratoriumMonthsMax ?? 12,
       interestAccrues: Boolean(raw.moratoriumInterestAccrues),
     },
-    source: "mcp",
+    source: "mcp" as const,
   }
 }
 

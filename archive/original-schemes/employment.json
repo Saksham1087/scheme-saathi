@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "mgnrega",
+    "name": { "en": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)", "hi": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार गारंटी अधिनियम (मनरेगा)" },
+    "ministry": "Ministry of Rural Development",
+    "category": ["employment", "social-welfare"],
+    "description": {
+      "en": "Guarantees 100 days of wage employment per year to every rural household whose adult members volunteer for unskilled manual work. Rights-based employment programme.",
+      "hi": "प्रत्येक ग्रामीण परिवार को प्रति वर्ष 100 दिन का वेतन रोजगार की गारंटी प्रदान करता है जिसके वयस्क सदस्य अकुशल मैनुअल कार्य के लिए स्वेच्छा से तैयार हों।"
+    },
+    "shortDescription": {
+      "en": "Guaranteed 100 days of wage employment per year for rural households.",
+      "hi": "ग्रामीण परिवारों के लिए प्रति वर्ष 100 दिन का वेतन रोजगार की गारंटी।"
+    },
+    "purpose": "Providing livelihood security to rural households through wage employment",
+    "targetBeneficiaries": ["Rural households", "Unemployed rural workers", "BPL families"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 200,
+      "maxAmount": 350,
+      "unit": "per day"
+    },
+    "eligibilityRules": {
+      "minAge": 18,
+      "occupations": ["Rural workers"],
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Worker's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Job Card", "description": "MGNREGA job card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Bank account linked to Aadhaar", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply at Gram Panchayat for MGNREGA job card. Demand work at least 15 days before. Work provided within 15 days of demand. Wage paid through DBT.",
+    "channelPartnerTypes": ["Gram Panchayats", "Banks", "Post Offices", "State Rural Development Departments"],
+    "officialUrl": "https://nrega.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "deen-dayal-upadhyaya-grameen-kaushalya-yojana",
+    "name": { "en": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)", "hi": "दीनदयाल उपाध्याय ग्रामीण कौशल्य योजना (डीडीयू-जीकेवाई)" },
+    "ministry": "Ministry of Rural Development",
+    "category": ["employment"],
+    "description": {
+      "en": "Skill training programme for rural youth from BPL families. Provides free residential training with placement assistance in various sectors like IT, retail, healthcare, and hospitality.",
+      "hi": "बीपीएल परिवारों के ग्रामीण युवाओं के लिए कौशल प्रशिक्षण कार्यक्रम। आईटी, खुदरा, स्वास्थ्य और आतिथ्य जैसे विभिन्न क्षेत्रों में रोजगार सहायता के साथ मुफ्त आवासीय प्रशिक्षण।"
+    },
+    "shortDescription": {
+      "en": "Free skill training for rural BPL youth with job placement assistance.",
+      "hi": "रोजगार सहायता के साथ ग्रामीण बीपीएल युवाओं के लिए मुफ्त कौशल प्रशिक्षण।"
+    },
+    "purpose": "Skill development and placement of rural BPL youth",
+    "targetBeneficiaries": ["Rural BPL youth", "SC/ST youth", "Minority youth", "15-35 years age group"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5000,
+      "maxAmount": 50000
+    },
+    "eligibilityRules": {
+      "maxIncome": 150000,
+      "minAge": 15,
+      "maxAge": 35,
+      "categories": ["BPL"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Candidate's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "BPL certificate or ration card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Education Certificate", "description": "Minimum education qualification", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Photograph", "description": "Passport-size photograph", "mandatory": true, "format": "JPEG" }
+    ],
+    "applicationProcess": "Apply through DDU-GKY portal or district rural development agency. Selection through interview. Training at empaneled training centers with guaranteed placement.",
+    "channelPartnerTypes": ["District Rural Development Agencies", "Training Partners", "Placement Partners"],
+    "officialUrl": "https://ddugky.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pradhan-mantri-kaushal-vikas-yojana",
+    "name": { "en": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)", "hi": "प्रधानमंत्री कौशल विकास योजना (पीएमकेवीवाई)" },
+    "ministry": "Ministry of Skill Development and Entrepreneurship",
+    "category": ["employment", "education"],
+    "description": {
+      "en": "Flagship skill certification programme providing recognition of prior learning and short-term skill training. Offers monetary reward for certified candidates.",
+      "hi": "पूर्व सीखने की मान्यता और अल्पकालिक कौशल प्रशिक्षण प्रदान करने वाला प्रमुख कौशल प्रमाणन कार्यक्रम। प्रमाणित उम्मीदवारों के लिए मौद्रिक पुरस्कार।"
+    },
+    "shortDescription": {
+      "en": "Skill certification and training programme with monetary rewards.",
+      "hi": "मौद्रिक पुरस्कार के साथ कौशल प्रमाणन और प्रशिक्षण कार्यक्रम।"
+    },
+    "purpose": "Skill development and certification of Indian youth",
+    "targetBeneficiaries": ["Youth 15-45 years", "School dropouts", "Unemployed graduates", "Existing workers"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5000,
+      "maxAmount": 15000
+    },
+    "eligibilityRules": {
+      "minAge": 15,
+      "maxAge": 45,
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Candidate's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Education Certificate", "description": "Education qualification certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Photograph", "description": "Passport-size photograph", "mandatory": true, "format": "JPEG" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Register at nearest PMKVY Training Centre or online. Choose skill course. Complete training and assessment. Receive PMKVY certificate and reward money.",
+    "channelPartnerTypes": ["NSDC", "Training Partners", "Assessment Agencies", "Skill Councils"],
+    "officialUrl": "https://www.pmkvyofficial.org/",
+    "source": "official",
+    "lastUpdated": "2025-05-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-career-service-portal",
+    "name": { "en": "National Career Service (NCS) Portal", "hi": "राष्ट्रीय करियर सेवा (एनसीएस) पोर्टल" },
+    "ministry": "Ministry of Labour and Employment",
+    "category": ["employment"],
+    "description": {
+      "en": "Online platform connecting job seekers with employers across India. Provides job matching, career counseling, skill courses, and internship opportunities.",
+      "hi": "भारत भर में नौकरी खोजने वालों को नियोक्ताओं से जोड़ने वाला ऑनलाइन प्लेटफॉर्म। नौकरी मैचिंग, करियर परामर्श, कौशल पाठ्यक्रम और इंटर्नशिप के अवसर प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Online platform for job matching, career counseling, and skill courses.",
+      "hi": "नौकरी मैचिंग, करियर परामर्श और कौशल पाठ्यक्रमों के लिए ऑनलाइन प्लेटफॉर्म।"
+    },
+    "purpose": "Connecting job seekers with employers and providing career services",
+    "targetBeneficiaries": ["Job seekers", "Fresh graduates", "Skilled workers", "Employers"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "minAge": 14,
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "User's Aadhaar card", "mandatory": false, "format": "PDF/JPEG" },
+      { "name": "Resume", "description": "Updated resume/CV", "mandatory": true, "format": "PDF" },
+      { "name": "Education Certificates", "description": "Educational qualification certificates", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Register on ncs.gov.in. Create profile and upload resume. Search and apply for jobs. Attend career fairs and counseling sessions.",
+    "channelPartnerTypes": ["Employment Exchanges", "Skill Development Centers", "Educational Institutions"],
+    "officialUrl": "https://ncs.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "swarnjayanti-grameen-rozgar-yojana",
+    "name": { "en": "Swarnajayanti Gram Swarozgar Yojana (SGSY)", "hi": "स्वर्ण जयंती ग्राम स्वरोजगार योजना (एसजीएसवाई)" },
+    "ministry": "Ministry of Rural Development",
+    "category": ["employment"],
+    "description": {
+      "en": "Self-employment programme for rural poor providing bank-linked subsidy for income-generating activities. Now restructured as National Rural Livelihoods Mission (NRLM).",
+      "hi": "ग्रामीण गरीबों के लिए आय उत्पन्न करने वाली गतिविधियों के लिए बैंक-लिंक्ड सब्सिडी प्रदान करने वाला स्वरोजगार कार्यक्रम।"
+    },
+    "shortDescription": {
+      "en": "Self-employment programme with bank-linked subsidy for rural poor.",
+      "hi": "ग्रामीण गरीबों के लिए बैंक-लिंक्ड सब्सिडी के साथ स्वरोजगार कार्यक्रम।"
+    },
+    "purpose": "Providing self-employment opportunities to rural poor",
+    "targetBeneficiaries": ["Rural BPL families", "Self-help groups", "Rural artisans"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 25000,
+      "maxAmount": 500000,
+      "coverageMaxPct": 50
+    },
+    "eligibilityRules": {
+      "maxIncome": 150000,
+      "categories": ["BPL"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "BPL certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" },
+      { "name": "Project Report", "description": "Activity/project report", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through Block Development Office. Form Self-Help Group. Bank processes loan with subsidy component. Now subsumed under DAY-NRLM.",
+    "channelPartnerTypes": ["Banks", "Block Development Offices", "SHPIs"],
+    "officialUrl": "https://aajeevika.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-20",
+    "verified": true,
+    "isActive": true
+  }
+]

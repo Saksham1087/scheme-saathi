@@ -1,0 +1,25 @@
+{
+  "lastProcessedIndex": 3300,
+  "timestamp": "2026-08-26T12:18:32.838Z",
+  "stats": {
+    "total": 3400,
+    "processed": 3301,
+    "regexExtracted": 3301,
+    "llmExtracted": 0,
+    "defaulted": 0,
+    "errors": 0,
+    "confidenceDistribution": {
+      "high": 3301,
+      "medium": 0,
+      "low": 0
+    },
+    "fieldCoverage": {
+      "states": 2609,
+      "categories": 705,
+      "income": 551,
+      "age": 828,
+      "occupations": 2451,
+      "purposes": 2693
+    }
+  }
+}

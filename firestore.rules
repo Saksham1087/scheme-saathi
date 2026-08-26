@@ -1,45 +1,137 @@
 rules_version = '2';
 
+// ==========================================================================
+// Firestore Security Rules for Scheme Sathi
+//
+// Public read: schemes, schemeRules, categories, partners
+// Authenticated read/write: user profiles, saved schemes/partners, assessments
+// Admin-only: scheme management, admin collections
+// ==========================================================================
+
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    function isSignedIn() {
+    // -------------------------------------------------------------------
+    // Helper functions
+    // -------------------------------------------------------------------
+
+    function isAuthenticated() {
       return request.auth != null;
     }
 
-    function isOwner(uid) {
-      return isSignedIn() && request.auth.uid == uid;
-    }
-
     function isAdmin() {
-      return isSignedIn() && request.auth.token.admin == true;
+      return isAuthenticated() &&
+        get(/databases/$(database)/documents/adminUsers/$(request.auth.uid)).data.role == 'admin';
     }
 
-    // User profiles: owner-only. Consent timestamps live here.
-    match /users/{uid} {
-      allow read, write: if isOwner(uid);
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
     }
 
-    // Scheme + partner catalogs: public read, admin write.
-    match /schemes/{id} {
+    // -------------------------------------------------------------------
+    // Public collections — anyone can read
+    // -------------------------------------------------------------------
+
+    // Schemes
+    match /schemes/{schemeId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Scheme eligibility rules
+    match /schemeRules/{ruleId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Scheme categories
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Channel partners
+    match /partners/{partnerId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Partner-scheme associations
+    match /partnerSchemes/{id} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // -------------------------------------------------------------------
+    // Authenticated-only collections
+    // -------------------------------------------------------------------
+
+    // Recommendations (global collection, filtered by userId in service layer)
+    match /recommendations/{recId} {
+      allow read: if isOwner(resource.data.userId);
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+
+    // Assessments (global collection, filtered by userId in service layer)
+    match /assessments/{assessmentId} {
+      allow read: if isOwner(resource.data.userId);
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+
+    // Translations
+    match /translations/{lang} {
       allow read: if true;
       allow write: if isAdmin();
     }
 
-    match /partners/{id} {
-      allow read: if true;
-      allow write: if isAdmin();
-    }
+    // -------------------------------------------------------------------
+    // User-scoped sub-collections
+    // -------------------------------------------------------------------
 
-    // Applications: applicant can create/read own documents only.
-    // Status transitions happen server-side (Cloud Functions / admin),
-    // never through direct client writes.
-    match /applications/{appId} {
-      allow read: if isOwner(resource.data.uid);
-      allow create: if isOwner(request.resource.data.uid)
-                    && request.resource.data.status == 'submitted';
-      allow update: if false;
+    // User profiles
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isOwner(userId);
       allow delete: if false;
+
+      // Saved schemes
+      match /savedSchemes/{schemeId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // Saved partners
+      match /savedPartners/{partnerId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // Calculator history
+      match /calculatorHistory/{calcId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId);
+        allow update, delete: if false;
+      }
+
+      // Application journeys
+      match /applicationJourneys/{journeyId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      // Documents (DigiLocker / manual uploads)
+      match /documents/{docId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // -------------------------------------------------------------------
+    // Admin collections
+    // -------------------------------------------------------------------
+
+    match /adminUsers/{adminId} {
+      allow read: if isAdmin();
+      allow write: if false; // managed via Firebase Console or admin scripts
     }
   }
 }

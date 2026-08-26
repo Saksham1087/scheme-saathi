@@ -1,15 +1,12 @@
-import { useRef, useState } from "react"
+import { useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { toast } from "sonner"
 import {
-  RecaptchaVerifier,
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
-  signInWithPhoneNumber,
   signInWithPopup,
-  type ConfirmationResult,
 } from "firebase/auth"
 import { auth } from "@/lib/firebase"
 import { persistConsentIfAny } from "@/lib/userProfile"
@@ -18,7 +15,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 function GoogleIcon() {
   return (
@@ -49,54 +45,12 @@ export default function Login() {
   const location = useLocation()
   const from = (location.state as { from?: string } | null)?.from ?? "/track"
 
-  const [phone, setPhone] = useState("+91")
-  const [code, setCode] = useState("")
-  const [otpSent, setOtpSent] = useState(false)
-  const confirmationRef = useRef<ConfirmationResult | null>(null)
-
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
   async function afterAuth(uid: string) {
     await persistConsentIfAny(uid)
     navigate(from)
-  }
-
-  function ensureRecaptcha(): RecaptchaVerifier {
-    const existing = auth.app.name
-      ? (window as unknown as { __ssRecaptcha?: RecaptchaVerifier })
-          .__ssRecaptcha
-      : undefined
-    if (existing) return existing
-    const verifier = new RecaptchaVerifier(auth, "recaptcha-container", {
-      size: "invisible",
-    })
-    ;(window as unknown as { __ssRecaptcha?: RecaptchaVerifier }).__ssRecaptcha =
-      verifier
-    return verifier
-  }
-
-  async function sendOtp() {
-    try {
-      const verifier = ensureRecaptcha()
-      const confirmation = await signInWithPhoneNumber(auth, phone.trim(), verifier)
-      confirmationRef.current = confirmation
-      setOtpSent(true)
-      toast.success(t("auth.otpSent", { phone: phone.trim() }))
-    } catch (err) {
-      console.error(err)
-      toast.error(t("auth.errorInvalidPhone"))
-    }
-  }
-
-  async function verifyOtp() {
-    try {
-      const result = await confirmationRef.current!.confirm(code.trim())
-      await afterAuth(result.user.uid)
-    } catch (err) {
-      console.error(err)
-      toast.error(t("auth.errorGeneric"))
-    }
   }
 
   async function emailAuth(mode: "signin" | "signup") {
@@ -133,102 +87,45 @@ export default function Login() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <Tabs defaultValue="phone">
-            <TabsList className="w-full mb-5">
-              <TabsTrigger value="phone" className="flex-1">
-                {t("auth.phoneTab")}
-              </TabsTrigger>
-              <TabsTrigger value="email" className="flex-1">
-                {t("auth.emailTab")}
-              </TabsTrigger>
-            </TabsList>
-
-            {/* Phone OTP — primary for users without email */}
-            <TabsContent value="phone" className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="phone">{t("auth.phoneLabel")}</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  inputMode="tel"
-                  autoComplete="tel"
-                  placeholder="+91 98765 43210"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
-                <p className="text-xs text-muted-foreground">
-                  {t("auth.phoneHint")}
-                </p>
-              </div>
-              {!otpSent ? (
-                <Button className="w-full" onClick={() => void sendOtp()}>
-                  {t("auth.sendOtp")}
-                </Button>
-              ) : (
-                <>
-                  <div className="space-y-2">
-                    <Label htmlFor="code">{t("auth.codeLabel")}</Label>
-                    <Input
-                      id="code"
-                      inputMode="numeric"
-                      maxLength={6}
-                      value={code}
-                      onChange={(e) => setCode(e.target.value)}
-                      className="tracking-[0.4em] text-center font-semibold"
-                    />
-                  </div>
-                  <Button
-                    className="w-full"
-                    onClick={() => void verifyOtp()}
-                    disabled={code.trim().length !== 6}
-                  >
-                    {t("auth.verifyOtp")}
-                  </Button>
-                </>
-              )}
-            </TabsContent>
-
-            {/* Email fallback */}
-            <TabsContent value="email" className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">{t("auth.emailLabel")}</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">{t("auth.passwordLabel")}</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  autoComplete={
-                    email && password.length === 0 ? "current-password" : "new-password"
-                  }
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <Button
-                  variant="outline"
-                  onClick={() => void emailAuth("signin")}
-                  disabled={!email || !password}
-                >
-                  {t("auth.emailSignIn")}
-                </Button>
-                <Button
-                  onClick={() => void emailAuth("signup")}
-                  disabled={!email || !password}
-                >
-                  {t("auth.emailSignUp")}
-                </Button>
-              </div>
-            </TabsContent>
-          </Tabs>
+          <div className="space-y-4 mb-5">
+            <div className="space-y-2">
+              <Label htmlFor="email">{t("auth.emailLabel")}</Label>
+              <Input
+                id="email"
+                type="email"
+                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="password">{t("auth.passwordLabel")}</Label>
+              <Input
+                id="password"
+                type="password"
+                autoComplete={
+                  email && password.length === 0 ? "current-password" : "new-password"
+                }
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              <Button
+                variant="outline"
+                onClick={() => void emailAuth("signin")}
+                disabled={!email || !password}
+              >
+                {t("auth.emailSignIn")}
+              </Button>
+              <Button
+                onClick={() => void emailAuth("signup")}
+                disabled={!email || !password}
+              >
+                {t("auth.emailSignUp")}
+              </Button>
+            </div>
+          </div>
 
           <div className="my-5 flex items-center gap-3">
             <Separator className="flex-1" />
@@ -246,8 +143,6 @@ export default function Login() {
             <GoogleIcon />
             {t("auth.googleButton")}
           </Button>
-
-          <div id="recaptcha-container" aria-hidden />
         </CardContent>
       </Card>
     </div>

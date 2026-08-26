@@ -1,0 +1,325 @@
+[
+  {
+    "slug": "post-matric-scholarship-sc-st",
+    "name": { "en": "Post-Matric Scholarship for SC/ST Students", "hi": "एससी/एसटी छात्रों के लिए मैट्रिक के बाद छात्रवृत्ति" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Central sector scheme providing financial assistance to SC/ST students for pursuing post-matriculation education. Covers tuition fees, maintenance allowance, and other educational expenses.",
+      "hi": "मैट्रिक के बाद की शिक्षा प्राप्त करने के लिए एससी/एसटी छात्रों को वित्तीय सहायता प्रदान करने वाली केंद्रीय क्षेत्र योजना।"
+    },
+    "shortDescription": {
+      "en": "Financial assistance for SC/ST students pursuing post-matriculation education.",
+      "hi": "मैट्रिक के बाद की शिक्षा के लिए एससी/एसटी छात्रों को वित्तीय सहायता।"
+    },
+    "purpose": "Supporting SC/ST students in pursuing higher education after matriculation",
+    "targetBeneficiaries": ["SC students", "ST students", "Post-matric students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000,
+      "maxAmount": 200000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "maxIncome": 250000,
+      "categories": ["SC", "ST"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC/ST caste certificate from competent authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate from competent authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Marksheet", "description": "Previous year's marksheet", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Student's bank account details", "mandatory": true, "format": "PDF" },
+      { "name": "Admission Letter", "description": "Current year admission letter", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply online through National Scholarship Portal (NSP). Submit documents and get institute verification. Disbursement directly to student's bank account.",
+    "channelPartnerTypes": ["Educational Institutions", "State Social Welfare Departments", "NSP"],
+    "officialUrl": "https://scholarships.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pre-matric-scholarship-sc-st",
+    "name": { "en": "Pre-Matric Scholarship for SC/ST Students", "hi": "एससी/एसटी छात्रों के लिए मैट्रिक से पहले छात्रवृत्ति" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Provides financial support to SC/ST students studying in classes IX and X to reduce dropout rate. Includes maintenance allowance and book/stationery allowance.",
+      "hi": "ड्रॉपआउट दर कम करने के लिए कक्षा IX और X में पढ़ने वाले एससी/एसटी छात्रों को वित्तीय सहायता प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Financial support for SC/ST students in classes IX-X to reduce dropout rate.",
+      "hi": "ड्रॉपआउट दर कम करने के लिए कक्षा IX-X में एससी/एसटी छात्रों के लिए वित्तीय सहायता।"
+    },
+    "purpose": "Reducing dropout rate among SC/ST students in classes IX and X",
+    "targetBeneficiaries": ["SC students", "ST students", "Class IX-X students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 150,
+      "maxAmount": 3000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "maxIncome": 200000,
+      "categories": ["SC", "ST"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC/ST caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Previous Marksheet", "description": "Previous class marksheet", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through National Scholarship Portal. School verifies and submits to district authority.",
+    "channelPartnerTypes": ["Schools", "Education Departments", "NSP"],
+    "officialUrl": "https://scholarships.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-fellowship-sc",
+    "name": { "en": "National Fellowship for SC Students", "hi": "एससी छात्रों के लिए राष्ट्रीय फेलोशिप" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Provides fellowship to SC students for pursuing M.Phil and Ph.D. programs. Covers Junior Research Fellowship (JRF) and Senior Research Fellowship (SRF) with monthly stipend and contingency grant.",
+      "hi": "एम.फिल और पीएच.डी. कार्यक्रमों को आगे बढ़ाने के लिए एससी छात्रों को फेलोशिप प्रदान करता है।"
+    },
+    "shortDescription": {
+      "en": "Fellowship for SC students pursuing M.Phil and Ph.D. with monthly stipend.",
+      "hi": "मासिक वृत्ति के साथ एम.फिल और पीएच.डी. कर रहे एससी छात्रों के लिए फेलोशिप।"
+    },
+    "purpose": "Supporting SC students in pursuing research and doctoral studies",
+    "targetBeneficiaries": ["SC students", "M.Phil scholars", "Ph.D. scholars"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 31000,
+      "maxAmount": 42000
+    },
+    "eligibilityRules": {
+      "categories": ["SC"],
+      "education": ["Post-Graduate"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Admission Letter", "description": "M.Phil/Ph.D. admission letter", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "PG Marksheet", "description": "Post-graduation marksheet", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Student's bank account", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply online through UGC portal. University verifies and recommends. Fellowship disbursed monthly through DBT.",
+    "channelPartnerTypes": ["Universities", "UGC", "Research Institutions"],
+    "officialUrl": "https://www.ugc.ac.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-means-cum-merit-scholarship",
+    "name": { "en": "National Means-cum-Merit Scholarship Scheme (NMMSS)", "hi": "राष्ट्रीय आर्थिक सहायता सह मेधावृत्ति छात्रवृत्ति योजना (एनएमएमएसएस)" },
+    "ministry": "Ministry of Education",
+    "category": ["education"],
+    "description": {
+      "en": "Scholarship to arrest dropouts at class VIII for continuing education in secondary and higher secondary stages. Awards ₹12,000 per annum to meritorious students from economically weaker sections.",
+      "hi": "माध्यमिक और उच्च माध्यमिक चरण में शिक्षा जारी रखने के लिए कक्षा VIII में ड्रॉपआउट को रोकने के लिए छात्रवृत्ति।"
+    },
+    "shortDescription": {
+      "en": "₹12,000 per annum scholarship for economically weaker students in classes IX-XII.",
+      "hi": "कक्षा IX-XII में आर्थिक रूप से कमजोर छात्रों के लिए ₹12,000 प्रति वर्ष छात्रवृत्ति।"
+    },
+    "purpose": "Preventing dropout at class VIII and supporting secondary education",
+    "targetBeneficiaries": ["Economically weaker students", "Class IX-XII students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 12000,
+      "maxAmount": 12000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "maxIncome": 350000,
+      "education": ["Class VIII"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Class VIII Marksheet", "description": "Class VIII marksheet", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Student's bank account", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through Nodal officer at school. State-level selection committee recommends candidates.",
+    "channelPartnerTypes": ["Schools", "Education Departments", "NSP"],
+    "officialUrl": "https://scholarships.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "top-class-education-scheme",
+    "name": { "en": "Top Class Education Scheme for SC Students", "hi": "एससी छात्रों के लिए शीर्ष श्रेणी शिक्षा योजना" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Full financial support to SC students for pursuing studies in notified institutions of excellence including IIMs, IITs, NITs, and other premier institutions.",
+      "hi": "प्रतिष्ठित संस्थानों जैसे आईआईएम, आईआईटी, एनआईटी और अन्य प्रमुख संस्थानों में पढ़ाई के लिए एससी छात्रों को पूर्ण वित्तीय सहायता।"
+    },
+    "shortDescription": {
+      "en": "Full financial support for SC students in IIMs, IITs, NITs, and other premier institutions.",
+      "hi": "आईआईएम, आईआईटी, एनआईटी और अन्य प्रमुख संस्थानों में एससी छात्रों के लिए पूर्ण वित्तीय सहायता।"
+    },
+    "purpose": "Enabling SC students to study in institutions of excellence",
+    "targetBeneficiaries": ["SC students", "Students in premier institutions"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 50000,
+      "maxAmount": 500000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "categories": ["SC"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Admission Letter", "description": "Institution admission letter", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through the institution. Ministry disburses directly to institution for tuition and to student for other expenses.",
+    "channelPartnerTypes": ["Educational Institutions", "State Social Welfare Departments"],
+    "officialUrl": "https://socialjustice.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-overseas-scholarship-sc",
+    "name": { "en": "National Overseas Scholarship for SC Students", "hi": "एससी छात्रों के लिए राष्ट्रीय विदेश छात्रवृत्ति" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Financial support for SC/ST/OBC students to pursue Master's level courses abroad at top-ranked institutions. Covers tuition, living expenses, and airfare.",
+      "hi": "शीर्ष संस्थानों में विदेश में मास्टर्स स्तर के पाठ्यक्रमों को आगे बढ़ाने के लिए एससी/एसटी/ओबीसी छात्रों को वित्तीय सहायता।"
+    },
+    "shortDescription": {
+      "en": "Financial support for SC/ST/OBC students for Master's studies abroad.",
+      "hi": "विदेश में मास्टर्स पढ़ाई के लिए एससी/एसटी/ओबीसी छात्रों को वित्तीय सहायता।"
+    },
+    "purpose": "Enabling SC/ST/OBC students to pursue higher education abroad",
+    "targetBeneficiaries": ["SC students", "ST students", "OBC students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000000,
+      "maxAmount": 3000000
+    },
+    "eligibilityRules": {
+      "categories": ["SC", "ST", "OBC"],
+      "maxIncome": 600000,
+      "education": ["Graduate"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "SC/ST/OBC caste certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "University Admission", "description": "Admission letter from foreign university", "mandatory": true, "format": "PDF" },
+      { "name": "Passport", "description": "Valid passport", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "GRE/GMAT Score", "description": "Standardized test scores", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply online through Ministry portal. Selection through interview and merit. Scholarship disbursed in installments.",
+    "channelPartnerTypes": ["Ministry of Social Justice", "Indian Embassies"],
+    "officialUrl": "https://socialjustice.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pm-yasaswi-scheme",
+    "name": { "en": "Pradhan Mantri YASASVI Yojana", "hi": "प्रधानमंत्री यशस्वी योजना" },
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "category": ["education"],
+    "description": {
+      "en": "Entrance test-based scholarship scheme for OBC, EBC, DNT, and S&T students for Class IX and XI in top-rated schools. Aims to provide equal educational opportunities.",
+      "hi": "ओबीसी, ईबीसी, डीएनटी और एसएंडटी छात्रों के लिए शीर्ष विद्यालयों में कक्षा IX और XI में प्रवेश परीक्षा आधारित छात्रवृत्ति योजना।"
+    },
+    "shortDescription": {
+      "en": "Entrance test-based scholarship for OBC/EBC/DNT students in top schools.",
+      "hi": "शीर्ष विद्यालयों में ओबीसी/ईबीसी/डीएनटी छात्रों के लिए प्रवेश परीक्षा आधारित छात्रवृत्ति।"
+    },
+    "purpose": "Providing equal educational opportunities to OBC/EBC/DNT students",
+    "targetBeneficiaries": ["OBC students", "EBC students", "DNT students", "Class IX-XI students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 75000,
+      "maxAmount": 125000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "maxIncome": 300000,
+      "categories": ["OBC", "EBC", "DNT"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Caste Certificate", "description": "OBC/EBC/DNT certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Previous Marksheet", "description": "Previous class marksheet", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Register for YASASVI entrance test on National Testing Agency (NTA) portal. Appear for test and get selected based on merit.",
+    "channelPartnerTypes": ["NTA", "Educational Institutions", "Ministry of Social Justice"],
+    "officialUrl": "https://socialjustice.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "swami-vivekananda-scholarship-morarji-desai",
+    "name": { "en": "Swami Vivekananda Merit-cum-Means Scholarship", "hi": "स्वामी विवेकानंद मेधा सह आर्थिक छात्रवृत्ति" },
+    "ministry": "Ministry of Minority Affairs",
+    "category": ["education"],
+    "description": {
+      "en": "Scholarship for students from minority communities pursuing professional and technical courses at undergraduate and postgraduate levels. Covers tuition and maintenance allowance.",
+      "hi": "स्नातक और स्नातकोत्तर स्तर पर पेशेवर और तकनीकी पाठ्यक्रमों में अल्पसंख्यक समुदायों के छात्रों के लिए छात्रवृत्ति।"
+    },
+    "shortDescription": {
+      "en": "Scholarship for minority students in professional and technical courses.",
+      "hi": "पेशेवर और तकनीकी पाठ्यक्रमों में अल्पसंख्यक छात्रों के लिए छात्रवृत्ति।"
+    },
+    "purpose": "Supporting minority students in professional and technical education",
+    "targetBeneficiaries": ["Muslim students", "Christian students", "Sikh students", "Buddhist students", "Jain students", "Parsi students"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 3000,
+      "maxAmount": 300000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "categories": ["Minority"],
+      "maxIncome": 200000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Minority Certificate", "description": "Community certificate from competent authority", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Student's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Previous Marksheet", "description": "Previous qualifying exam marksheet", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Student's bank account", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through National Scholarship Portal (NSP). Institution verification followed by disbursement through DBT.",
+    "channelPartnerTypes": ["Educational Institutions", "Minority Welfare Departments", "NSP"],
+    "officialUrl": "https://scholarships.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  }
+]

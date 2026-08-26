@@ -21,6 +21,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Textarea } from "@/components/ui/textarea"
 import { Progress } from "@/components/ui/progress"
 import { functions } from "@/lib/firebase"
+import { matchSchemesLocally } from "@/services/matcher"
 import { STATES } from "@/lib/states"
 import { fmtINR } from "@/lib/format"
 import { useVoiceInput } from "@/lib/voice"
@@ -153,21 +154,34 @@ export default function IntakeWizard() {
   async function findMatches() {
     setBusy(true)
     try {
-      const callable = httpsCallable<{ input: object }, MatchResponse>(
-        functions,
-        "matchSchemes",
-      )
-      const res = await callable({
-        input: {
+      let result: MatchResponse
+      try {
+        const callable = httpsCallable<{ input: object }, MatchResponse>(
+          functions,
+          "matchSchemes",
+        )
+        const res = await callable({
+          input: {
+            projectType,
+            estimatedCost,
+            annualFamilyIncome,
+            educationStatus,
+            category,
+            state,
+          },
+        })
+        result = res.data
+      } catch {
+        result = matchSchemesLocally({
           projectType,
           estimatedCost,
           annualFamilyIncome,
           educationStatus,
           category,
           state,
-        },
-      })
-      store.setMatch(res.data)
+        })
+      }
+      store.setMatch(result)
       navigate("/results")
     } catch (err) {
       console.error(err)
