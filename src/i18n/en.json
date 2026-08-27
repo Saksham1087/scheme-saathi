@@ -9,7 +9,8 @@
     "cancel": "Cancel",
     "close": "Close",
     "loading": "Loading…",
-    "perMonth": "/month"
+    "perMonth": "/month",
+    "dismiss": "Dismiss"
   },
   "nav": {
     "home": "Home",
@@ -705,5 +706,36 @@
     "errorGeneric": "Something went wrong. Please try again.",
     "googleButton": "Continue with Google",
     "orContinue": "or"
+  },
+  "chat": {
+    "drawerTitle": "Talk to Scheme Sathi",
+    "subtitle": "Your government scheme navigator",
+    "placeholder": "Ask about schemes, eligibility, EMI, documents, partners...",
+    "welcome": "Namaste! I'm Scheme Sathi. Ask me about government schemes, eligibility, repayment, documents, or Channel Partners.",
+    "thinking": "Scheme Sathi is thinking...",
+    "emptyState": "Start a conversation to get help with schemes",
+    "open": "Open chat",
+    "close": "Close chat",
+    "minimize": "Minimize",
+    "expand": "Expand",
+    "newConversation": "New conversation",
+    "newConvConfirm": "Start a new conversation? Your current chat history will be cleared.",
+    "ttsEnable": "Enable voice output",
+    "ttsDisable": "Disable voice output",
+    "playAudio": "Play response",
+    "stopAudio": "Stop playback",
+    "charsLeft": "chars left",
+    "disabled": "Please sign in to use the assistant",
+    "error": "Something went wrong. Please try again.",
+    "poweredBy": "Powered by AI • Your data helps improve scheme discovery",
+    "quickPrompts": {
+      "business": "Find schemes for business",
+      "emi": "Calculate EMI for a loan",
+      "documents": "What documents do I need?",
+      "partner": "Find a Channel Partner"
+    }
+  },
+  "nav": {
+    "talkToSathi": "Talk to Scheme Sathi"
   }
 }

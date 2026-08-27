@@ -1,6 +1,8 @@
 import { Route, Routes, Navigate } from "react-router-dom"
 import { Toaster } from "@/components/ui/sonner"
 import { AppShell } from "@/components/layout/AppShell"
+import { FloatingChatWidget } from "@/components/FloatingChatWidget"
+import { appConfig } from "@/lib/appConfig"
 import Home from "@/pages/Home"
 import CalculatorPage from "@/pages/CalculatorPage"
 import PartnersPage from "@/pages/PartnersPage"
@@ -14,7 +16,6 @@ import Recommend from "@/pages/Recommend"
 import Compare from "@/pages/Compare"
 import Application from "@/pages/Application"
 import Dashboard from "@/pages/Dashboard"
-import Assistant from "@/pages/Assistant"
 import AdminLayout from "@/pages/admin/AdminLayout"
 import AdminSchemes from "@/pages/admin/AdminSchemes"
 import AdminPartners from "@/pages/admin/AdminPartners"
@@ -23,6 +24,7 @@ import AdminAnalytics from "@/pages/admin/AdminAnalytics"
 export default function App() {
   return (
     <>
+      {appConfig.hasChat && <FloatingChatWidget />}
       <Routes>
         <Route element={<AppShell />}>
           <Route path="/" element={<Home />} />
@@ -34,7 +36,6 @@ export default function App() {
           <Route path="/compare" element={<Compare />} />
           <Route path="/application/:id" element={<Application />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/assistant" element={<Assistant />} />
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AdminSchemes />} />
             <Route path="schemes" element={<AdminSchemes />} />

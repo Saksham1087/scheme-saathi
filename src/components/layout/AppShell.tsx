@@ -1,5 +1,5 @@
 import { NavLink, Link, Outlet, useNavigate } from "react-router-dom"
-import { LogOut, MapPin } from "lucide-react"
+import { LogOut, MapPin, MessageSquareText } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
 import { useAuthStore } from "@/stores/authStore"
@@ -55,23 +55,34 @@ export function AppShell() {
               </NavLink>
             ))}
           </nav>
-          <div className="ml-auto lg:ml-0 flex items-center gap-3">
+<div className="ml-auto lg:ml-0 flex items-center gap-3">
             <LanguageSelector />
             {user ? (
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => void auth.signOut()}
-              >
-                <LogOut className="size-4 mr-1" />
-                {t("nav.logout")}
-              </Button>
+              <>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hidden sm:flex items-center gap-2"
+                  onClick={() => window.dispatchEvent(new CustomEvent("open-chat-drawer"))}
+                >
+                  <MessageSquareText className="size-4" />
+                  {t("nav.talkToSathi")}
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => void auth.signOut()}
+                >
+                  <LogOut className="size-4 mr-1" />
+                  {t("nav.logout")}
+                </Button>
+              </>
             ) : (
               <Button size="sm" onClick={() => navigate("/login")}>
                 {t("nav.login")}
               </Button>
             )}
-      <ComparisonBar />
+        <ComparisonBar />
     </div>
         </div>
         <nav
