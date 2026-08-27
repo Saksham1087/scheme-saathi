@@ -1,50 +1,247 @@
 [
   {
     "id": "micro-finance",
-    "name": { "en": "Micro Finance Scheme", "hi": "माइक्रो फाइनेंस योजना" },
+    "name": { "en": "Micro Credit Scheme (MCS)", "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)" },
     "description": {
-      "en": "Collateral-free concessional credit for tiny self-employment projects.",
-      "hi": "छोटे रोज़गार प्रोजेक्ट के लिए बिना गारंटी रियायती ऋण।"
+      "en": "Collateral-free concessional credit up to ₹1.40 Lakh for tiny self-employment projects, small trades, and artisans.",
+      "hi": "छोटे रोज़गार प्रोजेक्ट, छोटे व्यापार और कारीगरों के लिए ₹1.40 लाख तक बिना गारंटी रियायती ऋण।"
     },
     "type": "micro",
+    "category": "micro",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC (National Scheduled Castes Finance & Development Corp)",
+      "hi": "एनएसएफडीसी (राष्ट्रीय अनुसूचित जाति वित्त एवं विकास निगम)"
+    },
+    "purpose": {
+      "en": "Self employment, small shop, petty trade, artisan support",
+      "hi": "स्वरोज़गार, छोटी दुकान, खुदरा व्यापार, कारीगर सहायता"
+    },
+    "purposeTags": ["Shop / Retail", "Tailoring", "Artisan", "Services", "Self-Employment"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
     "maxProjectCost": 140000,
     "incomeCeiling": 500000,
     "coverageMaxPct": 90,
-    "rateRange": { "min": 6.5, "max": 9 },
+    "rateRange": { "min": 6.5, "max": 9.0 },
     "tenureRangeMonths": { "min": 12, "max": 60 },
     "moratorium": { "minMonths": 3, "maxMonths": 6, "interestAccrues": false },
-    "source": "seed"
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
   },
   {
     "id": "term-loan",
-    "name": { "en": "Term Loan Scheme", "hi": "टर्म लोन योजना" },
+    "name": { "en": "Term Loan Scheme (TLS)", "hi": "टर्म लोन योजना (टीएलएस)" },
     "description": {
-      "en": "Concessional term loan for larger manufacturing, service and agri-business ventures.",
-      "hi": "बड़े निर्माण, सेवा और कृषि-व्यापार उद्यमों के लिए रियायती टर्म लोन।"
+      "en": "Concessional term loans up to ₹50 Lakh for viable manufacturing, service, agriculture, and transport enterprises.",
+      "hi": "उत्पादन, सेवा, कृषि और परिवहन उद्यमों के लिए ₹50 लाख तक का रियायती टर्म लोन।"
     },
     "type": "term",
+    "category": "business",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC (National Scheduled Castes Finance & Development Corp)",
+      "hi": "एनएसएफडीसी (राष्ट्रीय अनुसूचित जाति वित्त एवं विकास निगम)"
+    },
+    "purpose": {
+      "en": "Medium to large enterprises in manufacturing, services, or transport",
+      "hi": "विनिर्माण, सेवा या परिवहन में मध्यम से बड़े उद्यम"
+    },
+    "purposeTags": ["Manufacturing", "Services", "Agri-business", "Transport", "Machinery"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
     "maxProjectCost": 5000000,
     "incomeCeiling": 500000,
     "coverageMaxPct": 90,
-    "rateRange": { "min": 8, "max": 12.5 },
+    "rateRange": { "min": 8.0, "max": 12.5 },
     "tenureRangeMonths": { "min": 36, "max": 120 },
     "moratorium": { "minMonths": 3, "maxMonths": 12, "interestAccrues": true },
-    "source": "seed"
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
   },
   {
     "id": "education-loan",
-    "name": { "en": "Education Loan Scheme", "hi": "शिक्षा ऋण योजना" },
+    "name": { "en": "Education Loan Scheme (ELS)", "hi": "शिक्षा ऋण योजना (ईएलएस)" },
     "description": {
-      "en": "Course-cost based concessional education finance for SC students.",
-      "hi": "एससी छात्रों के लिए कोर्स लागत आधारित रियायती शिक्षा वित्त।"
+      "en": "Concessional education loan up to ₹20 Lakh in India and ₹30 Lakh abroad for professional & higher technical education.",
+      "hi": "व्यावसायिक और उच्च तकनीकी शिक्षा के लिए भारत में ₹20 लाख और विदेश में ₹30 लाख तक रियायती शिक्षा ऋण।"
     },
     "type": "education",
+    "category": "education",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC (National Scheduled Castes Finance & Development Corp)",
+      "hi": "एनएसएफडीसी (राष्ट्रीय अनुसूचित जाति वित्त एवं विकास निगम)"
+    },
+    "purpose": {
+      "en": "Higher technical, professional, medical, engineering and vocational courses",
+      "hi": "उच्च तकनीकी, व्यावसायिक, चिकित्सा, इंजीनियरिंग और वोकेशनल कोर्स"
+    },
+    "purposeTags": ["Higher Education", "Engineering / Medical", "Foreign Studies", "Vocational Course"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["student", "twelfth", "graduate", "postgraduate"],
     "maxProjectCost": 5000000,
     "incomeCeiling": 500000,
     "coverageMaxPct": 90,
-    "rateRange": { "min": 6.5, "max": 9 },
+    "rateRange": { "min": 6.5, "max": 9.0 },
     "tenureRangeMonths": { "min": 12, "max": 96 },
     "moratorium": { "minMonths": 6, "maxMonths": 12, "interestAccrues": false },
-    "source": "seed"
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "mahila-samriddhi",
+    "name": { "en": "Mahila Samriddhi Yojana (MSY)", "hi": "महिला समृद्धि योजना (एमएसवाई)" },
+    "description": {
+      "en": "Special micro-finance scheme exclusively for women entrepreneurs with highly subsidized interest rates up to ₹1.40 Lakh.",
+      "hi": "महिला उद्यमियों के लिए विशेष रियायती ब्याज दर (4% p.a.) पर ₹1.40 लाख तक की सूक्ष्म वित्त योजना।"
+    },
+    "type": "micro",
+    "category": "women",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC / National Women Development Division",
+      "hi": "एनएसएफडीसी / राष्ट्रीय महिला विकास प्रभाग"
+    },
+    "purpose": {
+      "en": "Women-led micro businesses, tailoring, food catering, beauty salons, cottage industry",
+      "hi": "महिला संचालित सूक्ष्म व्यापार, सिलाई, कैटरिंग, ब्यूटी पार्लर, कुटीर उद्योग"
+    },
+    "purposeTags": ["Women Entrepreneurship", "Tailoring", "Food Processing", "Handicrafts", "Beauty & Wellness"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
+    "maxProjectCost": 140000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 95,
+    "rateRange": { "min": 4.0, "max": 6.0 },
+    "tenureRangeMonths": { "min": 12, "max": 48 },
+    "moratorium": { "minMonths": 3, "maxMonths": 6, "interestAccrues": false },
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "swachhta-udyami",
+    "name": { "en": "Swachhta Udyami Yojana (SUY)", "hi": "स्वच्छता उद्यमी योजना (एसयूवाई)" },
+    "description": {
+      "en": "Financial assistance up to ₹25 Lakh for procurement of sanitation-related vehicles, machinery, and mechanized cleaning equipment.",
+      "hi": "स्वच्छता संबंधी वाहन, मशीनरी और मशीनीकृत सफाई उपकरण खरीदने के लिए ₹25 लाख तक की वित्तीय सहायता।"
+    },
+    "type": "term",
+    "category": "sanitation",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC / National Safai Karamcharis Finance & Dev Corp",
+      "hi": "एनएसएफडीसी / राष्ट्रीय सफाई कर्मचारी वित्त एवं विकास निगम"
+    },
+    "purpose": {
+      "en": "Mechanized cleaning machinery, vacuum tankers, waste recycling units",
+      "hi": "मशीनीकृत सफाई मशीनरी, वैक्यूम टैंकर, कचरा पुनर्चक्रण इकाइयाँ"
+    },
+    "purposeTags": ["Sanitation Equipment", "Garbage Collection", "Waste Recycling", "Vehicles", "Cleanliness"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "other"],
+    "maxProjectCost": 2500000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 4.0, "max": 6.0 },
+    "tenureRangeMonths": { "min": 24, "max": 84 },
+    "moratorium": { "minMonths": 6, "maxMonths": 12, "interestAccrues": false },
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "green-business",
+    "name": { "en": "Green Business Scheme (GBS)", "hi": "हरित व्यवसाय योजना (जीबीएस)" },
+    "description": {
+      "en": "Concessional loans up to ₹30 Lakh to support climate-friendly activities, solar energy, e-rickshaws, and organic agriculture.",
+      "hi": "जलवायु-अनुकूल गतिविधियों, सौर ऊर्जा, ई-रिक्शा और जैविक कृषि को बढ़ावा देने के लिए ₹30 लाख तक रियायती ऋण।"
+    },
+    "type": "term",
+    "category": "agriculture",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "NSFDC Green Energy Division",
+      "hi": "एनएसएफडीसी हरित ऊर्जा प्रभाग"
+    },
+    "purpose": {
+      "en": "Solar powered equipment, battery e-vehicles, polyhouse farming, organic compost",
+      "hi": "सौर ऊर्जा उपकरण, बैटरी ई-वाहन, पॉलीहाउस खेती, जैविक खाद"
+    },
+    "purposeTags": ["Solar Energy", "Organic Farming", "E-Rickshaws", "Polyhouse", "Bio-waste"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "other"],
+    "maxProjectCost": 3000000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 5.0, "max": 8.0 },
+    "tenureRangeMonths": { "min": 36, "max": 120 },
+    "moratorium": { "minMonths": 6, "maxMonths": 12, "interestAccrues": true },
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://nsfdc.nic.in",
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "pm-daksh-loan",
+    "name": { "en": "PM-DAKSH Skill Upgradation Loan", "hi": "पीएम-दक्ष कौशल उन्नयन ऋण" },
+    "description": {
+      "en": "Low-interest financial assistance up to ₹1.50 Lakh for purchasing toolkits, certification fees, and post-training setup.",
+      "hi": "टूलकिट खरीदने, प्रमाणन शुल्क और प्रशिक्षण के बाद काम शुरू करने के लिए ₹1.50 लाख तक कम ब्याज वित्तीय सहायता।"
+    },
+    "type": "micro",
+    "category": "skills",
+    "ministry": {
+      "en": "Ministry of Social Justice and Empowerment",
+      "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय"
+    },
+    "department": {
+      "en": "National Skill Development Corporation / PM-DAKSH",
+      "hi": "राष्ट्रीय कौशल विकास निगम / पीएम-दक्ष"
+    },
+    "purpose": {
+      "en": "Skill enhancement toolkits, technical equipment, certification and enterprise launch",
+      "hi": "कौशल वृद्धि टूलकिट, तकनीकी उपकरण, प्रमाणन और उद्यम स्थापना"
+    },
+    "purposeTags": ["Skill Development", "Technical Certification", "Toolkits", "Apprenticeship", "Upskilling"],
+    "applicableStates": ["All India"],
+    "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "student", "other"],
+    "maxProjectCost": 150000,
+    "incomeCeiling": 500000,
+    "coverageMaxPct": 90,
+    "rateRange": { "min": 5.0, "max": 7.5 },
+    "tenureRangeMonths": { "min": 12, "max": 36 },
+    "moratorium": { "minMonths": 3, "maxMonths": 6, "interestAccrues": false },
+    "source": "seed",
+    "verified": true,
+    "officialUrl": "https://pmdaksh.dosje.gov.in",
+    "lastUpdated": "2026-08-01"
   }
 ]

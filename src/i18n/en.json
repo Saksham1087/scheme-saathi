@@ -13,6 +13,7 @@
   },
   "nav": {
     "home": "Home",
+    "schemes": "Browse Schemes",
     "findSchemes": "Find Schemes",
     "calculator": "EMI Calculator",
     "partners": "Find a Partner",
@@ -74,7 +75,14 @@
   },
   "categories": {
     "sc": "Scheduled Caste (SC)",
-    "other": "Other"
+    "other": "Other",
+    "business": "Business & Industry",
+    "micro": "Micro Credit",
+    "education": "Education",
+    "women": "Women Entrepreneur",
+    "agriculture": "Agriculture & Green",
+    "sanitation": "Sanitation & Cleaning",
+    "skills": "Skill Development"
   },
   "educationStatuses": {
     "student": "Currently studying",
@@ -233,5 +241,64 @@
     "errorGeneric": "Something went wrong. Please try again.",
     "googleButton": "Continue with Google",
     "orContinue": "or"
+  },
+  "schemes": {
+    "pageTitle": "Faceted Scheme Catalog",
+    "pageSubtitle": "Explore concessional credit, term loans, and education finance from central and state corporations with multi-dimensional criteria matching.",
+    "tagline": "Government Financial Assistance & Welfare Schemes",
+    "searchPlaceholder": "Search schemes by name, keyword, business type, or ministry…",
+    "searchLabel": "Search schemes",
+    "allCategories": "All Schemes",
+    "activeFilters": "Active Filters:",
+    "clearAll": "Clear all",
+    "verifiedBadge": "Verified Govt Scheme",
+    "maxAssistance": "Max Assistance",
+    "coverageNote": "Up to {{pct}}% funded",
+    "interestRate": "Interest Rate",
+    "perAnnum": "p.a.",
+    "concessionalTag": "Concessional rate",
+    "tenure": "Tenure",
+    "years": "years",
+    "moratorium": "Moratorium",
+    "months": "months",
+    "purposeLabel": "Purpose:",
+    "more": "more",
+    "viewDetails": "View Details",
+    "calculateEmi": "Calculate EMI",
+    "findPartners": "Find Partners",
+    "emi": "EMI",
+    "partners": "Partners",
+    "resultsCount": "Showing {{count}} of {{total}} schemes",
+    "noResultsTitle": "No matching schemes found",
+    "noResultsBody": "We couldn't find any schemes matching your current combination of filters. Try broadening your criteria or resetting filters.",
+    "resetFiltersCta": "Reset All Filters",
+    "retry": "Retry Loading"
+  },
+  "filters": {
+    "title": "Filter Schemes",
+    "resetAll": "Reset",
+    "sortBy": "Sort Order",
+    "sortNameAsc": "Scheme Name (A to Z)",
+    "sortAmountDesc": "Max Assistance (High to Low)",
+    "sortAmountAsc": "Max Assistance (Low to High)",
+    "sortRateAsc": "Interest Rate (Lowest First)",
+    "sortIncomeAsc": "Income Ceiling (Lowest First)",
+    "category": "Scheme Category",
+    "state": "State / UT",
+    "allStates": "All India (National & State)",
+    "maxAssistance": "Max Assistance Needed",
+    "anyAmount": "Up to ₹50L+",
+    "amount": "Amount",
+    "incomeLimit": "Annual Family Income",
+    "incomeAny": "Up to ₹5.0L",
+    "education": "Education Qualification",
+    "eduAll": "All Education Levels",
+    "purpose": "Project / Business Purpose",
+    "applyFilters": "Show Results"
+  },
+  "schemeTypes": {
+    "micro": "Micro Finance",
+    "term": "Term Loan",
+    "education": "Education Loan"
   }
 }

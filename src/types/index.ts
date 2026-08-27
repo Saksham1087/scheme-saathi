@@ -20,11 +20,46 @@ export interface LocalizedText {
   hi: string
 }
 
+export type SchemeCategory =
+  | "business"
+  | "education"
+  | "agriculture"
+  | "sanitation"
+  | "women"
+  | "skills"
+  | "micro"
+  | "other"
+
+export type SchemeSortOption =
+  | "name_asc"
+  | "max_amount_desc"
+  | "max_amount_asc"
+  | "rate_asc"
+  | "income_ceiling_asc"
+
+export interface SchemeFilterState {
+  searchQuery: string
+  categories: string[]
+  state: string | null
+  maxIncome: number | null
+  amountRange: [number, number]
+  purposes: string[]
+  education: EducationStatus | "all" | null
+  sortBy: SchemeSortOption
+}
+
 export interface Scheme {
   id: string
   name: LocalizedText
   description: LocalizedText
   type: SchemeType
+  category?: SchemeCategory | string
+  ministry?: LocalizedText
+  department?: LocalizedText
+  purpose?: LocalizedText
+  purposeTags?: string[]
+  applicableStates?: string[]
+  eligibleEducation?: EducationStatus[]
   /** rupees per year */
   maxProjectCost: number
   /** annual family income ceiling (₹5,00,000 for all current schemes) */
@@ -40,6 +75,9 @@ export interface Scheme {
     interestAccrues: boolean
   }
   source: "seed" | "mcp"
+  verified?: boolean
+  officialUrl?: string
+  lastUpdated?: string
 }
 
 export interface MatchInput {

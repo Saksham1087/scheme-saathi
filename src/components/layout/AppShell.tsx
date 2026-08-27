@@ -51,6 +51,7 @@ function LanguageToggle() {
 }
 
 const navKeys = [
+  { to: "/schemes", key: "nav.schemes" },
   { to: "/find-schemes", key: "nav.findSchemes" },
   { to: "/calculator", key: "nav.calculator" },
   { to: "/partners", key: "nav.partners" },

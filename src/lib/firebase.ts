@@ -42,7 +42,7 @@ const useEmulators =
   !useEnvConfig ||
   (import.meta.env.DEV && import.meta.env.VITE_USE_EMULATORS !== "false")
 
-if (useEmulators) {
+if (useEmulators && typeof window !== "undefined") {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const anyWindow = window as any
   if (!anyWindow.__schemesaathi_emulators_connected) {

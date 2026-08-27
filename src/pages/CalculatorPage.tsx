@@ -1,4 +1,5 @@
-import { useMemo } from "react"
+import { useMemo, useEffect } from "react"
+import { useSearchParams } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -71,8 +72,42 @@ function SliderRow({
 
 export default function CalculatorPage() {
   const { t } = useTranslation()
+  const [searchParams] = useSearchParams()
   const calc = useCalculatorStore()
   const [showFullSchedule, setShowFullSchedule] = useState(false)
+
+  // Sync URL search params from Scheme card or deep link
+  useEffect(() => {
+    const amount = searchParams.get("amount")
+    const rate = searchParams.get("rate")
+    const tenure = searchParams.get("tenure")
+    const moratorium = searchParams.get("moratorium")
+    const accrual = searchParams.get("accrual")
+    const scheme = searchParams.get("scheme")
+
+    const patch: Partial<{
+      principal: number
+      annualRatePct: number
+      tenureMonths: number
+      moratoriumMonths: number
+      moratoriumInterestAccrues: boolean
+      schemeId: string | null
+    }> = {}
+
+    if (amount) patch.principal = Number(amount)
+    if (rate) patch.annualRatePct = Number(rate)
+    if (tenure) {
+      const tenureVal = Number(tenure)
+      patch.tenureMonths = tenureVal <= 10 ? tenureVal * 12 : tenureVal
+    }
+    if (moratorium) patch.moratoriumMonths = Number(moratorium)
+    if (accrual) patch.moratoriumInterestAccrues = accrual === "1"
+    if (scheme) patch.schemeId = scheme
+
+    if (Object.keys(patch).length > 0) {
+      calc.patch(patch)
+    }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const result = useMemo(
     () =>
