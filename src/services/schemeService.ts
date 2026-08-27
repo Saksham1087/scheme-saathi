@@ -27,16 +27,47 @@ export async function fetchSchemes(): Promise<Scheme[]> {
   }
 }
 
+function deepMerge<T extends Record<string, any>>(target: T, source: Partial<T>): T {
+  const output: Record<string, any> = { ...target }
+  for (const key in source) {
+    if (Object.prototype.hasOwnProperty.call(source, key)) {
+      const sourceVal = source[key]
+      const targetVal = output[key]
+      if (
+        sourceVal &&
+        typeof sourceVal === "object" &&
+        !Array.isArray(sourceVal) &&
+        targetVal &&
+        typeof targetVal === "object" &&
+        !Array.isArray(targetVal)
+      ) {
+        output[key] = deepMerge(targetVal, sourceVal)
+      } else if (sourceVal !== undefined) {
+        output[key] = sourceVal
+      }
+    }
+  }
+  return output as T
+}
+
 /**
  * Fetch a single scheme by ID from Firestore, with fallback to seed data.
  */
 export async function fetchSchemeById(id: string): Promise<Scheme | null> {
+  const seedMatch = getSeedSchemes().find((s) => s.id === id)
   try {
     const docRef = doc(db, "schemes", id)
     const snap = await getDoc(docRef)
     if (snap.exists()) {
+      const firestoreData = snap.data() as Scheme
+      if (seedMatch) {
+        return {
+          ...deepMerge(seedMatch, firestoreData),
+          id: snap.id,
+        }
+      }
       return {
-        ...(snap.data() as Scheme),
+        ...firestoreData,
         id: snap.id,
       }
     }
@@ -44,6 +75,5 @@ export async function fetchSchemeById(id: string): Promise<Scheme | null> {
     console.warn(`Firestore fetch for scheme ${id} failed, checking seed data:`, err)
   }
 
-  const seedMatch = getSeedSchemes().find((s) => s.id === id)
   return seedMatch ?? null
 }

@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { AppShell } from "@/components/layout/AppShell"
 import Home from "@/pages/Home"
 import SchemesCatalog from "@/pages/SchemesCatalog"
+import SchemeDetailsPage from "@/pages/SchemeDetailsPage"
 import IntakeWizard from "@/pages/IntakeWizard"
 import Results from "@/pages/Results"
 import CalculatorPage from "@/pages/CalculatorPage"
@@ -18,6 +19,7 @@ export default function App() {
         <Route element={<AppShell />}>
           <Route path="/" element={<Home />} />
           <Route path="/schemes" element={<SchemesCatalog />} />
+          <Route path="/schemes/:id" element={<SchemeDetailsPage />} />
           <Route path="/find-schemes" element={<IntakeWizard />} />
           <Route path="/results" element={<Results />} />
           <Route path="/calculator" element={<CalculatorPage />} />

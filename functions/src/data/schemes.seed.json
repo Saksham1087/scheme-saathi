@@ -32,7 +32,233 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/micro-credit-scheme",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "The Micro Credit Scheme (MCS) provides direct concessional micro-loans to eligible Scheduled Caste individuals and Self Help Groups (SHGs) to undertake small income-generating activities with minimal documentation and without requiring collateral.",
+      "hi": "लघु ऋण योजना (माइक्रो क्रेडिट स्कीम) पात्र अनुसूचित जाति के व्यक्तियों और स्वयं सहायता समूहों (एसएचजी) को न्यूनतम दस्तावेजीकरण और बिना किसी गारंटी के छोटी आय-सृजन गतिविधियों को शुरू करने के लिए प्रत्यक्ष रियायती सूक्ष्म ऋण प्रदान करती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "Individual entrepreneurs belonging to Scheduled Castes residing in rural or urban areas.",
+        "hi": "ग्रामीण या शहरी क्षेत्रों में रहने वाले अनुसूचित जाति के व्यक्तिगत उद्यमी।"
+      },
+      {
+        "en": "Self Help Groups (SHGs) with at least 60% members from the Scheduled Caste community.",
+        "hi": "स्वयं सहायता समूह (एसएचजी) जिनके कम से कम 60% सदस्य अनुसूचित जाति समुदाय से हों।"
+      },
+      {
+        "en": "Small artisans, weavers, petty shopkeepers, street vendors, and service workers.",
+        "hi": "छोटे कारीगर, बुनकर, छोटे दुकानदार, स्ट्रीट वेंडर और सेवा प्रदाता।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) with valid caste certificate",
+        "hi": "सक्षम प्राधिकारी द्वारा जारी वैध जाति प्रमाण पत्र सहित अनुसूचित जाति (SC)"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 60 },
+      "gender": {
+        "en": "All genders (Special rebate for women beneficiaries)",
+        "hi": "सभी लिंग (महिला लाभार्थियों के लिए विशेष छूट)"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
+      "educationDescription": {
+        "en": "No minimum educational qualification required. Basic literacy or trade proficiency preferred.",
+        "hi": "कोई न्यूनतम शैक्षणिक योग्यता आवश्यक नहीं है। बुनियादी साक्षरता या संबंधित कार्य का अनुभव प्राथमिकता रखता है।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Applicant must not be a defaulter with any financial institution or bank.",
+          "hi": "आवेदक किसी भी बैंक या वित्तीय संस्थान का बकायेदार (डिफॉल्टर) नहीं होना चाहिए।"
+        },
+        {
+          "en": "Applicant must reside in the operational area of the Channel Partner.",
+          "hi": "आवेदक को संबंधित चैनल पार्टनर के कार्यक्षेत्र का निवासी होना चाहिए।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 5,
+      "fundingPattern": {
+        "en": "NSFDC funds 90% of the project cost; State Channelizing Agency contributes 5%; Beneficiary contributes 5%.",
+        "hi": "एनएसएफडीसी परियोजना लागत का 90% वित्तपोषित करता है; राज्य चैनेलाइजिंग एजेंसी 5% और लाभार्थी 5% योगदान देता है।"
+      },
+      "subsidyAvailable": false,
+      "subsidyDetails": {
+        "en": "Subsidies, if available under state government convergence schemes, can be clubbed.",
+        "hi": "यदि राज्य सरकार की अभिसरण योजनाओं के तहत कोई अनुदान उपलब्ध है, तो उसे जोड़ा जा सकता है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 6.5,
+      "max": 9.0,
+      "rateDescription": {
+        "en": "Concessional lending rate of 6.5% to 9.0% per annum chargeable to the end beneficiary.",
+        "hi": "अंतिम लाभार्थी के लिए 6.5% से 9.0% प्रति वर्ष की रियायती ब्याज दर।"
+      },
+      "concessions": {
+        "en": "0.5% interest rebate for timely repayment and 1.0% interest concession for women entrepreneurs.",
+        "hi": "समय पर पुनर्भुगतान के लिए 0.5% और महिला उद्यमियों के लिए 1.0% अतिरिक्त ब्याज छूट।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% rebate on timely quarterly installments.",
+          "hi": "समय पर त्रैमासिक किस्तों के भुगतान पर 0.5% की छूट।"
+        },
+        {
+          "en": "1.0% rebate for women-owned micro enterprises.",
+          "hi": "महिला स्वामित्व वाले सूक्ष्म उद्यमों के लिए 1.0% की छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 10000,
+      "maxAmount": 140000,
+      "unitCostLimit": {
+        "en": "Maximum project cost per unit is ₹1,40,000. Up to ₹14.00 Lakh for SHGs with 10 members.",
+        "hi": "प्रति इकाई अधिकतम परियोजना लागत ₹1,40,000 है। 10 सदस्यों वाले स्वयं सहायता समूह के लिए ₹14.00 लाख तक।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Working capital for merchandise, inventory, tools, raw materials.",
+          "hi": "माल, इन्वेंट्री, औजार, कच्चे माल के लिए कार्यशील पूंजी।"
+        },
+        {
+          "en": "Small equipment and work tools (sewing machines, retail kiosks, repair kits).",
+          "hi": "छोटे उपकरण और कार्य औजार (सिलाई मशीन, खुदरा कियोस्क, मरम्मत किट)।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 3,
+      "maxMonths": 6,
+      "interestAccrues": false,
+      "policyDescription": {
+        "en": "3 to 6 months repayment holiday. No interest accrues during the initial moratorium pause.",
+        "hi": "3 से 6 महीने की पुनर्भुगतान छूट। प्रारंभिक मोरेटोरियम अवधि के दौरान ब्याज नहीं जुड़ता है।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 12, "max": 60 },
+      "repaymentFrequency": {
+        "en": "Monthly or quarterly installments depending on channel partner terms.",
+        "hi": "चैनल पार्टनर की शर्तों के अनुसार मासिक या त्रैमासिक किस्तें।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "Zero foreclosure charges or pre-payment penalties at any time.",
+        "hi": "समय पूर्व ऋण चुकता करने पर कोई अतिरिक्त शुल्क या जुर्माना नहीं।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "Identity & Address", "hi": "पहचान एवं पता प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar Card", "hi": "आधार कार्ड" },
+            "description": { "en": "Linked with active mobile number", "hi": "सक्रिय मोबाइल नंबर से लिंक" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Voter ID / Ration Card", "hi": "मतदाता पहचान पत्र / राशन कार्ड" },
+            "description": { "en": "Proof of permanent residence", "hi": "स्थायी निवास का प्रमाण" },
+            "mandatory": false
+          }
+        ]
+      },
+      {
+        "category": { "en": "Income & Caste Verification", "hi": "आय एवं जाति सत्यापन" },
+        "items": [
+          {
+            "name": { "en": "Scheduled Caste (SC) Certificate", "hi": "अनुसूचित जाति (SC) प्रमाण पत्र" },
+            "description": { "en": "Issued by Tehsildar / Competent Revenue Authority", "hi": "तहसीलदार / सक्षम राजस्व अधिकारी द्वारा जारी" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Annual Family Income Certificate", "hi": "वार्षिक पारिवारिक आय प्रमाण पत्र" },
+            "description": { "en": "Annual income must not exceed ₹5,00,000", "hi": "वार्षिक आय ₹5,00,000 से अधिक नहीं होनी चाहिए" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Banking & Project Details", "hi": "बैंक एवं प्रोजेक्ट विवरण" },
+        "items": [
+          {
+            "name": { "en": "Bank Account Passbook / Cancelled Cheque", "hi": "बैंक खाता पासबुक / रद्द चेक" },
+            "description": { "en": "Aadhaar-seeded savings account in applicant's name", "hi": "आवेदक के नाम पर आधार-लिंक्ड बचत खाता" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Brief Activity Proposal / Quotation", "hi": "संक्षिप्त गतिविधि प्रस्ताव / कोटेशन" },
+            "description": { "en": "Cost estimation for tools, equipment, or stock", "hi": "औजारों, उपकरणों या स्टॉक का अनुमानित खर्च" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Recent Passport Size Photographs", "hi": "हालिया पासपोर्ट आकार की तस्वीरें" },
+            "description": { "en": "2 color passport photos", "hi": "2 रंगीन पासपोर्ट फोटो" },
+            "mandatory": true
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB", "NBFC_MFI"],
+      "description": {
+        "en": "Disbursement is routed through State Channelizing Agencies (SCAs), Public Sector Banks, Regional Rural Banks, and accredited NBFC-MFIs.",
+        "hi": "ऋण वितरण राज्य चैनेलाइजिंग एजेंसियों (SCAs), सार्वजनिक क्षेत्र के बैंकों, क्षेत्रीय ग्रामीण बैंकों और मान्यता प्राप्त NBFC-MFI के माध्यम से किया जाता है।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Check Eligibility & Gather Documents", "hi": "पात्रता जाँचें और दस्तावेज़ तैयार करें" },
+        "description": {
+          "en": "Verify that your annual family income is within ₹5.00 Lakh and you have a valid SC caste certificate, income proof, and Aadhaar.",
+          "hi": "जाँचें कि आपकी पारिवारिक आय ₹5 लाख के अंदर है और आपके पास जाति प्रमाण पत्र, आय प्रमाण पत्र और आधार कार्ड उपलब्ध है।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Select Channel Partner", "hi": "चैनल पार्टनर का चयन करें" },
+        "description": {
+          "en": "Locate your nearest State Channelizing Agency (SCA) district office or partner bank branch.",
+          "hi": "अपने निकटतम राज्य चैनेलाइजिंग एजेंसी (SCA) जिला कार्यालय या भागीदार बैंक शाखा का पता लगाएँ।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Submit Application & Project Brief", "hi": "आवेदन और प्रोजेक्ट विवरण जमा करें" },
+        "description": {
+          "en": "Fill the prescribed application form with trade quotations and submit it to the channel partner.",
+          "hi": "संबंधित व्यापार कोटेशन के साथ निर्धारित आवेदन पत्र भरें और चैनल पार्टनर को जमा करें।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Field Appraisal & Verification", "hi": "फील्ड सत्यापन एवं मूल्यांकन" },
+        "description": {
+          "en": "Channel partner inspects business viability, verifies documents, and sanctions the proposal.",
+          "hi": "चैनल पार्टनर व्यापार की व्यावहारिकता और दस्तावेजों का सत्यापन कर प्रस्ताव को स्वीकृति देता है।"
+        }
+      },
+      {
+        "stepNumber": 5,
+        "title": { "en": "Loan Disbursement to Bank Account", "hi": "बैंक खाते में ऋण वितरण" },
+        "description": {
+          "en": "Sanctioned loan funds are transferred directly via DBT to the beneficiary's Aadhaar-linked bank account.",
+          "hi": "स्वीकृत ऋण राशि डीबीटी के माध्यम से लाभार्थी के आधार-लिंक्ड बैंक खाते में सीधे स्थानांतरित की जाती है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "The terms, interest rates, and loan caps shown above are governed by NSFDC guidelines. Final sanction and disbursement are subject to verification of applicant eligibility and credit appraisal by the designated Channelizing Agency or Partner Bank.",
+      "hi": "उपर्युक्त शर्तें, ब्याज दरें और ऋण सीमाएं एनएसएफडीसी दिशानिर्देशों द्वारा शासित हैं। अंतिम स्वीकृति और वितरण संबंधित चैनल पार्टनर या बैंक द्वारा पात्रता और दस्तावेजों के सत्यापन के अधीन है।"
+    }
   },
   {
     "id": "term-loan",
@@ -67,7 +293,233 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/term-loan-scheme",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "The Term Loan Scheme (TLS) supports scalable, income-generating commercial ventures up to ₹50 Lakh in manufacturing, transport, technology, and service sectors for individual entrepreneurs and cooperatives from Scheduled Castes.",
+      "hi": "टर्म लोन योजना (TLS) अनुसूचित जाति के व्यक्तिगत उद्यमियों और सहकारी समितियों के लिए विनिर्माण, परिवहन, प्रौद्योगिकी और सेवा क्षेत्रों में ₹50 लाख तक के व्यावसायिक उद्यमों के लिए रियायती दीर्घकालिक ऋण प्रदान करती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "SC entrepreneurs initiating or expanding registered manufacturing or service units.",
+        "hi": "पंजीकृत विनिर्माण या सेवा इकाइयों की शुरुआत या विस्तार करने वाले अनुसूचित जाति के उद्यमी।"
+      },
+      {
+        "en": "Proprietorships, partnerships, or private limited companies with SC majority ownership.",
+        "hi": "अनुसूचित जाति के बहुसंख्यक स्वामित्व वाली एकल स्वामित्व, साझेदारी या प्राइवेट लिमिटेड कंपनियाँ।"
+      },
+      {
+        "en": "Transport operators, food processors, industrial fabrication units, and cold storage ventures.",
+        "hi": "परिवहन संचालक, खाद्य प्रसंस्करणकर्ता, औद्योगिक निर्माण इकाइयाँ और कोल्ड स्टोरेज उद्यम।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) with valid caste certificate",
+        "hi": "सक्षम प्राधिकारी द्वारा जारी वैध जाति प्रमाण पत्र सहित अनुसूचित जाति (SC)"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 60 },
+      "gender": {
+        "en": "All genders",
+        "hi": "सभी लिंग"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
+      "educationDescription": {
+        "en": "Technical skills, prior domain experience, or vocational diploma in relevant trade preferred.",
+        "hi": "संबंधित व्यापार में तकनीकी कौशल, पूर्व अनुभव या व्यावसायिक डिप्लोमा को प्राथमिकता।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Detailed Project Report (DPR) with financial feasibility must be submitted.",
+          "hi": "वित्तीय व्यवहार्यता दर्शाने वाली विस्तृत परियोजना रिपोर्ट (डीपीआर) प्रस्तुत करनी होगी।"
+        },
+        {
+          "en": "Statutory licenses and environmental clearances where applicable.",
+          "hi": "जहाँ लागू हो, वैधानिक लाइसेंस और पर्यावरण मंज़ूरी।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 10,
+      "fundingPattern": {
+        "en": "NSFDC provides up to 90% of project cost; State Channelizing Agency contributes up to 5%; Beneficiary contributes min 5-10%.",
+        "hi": "एनएसएफडीसी परियोजना लागत का 90% तक प्रदान करता है; राज्य एजेंसी 5% और लाभार्थी 5-10% न्यूनतम योगदान करता है।"
+      },
+      "subsidyAvailable": false,
+      "subsidyDetails": {
+        "en": "Interest subvention or state industrial development subsidies may be availed alongside.",
+        "hi": "ब्याज सबवेंशन या राज्य औद्योगिक विकास अनुदान का साथ में लाभ उठाया जा सकता है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 8.0,
+      "max": 12.5,
+      "rateDescription": {
+        "en": "Graduated interest rate: 8.0% p.a. for loans up to ₹5.00 Lakh; 9.5% to 12.5% p.a. for loans above ₹5.00 Lakh.",
+        "hi": "क्रमिक ब्याज दर: ₹5 लाख तक के ऋण पर 8.0% प्रति वर्ष; ₹5 लाख से अधिक के ऋण पर 9.5% से 12.5% प्रति वर्ष।"
+      },
+      "concessions": {
+        "en": "0.5% interest rebate on regular repayment history; 1.0% concession for women-owned units.",
+        "hi": "नियमित भुगतान पर 0.5% की ब्याज छूट; महिला संचालित इकाइयों के लिए 1.0% अतिरिक्त छूट।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% rebate on prompt quarterly installment servicing.",
+          "hi": "समय पर त्रैमासिक किस्त भुगतान पर 0.5% की छूट।"
+        },
+        {
+          "en": "1.0% interest rebate for units led by SC women promoters.",
+          "hi": "अनुसूचित जाति की महिला उद्यमियों द्वारा संचालित इकाइयों के लिए 1.0% ब्याज छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 500000,
+      "maxAmount": 5000000,
+      "unitCostLimit": {
+        "en": "Maximum project cost ceiling is ₹50.00 Lakh per beneficiary / enterprise.",
+        "hi": "प्रति लाभार्थी / उद्यम अधिकतम परियोजना लागत सीमा ₹50.00 लाख है।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Plant, machinery, commercial vehicles, shed construction, testing equipment.",
+          "hi": "संयंत्र, मशीनरी, वाणिज्यिक वाहन, शेड निर्माण, परीक्षण उपकरण।"
+        },
+        {
+          "en": "Core working capital component up to 25% of total project cost.",
+          "hi": "कुल परियोजना लागत का 25% तक कार्यशील पूंजी घटक।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 3,
+      "maxMonths": 12,
+      "interestAccrues": true,
+      "policyDescription": {
+        "en": "3 to 12 months moratorium depending on project commissioning cycle. Simple interest accrues during moratorium and is capitalized.",
+        "hi": "परियोजना निर्माण अवधि के आधार पर 3 से 12 माह का मोरेटोरियम। इस दौरान साधारण ब्याज जुड़ता है और ऋण में शामिल किया जाता है।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 36, "max": 120 },
+      "repaymentFrequency": {
+        "en": "Quarterly installments over 3 to 10 years including moratorium.",
+        "hi": "मोरेटोरियम सहित 3 से 10 वर्षों में त्रैमासिक किस्तों में पुनर्भुगतान।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "No penalty for premature loan closure or accelerated principal amortisation.",
+        "hi": "समय पूर्व ऋण चुकाने पर कोई पेनल्टी या अतिरिक्त शुल्क नहीं।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "Identity & Ownership Proofs", "hi": "पहचान एवं स्वामित्व प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar Card & PAN Card", "hi": "आधार कार्ड एवं पैन कार्ड" },
+            "description": { "en": "Mandatory for all business promoters and partners", "hi": "सभी व्यावसायिक प्रमोटरों और साझेदारों के लिए अनिवार्य" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Caste Certificate (SC)", "hi": "जाति प्रमाण पत्र (SC)" },
+            "description": { "en": "Digitally verified certificate from competent authority", "hi": "सक्षम प्राधिकारी से डिजिटल रूप से सत्यापित प्रमाण पत्र" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Income & Financial Records", "hi": "आय एवं वित्तीय रिकॉर्ड" },
+        "items": [
+          {
+            "name": { "en": "Income Certificate / ITR of last 2 years", "hi": "आय प्रमाण पत्र / पिछले 2 वर्षों का आईटीआर" },
+            "description": { "en": "Family income ceiling compliance certificate", "hi": "पारिवारिक आय सीमा अनुपालन प्रमाण पत्र" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Bank Statement (Last 12 months)", "hi": "बैंक विवरण (पिछले 12 माह)" },
+            "description": { "en": "Active current or savings account statement", "hi": "सक्रिय चालू या बचत खाता विवरण" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Business & Project Proposal", "hi": "व्यवसाय एवं प्रोजेक्ट प्रस्ताव" },
+        "items": [
+          {
+            "name": { "en": "Detailed Project Report (DPR)", "hi": "विस्तृत परियोजना रिपोर्ट (डीपीआर)" },
+            "description": { "en": "Cash flow projections, technical feasibility, market analysis", "hi": "कैश फ्लो अनुमान, तकनीकी व्यवहार्यता, बाजार विश्लेषण" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Machinery & Quotation Invoices", "hi": "मशीनरी एवं कोटेशन इनवॉइस" },
+            "description": { "en": "Proforma invoices from certified OEM suppliers", "hi": "प्रमाणित ओईएम आपूर्तिकर्ताओं से प्रोफार्मा इनवॉइस" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Udyam MSME Registration Certificate", "hi": "उद्यम एमएसएमई पंजीकरण प्रमाण पत्र" },
+            "description": { "en": "Proof of business registration (if existing)", "hi": "व्यवसाय पंजीकरण का प्रमाण (यदि पहले से है)" },
+            "mandatory": false
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB"],
+      "description": {
+        "en": "Financed directly through State Channelizing Agencies (SCAs) and Public Sector / Regional Rural Banks.",
+        "hi": "राज्य चैनेलाइजिंग एजेंसियों (SCAs) और सार्वजनिक क्षेत्र / क्षेत्रीय ग्रामीण बैंकों के माध्यम से सीधे वित्तपोषित।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Prepare DPR & Quotations", "hi": "डीपीआर और कोटेशन तैयार करें" },
+        "description": {
+          "en": "Compile a detailed project report including machine invoices, site details, and working capital needs.",
+          "hi": "मशीनरी इनवॉइस, साइट विवरण और कार्यशील पूंजी आवश्यकताओं सहित एक विस्तृत परियोजना रिपोर्ट तैयार करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Apply via SCA or Bank Portal", "hi": "SCA या बैंक पोर्टल के माध्यम से आवेदन करें" },
+        "description": {
+          "en": "Submit the application through the respective State SC Corporation or partner public sector bank branch.",
+          "hi": "संबंधित राज्य अनुसूचित जाति निगम या भागीदार बैंक शाखा के माध्यम से आवेदन पत्र जमा करें।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Technical & Financial Appraisal", "hi": "तकनीकी एवं वित्तीय मूल्यांकन" },
+        "description": {
+          "en": "The bank/SCA reviews financial viability, promoter equity, and conducts pre-sanction inspection.",
+          "hi": "बैंक/SCA वित्तीय व्यवहार्यता, प्रमोटर पूंजी की समीक्षा करता है और पूर्व-स्वीकृति निरीक्षण करता है।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Loan Sanction & Security Creation", "hi": "ऋण स्वीकृति एवं सुरक्षा निर्माण" },
+        "description": {
+          "en": "Execution of loan agreement and hypothecation of assets created out of loan funds.",
+          "hi": "ऋण समझौते का निष्पादन और ऋण राशि से खरीदी गई संपत्तियों का दृष्टिबंधक (हाइपोथेकेशन)।"
+        }
+      },
+      {
+        "stepNumber": 5,
+        "title": { "en": "Staged Fund Disbursement", "hi": "चरणबद्ध ऋण वितरण" },
+        "description": {
+          "en": "Disbursement released directly to equipment suppliers and working capital account in planned tranches.",
+          "hi": "उपकरण आपूर्तिकर्ताओं और कार्यशील पूंजी खाते में निर्धारित चरणों में सीधे धनराशि जारी की जाती है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "Terms, interest rates, and loan limits are governed by NSFDC TLS guidelines. Sanction is strictly contingent upon bank appraisal, project feasibility, and fulfillment of statutory credit parameters.",
+      "hi": "शर्तें, ब्याज दरें और ऋण सीमाएं एनएसएफडीसी दिशानिर्देशों द्वारा शासित हैं। ऋण स्वीकृति बैंक मूल्यांकन, परियोजना व्यवहार्यता और नियमों के अनुपालन के अधीन है।"
+    }
   },
   {
     "id": "education-loan",
@@ -102,7 +554,224 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/education-loan-scheme",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "The Education Loan Scheme (ELS) enables meritorious students from Scheduled Castes to pursue full-time technical, medical, management, and engineering courses in India (up to ₹20 Lakh) and abroad (up to ₹30 Lakh) at concessional interest rates.",
+      "hi": "शिक्षा ऋण योजना (ELS) अनुसूचित जाति के मेधावी छात्रों को भारत में (₹20 लाख तक) और विदेशों में (₹30 लाख तक) रियायती ब्याज दरों पर पूर्णकालिक तकनीकी, चिकित्सा, प्रबंधन और इंजीनियरिंग पाठ्यक्रमों को आगे बढ़ाने में सक्षम बनाती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "SC students who have secured admission in UGC/AICTE/MCI/Govt-recognized institutions in India.",
+        "hi": "भारत में यूजीसी/एआईसीटीई/एमसीआई/सरकारी मान्यता प्राप्त संस्थानों में प्रवेश प्राप्त अनुसूचित जाति के छात्र।"
+      },
+      {
+        "en": "SC students pursuing accredited post-graduate, doctoral, or professional degree programs overseas.",
+        "hi": "विदेशों में मान्यता प्राप्त स्नातकोत्तर, डॉक्टरेट या व्यावसायिक डिग्री कार्यक्रमों में अध्ययनरत अनुसूचित जाति के छात्र।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) certificate holder",
+        "hi": "अनुसूचित जाति (SC) प्रमाण पत्र धारक"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 17, "max": 35 },
+      "gender": {
+        "en": "All genders (Special 0.5% interest rebate for female students)",
+        "hi": "सभी लिंग (छात्राओं के लिए 0.5% विशेष ब्याज छूट)"
+      },
+      "eligibleEducation": ["student", "twelfth", "graduate", "postgraduate"],
+      "educationDescription": {
+        "en": "Passed 10+2 or Bachelor degree with valid entrance exam scorecard / admission letter.",
+        "hi": "मान्यता प्राप्त बोर्ड से 10+2 या स्नातक उत्तीर्ण तथा वैध प्रवेश परीक्षा स्कोरकार्ड / प्रवेश पत्र।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Must have confirmed admission through merit/entrance quota.",
+          "hi": "मेरिट या प्रवेश परीक्षा के माध्यम से प्रवेश सुनिश्चित होना चाहिए।"
+        },
+        {
+          "en": "Co-obligation/guarantee of parent or guardian required.",
+          "hi": "माता-पिता या अभिभावक की सह-गारंटी आवश्यक है।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 10,
+      "fundingPattern": {
+        "en": "NSFDC covers up to 90% of total course expenses; student/parent margin is 10%.",
+        "hi": "एनएसएफडीसी कुल पाठ्यक्रम खर्च का 90% तक वहन करता है; छात्र/अभिभावक का अंशदान 10% है।"
+      },
+      "subsidyAvailable": true,
+      "subsidyDetails": {
+        "en": "Central Sector Interest Subsidy (CSIS) scheme benefits during moratorium can be integrated.",
+        "hi": "मोरेटोरियम अवधि के दौरान केंद्रीय क्षेत्र ब्याज सब्सिडी (CSIS) योजना का लाभ जोड़ा जा सकता है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 6.5,
+      "max": 9.0,
+      "rateDescription": {
+        "en": "Subsidized interest rate: 6.5% p.a. for male students; 6.0% p.a. for female students in India.",
+        "hi": "रियायती ब्याज दर: भारत में छात्रों के लिए 6.5% प्रति वर्ष; छात्राओं के लिए 6.0% प्रति वर्ष।"
+      },
+      "concessions": {
+        "en": "0.5% special rebate for girl students throughout the loan tenure.",
+        "hi": "ऋण की पूरी अवधि के दौरान छात्राओं के लिए 0.5% की विशेष ब्याज छूट।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% concession for female applicants.",
+          "hi": "महिला आवेदकों के लिए 0.5% की छूट।"
+        },
+        {
+          "en": "0.5% rebate on timely quarterly installments.",
+          "hi": "समय पर किश्तों के भुगतान पर 0.5% की छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 100000,
+      "maxAmount": 5000000,
+      "unitCostLimit": {
+        "en": "Up to ₹20.00 Lakh for domestic courses in India; Up to ₹30.00 Lakh (expandable to ₹50 Lakh) for overseas education.",
+        "hi": "भारत में पाठ्यक्रमों के लिए ₹20.00 लाख तक; विदेशी शिक्षा के लिए ₹30.00 लाख (₹50 लाख तक विस्तार योग्य)।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Tuition fees payable to college / university.",
+          "hi": "कॉलेज / विश्वविद्यालय को देय शिक्षण शुल्क।"
+        },
+        {
+          "en": "Hostel charges, books, equipment, computer/laptop, and airfare for foreign study.",
+          "hi": "छात्रावास शुल्क, पुस्तकें, उपकरण, कंप्यूटर/लैपटॉप और विदेशी अध्ययन के लिए हवाई किराया।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 6,
+      "maxMonths": 12,
+      "interestAccrues": false,
+      "policyDescription": {
+        "en": "Course duration + 6 months or 1 year after getting job (whichever is earlier). No interest compound during course pause under CSIS norms.",
+        "hi": "कोर्स की अवधि + 6 माह या नौकरी मिलने के 1 वर्ष बाद तक (जो भी पहले हो)। मोरेटोरियम के दौरान ब्याज नहीं जुड़ता।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 12, "max": 96 },
+      "repaymentFrequency": {
+        "en": "Monthly EMI payments over a maximum of 8 years after the moratorium period.",
+        "hi": "मोरेटोरियम अवधि समाप्त होने के बाद अधिकतम 8 वर्षों में मासिक ईएमआई भुगतान।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "No charges for early repayment.",
+        "hi": "समय पूर्व भुगतान करने पर कोई शुल्क नहीं।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "Student & Guardian KYC", "hi": "छात्र एवं अभिभावक केवाईसी" },
+        "items": [
+          {
+            "name": { "en": "Student Aadhaar & PAN Card", "hi": "छात्र का आधार एवं पैन कार्ड" },
+            "description": { "en": "Identity proof of student and co-borrower parent", "hi": "छात्र और सह-उधारकर्ता अभिभावक का पहचान प्रमाण" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Caste Certificate (SC)", "hi": "जाति प्रमाण पत्र (SC)" },
+            "description": { "en": "Valid SC certificate in the name of the student", "hi": "छात्र के नाम पर वैध अनुसूचित जाति प्रमाण पत्र" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Family Income Certificate", "hi": "पारिवारिक आय प्रमाण पत्र" },
+            "description": { "en": "Annual family income not exceeding ₹5,00,000", "hi": "वार्षिक पारिवारिक आय ₹5,00,000 से अधिक न हो" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Academic Records & Admission", "hi": "शैक्षणिक रिकॉर्ड एवं प्रवेश प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Admission Offer Letter / Allotment Slip", "hi": "प्रवेश पत्र / सीट आवंटन पर्ची" },
+            "description": { "en": "Official letter from recognized college / university", "hi": "मान्यता प्राप्त कॉलेज / विश्वविद्यालय से आधिकारिक पत्र" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Fee Structure Breakdown", "hi": "शुल्क संरचना विवरण (फीस ब्रेकअप)" },
+            "description": { "en": "Certified fee schedule from institution registrar", "hi": "संस्थान के कुलसचिव द्वारा प्रमाणित फीस शेड्यूल" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Mark sheets (10th, 12th / Graduation)", "hi": "अंकतालिकाएं (10वीं, 12वीं / स्नातक)" },
+            "description": { "en": "All prior qualifying examination mark sheets", "hi": "सभी पूर्व योग्यता परीक्षा अंकतालिकाएं" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Foreign Visa & I-20 (For Overseas)", "hi": "विदेशी वीजा और आई-20 (विदेश अध्ययन हेतु)" },
+            "description": { "en": "Applicable for foreign education applicants", "hi": "विदेश में शिक्षा के लिए आवेदन करने वालों हेतु" },
+            "mandatory": false
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB"],
+      "description": {
+        "en": "Offered through State Channelizing Agencies and designated public sector banks participating in the Vidya Lakshmi / NSFDC portal.",
+        "hi": "राज्य चैनेलाइजिंग एजेंसियों और विद्या लक्ष्मी / एनएसएफडीसी पोर्टल पर पंजीकृत राष्ट्रीयकृत बैंकों के माध्यम से उपलब्ध।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Secure College Admission", "hi": "कॉलेज में प्रवेश सुनिश्चित करें" },
+        "description": {
+          "en": "Obtain confirmed admission letter and official institutional fee structure break-up.",
+          "hi": "पुष्ट प्रवेश पत्र और आधिकारिक संस्थान की शुल्क संरचना प्राप्त करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Submit Application to SCA/Bank", "hi": "SCA या बैंक में आवेदन जमा करें" },
+        "description": {
+          "en": "Apply through the State SC Corporation office or partner bank branch with academic certificates.",
+          "hi": "शैक्षणिक प्रमाण पत्रों के साथ राज्य एससी निगम कार्यालय या भागीदार बैंक शाखा में आवेदन करें।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Verification of Institution & Merits", "hi": "संस्थान एवं योग्यता का सत्यापन" },
+        "description": {
+          "en": "Channel partner verifies university accreditation, course legitimacy, and student eligibility.",
+          "hi": "चैनल पार्टनर विश्वविद्यालय की मान्यता, पाठ्यक्रम और छात्र की पात्रता की पुष्टि करता है।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Sanction Letter Issuance", "hi": "स्वीकृति पत्र जारी करना" },
+        "description": {
+          "en": "Execution of loan agreement jointly with student and parent/guardian as co-obligor.",
+          "hi": "छात्र और माता-पिता/अभिभावक द्वारा सह-उधारकर्ता के रूप में ऋण समझौते का निष्पादन।"
+        }
+      },
+      {
+        "stepNumber": 5,
+        "title": { "en": "Direct Tuition Fee Remittance", "hi": "संस्थान को प्रत्यक्ष शिक्षण शुल्क भुगतान" },
+        "description": {
+          "en": "Tuition fees are remitted directly to the college/university semester-wise via RTGS/NEFT.",
+          "hi": "शिक्षण शुल्क आरटीजीएस/नेफ्ट के माध्यम से कॉलेज/विश्वविद्यालय को सीधे सेमेस्टर-वार भेजा जाता है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "All loan amounts and rate discounts are governed by the NSFDC ELS framework. Disbursement depends on continuous academic progress and admission validity in accredited institutions.",
+      "hi": "सभी ऋण राशियां और ब्याज दर छूट एनएसएफडीसी ईएलएस ढांचे द्वारा शासित हैं। ऋण वितरण निरंतर शैक्षणिक प्रगति और मान्यता प्राप्त संस्थानों में प्रवेश की वैधता पर निर्भर करता है।"
+    }
   },
   {
     "id": "mahila-samriddhi",
@@ -137,7 +806,198 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/mahila-samriddhi-yojana",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "Mahila Samriddhi Yojana (MSY) is a dedicated micro-finance initiative tailored specifically for women belonging to Scheduled Castes, providing deeply concessional funding up to ₹1.40 Lakh with up to 95% project coverage.",
+      "hi": "महिला समृद्धि योजना (एमएसवाई) विशेष रूप से अनुसूचित जाति की महिलाओं के लिए तैयार की गई एक समर्पित सूक्ष्म वित्त पहल है, जो 95% तक परियोजना कवरेज के साथ ₹1.40 लाख तक अत्यधिक रियायती वित्तपोषण प्रदान करती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "Individual SC women entrepreneurs seeking micro-business self-employment.",
+        "hi": "स्वरोज़गार हेतु सूक्ष्म व्यवसाय शुरू करने वाली व्यक्तिगत अनुसूचित जाति की महिला उद्यमी।"
+      },
+      {
+        "en": "Women Self-Help Groups (SHGs) and joint liability groups with SC majority.",
+        "hi": "अनुसूचित जाति बहुल महिला स्वयं सहायता समूह (SHG) और संयुक्त देयता समूह।"
+      },
+      {
+        "en": "Artisans, garment workers, food processing collectives, and beauty service providers.",
+        "hi": "महिला कारीगर, परिधान निर्माता, खाद्य प्रसंस्करण समूह और ब्यूटी सेवा प्रदाता।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) woman applicant",
+        "hi": "प्रमाणित अनुसूचित जाति (SC) की महिला आवेदक"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 60 },
+      "gender": {
+        "en": "Exclusively for Women applicants",
+        "hi": "केवल महिला आवेदकों के लिए"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "student", "other"],
+      "educationDescription": {
+        "en": "No formal academic prerequisite required. Basic trade skill or vocational training is helpful.",
+        "hi": "कोई औपचारिक शैक्षणिक योग्यता अनिवार्य नहीं। बुनियादी व्यावसायिक हुनर या प्रशिक्षण सहायक।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Applicant should not have availed overlapping micro-credit defaults.",
+          "hi": "आवेदक पर किसी अन्य सूक्ष्म ऋण का बकाया या डिफ़ॉल्ट नहीं होना चाहिए।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 95,
+      "promoterContributionPct": 5,
+      "fundingPattern": {
+        "en": "NSFDC funds 95% of project cost; Beneficiary contributes only 5%.",
+        "hi": "एनएसएफडीसी परियोजना लागत का 95% तक वित्तपोषित करता है; लाभार्थी का अंशदान केवल 5% है।"
+      },
+      "subsidyAvailable": false,
+      "subsidyDetails": {
+        "en": "State women development corporation subsidies may be integrated if applicable.",
+        "hi": "राज्य महिला विकास निगम की अनुदान योजनाओं को लागू होने पर जोड़ा जा सकता है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 4.0,
+      "max": 6.0,
+      "rateDescription": {
+        "en": "Super-concessional 4.0% per annum for the woman beneficiary (SCA lends at 1.0% to 2.0%).",
+        "hi": "महिला लाभार्थी के लिए केवल 4.0% प्रति वर्ष की अत्यधिक रियायती ब्याज दर।"
+      },
+      "concessions": {
+        "en": "Lowest interest tier among all national welfare corporation schemes.",
+        "hi": "सभी राष्ट्रीय कल्याण निगम योजनाओं में सबसे कम ब्याज दर श्रेणी।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% incentive rebate on flawless quarterly track record.",
+          "hi": "नियमित त्रैमासिक भुगतान पर 0.5% की अतिरिक्त प्रोत्साहन छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 10000,
+      "maxAmount": 140000,
+      "unitCostLimit": {
+        "en": "Up to ₹1,40,000 per individual woman; Up to ₹14.00 Lakh for a 10-woman SHG unit.",
+        "hi": "प्रति व्यक्तिगत महिला ₹1,40,000 तक; 10 महिलाओं के एसएचजी समूह के लिए ₹14.00 लाख तक।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Sewing machines, embroidery units, beauty parlour kits, grocery store stock, dairy animals.",
+          "hi": "सिलाई मशीन, कढ़ाई उपकरण, ब्यूटी पार्लर किट, किराना दुकान स्टॉक, दुधारू पशु।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 3,
+      "maxMonths": 6,
+      "interestAccrues": false,
+      "policyDescription": {
+        "en": "3 to 6 months repayment pause. Interest-free during moratorium pause.",
+        "hi": "3 से 6 महीने की पुनर्भुगतान छूट। मोरेटोरियम अवधि के दौरान ब्याज मुक्त।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 12, "max": 48 },
+      "repaymentFrequency": {
+        "en": "Quarterly or monthly installments over up to 4 years.",
+        "hi": "4 वर्षों तक की अवधि में त्रैमासिक या मासिक किस्तें।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "Zero charges for pre-closing the loan account.",
+        "hi": "ऋण खाता समय पूर्व बंद करने पर शून्य शुल्क।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "Identity & Caste", "hi": "पहचान एवं जाति" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar Card", "hi": "आधार कार्ड" },
+            "description": { "en": "Mandatory for direct DBT transfer", "hi": "प्रत्यक्ष डीबीटी अंतरण के लिए अनिवार्य" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "SC Caste Certificate", "hi": "अनुसूचित जाति प्रमाण पत्र" },
+            "description": { "en": "In applicant's name or father/husband with gazetted record", "hi": "आवेदक के नाम पर अथवा राजपत्रित अभिलेख सहित" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Income & Bank Details", "hi": "आय एवं बैंक विवरण" },
+        "items": [
+          {
+            "name": { "en": "Income Certificate / BPL / Antyodaya Card", "hi": "आय प्रमाण पत्र / बीपीएल / अंत्योदय कार्ड" },
+            "description": { "en": "Proof of annual income within ₹5 Lakh", "hi": "₹5 लाख के भीतर वार्षिक आय का प्रमाण" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Bank Passbook Copy", "hi": "बैंक पासबुक की प्रति" },
+            "description": { "en": "Single or joint SHG bank account with IFSC code", "hi": "आईएफएससी कोड सहित एकल या संयुक्त एसएचजी बैंक खाता" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Trade Quotation / Activity Plan", "hi": "व्यापार कोटेशन / गतिविधि योजना" },
+            "description": { "en": "Estimated cost of equipment or inventory", "hi": "उपकरण या इन्वेंट्री की अनुमानित लागत" },
+            "mandatory": true
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB", "NBFC_MFI"],
+      "description": {
+        "en": "Administered primarily through State Women Development Corporations, SCAs, Rural Banks, and specialized MFIs.",
+        "hi": "मुख्य रूप से राज्य महिला विकास निगमों, एससीए, ग्रामीण बैंकों और विशेष एमएफआई के माध्यम से संचालित।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Select Trade Activity", "hi": "व्यावसायिक गतिविधि का चयन करें" },
+        "description": {
+          "en": "Choose suitable livelihood activity (tailoring, food processing, kiosk) and obtain seller quote.",
+          "hi": "उपयुक्त आजीविका गतिविधि (सिलाई, खाद्य प्रसंस्करण, कियोस्क) चुनें और विक्रेता कोटेशन प्राप्त करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Submit MSY Form to Local SCA/MFI", "hi": "स्थानीय SCA/MFI में एमएसवाई फॉर्म जमा करें" },
+        "description": {
+          "en": "Visit district SC corporation or partner MFI with basic documents.",
+          "hi": "बुनियादी दस्तावेजों के साथ जिला एससी निगम या भागीदार एमएफआई कार्यालय जाएं।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Quick Eligibility Verification", "hi": "त्वरित पात्रता सत्यापन" },
+        "description": {
+          "en": "Simplified desk assessment and rapid on-ground verification within 7-14 days.",
+          "hi": "7-14 दिनों के भीतर सरलीकृत मूल्यांकन और त्वरित सत्यापन।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Direct DBT Loan Release", "hi": "प्रत्यक्ष डीबीटी ऋण जारी" },
+        "description": {
+          "en": "Funds deposited directly into the woman beneficiary's bank account with immediate moratorium.",
+          "hi": "तत्काल मोरेटोरियम के साथ महिला लाभार्थी के बैंक खाते में सीधे धनराशि जमा की जाती है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "Subsidized 4% interest rate applies strictly to eligible Scheduled Caste women beneficiaries under NSFDC MSY operational rules.",
+      "hi": "रियायती 4% ब्याज दर एनएसएफडीसी एमएसवाई नियमों के तहत केवल पात्र अनुसूचित जाति की महिला लाभार्थियों पर लागू होती है।"
+    }
   },
   {
     "id": "swachhta-udyami",
@@ -172,7 +1032,193 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/swachhta-udyami-yojana",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "Swachhta Udyami Yojana (SUY) aims to eliminate manual scavenging and promote total mechanization of cleaning operations by providing concessional financial assistance up to ₹25 Lakh to Safai Karamcharis and SC beneficiaries to own modern sanitation machinery and automated desludging vehicles.",
+      "hi": "स्वच्छता उद्यमी योजना (SUY) का उद्देश्य मैला ढोने की प्रथा को समाप्त करना और आधुनिक स्वच्छता मशीनरी व स्वचालित डीस्लजिंग वाहनों की खरीद हेतु ₹25 लाख तक वित्तीय सहायता देकर सफाई कर्मचारियों व अनुसूचित जाति के लाभार्थियों को स्वच्छता उद्यमी बनाना है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "Safai Karamcharis, manual scavengers (identified under MS Act), and their dependents.",
+        "hi": "सफाई कर्मचारी, मैनुअल स्कैवेंजर्स (एमएस अधिनियम के तहत चिन्हित) और उनके आश्रित।"
+      },
+      {
+        "en": "Scheduled Caste individuals and registered sanitation worker cooperatives.",
+        "hi": "अनुसूचित जाति के व्यक्ति और पंजीकृत स्वच्छता कर्मचारी सहकारी समितियां।"
+      },
+      {
+        "en": "Urban local body sanitation concessionaires and waste collection groups.",
+        "hi": "शहरी स्थानीय निकाय स्वच्छता रियायतग्राही और अपशिष्ट संग्रह समूह।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Safai Karamchari / Manual Scavenger / Scheduled Caste",
+        "hi": "सफाई कर्मचारी / मैनुअल स्कैवेंजर / अनुसूचित जाति"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 60 },
+      "gender": {
+        "en": "All genders",
+        "hi": "सभी लिंग"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "other"],
+      "educationDescription": {
+        "en": "No minimum qualification. Commercial driving license required for vehicle-mounted machinery.",
+        "hi": "कोई न्यूनतम योग्यता नहीं। वाहन चालित मशीनरी के लिए वैध वाणिज्यिक ड्राइविंग लाइसेंस आवश्यक।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Identification card from Municipal Body / Cantonment / Revenue Authority as sanitation worker.",
+          "hi": "सफाई कर्मचारी के रूप में नगर निगम / छावनी बोर्ड / राजस्व प्राधिकरण से जारी पहचान पत्र।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 10,
+      "fundingPattern": {
+        "en": "NSFDC/NSKFDC funds 90% of unit cost; Beneficiary / SCA contributes 10%.",
+        "hi": "एनएसएफडीसी/एनएसकेएफडीसी इकाई लागत का 90% तक वित्तपोषित करता है; लाभार्थी/एससीए 10% योगदान देता है।"
+      },
+      "subsidyAvailable": true,
+      "subsidyDetails": {
+        "en": "Capital subsidy up to ₹5.00 Lakh (up to 50% for identified manual scavengers under NAMASTE / SRMS scheme).",
+        "hi": "नमस्ते / एसआरएमएस योजना के तहत चिन्हित मैनुअल स्कैवेंजर्स के लिए ₹5.00 लाख तक (50% तक) पूंजीगत अनुदान उपलब्ध।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 4.0,
+      "max": 6.0,
+      "rateDescription": {
+        "en": "Extremely concessional interest rate of 4.0% p.a. for sanitation equipment procurement.",
+        "hi": "स्वच्छता उपकरण खरीद के लिए केवल 4.0% प्रति वर्ष की बेहद रियायती ब्याज दर।"
+      },
+      "concessions": {
+        "en": "Special interest subvention support under Ministry of Social Justice & Empowerment guidelines.",
+        "hi": "सामाजिक न्याय एवं अधिकारिता मंत्रालय के दिशानिर्देशों के तहत विशेष ब्याज सबवेंशन सहायता।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% prompt servicing rebate.",
+          "hi": "समय पर भुगतान पर 0.5% की अतिरिक्त छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 500000,
+      "maxAmount": 2500000,
+      "unitCostLimit": {
+        "en": "Up to ₹25.00 Lakh for suction tankers, jetting machines, and solid waste collection loaders.",
+        "hi": "सक्शन टैंकर, जेटिंग मशीन और ठोस कचरा संग्रहण लोडर के लिए ₹25.00 लाख तक।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Truck-mounted sewer suction & jetting units, motorized sweeping machines, mechanized garbage tippers.",
+          "hi": "ट्रक-माउंटेड सीवर सक्शन और जेटिंग यूनिट, मोटराइज्ड स्वीपिंग मशीन, कचरा टिपर।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 6,
+      "maxMonths": 12,
+      "interestAccrues": false,
+      "policyDescription": {
+        "en": "6 to 12 months moratorium until vehicle delivery and municipal contract commencement. Interest-free during pause.",
+        "hi": "वाहन आपूर्ति और नगर निगम अनुबंध शुरू होने तक 6 से 12 महीने का मोरेटोरियम। इस अवधि में कोई ब्याज नहीं।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 24, "max": 84 },
+      "repaymentFrequency": {
+        "en": "Monthly or quarterly installments over up to 7 years.",
+        "hi": "7 वर्षों तक की अवधि में मासिक या त्रैमासिक किस्तें।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "No foreclosure charges.",
+        "hi": "कोई अतिरिक्त प्री-क्लोज़र शुल्क नहीं।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "Beneficiary KYC & Sanitation Certificate", "hi": "लाभार्थी केवाईसी एवं सफाई कर्मी प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar Card", "hi": "आधार कार्ड" },
+            "description": { "en": "Identity and residential address proof", "hi": "पहचान और निवास प्रमाण पत्र" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Safai Karamchari ID Card / Survey Slip", "hi": "सफाई कर्मचारी पहचान पत्र / सर्वे पर्ची" },
+            "description": { "en": "Proof of occupation from ULB or District Administration", "hi": "शहरी स्थानीय निकाय या जिला प्रशासन से जारी प्रमाण" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Vehicle & Machine Quotations", "hi": "वाहन एवं मशीनरी कोटेशन" },
+        "items": [
+          {
+            "name": { "en": "Authorized OEM Vehicle & Machine Proforma", "hi": "अधिकृत ओईएम वाहन व मशीनरी प्रोफार्मा इनवॉइस" },
+            "description": { "en": "Quotations for ARAI / CPCB approved sanitation vehicles", "hi": "एआरएआई / सीपीसीबी अनुमोदित स्वच्छता वाहनों के कोटेशन" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Commercial Driving License", "hi": "वाणिज्यिक ड्राइविंग लाइसेंस" },
+            "description": { "en": "Heavy/Light motor vehicle license of applicant or partner", "hi": "आवेदक या भागीदार का भारी/हल्का मोटर वाहन लाइसेंस" },
+            "mandatory": true
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB"],
+      "description": {
+        "en": "Implemented jointly by NSKFDC, State SC Corporations, and participating Public Sector Banks.",
+        "hi": "एनएसकेएफडीसी, राज्य एससी निगमों और भाग लेने वाले राष्ट्रीयकृत बैंकों द्वारा संयुक्त रूप से क्रियान्वित।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Obtain Vehicle Equipment Quotation", "hi": "वाहन उपकरण कोटेशन प्राप्त करें" },
+        "description": {
+          "en": "Select automated sewer jetting/suction vehicle and get official proforma invoice from manufacturer.",
+          "hi": "स्वचालित सीवर जेटिंग/सक्शन वाहन चुनें और निर्माता से आधिकारिक प्रोफार्मा इनवॉइस प्राप्त करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Submit Application to State SC Corporation", "hi": "राज्य एससी निगम में आवेदन जमा करें" },
+        "description": {
+          "en": "Submit application along with municipal sanitation worker certificate.",
+          "hi": "नगरपालिका सफाई कर्मचारी प्रमाण पत्र के साथ आवेदन जमा करें।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Sanction & Subsidy Credit", "hi": "स्वीकृति एवं अनुदान क्रेडिट" },
+        "description": {
+          "en": "Sanction approved and upfront capital subsidy linked through NSKFDC.",
+          "hi": "स्वीकृति प्रदान की जाती है और एनएसकेएफडीसी के माध्यम से अग्रिम पूंजीगत अनुदान लिंक किया जाता है।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Delivery & ULB Empanelment", "hi": "वाहन डिलीवरी एवं नगर निकाय अनुबंध" },
+        "description": {
+          "en": "Sanitation vehicle delivered directly to applicant and tied up with local municipality sanitation contracts.",
+          "hi": "स्वच्छता वाहन सीधे आवेदक को दिया जाता है और स्थानीय नगर पालिका अनुबंधों से जोड़ा जाता है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "Subsidies and concessional lending parameters are subject to the Swachhta Udyami Yojana (SUY) operational manual by NSKFDC/NSFDC.",
+      "hi": "अनुदान और रियायती ऋण पैरामीटर एनएसकेएफडीसी/एनएसएफडीसी की स्वच्छता उद्यमी योजना (एसयूवाई) संचालन नियमावली के अधीन हैं।"
+    }
   },
   {
     "id": "green-business",
@@ -207,7 +1253,193 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://nsfdc.nic.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://nsfdc.nic.in/en/green-business-scheme",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "The Green Business Scheme (GBS) provides financial support up to ₹30 Lakh at concessional interest rates (5% to 8% p.a.) for Scheduled Caste individuals to launch clean-energy, eco-friendly, and climate-positive enterprises such as solar pump installation, e-mobility, polyhouse farming, and bio-waste composting.",
+      "hi": "हरित व्यवसाय योजना (GBS) अनुसूचित जाति के व्यक्तियों को स्वच्छ ऊर्जा, पर्यावरण-अनुकूल और जलवायु-सकारात्मक उद्यमों जैसे सोलर पंप, ई-वाहन, पॉलीहाउस खेती और जैविक खाद संयंत्र स्थापित करने के लिए 5% से 8% प्रति वर्ष की रियायती ब्याज दर पर ₹30 लाख तक वित्तीय सहायता प्रदान करती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "SC farmers, agritech entrepreneurs, and small business operators investing in green infrastructure.",
+        "hi": "हरित बुनियादी ढांचे में निवेश करने वाले अनुसूचित जाति के किसान, एग्रीटेक उद्यमी और छोटे व्यवसाय संचालक।"
+      },
+      {
+        "en": "Transport drivers transitioning to electric battery three-wheelers/four-wheelers.",
+        "hi": "इलेक्ट्रिक बैटरी तिपहिया/चार पहिया वाहनों की ओर रुख करने वाले परिवहन चालक।"
+      },
+      {
+        "en": "SC cooperatives engaged in waste recycling, organic certification, and renewable power setup.",
+        "hi": "कचरा पुनर्चक्रण, जैविक प्रमाणीकरण और नवीकरणीय ऊर्जा स्थापना में लगे अनुसूचित जाति सहकारी समूह।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) certificate holder",
+        "hi": "अनुसूचित जाति (SC) प्रमाण पत्र धारक"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 60 },
+      "gender": {
+        "en": "All genders",
+        "hi": "सभी लिंग"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "postgraduate", "other"],
+      "educationDescription": {
+        "en": "Prior training or basic knowledge in solar, farming, or electrical systems is advantageous.",
+        "hi": "सौर ऊर्जा, कृषि या इलेक्ट्रिकल प्रणालियों में पूर्व प्रशिक्षण या बुनियादी ज्ञान लाभकारी है।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Land ownership or valid lease agreement for solar/agricultural setups.",
+          "hi": "सोलर/कृषि सेटअप के लिए भूमि स्वामित्व या वैध लीज समझौता।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 10,
+      "fundingPattern": {
+        "en": "NSFDC funds up to 90% of the project cost; Beneficiary contributes 10%.",
+        "hi": "एनएसएफडीसी परियोजना लागत का 90% तक वित्तपोषित करता है; लाभार्थी का अंशदान 10% है।"
+      },
+      "subsidyAvailable": true,
+      "subsidyDetails": {
+        "en": "Convergence with MNRE Solar Subsidies and PM-KUSUM scheme subsidies permitted.",
+        "hi": "एमएनआरई सोलर सब्सिडी और पीएम-कुसुम योजना के अनुदान के साथ अभिसरण अनुमत है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 5.0,
+      "max": 8.0,
+      "rateDescription": {
+        "en": "Concessional rate between 5.0% and 8.0% p.a. for green business assets.",
+        "hi": "हरित व्यापार संपत्तियों के लिए 5.0% से 8.0% प्रति वर्ष के बीच रियायती ब्याज दर।"
+      },
+      "concessions": {
+        "en": "1.0% interest rebate for solar micro-grid and EV charging infrastructure units.",
+        "hi": "सौर माइक्रोग्रिड और ईवी चार्जिंग इंफ्रास्ट्रक्चर इकाइयों के लिए 1.0% अतिरिक्त ब्याज छूट।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% timely installment servicing rebate.",
+          "hi": "समय पर किस्त भुगतान पर 0.5% की छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 100000,
+      "maxAmount": 3000000,
+      "unitCostLimit": {
+        "en": "Up to ₹30.00 Lakh for solar polyhouse, rooftop systems, and e-vehicle fleets.",
+        "hi": "सोलर पॉलीहाउस, रूफटॉप सिस्टम और ई-वाहन बेड़े के लिए ₹30.00 लाख तक।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Solar panels, inverters, battery packs, EV chassis, greenhouse poly-tunnels, vermicompost sheds.",
+          "hi": "सोलर पैनल, इन्वर्टर, बैटरी पैक, ईवी चेसिस, ग्रीनहाउस पॉली-टनल, वर्मीकंपोस्ट शेड।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 6,
+      "maxMonths": 12,
+      "interestAccrues": true,
+      "policyDescription": {
+        "en": "6 to 12 months moratorium until installation, grid sync, or crop harvest cycle. Simple interest accrues during moratorium.",
+        "hi": "स्थापना, ग्रिड सिंक या फसल कटाई चक्र तक 6 से 12 महीने का मोरेटोरियम। इस दौरान साधारण ब्याज जुड़ता है।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 36, "max": 120 },
+      "repaymentFrequency": {
+        "en": "Quarterly installments over 3 to 10 years including moratorium.",
+        "hi": "मोरेटोरियम सहित 3 से 10 वर्षों में त्रैमासिक किस्तों में पुनर्भुगतान।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "Zero foreclosure charges.",
+        "hi": "शून्य प्री-क्लोज़र शुल्क।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "KYC & Identity", "hi": "केवाईसी एवं पहचान" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar & PAN Card", "hi": "आधार एवं पैन कार्ड" },
+            "description": { "en": "Mandatory identity documents", "hi": "अनिवार्य पहचान दस्तावेज" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Scheduled Caste (SC) Certificate", "hi": "अनुसूचित जाति (SC) प्रमाण पत्र" },
+            "description": { "en": "Issued by Competent Revenue Authority", "hi": "सक्षम राजस्व अधिकारी द्वारा जारी" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Technical & Land Proofs", "hi": "तकनीकी एवं भूमि प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Land 7/12 Extract / Khasra or Lease Agreement", "hi": "भूमि 7/12 खसरा / खतौनी या लीज डीड" },
+            "description": { "en": "Proof of premises for polyhouse/solar setup", "hi": "पॉलीहाउस/सोलर स्थापना हेतु भूमि का स्वामित्व प्रमाण" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "OEM Technical Quotation & Warranty Certificate", "hi": "ओईएम तकनीकी कोटेशन एवं वारंटी प्रमाण पत्र" },
+            "description": { "en": "Certified quote from BIS/MNRE approved manufacturer", "hi": "बीआईएस/एमएनआरई अनुमोदित निर्माता से प्रमाणित कोटेशन" },
+            "mandatory": true
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "PSB", "RRB"],
+      "description": {
+        "en": "Disbursed via State Channelizing Agencies, Rural Gramin Banks, and Nationalized Banks.",
+        "hi": "राज्य चैनेलाइजिंग एजेंसियों, ग्रामीण बैंकों और राष्ट्रीयकृत बैंकों के माध्यम से वितरित।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Technical Site Assessment", "hi": "तकनीकी साइट मूल्यांकन" },
+        "description": {
+          "en": "Prepare project proposal with solar vendor or agricultural expert.",
+          "hi": "सोलर वेंडर या कृषि विशेषज्ञ के साथ परियोजना प्रस्ताव तैयार करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Submit Application to SCA/Bank", "hi": "SCA/बैंक में आवेदन करें" },
+        "description": {
+          "en": "Submit proposal with equipment quotes and land records.",
+          "hi": "उपकरण कोटेशन और भूमि रिकॉर्ड के साथ प्रस्ताव जमा करें।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Appraisal & Sanction", "hi": "मूल्यांकन एवं स्वीकृति" },
+        "description": {
+          "en": "Bank / SCA sanctions loan with green subsidy integration.",
+          "hi": "बैंक/SCA हरित सब्सिडी एकीकरण के साथ ऋण स्वीकृत करता है।"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": { "en": "Asset Installation & Disbursement", "hi": "परिसंपत्ति स्थापना एवं ऋण वितरण" },
+        "description": {
+          "en": "Direct payment released to vendor on certified installation.",
+          "hi": "प्रमाणित स्थापना के बाद विक्रेता को सीधे भुगतान जारी किया जाता है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "Green Business Scheme parameters are governed by NSFDC environmental finance norms and MNRE technical compliances.",
+      "hi": "हरित व्यवसाय योजना के पैरामीटर एनएसएफडीसी पर्यावरण वित्त मानदंडों और एमएनआरई तकनीकी अनुपालन द्वारा शासित हैं।"
+    }
   },
   {
     "id": "pm-daksh-loan",
@@ -242,6 +1474,185 @@
     "source": "seed",
     "verified": true,
     "officialUrl": "https://pmdaksh.dosje.gov.in",
-    "lastUpdated": "2026-08-01"
+    "officialSourceUrl": "https://pmdaksh.dosje.gov.in/scheme-guidelines",
+    "lastUpdated": "2026-08-01",
+    "sourceLastUpdated": "2026-08-01",
+    "overview": {
+      "en": "The PM-DAKSH (Pradhan Mantri Dakshta Aur Kushalta Sampann Hitgrahi) Scheme connects skill training with credit linkage up to ₹1.50 Lakh, enabling youth and traditional artisans from SC communities to acquire modern tools and start micro-enterprises immediately upon completing certified training.",
+      "hi": "पीएम-दक्ष योजना कौशल प्रशिक्षण को ₹1.50 लाख तक के ऋण से जोड़ती है, जिससे अनुसूचित जाति के युवाओं और पारंपरिक कारीगरों को आधुनिक टूलकिट खरीदने और प्रमाणित प्रशिक्षण पूरा करते ही सूक्ष्म उद्यम शुरू करने में मदद मिलती है।"
+    },
+    "whoCanApply": [
+      {
+        "en": "Candidates who have completed or are undergoing skill training under PM-DAKSH or NSDC portals.",
+        "hi": "पीएम-दक्ष या एनएसडीसी पोर्टल के तहत कौशल प्रशिक्षण पूरा करने वाले या प्रशिक्षण ले रहे उम्मीदवार।"
+      },
+      {
+        "en": "Young artisans, electricians, plumbers, CNC operators, mobile repair technicians, and tailors from SC communities.",
+        "hi": "अनुसूचित जाति समुदाय के युवा कारीगर, इलेक्ट्रीशियन, प्लंबर, सीएनसी ऑपरेटर, मोबाइल रिपेयर तकनीशियन और दर्जी।"
+      }
+    ],
+    "eligibilityCriteria": {
+      "targetCaste": {
+        "en": "Scheduled Caste (SC) / OBC / De-notified Tribes",
+        "hi": "अनुसूचित जाति (SC) / अन्य पिछड़ा वर्ग / विमुक्त जनजातियाँ"
+      },
+      "incomeCeiling": 500000,
+      "ageRange": { "min": 18, "max": 45 },
+      "gender": {
+        "en": "All genders",
+        "hi": "सभी लिंग"
+      },
+      "eligibleEducation": ["below_twelfth", "twelfth", "graduate", "student", "other"],
+      "educationDescription": {
+        "en": "PM-DAKSH / NSDC Training Certificate or enrolment ID required.",
+        "hi": "पीएम-दक्ष / एनएसडीसी प्रशिक्षण प्रमाण पत्र या नामांकन आईडी अनिवार्य।"
+      },
+      "otherRequirements": [
+        {
+          "en": "Valid certificate from an accredited training institute.",
+          "hi": "मान्यता प्राप्त प्रशिक्षण संस्थान से वैध प्रमाण पत्र।"
+        }
+      ]
+    },
+    "financialAssistance": {
+      "coverageMaxPct": 90,
+      "promoterContributionPct": 10,
+      "fundingPattern": {
+        "en": "90% covered by Corporation/Bank loan; 10% trainee margin.",
+        "hi": "90% निगम/बैंक ऋण द्वारा वहन; 10% प्रशिक्षु का अंशदान।"
+      },
+      "subsidyAvailable": true,
+      "subsidyDetails": {
+        "en": "Free training stipend + tool kit allowance provided under central PM-DAKSH budget.",
+        "hi": "केंद्रीय पीएम-दक्ष बजट के तहत मुफ्त प्रशिक्षण वजीफा + टूलकिट भत्ता प्रदान किया जाता है।"
+      }
+    },
+    "interestRateDetails": {
+      "min": 5.0,
+      "max": 7.5,
+      "rateDescription": {
+        "en": "Subsidized 5.0% to 7.5% per annum interest rate.",
+        "hi": "5.0% से 7.5% प्रति वर्ष की रियायती ब्याज दर।"
+      },
+      "concessions": {
+        "en": "0.5% interest rebate for certified top-grade course finishers.",
+        "hi": "प्रमाणित उच्च-ग्रेड पाठ्यक्रम पूरा करने वालों के लिए 0.5% ब्याज छूट।"
+      },
+      "rebates": [
+        {
+          "en": "0.5% rebate on regular monthly repayment.",
+          "hi": "नियमित मासिक भुगतान पर 0.5% की छूट।"
+        }
+      ]
+    },
+    "loanLimits": {
+      "minAmount": 10000,
+      "maxAmount": 150000,
+      "unitCostLimit": {
+        "en": "Up to ₹1,50,000 for advanced professional toolkits and trade setups.",
+        "hi": "उन्नत पेशेवर टूलकिट और व्यापार सेटअप के लिए ₹1,50,000 तक।"
+      },
+      "allowableExpenditure": [
+        {
+          "en": "Diagnostic tools, power machinery, digital gadgets, initial workshop rent.",
+          "hi": "डायग्नोस्टिक उपकरण, पावर मशीनरी, डिजिटल गैजेट्स, प्रारंभिक कार्यशाला किराया।"
+        }
+      ]
+    },
+    "moratoriumDetails": {
+      "minMonths": 3,
+      "maxMonths": 6,
+      "interestAccrues": false,
+      "policyDescription": {
+        "en": "3 to 6 months moratorium to establish client base. Interest-free during pause.",
+        "hi": "ग्राहकों का नेटवर्क स्थापित करने के लिए 3 से 6 महीने का मोरेटोरियम। इस दौरान कोई ब्याज नहीं।"
+      }
+    },
+    "repaymentTerms": {
+      "tenureRangeMonths": { "min": 12, "max": 36 },
+      "repaymentFrequency": {
+        "en": "Convenient monthly installments over 1 to 3 years.",
+        "hi": "1 से 3 वर्षों में सुविधाजनक मासिक किस्तें।"
+      },
+      "prepaymentPenalty": false,
+      "penaltyDescription": {
+        "en": "Zero penalty on pre-payment.",
+        "hi": "समय पूर्व भुगतान पर कोई पेनल्टी नहीं।"
+      }
+    },
+    "requiredDocumentsList": [
+      {
+        "category": { "en": "KYC & Training Certificate", "hi": "केवाईसी एवं प्रशिक्षण प्रमाण" },
+        "items": [
+          {
+            "name": { "en": "Aadhaar Card", "hi": "आधार कार्ड" },
+            "description": { "en": "Proof of identity", "hi": "पहचान का प्रमाण" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "PM-DAKSH Skill Certificate", "hi": "पीएम-दक्ष कौशल प्रमाण पत्र" },
+            "description": { "en": "Certificate from NSDC / Sector Skill Council", "hi": "एनएसडीसी / सेक्टर स्किल काउंसिल से प्राप्त प्रमाण पत्र" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Caste Certificate (SC)", "hi": "जाति प्रमाण पत्र (SC)" },
+            "description": { "en": "Issued by Competent Revenue Authority", "hi": "सक्षम राजस्व अधिकारी द्वारा जारी" },
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "category": { "en": "Bank & Toolkit Quotation", "hi": "बैंक एवं टूलकिट कोटेशन" },
+        "items": [
+          {
+            "name": { "en": "Bank Passbook Copy", "hi": "बैंक पासबुक प्रति" },
+            "description": { "en": "Aadhaar-seeded bank account", "hi": "आधार-लिंक्ड बैंक खाता" },
+            "mandatory": true
+          },
+          {
+            "name": { "en": "Toolkit / Equipment Quotation", "hi": "टूलकिट / उपकरण कोटेशन" },
+            "description": { "en": "Proforma invoice for tools to be acquired", "hi": "खरीदे जाने वाले औजारों का प्रोफार्मा इनवॉइस" },
+            "mandatory": true
+          }
+        ]
+      }
+    ],
+    "channelPartnersInfo": {
+      "partnerTypes": ["SCA", "NBFC_MFI", "PSB"],
+      "description": {
+        "en": "Facilitated through PM-DAKSH training centers, State Corporations, and partner micro-lenders.",
+        "hi": "पीएम-दक्ष प्रशिक्षण केंद्रों, राज्य निगमों और भागीदार सूक्ष्म ऋणदाताओं के माध्यम से उपलब्ध।"
+      }
+    },
+    "applicationProcessSteps": [
+      {
+        "stepNumber": 1,
+        "title": { "en": "Complete PM-DAKSH Training", "hi": "पीएम-दक्ष प्रशिक्षण पूरा करें" },
+        "description": {
+          "en": "Enrol and graduate from approved skill course and collect certificate.",
+          "hi": "स्वीकृत कौशल पाठ्यक्रम में भाग लें और प्रमाण पत्र प्राप्त करें।"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": { "en": "Apply for Toolkit Assistance", "hi": "टूलकिट सहायता हेतु आवेदन करें" },
+        "description": {
+          "en": "Apply through PM-DAKSH portal or local SC corporation with toolkit proforma.",
+          "hi": "टूलकिट प्रोफार्मा के साथ पीएम-दक्ष पोर्टल या स्थानीय एससी निगम में आवेदन करें।"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": { "en": "Sanction & Toolkit Procurement", "hi": "स्वीकृति एवं टूलकिट खरीद" },
+        "description": {
+          "en": "Loan disbursed directly for tool purchase and micro-business launch.",
+          "hi": "टूलकिट खरीदने और व्यवसाय शुरू करने के लिए ऋण सीधे वितरित किया जाता है।"
+        }
+      }
+    ],
+    "disclaimerText": {
+      "en": "PM-DAKSH credit assistance is subject to certified course completion and standard MSJE/NSFDC operational guidelines.",
+      "hi": "पीएम-दक्ष ऋण सहायता प्रमाणित पाठ्यक्रम पूरा करने और सामाजिक न्याय मंत्रालय के परिचालन दिशानिर्देशों के अधीन है।"
+    }
   }
 ]

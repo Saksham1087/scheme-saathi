@@ -48,6 +48,75 @@ export interface SchemeFilterState {
   sortBy: SchemeSortOption
 }
 
+export interface EligibilityCriteriaDetails {
+  targetCaste?: LocalizedText
+  incomeCeiling?: number
+  ageRange?: { min: number; max?: number }
+  gender?: LocalizedText
+  eligibleEducation?: EducationStatus[]
+  educationDescription?: LocalizedText
+  otherRequirements?: LocalizedText[]
+}
+
+export interface FinancialAssistanceDetails {
+  coverageMaxPct: number
+  promoterContributionPct?: number
+  fundingPattern?: LocalizedText
+  subsidyAvailable?: boolean
+  subsidyDetails?: LocalizedText
+}
+
+export interface InterestRateDetails {
+  min: number
+  max: number
+  rateDescription?: LocalizedText
+  concessions?: LocalizedText
+  rebates?: LocalizedText[]
+}
+
+export interface LoanLimitsDetails {
+  minAmount?: number
+  maxAmount: number
+  unitCostLimit?: LocalizedText
+  allowableExpenditure?: LocalizedText[]
+}
+
+export interface MoratoriumDetails {
+  minMonths: number
+  maxMonths: number
+  interestAccrues: boolean
+  policyDescription?: LocalizedText
+}
+
+export interface RepaymentTermsDetails {
+  tenureRangeMonths: { min: number; max: number }
+  repaymentFrequency?: LocalizedText
+  prepaymentPenalty?: boolean
+  penaltyDescription?: LocalizedText
+}
+
+export interface DocumentChecklistItem {
+  name: LocalizedText
+  description?: LocalizedText
+  mandatory?: boolean
+}
+
+export interface DocumentCategoryGroup {
+  category: LocalizedText
+  items: DocumentChecklistItem[]
+}
+
+export interface ChannelPartnersDetails {
+  partnerTypes: PartnerType[]
+  description?: LocalizedText
+}
+
+export interface ApplicationStep {
+  stepNumber: number
+  title: LocalizedText
+  description: LocalizedText
+}
+
 export interface Scheme {
   id: string
   name: LocalizedText
@@ -78,6 +147,22 @@ export interface Scheme {
   verified?: boolean
   officialUrl?: string
   lastUpdated?: string
+
+  // 14 Standardized Section Details
+  overview?: LocalizedText
+  whoCanApply?: LocalizedText[]
+  eligibilityCriteria?: EligibilityCriteriaDetails
+  financialAssistance?: FinancialAssistanceDetails
+  interestRateDetails?: InterestRateDetails
+  loanLimits?: LoanLimitsDetails
+  moratoriumDetails?: MoratoriumDetails
+  repaymentTerms?: RepaymentTermsDetails
+  requiredDocumentsList?: DocumentCategoryGroup[]
+  channelPartnersInfo?: ChannelPartnersDetails
+  applicationProcessSteps?: ApplicationStep[]
+  officialSourceUrl?: string
+  sourceLastUpdated?: string
+  disclaimerText?: LocalizedText
 }
 
 export interface MatchInput {
