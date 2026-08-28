@@ -18,6 +18,23 @@ export interface ScoreBreakdown {
   state: number
 }
 
+export interface SchemeAlternative {
+  schemeId: string
+  schemeName: LocalizedText
+  schemeType: SchemeType
+  maxProjectCost: number
+  rateRange: { min: number; max: number }
+  reason: LocalizedText
+}
+
+export interface GapItem {
+  criterion: "income" | "category" | "purpose" | "cost" | "age" | "state" | string
+  userValue?: string | number
+  requiredValue?: string | number
+  explanation: LocalizedText
+  remedialAdvice?: LocalizedText
+}
+
 export interface Scheme {
   id: string
   name: LocalizedText

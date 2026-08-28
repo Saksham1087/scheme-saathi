@@ -206,6 +206,23 @@ export interface MatchReason {
   params?: Record<string, string | number>
 }
 
+export interface SchemeAlternative {
+  schemeId: string
+  schemeName: LocalizedText
+  schemeType: SchemeType
+  maxProjectCost: number
+  rateRange: { min: number; max: number }
+  reason: LocalizedText
+}
+
+export interface GapItem {
+  criterion: "income" | "category" | "purpose" | "cost" | "age" | "state" | string
+  userValue?: string | number
+  requiredValue?: string | number
+  explanation: LocalizedText
+  remedialAdvice?: LocalizedText
+}
+
 export interface SchemeMatch {
   schemeId: string
   schemeType: SchemeType
@@ -226,6 +243,11 @@ export interface SchemeMatch {
     interestAccrues: boolean
   }
   tenureRangeMonths: { min: number; max: number }
+  /** alternative schemes suggested when disqualified or sub-optimal */
+  alternativeSchemeIds?: string[]
+  alternativeSchemes?: SchemeAlternative[]
+  remedialAdvice?: LocalizedText[]
+  gapBreakdown?: GapItem[]
 }
 
 export interface MatchResponse {
