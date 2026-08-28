@@ -11,7 +11,9 @@ import {
   Sparkles,
   TriangleAlert,
   UserCheck,
+  Bookmark,
 } from "lucide-react"
+import { toast } from "sonner"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -27,6 +29,7 @@ import { distanceKm } from "@/lib/emi"
 import { calculatePartnerScore, getNavigationUrl, type PartnerMatchScore } from "@/lib/maps/scoring"
 import { type GeoPoint, PARTNER_TYPE_VISUALS } from "@/lib/maps/types"
 import { PartnerScoreBadge } from "@/components/partners/PartnerScoreBadge"
+import { useSavedStore } from "@/stores/useSavedStore"
 import type { ChannelPartner } from "@/types"
 
 export interface PartnerCardProps {
@@ -51,6 +54,8 @@ export function PartnerCard({
   onViewProfile,
 }: PartnerCardProps) {
   const { t, i18n } = useTranslation()
+  const { isPartnerSaved, toggleSavedPartner } = useSavedStore()
+  const isSaved = isPartnerSaved(partner.id)
   const highNpa = partner.npaFlag === "high"
   const dist = distanceKm(userLocation, partner.geo)
   const visual = PARTNER_TYPE_VISUALS[partner.type] || PARTNER_TYPE_VISUALS.SCA
@@ -124,13 +129,47 @@ export function PartnerCard({
             </CardTitle>
           </div>
 
-          <Badge
-            variant="outline"
-            className="shrink-0 font-semibold text-xs border-primary/30 text-primary bg-primary/5 whitespace-nowrap"
-          >
-            <MapPin className="mr-1 size-3 text-primary" />
-            {t("partners.distanceAway", { km: dist.toFixed(1) })}
-          </Badge>
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={(e) => {
+                e.stopPropagation()
+                const nowSaved = toggleSavedPartner(partner.id)
+                if (nowSaved) {
+                  toast.success(t("dashboard.partnerSavedToast", "Partner saved to your dashboard"))
+                } else {
+                  toast.info(t("dashboard.partnerRemovedToast", "Partner removed from saved list"))
+                }
+              }}
+              className={`size-8 rounded-md transition-colors ${
+                isSaved
+                  ? "text-accent bg-accent/10 hover:bg-accent/20"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              }`}
+              aria-label={
+                isSaved
+                  ? t("dashboard.removeSavedPartnerAria", "Remove {{name}} from saved partners", { name: partner.name })
+                  : t("dashboard.savePartnerAria", "Save {{name}} to dashboard", { name: partner.name })
+              }
+              title={
+                isSaved
+                  ? t("dashboard.saved", "Saved")
+                  : t("dashboard.savePartner", "Bookmark Partner")
+              }
+            >
+              <Bookmark className={`size-4 ${isSaved ? "fill-accent text-accent" : ""}`} />
+            </Button>
+
+            <Badge
+              variant="outline"
+              className="shrink-0 font-semibold text-xs border-primary/30 text-primary bg-primary/5 whitespace-nowrap"
+            >
+              <MapPin className="mr-1 size-3 text-primary" />
+              {t("partners.distanceAway", { km: dist.toFixed(1) })}
+            </Badge>
+          </div>
         </div>
 
         <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-1.5 pt-1">

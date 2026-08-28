@@ -11,7 +11,9 @@ import {
   X,
   Calculator,
   FileSpreadsheet,
+  Bookmark,
 } from "lucide-react"
+import { toast } from "sonner"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -22,6 +24,7 @@ import { InfoNote } from "@/components/literacy/InfoNote"
 import { computeLoan, computeMoratoriumComparison } from "@/lib/emi"
 import { fmtINR } from "@/lib/format"
 import { useCalculatorStore } from "@/stores/calculatorStore"
+import { useSavedStore } from "@/stores/useSavedStore"
 import { SchemePresetBar } from "@/components/calculator/SchemePresetBar"
 import { SCHEME_PRESETS } from "@/lib/calculatorPresets"
 import { AmortizationTable } from "@/components/calculator/AmortizationTable"
@@ -270,6 +273,31 @@ export default function CalculatorPage() {
     setDismissedSchemeKey(null)
   }
 
+  // Handle Save Calculation to Dashboard
+  const { saveCalculation } = useSavedStore()
+  const handleSaveCalculation = () => {
+    const title = displayedSchemeName
+      ? `${displayedSchemeName} (${fmtINR(calc.principal)} @ ${calc.annualRatePct}%)`
+      : `Loan EMI (${fmtINR(calc.principal)} @ ${calc.annualRatePct}% for ${Math.round(calc.tenureMonths / 12)} yrs)`
+
+    saveCalculation({
+      type: "emi",
+      title,
+      principal: calc.principal,
+      annualRatePct: calc.annualRatePct,
+      tenureMonths: calc.tenureMonths,
+      moratoriumMonths: calc.moratoriumMonths,
+      moratoriumInterestAccrues: calc.moratoriumInterestAccrues,
+      monthlyEmi: result.emi,
+      totalInterest: result.totalInterest,
+      totalPayment: result.totalPayable,
+      schemeId: calc.schemeId,
+      schemeName: displayedSchemeName,
+    })
+
+    toast.success(t("dashboard.calcSavedToast", "Calculation saved to your dashboard"))
+  }
+
   // Handle Reset to defaults
   const handleReset = () => {
     calc.reset()
@@ -291,7 +319,7 @@ export default function CalculatorPage() {
   const tenureYearsDisplay = (calc.tenureMonths / 12).toFixed(1).replace(/\.0$/, "")
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 sm:py-10 space-y-8 print:p-0 print:m-0 print:max-w-none">
+    <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10 space-y-8 print:p-0 print:m-0 print:max-w-none">
       {/* Tab Switcher between EMI Calculator and Project Cost Planner */}
       <div className="flex items-center gap-2 border-b border-border pb-4 print:hidden">
         <Link
@@ -325,7 +353,18 @@ export default function CalculatorPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5 print:hidden">
+        <div className="flex flex-wrap items-center gap-2.5 print:hidden">
+          <Button
+            variant="default"
+            size="sm"
+            onClick={handleSaveCalculation}
+            className="min-h-[44px] px-3.5 cursor-pointer text-xs font-semibold gap-1.5"
+            title={t("dashboard.saveCalcTitle", "Save calculation to your dashboard")}
+          >
+            <Bookmark className="size-3.5" />
+            {t("dashboard.saveCalcBtn", "Save to Dashboard")}
+          </Button>
+
           <Button
             variant="outline"
             size="sm"

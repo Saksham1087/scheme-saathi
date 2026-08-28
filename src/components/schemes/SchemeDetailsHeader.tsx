@@ -12,10 +12,13 @@ import {
   MapPin,
   Tag,
   Layers,
+  Bookmark,
 } from "lucide-react"
+import { toast } from "sonner"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useCompareStore } from "@/stores/useCompareStore"
+import { useSavedStore } from "@/stores/useSavedStore"
 import { fmtINR } from "@/lib/format"
 import type { Scheme } from "@/types"
 
@@ -27,7 +30,9 @@ export function SchemeDetailsHeader({ scheme }: SchemeDetailsHeaderProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language === "hi" ? "hi" : "en") as "en" | "hi"
   const { isComparing, toggleScheme } = useCompareStore()
+  const { isSchemeSaved, toggleSavedScheme } = useSavedStore()
   const comparing = isComparing(scheme.id)
+  const isSaved = isSchemeSaved(scheme.id)
 
   const schemeName = scheme.name?.[lang] || scheme.name?.en || scheme.id
   const ministryName = scheme.ministry?.[lang] || scheme.ministry?.en
@@ -90,6 +95,29 @@ export function SchemeDetailsHeader({ scheme }: SchemeDetailsHeaderProps) {
 
           {/* Right Header Actions (Compare & States) */}
           <div className="flex flex-wrap items-center gap-2">
+            <Button
+              variant={isSaved ? "secondary" : "outline"}
+              size="sm"
+              onClick={() => {
+                const nowSaved = toggleSavedScheme(scheme.id)
+                if (nowSaved) {
+                  toast.success(t("dashboard.schemeSavedToast", "Scheme saved to your dashboard"))
+                } else {
+                  toast.info(t("dashboard.schemeRemovedToast", "Scheme removed from saved list"))
+                }
+              }}
+              className={`h-8 text-xs font-semibold px-2.5 ${
+                isSaved
+                  ? "border-accent/50 bg-accent/10 text-accent dark:text-amber-400"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <Bookmark className={`size-3.5 mr-1.5 ${isSaved ? "fill-accent text-accent" : "text-muted-foreground"}`} />
+              {isSaved
+                ? t("dashboard.savedToDashboard", "Saved in Dashboard")
+                : t("dashboard.saveToDashboard", "Save to Dashboard")}
+            </Button>
+
             <Button
               variant={comparing ? "secondary" : "outline"}
               size="sm"

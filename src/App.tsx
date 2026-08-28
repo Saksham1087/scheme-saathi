@@ -14,6 +14,7 @@ import HowItWorks from "@/pages/HowItWorks"
 import TrackApplication from "@/pages/TrackApplication"
 import DocumentsPage from "@/pages/DocumentsPage"
 import AssistantPage from "@/pages/AssistantPage"
+import DashboardPage from "@/pages/DashboardPage"
 import Login from "@/pages/Login"
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
       <Routes>
         <Route element={<AppShell />}>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/schemes" element={<SchemesCatalog />} />
           <Route path="/schemes/:id" element={<SchemeDetailsPage />} />
           <Route path="/compare" element={<ComparePage />} />

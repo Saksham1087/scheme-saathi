@@ -10,12 +10,15 @@ import {
   Clock,
   ExternalLink,
   ShieldCheck,
+  Bookmark,
 } from "lucide-react"
+import { toast } from "sonner"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useCompareStore } from "@/stores/useCompareStore"
+import { useSavedStore } from "@/stores/useSavedStore"
 import { fmtINR } from "@/lib/format"
 import type { Scheme } from "@/types"
 
@@ -27,7 +30,9 @@ export function SchemeCard({ scheme }: SchemeCardProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language === "hi" ? "hi" : "en") as "en" | "hi"
   const { isComparing, toggleScheme } = useCompareStore()
+  const { isSchemeSaved, toggleSavedScheme } = useSavedStore()
   const comparing = isComparing(scheme.id)
+  const isSaved = isSchemeSaved(scheme.id)
 
   const schemeName = scheme.name[lang] || scheme.name.en
   const schemeDesc = scheme.description[lang] || scheme.description.en
@@ -97,7 +102,38 @@ export function SchemeCard({ scheme }: SchemeCardProps) {
               </span>
             )}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                const nowSaved = toggleSavedScheme(scheme.id)
+                if (nowSaved) {
+                  toast.success(t("dashboard.schemeSavedToast", "Scheme saved to your dashboard"))
+                } else {
+                  toast.info(t("dashboard.schemeRemovedToast", "Scheme removed from saved list"))
+                }
+              }}
+              className={`size-8 min-w-[32px] min-h-[32px] rounded-md transition-colors ${
+                isSaved
+                  ? "text-accent bg-accent/10 hover:bg-accent/20"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              }`}
+              aria-label={
+                isSaved
+                  ? t("dashboard.removeSavedSchemeAria", "Remove {{name}} from saved schemes", { name: schemeName })
+                  : t("dashboard.saveSchemeAria", "Save {{name}} to dashboard", { name: schemeName })
+              }
+              title={
+                isSaved
+                  ? t("dashboard.saved", "Saved")
+                  : t("dashboard.saveToDashboard", "Save to Dashboard")
+              }
+            >
+              <Bookmark className={`size-4 ${isSaved ? "fill-accent text-accent" : ""}`} />
+            </Button>
             <label
               className={`flex items-center gap-1.5 rounded-md border px-2 py-1 text-xs font-medium cursor-pointer transition-colors select-none ${
                 comparing

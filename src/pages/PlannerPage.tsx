@@ -1,22 +1,47 @@
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { toast } from "sonner"
 import {
   Calculator,
   FileSpreadsheet,
   RotateCcw,
   Printer,
   Sparkles,
+  Bookmark,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { InfoNote } from "@/components/literacy/InfoNote"
 import { ProjectCostPlanner } from "@/components/planner/ProjectCostPlanner"
 import { FinancingBreakdownCard } from "@/components/planner/FinancingBreakdownCard"
 import { usePlannerStore } from "@/stores/plannerStore"
+import { useSavedStore } from "@/stores/useSavedStore"
 
 export default function PlannerPage() {
   const { t } = useTranslation()
-  const { resetToDefault, getFinancingBreakdown } = usePlannerStore()
+  const {
+    projectTitle,
+    projectType,
+    items,
+    resetToDefault,
+    getFinancingBreakdown,
+  } = usePlannerStore()
+  const { saveCalculation } = useSavedStore()
   const breakdown = getFinancingBreakdown()
+
+  const handleSavePlan = () => {
+    saveCalculation({
+      type: "budget",
+      title: projectTitle || "Custom Project Budget",
+      projectTitle,
+      projectType,
+      totalProjectCost: breakdown.totalProjectCost,
+      loanAmount: breakdown.loanAmount,
+      promoterMargin: breakdown.promoterMarginAmount,
+      subsidyAmount: breakdown.subsidyAmount,
+      itemCount: items.length,
+    })
+    toast.success(t("dashboard.calcSavedToast", "Project plan saved to your dashboard"))
+  }
 
   const handlePrint = () => {
     window.print()
@@ -62,7 +87,18 @@ export default function PlannerPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5 print:hidden shrink-0">
+        <div className="flex flex-wrap items-center gap-2.5 print:hidden shrink-0">
+          <Button
+            variant="default"
+            size="sm"
+            onClick={handleSavePlan}
+            className="min-h-[44px] px-3.5 cursor-pointer text-xs font-semibold gap-1.5"
+            title={t("dashboard.savePlanTitle", "Save project plan to your dashboard")}
+          >
+            <Bookmark className="size-3.5" />
+            {t("dashboard.savePlanBtn", "Save to Dashboard")}
+          </Button>
+
           <Button
             variant="outline"
             size="sm"
