@@ -2,12 +2,15 @@ import type {
   AmortizationRow,
   AnnualAmortizationRow,
   LoanParams,
+  MoratoriumComparisonResult,
 } from "@/types/calculator"
 
 export type {
   AmortizationRow,
   AnnualAmortizationRow,
   LoanParams,
+  MoratoriumScenarioMetrics,
+  MoratoriumComparisonResult,
 } from "@/types/calculator"
 
 /**
@@ -100,6 +103,170 @@ export function computeLoan(params: LoanParams): {
     totalInterest: Math.round(totalInterest * 100) / 100,
     totalPayable: Math.round(totalPayable * 100) / 100,
     schedule,
+  }
+}
+
+/**
+ * Computes side-by-side comparative metrics for:
+ * - Scenario A: Capitalizing monthly interest into principal during moratorium
+ * - Scenario B: Servicing simple interest monthly during moratorium
+ *
+ * Highlights the "Cost of Capitalization" (net lifetime interest difference).
+ */
+export function computeMoratoriumComparison(params: LoanParams): MoratoriumComparisonResult {
+  const principal = Math.max(0, Number(params.principal) || 0)
+  const annualRatePct = Math.max(0, Number(params.annualRatePct) || 0)
+  const tenureMonths = Math.max(1, Math.round(Number(params.tenureMonths) || 1))
+  const moratoriumMonths = Math.max(0, Math.round(Number(params.moratoriumMonths) || 0))
+  const r = annualRatePct / 12 / 100
+
+  // ----------------------------------------------------
+  // Scenario A: Capitalize Interest into Principal
+  // ----------------------------------------------------
+  let balanceA = principal
+  const scheduleA: AmortizationRow[] = []
+  let moratoriumInterestA = 0
+
+  for (let m = 1; m <= moratoriumMonths; m++) {
+    const interest = balanceA * r
+    if (r > 0) {
+      moratoriumInterestA += interest
+      balanceA += interest
+    }
+    scheduleA.push({
+      month: m,
+      openingBalance: r > 0 ? balanceA - interest : balanceA,
+      emi: 0,
+      interest: r > 0 ? interest : 0,
+      principalPaid: 0,
+      closingBalance: balanceA,
+      phase: "moratorium",
+    })
+  }
+
+  const effectivePrincipalA = balanceA
+  const emiA =
+    r === 0
+      ? effectivePrincipalA / tenureMonths
+      : (effectivePrincipalA * r * Math.pow(1 + r, tenureMonths)) /
+        (Math.pow(1 + r, tenureMonths) - 1)
+
+  for (let m = 1; m <= tenureMonths; m++) {
+    const openingBalance = balanceA
+    const interest = balanceA * r
+    let principalPaid = emiA - interest
+    if (principalPaid > balanceA || m === tenureMonths) {
+      principalPaid = balanceA
+    }
+    balanceA = Math.max(0, balanceA - principalPaid)
+    scheduleA.push({
+      month: moratoriumMonths + m,
+      openingBalance,
+      emi: principalPaid + interest,
+      interest,
+      principalPaid,
+      closingBalance: balanceA,
+      phase: "repayment",
+    })
+  }
+
+  const repaymentInterestA = scheduleA
+    .filter((row) => row.phase === "repayment")
+    .reduce((sum, row) => sum + row.interest, 0)
+  const totalInterestA = repaymentInterestA + moratoriumInterestA
+  const totalPayableA = scheduleA.reduce((sum, row) => sum + row.emi, 0)
+
+  // ----------------------------------------------------
+  // Scenario B: Service Simple Interest Monthly
+  // ----------------------------------------------------
+  let balanceB = principal
+  const scheduleB: AmortizationRow[] = []
+  const monthlyInterestB = principal * r
+  let moratoriumInterestB = 0
+
+  for (let m = 1; m <= moratoriumMonths; m++) {
+    const interest = monthlyInterestB
+    moratoriumInterestB += interest
+    scheduleB.push({
+      month: m,
+      openingBalance: principal,
+      emi: interest, // beneficiary services simple interest monthly
+      interest,
+      principalPaid: 0,
+      closingBalance: principal,
+      phase: "moratorium",
+    })
+  }
+
+  const effectivePrincipalB = principal
+  const emiB =
+    r === 0
+      ? effectivePrincipalB / tenureMonths
+      : (effectivePrincipalB * r * Math.pow(1 + r, tenureMonths)) /
+        (Math.pow(1 + r, tenureMonths) - 1)
+
+  for (let m = 1; m <= tenureMonths; m++) {
+    const openingBalance = balanceB
+    const interest = balanceB * r
+    let principalPaid = emiB - interest
+    if (principalPaid > balanceB || m === tenureMonths) {
+      principalPaid = balanceB
+    }
+    balanceB = Math.max(0, balanceB - principalPaid)
+    scheduleB.push({
+      month: moratoriumMonths + m,
+      openingBalance,
+      emi: principalPaid + interest,
+      interest,
+      principalPaid,
+      closingBalance: balanceB,
+      phase: "repayment",
+    })
+  }
+
+  const repaymentInterestB = scheduleB
+    .filter((row) => row.phase === "repayment")
+    .reduce((sum, row) => sum + row.interest, 0)
+  const totalInterestB = repaymentInterestB + moratoriumInterestB
+  const totalPayableB = scheduleB.reduce((sum, row) => sum + row.emi, 0)
+
+  const interestDifference = Math.max(
+    0,
+    Math.round((totalInterestA - totalInterestB) * 100) / 100,
+  )
+  const emiDifference = Math.max(
+    0,
+    Math.round((emiA - emiB) * 100) / 100,
+  )
+
+  return {
+    hasMoratorium: moratoriumMonths > 0,
+    moratoriumMonths,
+    tenureMonths,
+    principal,
+    annualRatePct,
+    scenarioA: {
+      scenarioKey: "capitalize",
+      effectivePrincipal: Math.round(effectivePrincipalA * 100) / 100,
+      moratoriumMonthlyPayment: 0,
+      moratoriumTotalPaid: 0,
+      postMoratoriumEmi: Math.round(emiA * 100) / 100,
+      totalInterest: Math.round(totalInterestA * 100) / 100,
+      totalPayable: Math.round(totalPayableA * 100) / 100,
+      schedule: scheduleA,
+    },
+    scenarioB: {
+      scenarioKey: "service",
+      effectivePrincipal: Math.round(effectivePrincipalB * 100) / 100,
+      moratoriumMonthlyPayment: Math.round(monthlyInterestB * 100) / 100,
+      moratoriumTotalPaid: Math.round(moratoriumInterestB * 100) / 100,
+      postMoratoriumEmi: Math.round(emiB * 100) / 100,
+      totalInterest: Math.round(totalInterestB * 100) / 100,
+      totalPayable: Math.round(totalPayableB * 100) / 100,
+      schedule: scheduleB,
+    },
+    interestDifference,
+    emiDifference,
   }
 }
 

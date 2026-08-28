@@ -17,12 +17,13 @@ import { Slider } from "@/components/ui/slider"
 import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
 import { InfoNote } from "@/components/literacy/InfoNote"
-import { computeLoan } from "@/lib/emi"
+import { computeLoan, computeMoratoriumComparison } from "@/lib/emi"
 import { fmtINR } from "@/lib/format"
 import { useCalculatorStore } from "@/stores/calculatorStore"
 import { SchemePresetBar } from "@/components/calculator/SchemePresetBar"
 import { SCHEME_PRESETS } from "@/lib/calculatorPresets"
 import { AmortizationTable } from "@/components/calculator/AmortizationTable"
+import { MoratoriumComparisonCard } from "@/components/calculator/MoratoriumComparisonCard"
 import schemesSeed from "@seed/schemes.seed.json"
 import type { SchemePreset } from "@/types/calculator"
 
@@ -182,10 +183,33 @@ export default function CalculatorPage() {
     }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
+  const [activeScenario, setActiveScenario] = useState<"capitalize" | "service">(
+    calc.moratoriumInterestAccrues ? "capitalize" : "service",
+  )
+
   // Calculate standard reducing balance loan
   const result = useMemo(
     () =>
       computeLoan({
+        principal: Math.max(0, calc.principal),
+        annualRatePct: Math.max(0, calc.annualRatePct),
+        tenureMonths: Math.max(1, calc.tenureMonths),
+        moratoriumMonths: Math.max(0, calc.moratoriumMonths),
+        moratoriumInterestAccrues: calc.moratoriumInterestAccrues,
+      }),
+    [
+      calc.principal,
+      calc.annualRatePct,
+      calc.tenureMonths,
+      calc.moratoriumMonths,
+      calc.moratoriumInterestAccrues,
+    ],
+  )
+
+  // Calculate side-by-side moratorium comparison
+  const moratoriumComparison = useMemo(
+    () =>
+      computeMoratoriumComparison({
         principal: Math.max(0, calc.principal),
         annualRatePct: Math.max(0, calc.annualRatePct),
         tenureMonths: Math.max(1, calc.tenureMonths),
@@ -219,6 +243,14 @@ export default function CalculatorPage() {
     commercialResult.totalInterest - result.totalInterest,
   )
 
+  const handleScenarioSelect = (scenario: "capitalize" | "service") => {
+    setActiveScenario(scenario)
+    calc.patch({
+      moratoriumInterestAccrues: scenario === "capitalize",
+      activePresetId: null,
+    })
+  }
+
   // Handler for scheme preset pill click
   const handleSelectPreset = (preset: SchemePreset) => {
     calc.patch({
@@ -232,12 +264,14 @@ export default function CalculatorPage() {
       schemeName:
         i18n.language?.startsWith("hi") ? preset.defaultName.hi : preset.defaultName.en,
     })
+    setActiveScenario(preset.moratoriumInterestAccrues ? "capitalize" : "service")
     setDismissedSchemeKey(null)
   }
 
   // Handle Reset to defaults
   const handleReset = () => {
     calc.reset()
+    setActiveScenario("service")
     setDismissedSchemeKey("all")
   }
 
@@ -421,12 +455,13 @@ export default function CalculatorPage() {
                 <Switch
                   id="accrual-switch"
                   checked={calc.moratoriumInterestAccrues}
-                  onCheckedChange={(v) =>
+                  onCheckedChange={(v) => {
                     calc.patch({
                       moratoriumInterestAccrues: v,
                       activePresetId: null,
                     })
-                  }
+                    setActiveScenario(v ? "capitalize" : "service")
+                  }}
                   aria-label={t("calculator.accrualLabel", "Interest accrues during moratorium")}
                 />
               </div>
@@ -442,6 +477,17 @@ export default function CalculatorPage() {
                     )}
               </p>
             </div>
+
+            {/* Moratorium & Interest Capitalization Simulation */}
+            {calc.moratoriumMonths > 0 && (
+              <div className="pt-3 border-t border-border/60">
+                <MoratoriumComparisonCard
+                  comparison={moratoriumComparison}
+                  activeScenario={activeScenario}
+                  onSelectScenario={handleScenarioSelect}
+                />
+              </div>
+            )}
           </CardContent>
         </Card>
 
@@ -555,6 +601,9 @@ export default function CalculatorPage() {
       {/* Amortization Schedule & Visual Breakdown */}
       <section className="pt-4 border-t border-border">
         <AmortizationTable
+          comparison={moratoriumComparison}
+          activeScenario={activeScenario}
+          onSelectScenario={handleScenarioSelect}
           schedule={result.schedule}
           principal={calc.principal}
           totalInterest={result.totalInterest}

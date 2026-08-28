@@ -43,3 +43,26 @@ export interface SchemePreset {
   category: "micro" | "term" | "education" | "women" | "commercial"
 }
 
+export interface MoratoriumScenarioMetrics {
+  scenarioKey: "capitalize" | "service"
+  effectivePrincipal: number
+  moratoriumMonthlyPayment: number
+  moratoriumTotalPaid: number
+  postMoratoriumEmi: number
+  totalInterest: number
+  totalPayable: number
+  schedule: AmortizationRow[]
+}
+
+export interface MoratoriumComparisonResult {
+  hasMoratorium: boolean
+  moratoriumMonths: number
+  tenureMonths: number
+  principal: number
+  annualRatePct: number
+  scenarioA: MoratoriumScenarioMetrics
+  scenarioB: MoratoriumScenarioMetrics
+  interestDifference: number
+  emiDifference: number
+}
+

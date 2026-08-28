@@ -49,7 +49,7 @@ development_status:
 
   epic-3: in-progress
   3-1-standard-scheme-aware-emi-amortization-calculator: review
-  3-2-moratorium-interest-capitalization-simulation: backlog
+  3-2-moratorium-interest-capitalization-simulation: review
   3-3-project-cost-planner-financing-breakdown: backlog
   epic-3-retrospective: optional
 

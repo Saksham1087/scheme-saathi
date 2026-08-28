@@ -1,6 +1,14 @@
 import React, { useState, useMemo } from "react"
 import { useTranslation } from "react-i18next"
-import { ChevronDown, ChevronRight, ChevronsUpDown, Calendar, Clock, BarChart3 } from "lucide-react"
+import {
+  ChevronDown,
+  ChevronRight,
+  ChevronsUpDown,
+  Calendar,
+  Clock,
+  BarChart3,
+  Layers,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Table,
@@ -12,30 +20,79 @@ import {
 } from "@/components/ui/table"
 import { fmtINR } from "@/lib/format"
 import { computeAnnualSchedule } from "@/lib/emi"
-import type { AmortizationRow } from "@/types/calculator"
+import type { AmortizationRow, MoratoriumComparisonResult } from "@/types/calculator"
 
 interface AmortizationTableProps {
-  schedule: AmortizationRow[]
+  schedule?: AmortizationRow[]
   principal: number
-  totalInterest: number
-  totalPayable: number
+  totalInterest?: number
+  totalPayable?: number
+  comparison?: MoratoriumComparisonResult
+  activeScenario?: "capitalize" | "service"
+  onSelectScenario?: (scenario: "capitalize" | "service") => void
 }
 
 export function AmortizationTable({
   schedule,
   principal,
-  totalInterest,
-  totalPayable,
+  totalInterest = 0,
+  totalPayable = 0,
+  comparison,
+  activeScenario = "capitalize",
+  onSelectScenario,
 }: AmortizationTableProps) {
   const { t } = useTranslation()
+  const [internalScenario, setInternalScenario] = useState<"capitalize" | "service">("capitalize")
   const [viewMode, setViewMode] = useState<"annual" | "monthly">("annual")
   const [expandedYears, setExpandedYears] = useState<Record<number, boolean>>({ 1: true })
   const [showAllMonthly, setShowAllMonthly] = useState(false)
 
-  const annualSchedule = useMemo(() => computeAnnualSchedule(schedule), [schedule])
+  const currentScenario = onSelectScenario ? activeScenario : internalScenario
 
-  const principalPct = totalPayable > 0 ? (principal / totalPayable) * 100 : 100
-  const interestPct = totalPayable > 0 ? (totalInterest / totalPayable) * 100 : 0
+  const handleScenarioChange = (scenario: "capitalize" | "service") => {
+    if (onSelectScenario) {
+      onSelectScenario(scenario)
+    } else {
+      setInternalScenario(scenario)
+    }
+  }
+
+  const effectiveSchedule = useMemo(() => {
+    if (comparison && comparison.hasMoratorium) {
+      return currentScenario === "service"
+        ? comparison.scenarioB.schedule
+        : comparison.scenarioA.schedule
+    }
+    return schedule || []
+  }, [comparison, currentScenario, schedule])
+
+  const effectiveInterest = useMemo(() => {
+    if (comparison && comparison.hasMoratorium) {
+      return currentScenario === "service"
+        ? comparison.scenarioB.totalInterest
+        : comparison.scenarioA.totalInterest
+    }
+    return totalInterest
+  }, [comparison, currentScenario, totalInterest])
+
+  const effectivePayable = useMemo(() => {
+    if (comparison && comparison.hasMoratorium) {
+      return currentScenario === "service"
+        ? comparison.scenarioB.totalPayable
+        : comparison.scenarioA.totalPayable
+    }
+    return totalPayable > 0 ? totalPayable : principal + effectiveInterest
+  }, [comparison, currentScenario, totalPayable, principal, effectiveInterest])
+
+  const annualSchedule = useMemo(
+    () => computeAnnualSchedule(effectiveSchedule),
+    [effectiveSchedule],
+  )
+
+  const principalPct =
+    effectivePayable > 0 ? (principal / effectivePayable) * 100 : 100
+  const interestPct =
+    effectivePayable > 0 ? (effectiveInterest / effectivePayable) * 100 : 0
 
   const toggleYear = (year: number) => {
     setExpandedYears((prev) => ({
@@ -57,10 +114,62 @@ export function AmortizationTable({
     }
   }
 
-  const visibleMonthlyRows = showAllMonthly ? schedule : schedule.slice(0, 12)
+  const visibleMonthlyRows = showAllMonthly
+    ? effectiveSchedule
+    : effectiveSchedule.slice(0, 12)
 
   return (
     <div className="space-y-6">
+      {/* Scenario Selector when Moratorium is Active */}
+      {comparison && comparison.hasMoratorium && (
+        <div className="rounded-xl border border-border bg-card p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
+          <div className="flex items-center gap-2">
+            <Layers className="size-4 text-primary shrink-0" />
+            <div>
+              <p className="text-sm font-semibold text-foreground">
+                {t("calculator.scheduleScenarioSelect", "Amortization Pathway Schedule")}
+              </p>
+              <p className="text-xs text-muted-foreground">
+                {currentScenario === "capitalize"
+                  ? t(
+                      "calculator.scheduleScenarioADesc",
+                      "Showing Scenario A: Unpaid interest capitalized monthly during moratorium",
+                    )
+                  : t(
+                      "calculator.scheduleScenarioBDesc",
+                      "Showing Scenario B: Simple interest serviced monthly during moratorium",
+                    )}
+              </p>
+            </div>
+          </div>
+
+          <div className="inline-flex rounded-lg border border-border bg-muted/60 p-0.5 text-xs shrink-0 self-start sm:self-auto">
+            <button
+              type="button"
+              onClick={() => handleScenarioChange("capitalize")}
+              className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 font-medium transition-colors min-h-[36px] cursor-pointer ${
+                currentScenario === "capitalize"
+                  ? "bg-amber-500 text-white shadow-xs font-semibold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {t("calculator.tabCapitalize", "Scenario A (Capitalized)")}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleScenarioChange("service")}
+              className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 font-medium transition-colors min-h-[36px] cursor-pointer ${
+                currentScenario === "service"
+                  ? "bg-emerald-600 text-white shadow-xs font-semibold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {t("calculator.tabService", "Scenario B (Serviced)")}
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Visual Principal vs Interest Progress Bar */}
       <div className="rounded-xl border border-border bg-card p-4 sm:p-5 space-y-3 shadow-xs">
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -72,7 +181,7 @@ export function AmortizationTable({
           </div>
           <div className="text-xs text-muted-foreground font-medium">
             {t("calculator.totalRepayment", "Total Repayment:")}{" "}
-            <span className="font-bold text-foreground">{fmtINR(totalPayable)}</span>
+            <span className="font-bold text-foreground">{fmtINR(effectivePayable)}</span>
           </div>
         </div>
 
@@ -108,7 +217,7 @@ export function AmortizationTable({
               {t("calculator.scheduleInterest", "Total Interest")}:
             </span>
             <span className="font-semibold text-foreground">
-              {fmtINR(totalInterest)} ({interestPct.toFixed(1)}%)
+              {fmtINR(effectiveInterest)} ({interestPct.toFixed(1)}%)
             </span>
           </div>
         </div>
@@ -236,8 +345,16 @@ export function AmortizationTable({
                           <TableCell className="pl-9 font-normal text-muted-foreground">
                             {t("calculator.monthLabel", "Month {{m}}", { m: monthRow.month })}
                             {monthRow.phase === "moratorium" && (
-                              <span className="ml-2 rounded-full bg-accent/20 text-accent-foreground text-[10px] font-semibold px-2 py-0.5">
-                                {t("calculator.phaseMoratorium", "Moratorium")}
+                              <span
+                                className={`ml-2 rounded-full text-[10px] font-semibold px-2 py-0.5 ${
+                                  monthRow.emi === 0
+                                    ? "bg-amber-500/15 text-amber-800 dark:text-amber-300"
+                                    : "bg-emerald-500/15 text-emerald-800 dark:text-emerald-300"
+                                }`}
+                              >
+                                {monthRow.emi === 0
+                                  ? t("calculator.phaseMoratoriumCapitalized", "Moratorium (Cap)")
+                                  : t("calculator.phaseMoratoriumServiced", "Moratorium (Serviced)")}
                               </span>
                             )}
                           </TableCell>
@@ -283,10 +400,18 @@ export function AmortizationTable({
                   <TableRow key={row.month} className="hover:bg-muted/30">
                     <TableCell className="font-medium text-foreground">
                       {t("calculator.monthLabel", "Month {{m}}", { m: row.month })}
-                      {i === 11 && !showAllMonthly && schedule.length > 12 ? " …" : ""}
+                      {i === 11 && !showAllMonthly && effectiveSchedule.length > 12 ? " …" : ""}
                       {row.phase === "moratorium" && (
-                        <span className="ml-2 rounded-full bg-accent/20 text-accent-foreground text-[10px] font-semibold px-2 py-0.5">
-                          {t("calculator.phaseMoratorium", "Moratorium")}
+                        <span
+                          className={`ml-2 rounded-full text-[10px] font-semibold px-2 py-0.5 ${
+                            row.emi === 0
+                              ? "bg-amber-500/15 text-amber-800 dark:text-amber-300"
+                              : "bg-emerald-500/15 text-emerald-800 dark:text-emerald-300"
+                          }`}
+                        >
+                          {row.emi === 0
+                            ? t("calculator.phaseMoratoriumCapitalized", "Moratorium (Cap)")
+                            : t("calculator.phaseMoratoriumServiced", "Moratorium (Serviced)")}
                         </span>
                       )}
                     </TableCell>
@@ -311,7 +436,7 @@ export function AmortizationTable({
             </Table>
           </div>
 
-          {schedule.length > 12 && (
+          {effectiveSchedule.length > 12 && (
             <div className="flex justify-center pt-1">
               <Button
                 variant="outline"
@@ -322,7 +447,7 @@ export function AmortizationTable({
                 {showAllMonthly
                   ? t("calculator.hideFullSchedule", "Show fewer rows")
                   : t("calculator.showFullScheduleAll", "Show all {{count}} months", {
-                      count: schedule.length,
+                      count: effectiveSchedule.length,
                     })}
               </Button>
             </div>
