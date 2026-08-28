@@ -1,0 +1,4000 @@
+[
+  {
+    "slug": "aay",
+    "name": {
+      "en": "Abua Awas Yojana",
+      "hi": ""
+    },
+    "ministry": "Rural Development",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Abua Awas Yojana\" was launched by the Department of Rural Development, Government of Jharkhand. The scheme aims to provide pucca houses to 8,00,000 homeless families in three phases with a budget of ₹16,320/- crore, prioritizes housing for vulnerable and underprivileged families, providing financial and labor assistance for construction. Each house will feature three rooms and a kitchen, covering an area of 31 square meters.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Abua Awas Yojana\" was launched by the Department of Rural Development, Government of Jharkhand. The scheme aims to provide pucca houses to 8,0...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "this scheme",
+      "for this scheme"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 200000,
+      "maxAmount": 200000
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "ST"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhaar Card",
+        "description": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "name": "Bank Passbook",
+        "description": "Bank Passbook",
+        "mandatory": true
+      },
+      {
+        "name": "Job Card",
+        "description": "Job Card",
+        "mandatory": true
+      },
+      {
+        "name": "Address Proof",
+        "description": "Address Proof",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Certificate",
+        "description": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Any Other Document If Required",
+        "description": "Any Other Document If Required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Block or District Office and request a hard copy of the prescribed format of the application form from the staff exclusively entrusted to issue and collect filled-in applications. Step 2: In the application form, fill in all the mandatory fields, and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents to the Block or District Office. Step 4: Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "ahs",
+    "name": {
+      "en": "Akanksha Housing Scheme",
+      "hi": ""
+    },
+    "ministry": "West Bengal on 28/02/2014 to provide housing to the serving State Government employees",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Akanksha Housing Scheme was launched by the Housing Department, Government of West Bengal on 28/02/2014 to provide housing to the serving State Government employees. The present project is situated in premises No. 07/300, Block-DB, Action Area-ID at New Town, Kolkata - 700107 on a pilot basis. The project has been designed on a no-profit no-loss basis and without the cost of the land. The instant project is spread over 5.0599 acres of land and comprising of 13 towers. (7 nos. of G+10 Towers for Elegant, Premium and Classic categories and 6 nos. of Straight 4 towers for Economy and Standard categories) containing of 576 flats and 236 covered Car parking spaces and 35 open Car parking spaces (only for Elegant, Premium and Classic categories) with provision for Gymnasium, Club-House and Community Hall within the Complex.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Akanksha Housing Scheme was launched by the Housing Department, Government of West Bengal on 28/02/2014 to provide housing to the serving State Gov...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Policemen or similar housing schemes under Government of West Bengal stated in Memorandum No",
+      "New Town Project under `AKANKSHA HOUSING SCHEME’ (AHS)"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 2200,
+      "maxAmount": 4445400
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "West Bengal"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "service",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Copy of Identity Card Online application with depo",
+        "description": "Copy of Identity Card Online application with deposit amount of ₹25",
+        "mandatory": true
+      },
+      {
+        "name": "000 as \"Application money\" in any branch of Bank o",
+        "description": "000 as \"Application money\" in any branch of Bank of Baroda by generating challan through online system",
+        "mandatory": true
+      },
+      {
+        "name": "Copy of Aadhar Card Residence proof of the applica",
+        "description": "Copy of Aadhar Card Residence proof of the applicant of the state of West Bengal Income certificate of the applicant",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "You can apply for Akanksha Housing Scheme by following the steps below: Visit the Akanksha Housing Scheme Official Website. Check off each item on the list now that you’ve reviewed the team and the terms of this plan. You must select Apply. After you’ve chosen all of your terms and conditions. An application form will now appear on the screen. Fill out every field on the application precisely. After you’ve uploaded the scanned copies of the documents, click Submit. You must generate a challan using the internet system and deposit Rs. 25,000 in any Bank of Baroda branch as Application Fees. Your application will be successfully submitted. Application must be made online only. No applicant is permitted to submit more than one application in this project. Applicant has to deposit an amount of Rs. 25,000/- as \"Application money\" in any branch of Bank of Baroda by generating challan through the online system.",
+    "channelPartnerTypes": [
+      "Bank",
+      "branch"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "bay",
+    "name": {
+      "en": "Banglar Awaas Yojana (BAY)",
+      "hi": ""
+    },
+    "ministry": "Rural Development (MoRD)",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Banglar Awaas Yojana (BAY) is a housing scheme aimed at providing a pucca house (minimum 25 sq mt floor area) to houseless households and those residing in kutcha or dilapidated houses. Launched by the Ministry of Rural Development (MoRD), GOI in FY 2016-17, the scheme offers assistance of ₹130,000/- per house, distributed in three installments. The Central and State Government share the cost in a 60:40 ratio. Eligible beneficiaries also receive wages for unskilled labor and assistance for constructing toilets under \"Mission Nirmal Bangla Prakalpa\". The assistance is credited directly to the bank account of the beneficiary.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Banglar Awaas Yojana (BAY) is a housing scheme aimed at providing a pucca house (minimum 25 sq mt floor area) to houseless households and those res...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 10000,
+      "maxAmount": 130000
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Proof of Residence",
+        "description": "Proof of Residence",
+        "mandatory": true
+      },
+      {
+        "name": "Bank Account Details",
+        "description": "Bank Account Details",
+        "mandatory": true
+      },
+      {
+        "name": "ANy other documents (if required)",
+        "description": "ANy other documents (if required)",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Visit the website of Pradhan Mantri Awaas Yojana-Gramin (PMAY-G) to check the Permanent Waiting List (PWL) which has been prepared by the Ministry of Rural Development (MoRD), GOI, based on SECC 2011 data. Step 2: Select the concerned District, Block, Panchayat name and verify the captcha to check the list. Step 3: Beneficiaries whose names are already enlisted in the PWL do not need to submit any additional application. Step 4: The government sanctions houses every financial year based on the priority list and category-wise allocation of houses. Step 5: If the applicant's name is included in the PWL, they will be automatically considered for assistance under the scheme. Step 6: Eligible beneficiaries will be informed about the sanctioning process and receive financial assistance directly in their registered bank accounts in installments.",
+    "channelPartnerTypes": [
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "bany",
+    "name": {
+      "en": "Birsa Awas Nirman Yojana",
+      "hi": ""
+    },
+    "ministry": "Scheduled Tribe",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Birsa Awas Nirman Yojana\" was launched by the Department of Scheduled Tribe, Scheduled Caste, Minority & Backward Class Welfare, Government of Jharkhand, and aims to provide durable housing for the economically weaker Scheduled Tribes (ST) with a focus on timely construction, monitoring, and quality management. Under this scheme, financial assistance is disbursed in three installments to beneficiaries, with an additional ₹500/- incentive per unit provided to Panchayat Volunteers or Self-Help Groups (SHGs) for overseeing construction milestones.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Birsa Awas Nirman Yojana\" was launched by the Department of Scheduled Tribe, Scheduled Caste, Minority & Backward Class Welfare, Government of...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the Scheduled Tribe community in Jharkhand"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 100,
+      "maxAmount": 131500
+    },
+    "eligibilityRules": {
+      "states": [
+        "Jharkhand"
+      ],
+      "categories": [
+        "ST",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "manufacturing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhaar Card",
+        "description": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of Residence",
+        "description": "Proof of Residence",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Certificate (issued by a competent authority",
+        "description": "Caste Certificate (issued by a competent authority)",
+        "mandatory": true
+      },
+      {
+        "name": "Bank Passbook",
+        "description": "Bank Passbook",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Panchayat office or designated Welfare Department office and request a hard copy of the prescribed format of the application form from the staff exclusively entrusted to issue and collect filled-in applications. Step 2: In the application form, fill in all the mandatory fields, and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents to the Panchayat office or designated Welfare Department office. Step 4: Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cmhap",
+    "name": {
+      "en": "Chief Minister Housing Assistance Programme",
+      "hi": ""
+    },
+    "ministry": "is intended to implement the Chief Minister’s Housing Assistance Program in two components in which ",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Housing is one of the basic human needs besides food, clothing and water. The improvement of the condition of the people also includes precision of decent housing. The Housing Department is intended to implement the Chief Minister’s Housing Assistance Program in two components in which housing roofing materials are given as grant in aid to the Economically Weaker Section (LWS) families to improve their existing house and tether is to provide a durable house to the how Income Group (LIG) families of the State, who are not in a position to build their own houses with their limited resources. ﻿ The scheme will be implemented in rural and urban areas of the State, allocation of funds among the districts will be on the basis of the State Budget Allocation of the year.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Housing is one of the basic human needs besides food, clothing and water. The improvement of the condition of the people also includes precision of...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "construction of the house in the location where the house is to be constructed",
+      "selection of beneficiaries will be  Block-wise",
+      "age of beneficiary is 18 years and above",
+      "y should be a bonafide resident of the State of Meghalaya",
+      "y should produce the EPIC or any other related document as proof of residence/address proof"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Meghalaya"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 18,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhar Card Voter Card The Latest electoral role s",
+        "description": "Aadhar Card Voter Card The Latest electoral role shall be the basis for identifications of beneficiaries",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "The applications under the chief minister's Housing Assistance Program should be submitted only in the prescribed printed forms which will be supplied by Directorate of Housing through the respective Block Development Officer/District Housing Officer/Inspector of Housing, according to the requirement in each Block and District.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cmbocwhrs",
+    "name": {
+      "en": "Chief Minister's Building and Other Construction Workers Housing (Rural) Scheme",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Launched in 2013, the scheme \"Chief Minister's Building and Other Construction Workers Housing (Rural) Scheme\" aims to provide permanent houses to registered construction workers in the rural areas of Madhya Pradesh who are homeless or living in kutcha/semi-pucca houses. This scheme is applicable in all rural areas of the state (excluding urban and Nazul outer areas).",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Launched in 2013, the scheme \"Chief Minister's Building and Other Construction Workers Housing (Rural) Scheme\" aims to provide permanent houses to ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Registration: The applicant should be a resident of Madhya Pradesh",
+      "at least 90 days during the preceding 12 months",
+      "₹3 lakh per annum",
+      "house construction",
+      "receive land for housing from the government"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 30000,
+      "maxAmount": 50000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Madhya Pradesh",
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "maxIncome": 300000,
+      "minAge": 18,
+      "maxAge": 60,
+      "occupations": [
+        "Farmer",
+        "Salaried"
+      ],
+      "purposes": [
+        "agriculture",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity Proof (e",
+        "description": "Identity Proof (e",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card) Passport",
+        "description": "Aadhaar Card) Passport-size Photograph Proof of Residence (e",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Utility bill",
+        "description": "Utility bill",
+        "mandatory": true
+      },
+      {
+        "name": "Voter ID",
+        "description": "Voter ID",
+        "mandatory": true
+      },
+      {
+        "name": ") Ration Card (optional) Bank Account Details (e",
+        "description": ") Ration Card (optional) Bank Account Details (e",
+        "mandatory": false
+      },
+      {
+        "name": "Copy of Bank Passbook) Caste Certificate (if appli",
+        "description": "Copy of Bank Passbook) Caste Certificate (if applicable) Undertaking/Declaration Age Certificate Valid Identity Cards Employment Certificate Signature Any other documents as required",
+        "mandatory": false
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Chief Executive Officer District Panchayat and request the hard copy of the prescribed format of the application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents, within the prescribed period (if any), to the authority. Step 4: Request a receipt or acknowledgement from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). ﻿ NOTE 1: Ensure that the application is submitted within the prescribed period, if any.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cmbaocwump",
+    "name": {
+      "en": "Chief Minister's Building and Other Construction Workers Urban Housing Scheme (MPBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh provides ₹1,00,000 in assistance to eligible urban construction workers, along with C",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Chief Minister's Building and Other Construction Workers Urban Housing Scheme\" by the Labour Department, Govt. of Madhya Pradesh provides ₹1,00,000 in assistance to eligible urban construction workers, along with Central and State Government grants. This scheme also supports workers eligible under the Pradhan Mantri Awas Yojana.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Chief Minister's Building and Other Construction Workers Urban Housing Scheme\" by the Labour Department, Govt. of Madhya Pradesh provides ₹1,0...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Registration The applicant should be a resident of Madhya Pradesh",
+      "at least 90 days during the preceding 12 months",
+      "receive benefits after 1 year from the registration date",
+      "qualify for the scheme",
+      "ies under the Act before the publication of the scheme in the Gazette"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 100000,
+      "maxAmount": 100000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 18,
+      "maxAge": 60,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity Proof (e",
+        "description": "Identity Proof (e",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card) Passport",
+        "description": "Aadhaar Card) Passport-size Photograph Proof of Residence (e",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Utility bill",
+        "description": "Utility bill",
+        "mandatory": true
+      },
+      {
+        "name": "Voter ID",
+        "description": "Voter ID",
+        "mandatory": true
+      },
+      {
+        "name": ") Ration Card (optional) Bank Account Details (e",
+        "description": ") Ration Card (optional) Bank Account Details (e",
+        "mandatory": false
+      },
+      {
+        "name": "Copy of Bank Passbook) Caste Certificate (if appli",
+        "description": "Copy of Bank Passbook) Caste Certificate (if applicable) Undertaking/Declaration Age Certificate Valid Identity Cards Employment Certificate Signature Any other documents as required",
+        "mandatory": false
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Commissioner Municipal Corporation / Chief Municipal Officer Nagar palika / Nagar Panchayat and request the hard copy of the prescribed format of the application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents, within the prescribed period (if any), to the authority. Step 4: Request a receipt or acknowledgement from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). ﻿ NOTE: Ensure that the application is submitted within the prescribed period, if any.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cmhr",
+    "name": {
+      "en": "Chief Ministers House Rent",
+      "hi": ""
+    },
+    "ministry": "De-notified",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Chief Minister's House Rent\" scheme, implemented by the Department of De-notified, Nomadic, and Semi-Nomadic Welfare, Government of Madhya Pradesh, provides a house rent allowance of ₹2,000 per student per month in Bhopal, Indore, Jabalpur, Gwalior, and Ujjain; ₹1,250 per student per month at district headquarters; and ₹1,000 per student per month in tehsil/development block headquarters and other cities. A third-party evaluation will be conducted to assess the results and impact of the scheme. Any rent amount exceeding the prescribed allowance must be borne by the students themselves. Apart from the house rent allowance, no other facility will be provided by the department.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Chief Minister's House Rent\" scheme, implemented by the Department of De-notified, Nomadic, and Semi-Nomadic Welfare, Government of Madhya Pra...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "colleges or equivalent institutions and not in any government hostel",
+      "any excess rent beyond the prescribed allowance",
+      "the scheme if they fail in any year",
+      "for the scheme if they fail in any year"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000,
+      "maxAmount": 2000
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Student",
+        "Salaried"
+      ],
+      "purposes": [
+        "education"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph Aadhaar Card Domicile Certificate Caste Certificate Samagra ID Bank account Details",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Registration Step 1: Visit the \" Samarth Portal \". Step 2: Navigate to the top right corner of the homepage and click \" Registration\". ﻿ Step 3: On the registration page, provide the mandatory details. (the fields marked with * are mandatory). If required, verify your Mobile Number and/or Email ID via OTP. Finally, click \"Register\". Application Step 1: Visit the \" Samarth Portal \". ﻿ ﻿ Step 2:  Use the credentials you created during registration to log in. Step 3:  Navigate to the online application form of the scheme you intend to apply for. Step 4:  In the application form, fill in all the mandatory fields and upload all the mandatory documents in the specified format and size. Step 5:  Carefully review all the information provided. Make any necessary corrections. Step 6:  Acknowledge and agree to the terms and conditions, declaration, and privacy policy (if any). Step 7:  Click the \"Submit\" to submit your application.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cwnss",
+    "name": {
+      "en": "Construction Workers Night Shelter Scheme (MPBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh provides for the construction of night shelters in urban areas and large Gram Panchay",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Construction Workers Night Shelter Scheme\" by the Labour Department, Government of Madhya Pradesh provides for the construction of night shelters in urban areas and large Gram Panchayats. These shelters are intended for construction workers and their dependent family members who temporarily relocate from other places for work.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Construction Workers Night Shelter Scheme\" by the Labour Department, Government of Madhya Pradesh provides for the construction of night shelt...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Registration The applicant should be a resident of Madhya Pradesh",
+      "at least 90 days during the preceding 12 months",
+      "Application The applicant should be a Construction worker",
+      "work"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 18,
+      "maxAge": 60,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity Proof (e",
+        "description": "Identity Proof (e",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card) Passport",
+        "description": "Aadhaar Card) Passport-size Photograph Proof of Residence (e",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Utility bill",
+        "description": "Utility bill",
+        "mandatory": true
+      },
+      {
+        "name": "Voter ID",
+        "description": "Voter ID",
+        "mandatory": true
+      },
+      {
+        "name": ") Ration Card (optional) Bank Account Details (e",
+        "description": ") Ration Card (optional) Bank Account Details (e",
+        "mandatory": false
+      },
+      {
+        "name": "Copy of Bank Passbook) Caste Certificate (if appli",
+        "description": "Copy of Bank Passbook) Caste Certificate (if applicable) Undertaking/Declaration Age Certificate Valid Identity Cards Employment Certificate Signature Any other documents as required",
+        "mandatory": false
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Commissioner Municipal Corporation / Chief Municipal Officer Nagar palika / Nagar Panchayat and request the hard copy of the prescribed format of the application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents, within the prescribed period (if any), to the authority. Step 4: Request a receipt or acknowledgement from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). ﻿ NOTE: Ensure that the application is submitted within the prescribed period, if any.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "cofhft",
+    "name": {
+      "en": "Construction of Free Houses for Tribals",
+      "hi": ""
+    },
+    "ministry": "constructs houses on these lands to ensure that tribals have access to safe and permanent shelter",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Construction of Free Houses for Tribals\" scheme launched by the Adi Dravidar and Tribal Welfare Department, Tamil Nadu, is designed to provide free housing to tribal communities who have been allocated house site pattas. Under this program, the state government constructs houses on these lands to ensure that tribals have access to safe and permanent shelter. The scheme is primarily aimed at improving the living conditions of SC/ST communities by providing basic infrastructure.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Construction of Free Houses for Tribals\" scheme launched by the Adi Dravidar and Tribal Welfare Department, Tamil Nadu, is designed to provide...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the Scheduled Castes (SC)/ Scheduled Tribes (ST) communities",
+      "y should be a resident of Tamil Nadu",
+      "y should belong to the Scheduled Castes (SC)/ Scheduled Tribes (ST) communities",
+      "y must possess a free house site patta"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [
+        "SC",
+        "ST"
+      ],
+      "occupations": [],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Proof of identity (Aadhar card or any other docume",
+        "description": "Proof of identity (Aadhar card or any other document as directed by the authority)",
+        "mandatory": true
+      },
+      {
+        "name": "Caste certificate (Adi Dravidar/ Tribal/ Adi Dravi",
+        "description": "Caste certificate (Adi Dravidar/ Tribal/ Adi Dravidar converted to Christian)",
+        "mandatory": true
+      },
+      {
+        "name": "Free house site patta",
+        "description": "Free house site patta",
+        "mandatory": true
+      },
+      {
+        "name": "Any other documents (if required)",
+        "description": "Any other documents (if required)",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should collect the application form from the office of the Commissioner/ Panchayat Union/ District Adi dravidar and Tribal Welfare Officer/ Commissioner of Tribal Welfare. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents to the concerned office/ authority. Step 4: Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "chobcbg",
+    "name": {
+      "en": "Construction of Hostels for OBC Boys and Girls",
+      "hi": ""
+    },
+    "ministry": "Social Justice & Empowerment in 1998-99 to address the problem of educational backwardness of OBCs",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme “Construction of Hostels for OBC Boys and Girls” is a Centrally Sponsored Scheme launched by the Department of Social Justice & Empowerment, Ministry of Social Justice & Empowerment in 1998-99 to address the problem of educational backwardness of OBCs. The Scheme was initiated with a view to facilitate continuation of education by students belonging to OBCs, especially those hailing from rural and remote areas and from poor families. Objective: The scheme aims at providing hostel facilities to students belonging to socially and educationally backward classes, especially from rural areas, to enable them to pursue secondary and higher education. Priority will be given for the proposals for construction of hostels for under-graduate students vis-a-vis below under-graduate level.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme “Construction of Hostels for OBC Boys and Girls” is a Centrally Sponsored Scheme launched by the Department of Social Justice & Empowerm...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "financial assistance under the Scheme will be as follows: State Governments and UT Administrations",
+      "be constructed under the Scheme: 1",
+      "post matric students",
+      "be accommodated",
+      "OBC students hailing from low-income families"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 3,
+      "maxAmount": 2500
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "OBC"
+      ],
+      "occupations": [
+        "Student",
+        "Salaried"
+      ],
+      "purposes": [
+        "poultry",
+        "education",
+        "transport"
+      ],
+      "education": [
+        "Matriculation",
+        "Secondary"
+      ]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Documentary evidence of land availability",
+        "description": "Documentary evidence of land availability",
+        "mandatory": true
+      },
+      {
+        "name": "plot number and plot area Site Plan Preliminary co",
+        "description": "plot number and plot area Site Plan Preliminary cost estimate of each of the proposed Hostel building",
+        "mandatory": true
+      },
+      {
+        "name": "as per State PWD/CPWD schedule of rates applicable",
+        "description": "as per State PWD/CPWD schedule of rates applicable in the State/UT signed by an officer not below the rank of an Executive Engineer Copy of the latest Annual Report A statement of the full receipts an",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Eligible agencies seeking assistance under the scheme may download the proposal format prescribed in Annexure-I of the official scheme document. Step 2: Complete the form and submit it along with all the necessary documents to the following address: The Joint Secretary (Backward Classes), Ministry of Social Justice and Empowerment Government of India, Shastri Bhavan, New Delhi – 110001 Note 1: State Governments/UT Administration which submits proposals for construction of three or more hostels in a year will have to propose Girls' Hostels to the extent of at least one third of them. Note 2: while submitting proposals for release of Central assistance, the implementing agencies shall give an undertaking that they would construct the Hostels within a period of eighteen months from the date of award of work order or two year from release of 1st instalment of Central Assistance, whichever is earlier.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "clssmig",
+    "name": {
+      "en": "Credit Linked Subsidy Scheme for Middle Income Group",
+      "hi": ""
+    },
+    "ministry": "Housing and Urban Affairs (MoHUA) has introduced an interest subsidy scheme for acquisition/construc",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Ministry of Housing and Urban Affairs (MoHUA) has introduced an interest subsidy scheme for acquisition/construction of houses (including repurchase) to cater to the Middle Income Group (MIG) called “Credit Linked Subsidy Scheme for Middle Income Group (CLSS for MIG)” given the projected growth of urbanization in India and the consequent housing demands. CLSS for MIG will be implemented initially in 2017 for a period of one-year w.e.f. 01 January 2017. This will also be implemented as a Central Sector Scheme. Under the Scheme, beneficiaries of the Middle-Income Group (MIG) can seek housing loans from Banks, Housing Finance Companies, and other such institutions for the acquisition/ construction of houses (including re-purchase). Key highlights of the scheme: Coverage: All the Statutory towns as per Census 2011 and towns notified subsequently including Notified Planning/Development Areas and the areas falling within notified Planning/Development area under the jurisdiction of an Industrial Development Authority/Special Area Development Authority/Urban Development Authority or any such Authority under State legislation. Purpose: Interest subsidy on housing loan for acquisition/construction of houses (including re-purchase). Beneficiary: A beneficiary family will comprise a husband, wife, unmarried sons, and/or unmarried daughters. An adult earning member (irrespective of marital status) can be treated as a separate household. Monitoring: CLSS for MIG will be implemented and monitored by the Mission Directorate formed under MoHUPA to implement PMAY(U) Mission. State Level Sanctioning & Monitoring Committee (SLSMC) and State Level Bankers Committee (SLBC) will monitor the scheme through its prevalent institution mechanism.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Ministry of Housing and Urban Affairs (MoHUA) has introduced an interest subsidy scheme for acquisition/construction of houses (including repur...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "a single house",
+      "the income eligibility of the household under the Scheme",
+      "₹12 lakhs seeking housing loans from Banks",
+      "acquiring/ constructing houses",
+      "₹18 lakhs seeking housing loans from Banks"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "OBC"
+      ],
+      "maxIncome": 600000,
+      "occupations": [
+        "Salaried",
+        "Unemployed"
+      ],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Copy of Aadhaar Card 2",
+        "description": "Copy of Aadhaar Card 2",
+        "mandatory": true
+      },
+      {
+        "name": "Copy of PAN Card 3",
+        "description": "Copy of PAN Card 3",
+        "mandatory": true
+      },
+      {
+        "name": "Residence proof 4",
+        "description": "Residence proof 4",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of income 5",
+        "description": "Proof of income 5",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account details 6",
+        "description": "Bank account details 6",
+        "mandatory": true
+      },
+      {
+        "name": "Property documents 7",
+        "description": "Property documents 7",
+        "mandatory": true
+      },
+      {
+        "name": "Any other documents",
+        "description": "Any other documents",
+        "mandatory": true
+      },
+      {
+        "name": "as required",
+        "description": "as required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Processes: Step 01: The eligible applicant can apply through the financial institutions or banks that participate in the PMAY initiative. Step 02: Collect the application form through institutions or banks and fill out it completely. Step 03: The completely filled form is submitted to the lender along with the required papers. Step 04: The loan amount will be deposited into your bank account after verification. Step 05: After the loan is disbursed, your lender will contact the nodal agencies to begin the process of collecting interest subsidies. Step 06: The interest subsidy will be credited to your loan account upon verification, and your loan amount will be reduced, lowering your Equated Monthly Installment amount. Note 01: Interest subsidy will be credited upfront to the loan account of beneficiaries through Primary Lending Institutions (PLIs) resulting in reduced effective housing loans and Equated Monthly Installments (EMI). Note 02: PLIs are identified as Scheduled Commercial Banks, Housing Finance Companies, Regional Rural Banks, State Cooperative Banks, Urban Cooperative Banks, Small Finance Banks, Non-Banking Financial Company-Micro Finance Institutions (NBFC MFIs) or any other institution as may be identified by the MoHUA. Note 03 : PLIs shall link the details of the Aadhaar Number(s) of the beneficiary family to avoid duplication before submitting claims to CNAs. Track Application in the CLSS tracker: Step 01: Applicant will visit CLAP Portal . Step 02: On the Home Page, there is CLSS tracker, where the applicant will enter the Application ID as received through SMS from CLAP. Step 03: On entering of valid Application ID, the system will send an OTP code on the mobile numbers of the applicant as registered in CLAP Portal during Process-1 through PLIs. Step 04: On entering a valid OTP code, the system will display the stages of the beneficiary’s application. The system will display all passed stages with green colour and in the process stage with blue colour. Step 05: If the applicant existing CLSS beneficiary who has received a subsidy amount in multiple disbursements, then the CLSS tracker will display details of all past disbursements i.e. dates of disbursement and subsidy amounts. Central Nodal Agencies: National Housing Bank (NHB), Housing and Urban Development Corporation (HUDCO), and State Bank of India(SBI)  have been identified as Central Nodal Agencies (CNAs) to channel this subsidy to the lending institutions and for monitoring the progress of this component. Ministry may notify other institutions as CNA in the future. Toll-Free Helpline Numbers: NHB: 1800-11-3377, 1800-11-3388 HUDCO: 1800-11-6163 SBI: 1800-11-2018",
+    "channelPartnerTypes": [
+      "bank",
+      "Bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "dddrs",
+    "name": {
+      "en": "Deen Dayal Disabled Rehabilitation Scheme",
+      "hi": ""
+    },
+    "ministry": "India that provides financial assistance to voluntary organizations working for the education and re",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Deen Dayal Disabled Rehabilitation Scheme (DDRS) is a Central Sector Scheme of the Government of India that provides financial assistance to voluntary organizations working for the education and rehabilitation of persons with disabilities. The scheme was launched in 1999 and was revised and renamed in 2003. ﻿ Objective Create an enabling environment to ensure equal opportunities, equity, social justice, and empowerment of persons with disabilities. Encourage voluntary action for ensuring effective implementation of the Rights of Persons with Disabilities Act 2016.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Deen Dayal Disabled Rehabilitation Scheme (DDRS) is a Central Sector Scheme of the Government of India that provides financial assistance to vo...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "at least two years",
+      "undertake the proposed project",
+      "the profit of any individual or a body of individuals",
+      "their sex"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "energy"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "List of required documents from organization to process grant",
+        "description": "List of required documents from organization to process grant-in-aid Application Registration Certificate under Registration of Societies Act Registration Certificate under PWD Act 1995/RPwD Act",
+        "mandatory": true
+      },
+      {
+        "name": "2016 Details of the Managing/Executive Committee Attested copy of Rent Agreement indicating validity",
+        "description": "2016 Details of the Managing/Executive Committee Attested copy of Rent Agreement indicating validity period and details of accommodation available Location of the project Staff List Certificate of Spe",
+        "mandatory": true
+      },
+      {
+        "name": "Receipt & Payment Statement and Income & Expenditure Statement Item",
+        "description": "Receipt & Payment Statement and Income & Expenditure Statement Item-wise breakup of expenditure Utilization Certificate Resolution Indemnity Bond Authorization letter for sending grants-in-aid directl",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "All applications by NGOs seeking Grant-in-aid (GIA) should have register themselves on NGO Darpan portal of NITI Aayog . Get the Unique ID. Now apply through on-line process on the online E-Anudaanportal of the Ministry.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "dbhs-2bhks",
+    "name": {
+      "en": "Double Bedroom Housing Scheme (2BHK Scheme)",
+      "hi": ""
+    },
+    "ministry": "Telangana formulated the double bed room housing scheme in the month of October 2015 with a view to ",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The government of Telangana formulated the double bed room housing scheme in the month of October 2015 with a view to providing dignity to the poor by providing 100% subsidized housing. There is no beneficiary contribution under this scheme which is one of its kind. In rural areas, beneficiaries solely depend on seasonal conditions for their earnings, the 2BHK housing helped in protecting them from debt traps as was the case in the past. ﻿ Hitherto the old yardstick was to provide a 260 sqft house with a single room; The \"Double Bedroom Housing\" provides two bedrooms, a hall, a kitchen and two toilets covering the 560 Sqft plinth area. The plot area is 125 sq yards for an independent house in a rural area and worked out to 36 Sq yards of undivided land share in G++ pattern houses in urban areas. The land is thus provided free of cost apart from the cost of the dwelling unit. ﻿ This is perhaps the only State in the Country to launch such a liberal scheme for the poor. Under this scheme, the beneficiaries neither take a loan nor contribute which is a great boon for rural and urban poor families, for acquiring a dwelling unit. It is a paradigm shift from a credit and subsidy-based scheme to a \"fully subsidized scheme\" which creates a sound economic asset with a hygienic living environment for the beneficiary, there by contributing enormously to the socio-economic growth of the individual and as well as the community.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The government of Telangana formulated the double bed room housing scheme in the month of October 2015 with a view to providing dignity to the poor...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Below Poverty Line (BPL) Category",
+      "others"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 230,
+      "maxAmount": 230
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST"
+      ],
+      "occupations": [],
+      "purposes": [],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "PMAY/2BHK housing application (Available at Meeseva",
+        "description": "PMAY/2BHK housing application (Available at Meeseva: Link ) Ration Card / Food Security Card Aadhar Card of Applicant and Family Members Voter ID card of the Applicant Community Certificate of Applica",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 01: The villages for coverage of 2BHK will be selected by the District level committee as per the GO Ms. No.10, Housing (RH&C.A1) Dept, dt.15.10.2015 and selection of beneficiaries as per GO Ms No 12 Housing (RH&C.A1) Dept, dt.26.11.2015. ﻿ Step 02: The applications are called for 2BHK from eligible beneficiaries as per the schedule given by the District Collectors and the same will be collected during Gram Sabha by the designated officer. ﻿ Step 03: The preliminary scrutiny will be done at Gram Sabha to arrive at actual eligibility and prepare a list accordingly and forwarded it to the Tahsildar of that mandal for thorough verification of beneficiaries. ﻿ Step 04: The Tahsildar after thorough verification and vetting list of applicants, will submit the eligible final list of applicants to the District Collector. ﻿ Step 05: As per the schedule given by the District Collector, the list verified by the Tahsildar will be again placed in the Gram Sabhas for its final approval. ﻿ Step 06: The list finalized by Gram Sabha will be approved by the District Collector and will be made available to the public. ﻿ NOTE: In case of any complaints, they will get enquired by the District Level Officer, nominated by the District Collector and findings will be placed before the Appellate Committee and the orders passed by the Committee will be treated as final.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "daay",
+    "name": {
+      "en": "Dr. Ambedkar Awas Yojana",
+      "hi": ""
+    },
+    "ministry": "Social Justice & Empowerment",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme \"Dr. Ambedkar Awas Yojana\" was launched by the Director of Scheduled Caste Welfare, Department of Social Justice & Empowerment, Government of Gujarat, in the year 1999. Under the scheme, financial assistance of ₹1,20,000/- is provided to Scheduled Caste individuals who do not own a residential home, have an old rough residential home, or own a plot for residence, and who belong to the Below Poverty Line (BPL) category for the construction of a house. The assistance will be paid in three installments to economically weaker Scheduled Caste individuals, especially those below the poverty line, in both urban and rural areas for house construction on an individual basis. Implementing Agency: In Urban Areas : District Deputy Director, Scheduled Caste Welfare Office In Rural Areas: District Social Welfare Officer Office",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Dr. Ambedkar Awas Yojana\" was launched by the Director of Scheduled Caste Welfare, Department of Social Justice & Empowerment, Governme...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the Scheduled Caste category",
+      "receive benefits under the scheme",
+      "residence",
+      "toilets will be eligible for it separately as per the rules of the scheme",
+      "assistance for a toilet"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 20000,
+      "maxAmount": 120000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Gujarat"
+      ],
+      "categories": [
+        "SC",
+        "General"
+      ],
+      "maxIncome": 600000,
+      "minAge": 21,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": [],
+      "gender": "male"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph Aadhaar Card of the applicant Caste Certificate issued by the competent authority Ration card of the applicant Proof of annual income Proof of Residence (Any one of Electricit",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "A copy of the map showing the area of the land on which the house is to be constructed Election Iden",
+        "description": "A copy of the map showing the area of the land on which the house is to be constructed Election Identity Card House construction certificate Self-Declaration Photo of open plot/ dilapidated house wher",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 01: The eligible applicant may visit the e-Samaj Kalyan Portal: https://esamajkalyan.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Citizen Login’, click on New User ‘ Please Register Here ’. Step 03 : Enter your Full Name as per Aadhaar Card, Gender, Date of Birth, Aadhaar Card Number, Email ID, Caste etc. and then click on ‘Register’. Step 04: After successful registration, the applicants can login through their User ID and Password. Step 05: Now, click on ‘User Profile’ to update your profile. Step 06: Fill in all the mandatory information and then click on ‘Update’. Step 07: After updating the profile successfully, select the scheme appearing on the home page; an application form will open. Step 08: Fill in all the mandatory details in the application form and upload all the relevant documents. Step 09: Now agree with the terms & conditions and click on ‘Save Application’. Step 10: Submit the application form and take out the print of the application for future reference. The applicant can note down the application number to track the application status by logging into the portal using their User ID and Password. ﻿ User Manual",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "dbjrlcwscs",
+    "name": {
+      "en": "Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme\" provides financial assistance to houseless leather artisans for constructing Living cum Work Sheds through the Rajiv Gandhi Rural Housing Corporation. The artisans who own a site, old house, or hut in their name can avail the benefit.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme\" provides financial assistance to houseless leather artisans for constructing L...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "sub-castes Arundathiyar"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 30000,
+      "maxAmount": 250000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Karnataka"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "maxIncome": 32000,
+      "occupations": [
+        "Artisan",
+        "Salaried"
+      ],
+      "purposes": [
+        "education",
+        "crafts"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph of the applicant and spouse",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Aadhaar Card",
+        "description": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Certificate with RD Number",
+        "description": "Caste Certificate with RD Number",
+        "mandatory": true
+      },
+      {
+        "name": "Income Certificate",
+        "description": "Income Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Ration Card",
+        "description": "Ration Card",
+        "mandatory": true
+      },
+      {
+        "name": "Site Khatha Certificate",
+        "description": "Site Khatha Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "E",
+        "description": "E-Shram Card (for cobbler/shoemaker profession)",
+        "mandatory": true
+      },
+      {
+        "name": "Skill test certificate issued by the Technical Sec",
+        "description": "Skill test certificate issued by the Technical Section Committee of the Corporation",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Registration Process: Step-01: Visit the official Seva Sindhu Portal . Step-02: Choose \"New Users Register Here\" and fill in your Aadhaar Number and the Captcha code. Step-03: An OTP will be sent to your Aadhaar-linked mobile number. Enter the OTP to continue. Step-04: Once your DigiLocker account is created, click \"Allow\" to proceed. Step-05: ﻿ Fill out your email ID, mobile number, create a password, and enter the captcha, then click \"Submit\". Step-06: You will receive OTPs on both your email and mobile number. Enter both OTPs and select \"Validate\". Step-07: Once validated, a confirmation message will indicate your registration is successful. ﻿ Applying for a Scheme: Step-01: Go to Seva Sindhu Portal and select \"Department & Services\". Step-02: Select department \"Social Welfare Department\" and click on the scheme \"Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme\" Step-03: Click \"Apply Online\" and enter your registered email ID/mobile number and the OTP. Step-04: Select the scheme and provide your personal, address, and banking details as required. Step-05: Once submitted, you will receive an Application ID. You can use this ID to track your application status on the portal.",
+    "channelPartnerTypes": [
+      "bank",
+      "dic"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "fahfptihbocwwb",
+    "name": {
+      "en": "Financial Assistance for Hostel Facility in Professional/Technical Institutions (HBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Haryana",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme “Financial Assistance for Hostel Facility in Professional/Technical Institutions” is implemented by the Haryana Building and Other Construction Workers Welfare Board (HBOCWWB), Labour Department, Government of Haryana. Under this scheme, the Board provides financial assistance of up to ₹1,20,000/- to the children of construction workers for hostel facilities while they pursue technical/professional courses in recognized institutes. The financial assistance will be given directly to the recognized government or private institute, college, university, IIT, IIM, AIIMS, etc. Reimbursement of admission expenses will be provided to the candidate upon submission of an attested copy of the original receipt.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme “Financial Assistance for Hostel Facility in Professional/Technical Institutions” is implemented by the Haryana Building and Other Const...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "benefits under this scheme",
+      "hostel facilities will be available for up to three children per worker",
+      "for benefits under this scheme"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 120000,
+      "maxAmount": 120000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Haryana",
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Student",
+        "Salaried"
+      ],
+      "purposes": [
+        "education",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Documents required for registration under HBOCWWB",
+        "description": "Documents required for registration under HBOCWWB: Identity proof i",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card",
+        "description": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "name": "Voter Card Passport",
+        "description": "Voter Card Passport-size photograph Attested work experience document Proof of Residence Ration Card Bank account details Caste Certificate (If applicable) Proof of age Parivar Pehchan Patra (Family I",
+        "mandatory": false,
+        "format": "JPEG"
+      },
+      {
+        "name": "Undertaking/declaration ﻿ Any other documents as required Note",
+        "description": "Undertaking/declaration ﻿ Any other documents as required Note: The claim applications of students living in hostels for technical/professional courses in private institutions will be verified by any ",
+        "mandatory": true
+      },
+      {
+        "name": "Deputy Labor Commissioner",
+        "description": "Deputy Labor Commissioner",
+        "mandatory": true
+      },
+      {
+        "name": "Assistant Labor Commissioner",
+        "description": "Assistant Labor Commissioner",
+        "mandatory": true
+      },
+      {
+        "name": "Tehsildar",
+        "description": "Tehsildar",
+        "mandatory": true
+      },
+      {
+        "name": "Naib Tehsildar",
+        "description": "Naib Tehsildar",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Registration of a Construction Worker under HBOCWWB: Step 01: The applicant should visit the Official Website of the Labour Department Haryana. Step 02: On the home page, click on the “Building & Ors Const. Workers Welfare Board” link. A new window page will be opened. If you don't have login details then click on “ Click Here ” to register. Step 03: Applicant has to read all the instructions and then “Tick” the acknowledgment, then click on the “Submit” button. Step 04: Verification using Parivar Pehchan Patra (PPP)- Family ID: a) Forget/not having Family ID: If you do not have PPP ID or forget the PPP ID, then you have to select that radio button and you are redirected to the PPP Portal for getting their PPP ID. b) Having a Family ID: If you have a family ID, then only you can move to the next step for registration. To proceed further, follow the given steps: • Select the “I have family ID” radio button • Enter Parivar Pehchan Patra number - Family ID • Click on “Fetch Family Details” which displays the family members registered under the given Family ID • Select a family member for registration • Enter the OTP that is being sent to the selected family member for verification • Click on “Click to Verify” Step 05: Aadhaar Verification before Registration: Provide your Aadhaar number and tick mark the checkbox for the declaration. Click on the “Continue” button. Step 06: After verification, fill out the complete registration form and submit the form. Step 07: Login into the account: After the final submission of the registration form, a worker can login into his/her account using their username and password but unable to avail of any benefit. Step 08: To avail of the benefits, a worker has to pay the registration fee and add a work experience of a minimum of 90 days of the preceding year. Step 09: Now, the worker needs to add work experience, to add 90 days of experience, the applicant has to fill in all the details where he/she has worked. Step 10: The schemes and other benefits can be availed once the 90 days’ work experience is approved by the Officer. Apply for Scheme Benefits: Step 01: Visit the Official Website of the Labour Department Haryana. Step 02: On the home page, click on \" HBOCW Board Beneficiary Login \". Step 03: Enter your Username, Password, Captcha, and click on the submit button. Step 04: In the opened window, click on \"Schemes\", and a list of schemes will appear on the screen. Step 05: Now, select the scheme and read its details. Step 06: Fill in all the required details in the online application form and submit it. Application Tracking: Workers can track their application status online through the official website of the Labour Department Haryana. Relevant updates will be sent to the registered mobile number.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "gitanjali-housing",
+    "name": {
+      "en": "GITANJALI HOUSING SCHEME",
+      "hi": ""
+    },
+    "ministry": "Purpose:\tTo provide housing for homeless people in West Bengal",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Name of the scheme:\tGitanjali Housing Scheme, West Bengal Department:\tWest Bengal Housing Department Purpose:\tTo provide housing for homeless people in West Bengal. Application process:\tOffline Official website:\thttps://wbhousing.gov.in/ ﻿ Intending to provide proper shelters, free of cost, to the poor, the Government in Housing Department has laid proper focus on the construction of houses for the Economically Weaker Section of people.  This scheme is being implemented in the rural and non-Municipal urban areas in coordination with seven other Government Departments under the name of ‘Gitanjali’ and ‘Amar Thikana’. The Departments executing the scheme ‘Gitanjali’ are: a) Fisheries Department b) Backward Classes Welfare Department c) Minority Affairs & Madrasah Education Department d) Forest Department e) Sundarban Affairs Department and f) Paschimanchal Unnayan Affairs Department. ﻿ The Gitanjali Housing Scheme has two significant parts. One is the housing Scheme for the urban population and the other is the housing scheme for the rural population. The state government of West Bengal will build a shelter for the homeless people in the city. ﻿ The objective of the scheme is to provide proper shelter to the economically weaker section of society as well as to create additional employment opportunities for construction workers etc. The cost of such dwelling units for new construction on beneficiary’s land in rural areas varies across the span and terrain of the state as follows owing to different soil and climatic conditions: (a)  Rs. 1.67 lahks for beneficiaries, in general, residing in Rural areas of plains; (b) Rs.  1.23 lakh for fishermen residing in non-coastal areas to be implemented by the Fisheries Department; (c) Rs. 1.94 lahks for beneficiaries residing in the forest fringe areas of Sunderbans (to be implemented by Forest Department), and, for beneficiaries residing in other non-forest Coastal areas to be implemented by Sundarban Affairs Department & Fisheries Department; (d) Rs.  2.51 lakhs for beneficiaries residing within the forest fringe areas and forest villages in hill areas of Darjeeling district to be implemented by the Forest Department; (e) Rs. 3 lahks within the forest villages of Jalpaiguri district to be implemented by the Forest Department. ﻿ The cost of such dwelling units for new construction in Non-Municipal Semi-Urban areas is as follows: (i)      Rs. 1.67 lakh - for single–storied building on beneficiary’s land; (ii)      Rs. 3.30 lakh – for multi-Storied building on the own land of implementing Government agencies or on Government land. ﻿ Construction of housing complexes in cluster approach is being explored for the EWS people in suitable areas dove-tailing with the programme ‘Nija Griha Nija Bhumi’ launched by L&LR Department. Panchayat and Rural Development Department are implementing the scheme ‘Amar Thikana’ at a unit cost of Rs. 45,000/- for the plain areas and Rs. 48,500/- in hills, difficult areas, and coastal areas. Families with a Monthly income of Rs. 6000/- or less will be benefitted under the scheme. ﻿ Within this scheme, The State Government is providing Rs. 70 thousand per house in the plain area and Rs. 75 thousand per house in the Hill area and also in the Sundarban area under the project. Through the District Magistrate, 70% will be deposited as the first installment to the Bank account of the beneficiary and the residue 30% will be deposited as the second installment. To get the advantage the prospective beneficiary only should have hassle-free land in his name. ﻿ Who can apply: Homeless but owners of land and having monthly income below Rs. 6000/-, may apply under this project. In short, every poor of the state and especially those who are homeless due to flood or caving in of the embankment may apply.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Name of the scheme:\tGitanjali Housing Scheme, West Bengal Department:\tWest Bengal Housing Department Purpose:\tTo provide housing for homeless peopl...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "floods or other natural calamities will be considered eligible for the Gitanjali Housing Scheme",
+      "all over the state of West Bengal including Rural and Urban areas",
+      "for the Gitanjali Housing Scheme",
+      "ies: a) Poor People in Rural and Urban areas"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "West Bengal"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "The following documents are commonly required",
+        "description": "The following documents are commonly required: ﻿ Identity proof includes Aadhaar card",
+        "mandatory": true
+      },
+      {
+        "name": "voter ID",
+        "description": "voter ID",
+        "mandatory": true
+      },
+      {
+        "name": "PAN card",
+        "description": "PAN card",
+        "mandatory": true
+      },
+      {
+        "name": "passport",
+        "description": "passport",
+        "mandatory": true
+      },
+      {
+        "name": "or driving license",
+        "description": "or driving license",
+        "mandatory": true
+      },
+      {
+        "name": "Address proof such as Aadhaar card",
+        "description": "Address proof such as Aadhaar card",
+        "mandatory": true
+      },
+      {
+        "name": "voter ID",
+        "description": "voter ID",
+        "mandatory": true
+      },
+      {
+        "name": "electricity bill",
+        "description": "electricity bill",
+        "mandatory": true
+      },
+      {
+        "name": "water bill",
+        "description": "water bill",
+        "mandatory": true
+      },
+      {
+        "name": "or telephone bill",
+        "description": "or telephone bill",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "At the district level, a sub-divisional governor, SDO, and block development officer BDO conduct the entire activities of the Scheme. In this case, the office can be contacted for the Scheme. In addition, a district governor and additional district governor supervise the work in each district. ﻿ If you are considered eligible for the Gitanjali Housing Scheme, you can apply online for the benefits of this Scheme. ﻿ There was no official portal for applying online but If government provides Gitanjali Housing Scheme Online Registration Then from there, you have to select Gitanjali Awas Yojana and press the registration button. ﻿ Then a form will come in front of you. You have to fill in the required information on this site. ﻿ However, make sure that the information you have filled in is correct. Then you need to attach the necessary documents and submit them carefully. ﻿ The housing money received under the Gitanjali Housing Scheme will go directly to the bank account. However, in this case, the housing money can come in different installments. ﻿ https://wbhousing.gov.in/pages/display/399-gitanjali-housing-scheme",
+    "channelPartnerTypes": [
+      "office",
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "glbngs",
+    "name": {
+      "en": "Gadiya Lohar Maharana Pratap Bhawan Nirman Yojana",
+      "hi": ""
+    },
+    "ministry": "Rajasthan",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme \"Gadiya Lohar Maharana Pratap Bhawan Nirman Yojana\" was introduced by the Social Justice and Empowerment Department, Government of Rajasthan. Under this scheme, financial assistance of ₹1,20,000/- is provided in three instalments to Gadiya Lohar families in Rajasthan for the construction of permanent houses and ensuring their settlement. Objectives: To provide permanent houses to the Gadiya Lohar families. To provide financial assistance in three installments for house construction. To promote the social and economic integration of Gadiya Lohars community.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Gadiya Lohar Maharana Pratap Bhawan Nirman Yojana\" was introduced by the Social Justice and Empowerment Department, Government of Rajas...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the Gadiya Lohar community",
+      "house construction"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 40000,
+      "maxAmount": 120000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Rajasthan"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Document Submit in First Installment",
+        "description": "Document Submit in First Installment: Identity proof Caste Certificate (Issued by a competent authority) Proof of Land Ownership (Patta/Title Deed) Domicile Certificate Bank account details The applic",
+        "mandatory": true
+      },
+      {
+        "name": "Any other documents as required Second Installment",
+        "description": "Any other documents as required Second Installment: Construction Progress Report (for second and third installments) Final Installment: Utilization Certificate (for final installment)",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the District Social Welfare Office and request a hard copy of the prescribed format of the application form from the staff exclusively entrusted to issue and collect filled-in applications. Step 2: In the application form, fill in all the mandatory fields and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents to the District Social Welfare Office. Step 4: Request a receipt or acknowledgment from the District Social Welfare Office to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "gvyr",
+    "name": {
+      "en": "Gaushala Vikas Yojana",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Gaushala Vikas Yojana\" launched on 26th December 2019, by the Animal Husbandry Department, Rajasthan, aims to support registered gaushalas with ownership or long-term leased land (minimum 20 years) to develop permanent infrastructure. Eligible gaushalas must have maintained at least 100 cattle consistently for the past two years and should not have any financial irregularities under review.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Gaushala Vikas Yojana\" launched on 26th December 2019, by the Animal Husbandry Department, Rajasthan, aims to support registered gaushalas wit...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the past two years to qualify for infrastructure construction",
+      "share information and cooperate on relevant initiatives are eligible",
+      "additional construction work as per requirements",
+      "for additional construction work as per requirements"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000000,
+      "maxAmount": 1000000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Rajasthan"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "dairy",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Estimate approved by competent level for getting t",
+        "description": "Estimate approved by competent level for getting the construction work done",
+        "mandatory": true
+      },
+      {
+        "name": "Copy of Registration number and date under the Raj",
+        "description": "Copy of Registration number and date under the Rajasthan Societies Registration Act",
+        "mandatory": true
+      },
+      {
+        "name": "1958",
+        "description": "1958",
+        "mandatory": true
+      },
+      {
+        "name": "or Rajasthan Gaushala Act",
+        "description": "or Rajasthan Gaushala Act",
+        "mandatory": true
+      },
+      {
+        "name": "1960",
+        "description": "1960",
+        "mandatory": true
+      },
+      {
+        "name": "Name",
+        "description": "Name",
+        "mandatory": true
+      },
+      {
+        "name": "branch",
+        "description": "branch",
+        "mandatory": true
+      },
+      {
+        "name": "address",
+        "description": "address",
+        "mandatory": true
+      },
+      {
+        "name": "account number",
+        "description": "account number",
+        "mandatory": true
+      },
+      {
+        "name": "and IFSC code number of the Gaushala (verified by ",
+        "description": "and IFSC code number of the Gaushala (verified by the bank)",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Visit the official website . Step 2: Scroll down to the window named \"Documents related to the plan\". Step 3: Download the application form and fill in all the details. Step 4: Submit the application form along with the required documents to the Directorate of Gopalan. Step 5: Await verification and approval from the concerned authority. Online Aplication Process for Gaushala Registration: Click here to know. ﻿ Scheme Contact Details: Nodal Officer Name & Designation: Dr Arti; Veterinary Officer Phone Number: 9982393220 Email: dir.dgs@rajasthan.gov.in",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "grhbbocwwb",
+    "name": {
+      "en": "Grant for the Repair of House (BBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Bihar",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Grant for the Repair of House\" scheme is implemented by the Bihar Building & Other Construction Workers Welfare Board (BBOCWWB), Labour Resources Department, Government of Bihar. Under this scheme, financial assistance of ₹20,000/- is provided to registered construction workers who have been members of the Board for at least three years for the repair of their house. However, workers who have already received financial assistance for house construction, bicycles, or tools are not eligible for this benefit. The assistance is provided only once to each eligible worker.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Grant for the Repair of House\" scheme is implemented by the Bihar Building & Other Construction Workers Welfare Board (BBOCWWB), Labour Resour...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "house construction",
+      "this benefit",
+      "a worker",
+      "for this benefit"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 20000,
+      "maxAmount": 20000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Bihar"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity proof worker i",
+        "description": "Identity proof worker i",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card 2",
+        "description": "Aadhaar Card 2",
+        "mandatory": true
+      },
+      {
+        "name": "Photo of the house being repaired with registered ",
+        "description": "Photo of the house being repaired with registered construction worker 3",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "LPC issued by the Circle Officer as ownership cert",
+        "description": "LPC issued by the Circle Officer as ownership certificate of the land 4",
+        "mandatory": true
+      },
+      {
+        "name": "Current receipt of the land 5",
+        "description": "Current receipt of the land 5",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of residence 6",
+        "description": "Proof of residence 6",
+        "mandatory": true
+      },
+      {
+        "name": "Ration card 7",
+        "description": "Ration card 7",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account details/copy of bank passbook 8",
+        "description": "Bank account details/copy of bank passbook 8",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Certificate (If applicable) 9",
+        "description": "Caste Certificate (If applicable) 9",
+        "mandatory": false
+      },
+      {
+        "name": "Undertaking/declaration 10",
+        "description": "Undertaking/declaration 10",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Registration of a Construction Worker under BBOCWWB: Step 1: Visit the Official Website of the Bihar Building and Other Construction Workers Welfare Board. Step 2: On the homepage, click on \"Labour Registration\". Step 3: If you are not registered, click on \" Apply for New Registration \". Step 4: Enter your Aadhar card number and name, then click \"Authenticate\". Step 5: A dashboard will appear. Enter all required details, ensuring that all fields marked with an asterisk (*) are filled in correctly. Step 6: Click on \"Submit\" and proceed to pay the application fee online. Step 7: You will receive your construction worker registration number upon successful registration. Apply for Scheme Benefits: Step 1: Visit the Official Website of the Bihar Building and Other Construction Workers Welfare Board. Step 2: Click on \"Scheme Application\" and select \" Apply for Scheme \". Step 3: Enter your registration number and click \"Show\" to view your details. Step 4: Select the scheme you wish to apply for to avail the benefits. Step 5: Enter all required information and upload the necessary documents. Step 6: Click on \"Submit Application\" to complete the process. Application Tracking: Applicant can track their application status online through the official website of the Bihar Building and Other Construction Workers Welfare Board. Relevant updates will be sent to the registered mobile number.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "hfshpbocwwb",
+    "name": {
+      "en": "Hostel Facility Scheme (HPBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Hostel Facility Scheme, introduced by the Himachal Pradesh Building and Other Construction Workers Welfare Board (HPBOCWWB), provides financial assistance ranging from ₹15,000/- to ₹20,000/- annually. This support covers accommodation, boarding, and food expenses for the children of registered worker while they reside in a hostel.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Hostel Facility Scheme, introduced by the Himachal Pradesh Building and Other Construction Workers Welfare Board (HPBOCWWB), provides financial...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 15000,
+      "maxAmount": 20000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Himachal Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 18,
+      "maxAge": 60,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity Card of the Member Bank Account Details (",
+        "description": "Identity Card of the Member Bank Account Details (e",
+        "mandatory": true
+      },
+      {
+        "name": "Copy of Bank Passbook) Labour Card Identity proof ",
+        "description": "Copy of Bank Passbook) Labour Card Identity proof of student/child Receipt of Hostel Expenditure Age Certificate Any other documents as required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "The Registration Process for Building and Other Construction Workers is as follows: ﻿ Step 1: The interested applicant should visit the Labor Welfare Office (during office hours) and request a hard copy of the prescribed application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste a passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attested, if required). Step 3: Submit the duly filled and signed application form along with a wage slip or appointment letter from the employer, verifying 90 days of construction work. If unavailable, a certificate from a local authority (such as a councilor, executive officer, or Panchayat Secretary) can be submitted to verify employment. Step 4: After submitting the documents and payment, the worker will receive an acknowledgment receipt confirming their registration. ﻿ NOTE 1: Ensure that the application is submitted within the prescribed period, if any. NOTE 2: After three years, the worker must visit the office to pay a renewal fee and submit proof of 90 days of work each year to maintain eligibility for benefits. NOTE 3: A one-time registration fee must be paid at the office, and it will be valid for three years.",
+    "channelPartnerTypes": [
+      "Office",
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "hs",
+    "name": {
+      "en": "House Subsidy Scheme",
+      "hi": ""
+    },
+    "ministry": "Himachal Pradesh to provide financial assistance to individuals from marginalized sections for the c",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The housing subsidy scheme was launched by the Government of Himachal Pradesh to provide financial assistance to individuals from marginalized sections for the construction of their own houses. Under this scheme, a subsidy of Rs. 1,30,000/- is provided to persons from Scheduled Castes, Other Backward Classes, Minority Communities, Single Women, or handicapped for the construction of their houses. This scheme aims to improve the living conditions and overall quality of life of individuals from these sections.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The housing subsidy scheme was launched by the Government of Himachal Pradesh to provide financial assistance to individuals from marginalized sect...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Scheduled Cast"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Himachal Pradesh"
+      ],
+      "categories": [
+        "OBC"
+      ],
+      "occupations": [],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": [],
+      "gender": "female",
+      "disabilityRequired": true
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Bonafide Himachali Certificate of the couple",
+        "description": "Bonafide Himachali Certificate of the couple",
+        "mandatory": true
+      },
+      {
+        "name": "Scheduled Cast/Other Backward Classes/Minority Com",
+        "description": "Scheduled Cast/Other Backward Classes/Minority Community/Single Women or Handicapped Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Income Certificate",
+        "description": "Income Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Revenue Papers (Record of Right – Parcha & Tatima)",
+        "description": "Revenue Papers (Record of Right – Parcha & Tatima) Recommendation from the concerned Gram Panchayat",
+        "mandatory": true
+      },
+      {
+        "name": "Certificate from the applicant that he/she is not ",
+        "description": "Certificate from the applicant that he/she is not availed any such subsidy earlier",
+        "mandatory": true
+      },
+      {
+        "name": "Latest Photographs of the present house",
+        "description": "Latest Photographs of the present house",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Obtain the application form: The application form for the scheme can be obtained from the concerned department or can be downloaded from the official website. Fill out the application form: Fill out the application form with all the required details such as personal information, income details, and details of the proposed construction. Gather necessary documents: Gather all the necessary documents such as Bonafied Himachali Certificate of the couple, Scheduled Cast/Other Backward Classes/Minority Community/Single Women or Handicapped Certificate, Income Certificate, Revenue Papers, Recommendation from the concerned Gram Panchayat, Certificate from the applicant that he/she is not availed any such subsidy earlier, and Latest Photographs of the present house. Submit the application: Submit the filled application form along with all the necessary documents to the concerned department or Gram Panchayat. Verification and approval: The application will be verified by the concerned authorities, and if found eligible, the subsidy amount will be approved and disbursed to the beneficiary.",
+    "channelPartnerTypes": [
+      "dic"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "ha",
+    "name": {
+      "en": "Housing Assistance (Madhya Pradesh)",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh, provides housing support to tribal boys and girls pursuing higher education outside ",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme \"Housing Assistance (Madhya Pradesh)\" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, provides housing support to tribal boys and girls pursuing higher education outside their hometown, where hostels are not available.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Housing Assistance (Madhya Pradesh)\" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, provides ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "a government hostel"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Student",
+        "Salaried"
+      ],
+      "purposes": [
+        "education",
+        "health"
+      ],
+      "education": [
+        "Graduate",
+        "Diploma"
+      ]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph Aadhaar card Domicile certificate of Madhya Pradesh Caste certificate Previous class passing certificate/marksheet Samagra ID Bank account details/Bank Passbook Other necessar",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Hostel Superintendent Vikas Khand Education Officer Principal District Coordinator/Assistant Commissioner, and request the hard copy of the prescribed format of the application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents, within the prescribed period (if any), to the authority. Step 4: Request a receipt or acknowledgement from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). NOTE: Ensure that the application is submitted within the prescribed period, if any.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "hasukbocwwb",
+    "name": {
+      "en": "Housing Assistance Scheme (UKBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Uttarakhand",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme “Housing Assistance Scheme” is implemented by the Uttarakhand Building and Other Construction Workers’ Welfare Board (UKBOCWWB), Labour Department, Government of Uttarakhand. Under the scheme, an advance loan is provided to registered construction workers for the purchase or construction of a house, subject to the conditions specified by the Board. In order to get an advance loan, the worker must have been a member of the fund for five years and have at least 15 years remaining until reaching the age of superannuation/retirement.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme “Housing Assistance Scheme” is implemented by the Uttarakhand Building and Other Construction Workers’ Welfare Board (UKBOCWWB), Labour ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "five years",
+      "y should be a resident of Uttarakhand"
+    ],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 50000,
+      "maxAmount": 50000,
+      "interestRate": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    "eligibilityRules": {
+      "states": [
+        "Uttarakhand"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 15,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Documents required for New Registration",
+        "description": "Documents required for New Registration: Two Passport size photographs Proof of age Certificate of working as a construction worker for at least 90 days in the previous year Affidavit of construction ",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Aadhaar Card Bank account details Any other document as required Documents required for Welfare Sche",
+        "description": "Aadhaar Card Bank account details Any other document as required Documents required for Welfare Scheme: Self-attested copy of Registration ID Card of Worker/Labour Card Copy of Aadhaar Card of worker ",
+        "mandatory": true
+      },
+      {
+        "name": "Any other document as required",
+        "description": "Any other document as required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "For New Registration under the UKBOCWWB: Step 01: To become a beneficiary, a construction worker who has completed 18 years of age and has not completed 60 years, has worked as a construction worker for at least 90 days during the preceding 01 year, can register himself/herself. Step 02: The eligible worker may visit the nearest Jan Seva Kendra or Shramik Suvidha Kendra along with all the relevant documents for online registration. Step 03: Upon successful registration, the applicant will receive a Registration Number for future reference. Step 04: The applicant can also track the status of their application online by visiting the official website: https://ukbocw.uk.gov.in/DynamicPages/LabourSearch-hi.aspx ﻿ Note 01: After verification of the application, the photo identity card will be issued by the registration officer. Note 02: Registration will be done free of cost, which will be valid for three years and after the completion of three years, only ₹100/- contribution will be required to be deposited by the construction worker for every next three years. Application Process for Welfare Scheme Benefits: Step 01: To avail the benefits of the scheme, the eligible applicant may visit the nearest Shram Suvidha Kendra along with all the relevant documents. Step 02: Upon successful submission of the application form, the applicant will receive an Application Number for future reference. Step 03: The applicant can also track the status of their application online by visiting the official website: https://ukbocw.uk.gov.in/DynamicPages/LabourSchemeSearch.aspx",
+    "channelPartnerTypes": [
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "hssgbocwwb",
+    "name": {
+      "en": "Housing Subsidy Scheme (GBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Gujarat",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The “Housing Subsidy Scheme” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Development & Employment Department, Government of Gujarat. The main objective of this scheme is to provide financial assistance to construction workers registered with the Gujarat Building and Other Construction Worker’s Welfare Board to build their own houses. In order to provide financial relief to the construction workers by giving subsidies for the houses purchased by them and to provide social stability to the construction workers, the  \"Housing Subsidy\" schemewasn started in the year 2021-22. It is planned to provide financial relief and social stability to construction workers through providing subsidies.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The “Housing Subsidy Scheme” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Developm...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "get the benefit of this scheme",
+      "the benefits of this scheme",
+      "have at least the last 2 years of registration with the construction worker's board",
+      "be made within one year from the date of the document mentioned in the house purchase document",
+      "be given by the worker in an affidavit as per the prescribed format herein"
+    ],
+    "financialAssistance": {
+      "type": "loan",
+      "minAmount": 15,
+      "maxAmount": 150000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Gujarat"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Documents required for ‘E",
+        "description": "Documents required for ‘E-Nirman Card’ under the GBOCWWB: Photograph of the worker Aadhaar Card Ration Card Caste Category certificate",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "if applicable Proof of age (Birth certificate/Driving Licence/PAN Card/Voter ID Card) ﻿ Self",
+        "description": "if applicable Proof of age (Birth certificate/Driving Licence/PAN Card/Voter ID Card) ﻿ Self-declaration certificate Employer Certificate Bank Passbook/cancelled Cheque Any other documents as required",
+        "mandatory": false
+      }
+    ],
+    "applicationProcess": "Application Process for ‘E-Nirman Card’ under the GBOCWWB: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Login to Portal’, click on ‘ Please Register Here ’. Step 03: Enter all the mandatory information and then click on ‘Register’. Step 04: After successful registration, the applicants can login through their User ID and Password. Step 05: Now, update your profile by entering all the necessary details as required and click on ‘Update’. Step 06: Select the ‘Construction Works Form’ and fill out all the mandatory information in the form. Step 07: Upload all the relevant documents, agree with the terms & conditions, and submit the form. Step 08: Once the application has been submitted, an application Number is generated which can be kept for future reference. Process to track Application Status: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, click on ‘View Citizen Application Status’. Step 03: Enter the Application Number and Date of Birth. Step 04: Now click on ‘View Status’. Application Process for Scheme Benefit: Step 01: The applicant may visit the Sanman Portal: https://sanman.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Citizen Login’, click on ‘ Please Register Here ’. Step 03: Enter your Aadhaar Card Number, select user type, and then enter your E-Nirman Card Number. Step 04: Now, click on ‘Fetch’ & submit the details. Step 05: After successful registration, the applicants can login through their User ID and Password. Step 06: Now, select the scheme and read the instructions carefully for the selected scheme. Step 07: Fill out the application form and upload all the relevant documents. Step 08: Agree with the Rules & Regulations and submit the application form. A confirmation email with the application Number will be sent to the registered email ID.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "lach",
+    "name": {
+      "en": "Loans and Advances for Construction of a House",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Loans and Advances for Construction of a House\" scheme by the Manipur Building and Other Construction Workers' Welfare Board provides financial support to registered construction workers to build their own houses. Beneficiaries can avail loans based on their skill level, with amounts ranging from ₹1,00,000/- to ₹2,00,000/-. The loan carries a 5% simple interest, with a 5-year repayment period, and the worker must submit a completion certificate within six months of receiving the loan.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Loans and Advances for Construction of a House\" scheme by the Manipur Building and Other Construction Workers' Welfare Board provides financia...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 100000,
+      "maxAmount": 200000,
+      "interestRate": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    "eligibilityRules": {
+      "states": [
+        "Manipur"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Certificate of Registration",
+        "description": "Certificate of Registration",
+        "mandatory": true
+      },
+      {
+        "name": "Payment Receipt of the Last Contribution",
+        "description": "Payment Receipt of the Last Contribution",
+        "mandatory": true
+      },
+      {
+        "name": "Estimate Cost Copy of the House Construction",
+        "description": "Estimate Cost Copy of the House Construction",
+        "mandatory": true
+      },
+      {
+        "name": "Sanction Order Copy (granting loan/advance for con",
+        "description": "Sanction Order Copy (granting loan/advance for construction of house in respect of the subsidy up to 25% of the amount of loan/advance received)",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Card of the applicant and construction wor",
+        "description": "Aadhaar Card of the applicant and construction worker",
+        "mandatory": true
+      },
+      {
+        "name": "First Page of Bank Passbook",
+        "description": "First Page of Bank Passbook",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step-1: The interested applicant should visit (during office hours) the Manipur Building and Other Construction Workers Welfare Board and request a hard copy of the prescribed format of the application form from the staff exclusively entrusted to issue and collect filled-in applications. OR The interested applicant visits the official website and downloads the application form . Step-2: In the application form, fill in all the mandatory fields, and attach copies of all the mandatory documents (self-attest, if required). Step-3: Submit the duly filled and signed application form along with the documents to the Labour Board Inspector Step-4: Request a receipt or acknowledgement from the Labour Board Inspector to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). ﻿ NOTE: The applicant submits the surety bond to the board. The completion certificate shall be submitted to the Board by the beneficiary building worker within six months from the date of Drawal of the Loan or Advance.",
+    "channelPartnerTypes": [
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "mabay",
+    "name": {
+      "en": "Mukhyamantri Aawasiye Bhu-Adhikaar Yojana",
+      "hi": ""
+    },
+    "ministry": "can truly reap the benefits once they obtain a housing plot",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Each family is entitled to live a dignified life with access to essential necessities. Those who are eligible for the housing schemes initiated by either the Central or State government can truly reap the benefits once they obtain a housing plot. Once the residential plot is secured, assistance can be availed for housing loans through government schemes and banks. In light of this, the state government is launching the \"Mukhyamantri Awasiya Bhu-Adhikar Yojana,\" aimed at granting eligible families residential plots on the 'populated areas' within each gram panchayat region in rural areas.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Each family is entitled to live a dignified life with access to essential necessities. Those who are eligible for the housing schemes initiated by ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "live independently",
+      "obtaining ration from the Public Distribution System (PDS) shop"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Self-employed",
+        "Salaried"
+      ],
+      "purposes": [
+        "service",
+        "trading",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhar card",
+        "description": "Aadhar card",
+        "mandatory": true
+      },
+      {
+        "name": "Address proof",
+        "description": "Address proof",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of income",
+        "description": "Proof of income",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of age",
+        "description": "Proof of age",
+        "mandatory": true
+      },
+      {
+        "name": "Identity card",
+        "description": "Identity card",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account statement",
+        "description": "Bank account statement",
+        "mandatory": true
+      },
+      {
+        "name": "Mobile number",
+        "description": "Mobile number",
+        "mandatory": true
+      },
+      {
+        "name": "Passport size photograph",
+        "description": "Passport size photograph",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Applicants have to visit official website. ﻿ Click on \"Apply\" under the scheme name. On the new page , click on the \"Avedan\". Select the \"New Application\" option. Now fill out the application form and provide the required details. Submit",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "mayhpbocwwb",
+    "name": {
+      "en": "Mukhyamantri Awas Yojna (HPBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "under the PM/MA Housing Scheme",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Mukhyamantri Awas Yojna, introduced by the Himachal Pradesh Building and Other Construction Workers Welfare Board (HPBOCWWB), provides financial assistance of ₹1,50,000/- to registered worker. This amount is granted for the construction of their house, under the Chief Minister/PM Housing Scheme, upon approval by the Rural Development Department under the PM/MA Housing Scheme.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Mukhyamantri Awas Yojna, introduced by the Himachal Pradesh Building and Other Construction Workers Welfare Board (HPBOCWWB), provides financia...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 150000,
+      "maxAmount": 150000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Himachal Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 18,
+      "maxAge": 60,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity Proof Proof of residence Bank account det",
+        "description": "Identity Proof Proof of residence Bank account details/copy of bank passbook Age proof Labour Card ID proof of the worker issued by the organization Any other documents as required",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Registration Process for Building and Other Construction Workers: Step 1: The applicant must visit the official website of the Himachal Pradesh Building and Other Construction Workers Welfare Board. Step 2: If you are a new user then click worker services , click on \" New Registration .\" Step 3: Once the dashboard appears, locate and complete the form by entering all required details. Mandatory fields are marked with an asterisk (*), ensuring that all essential information is provided. Step 4: Attach all necessary documents, including ID proof and any other relevant certificates, as specified. Ensure the documents are clear and meet the format requirements. Step 5: After completing the form and uploading the documents, click on the \"Submit\" button. You will be directed to the payment gateway to pay the application fee online. Step 6: Upon successful payment and submission, a registration number will be generated. This number serves as confirmation of your application and can be used for future reference. ﻿ Scheme Application Process: Step 1: The applicant must visit the official website of the Himachal Pradesh Building and Other Construction Workers Welfare Board. Step 2: Click on the option \" Apply for Benefits. \" Step 3: Enter your beneficiary details and date of birth, then click \"Search\" to view your information. Step 4: Select the scheme you wish to apply for to avail of the benefits. Step 5: Enter all required information and upload the necessary documents as prompted. Step 6: Finally, click on \"Submit Application\" to complete the process. ﻿ Application Tracking: Applicants can track their application status online through the official website of the Himachal Pradesh Building and Other Construction Workers Welfare Board. Relevant updates will be sent to the registered mobile number.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "mgawb",
+    "name": {
+      "en": "Mukhyamantri Gramin Awas Yojana",
+      "hi": ""
+    },
+    "ministry": "Awas Yojana\" was introduced by the Rural Development Department",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Mukhyamantri Gramin Awas Yojana\" was introduced by the Rural Development Department, Bihar, to address the housing needs of beneficiaries belonging to Scheduled Castes, Scheduled Tribes, and Extremely Backward Classes whose cluster housing, built under previous schemes before January 1996, has deteriorated. As these families are ineligible for the Pradhan Mantri Awas Yojana due to prior benefits, this scheme provides financial assistance in three installments directly to the beneficiaries' accounts for reconstructing their homes.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Mukhyamantri Gramin Awas Yojana\" was introduced by the Rural Development Department, Bihar, to address the housing needs of beneficiaries belo...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "rural area",
+      "the Scheduled Caste"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 40000,
+      "maxAmount": 120000
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhaar card of the applicant",
+        "description": "Aadhaar card of the applicant",
+        "mandatory": true
+      },
+      {
+        "name": "Caste certificate (for SC/ST/Extremely Backward Cl",
+        "description": "Caste certificate (for SC/ST/Extremely Backward Classes)",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account details",
+        "description": "Bank account details",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of ownership of damaged/broken house (if app",
+        "description": "Proof of ownership of damaged/broken house (if applicable)",
+        "mandatory": false
+      },
+      {
+        "name": "Recent passport",
+        "description": "Recent passport-sized photograph",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Address proof",
+        "description": "Address proof",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Applicants must visit the Block Development Officer (BDO) office in their respective area. Step 2: Collect the Mukhyamantri Gramin Awas Yojana application form from the office and fill properly. Step 3: Submit the filled form along with the required documents at the BDO office. Ensure you obtain an acknowledgment receipt for your submission. Note: Field officers may visit the site to inspect the condition of the existing house. Upon successful verification, the application is approved, and the financial assistance is sanctioned.",
+    "channelPartnerTypes": [
+      "Office",
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "mmvsksy",
+    "name": {
+      "en": "Mukhyamantri Vas Sthal Kray Sahayata Yojana",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Mukhyamantri Vas Sthal Kray Sahayata Yojana\" launched by the Rural Development Department, Bihar, aims to support landless beneficiaries listed under the Pradhan Mantri Awas Yojana–Rural (PMAY-G). The scheme helps those without residential land by offering financial aid directly into their bank accounts to purchase land for housing.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Mukhyamantri Vas Sthal Kray Sahayata Yojana\" launched by the Rural Development Department, Bihar, aims to support landless beneficiaries liste...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "housing allocation",
+      "direct fund transfer",
+      "y under PMAY-G"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 60000,
+      "maxAmount": 60000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Identity proof (e",
+        "description": "Identity proof (e",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar card",
+        "description": "Aadhaar card",
+        "mandatory": true
+      },
+      {
+        "name": "voter ID)",
+        "description": "voter ID)",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of landlessness (certified by the concerned ",
+        "description": "Proof of landlessness (certified by the concerned authority)",
+        "mandatory": true
+      },
+      {
+        "name": "PMAY",
+        "description": "PMAY-G beneficiary identification",
+        "mandatory": true
+      },
+      {
+        "name": "Bank account details",
+        "description": "Bank account details",
+        "mandatory": true
+      },
+      {
+        "name": "Residential proof",
+        "description": "Residential proof",
+        "mandatory": true
+      },
+      {
+        "name": "Passport",
+        "description": "Passport-size photographs",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: Verify your eligibility as a PMAY-G beneficiary. Step 2: Gather all required documents and submit your application through the designated Rural Development Department office. Step 3: The concerned authority will conduct a physical verification of landlessness and eligibility. Step 4: Upon approval, the amount will be directly transferred to the bank account.",
+    "channelPartnerTypes": [
+      "office",
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "oossh",
+    "name": {
+      "en": "Operation of SC Senior Hostel",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh aims to provide accommodations and a conducive learning environment for Scheduled Cas",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme \"Operation of SC Senior Hostel\" by the Scheduled Caste Welfare Department, Government of Madhya Pradesh aims to provide accommodations and a conducive learning environment for Scheduled Caste students. Through this scheme, separate junior, senior, and college hostels with free boarding and lodging facilities are provided to both boys and girls. The applications for this scheme must be submitted within one month after the fixed date for school admissions. The scheme is implemented at the state level through Divisional District Officers.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Operation of SC Senior Hostel\" by the Scheduled Caste Welfare Department, Government of Madhya Pradesh aims to provide accommodations a...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the Scheduled Caste category",
+      "senior hostels"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "occupations": [
+        "Student"
+      ],
+      "purposes": [],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph Aadhaar card Domicile certificate of Madhya Pradesh Caste certificate Previous Class Passing Certificate/ Marksheet Samagra ID Bank account details/Bank Passbook Other necessa",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: The interested applicant should visit (during office hours) the Head of the Institution and request the hard copy of the prescribed format of the application form from the concerned authority. Step 2: In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents, within the prescribed period (if any), to the authority. Step 4: Request a receipt or acknowledgement from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable). NOTE: Ensure that the application is submitted within the prescribed period, if any.",
+    "channelPartnerTypes": [
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "psnjsy",
+    "name": {
+      "en": "Panchayat Samiti Nandishala Jan Sahbhagita Yojana",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Panchayat Samiti Nandishala Jan Sahbhagita Yojana\", launched in 2021-22, by the Animal Husbandry Department, Rajasthan, aims to support the construction of permanent infrastructure for the shelter of stray male cattle in each Panchayat Samiti. The scheme provides financial assistance for Nandishala.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Panchayat Samiti Nandishala Jan Sahbhagita Yojana\", launched in 2021-22, by the Animal Husbandry Department, Rajasthan, aims to support the co...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "at least 3 years",
+      "sustain 250 male cattle",
+      "entities include local bodies"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 3,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "dairy",
+        "housing"
+      ],
+      "education": [],
+      "gender": "male"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Proof of organization's registration and existence",
+        "description": "Proof of organization's registration and existence for at least 3 years",
+        "mandatory": true
+      },
+      {
+        "name": "Land ownership documents for 20 bighas of private ",
+        "description": "Land ownership documents for 20 bighas of private land",
+        "mandatory": true
+      },
+      {
+        "name": "Experience certificate for operating a cattle shel",
+        "description": "Experience certificate for operating a cattle shelter for at least 3 years",
+        "mandatory": true
+      },
+      {
+        "name": "Any additional documents as per scheme guidelines",
+        "description": "Any additional documents as per scheme guidelines",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Obtain the application form from the Office of the District Joint Director, Animal Husbandry Department. Step 2: Review the tender notices and apply online as per the guidelines. Step 3: Submit the application form along with the required documents. Step 4: Await verification and approval from the concerned authority. ﻿ Scheme Contact Details: Nodal Officer Name & Designation: Dr. Anil Kaushik, Joint Director Phone Number: 9829332050 Email: dir.dgs@rajasthan.gov.in",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "pi",
+    "name": {
+      "en": "Pedalandariki Illu",
+      "hi": ""
+    },
+    "ministry": "Andhra Pradesh",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Launched by the Hon’ble Chief Minister of Andhra Pradesh, the \"Pedalandariki Illu\" is a Housing Scheme by the Revenue Department, Govt. of Andhra Pradesh. 25 lakh House Site Pattas have been announced for distribution to all the eligible beneficiaries residing in Rural & Urban areas on Saturation Mode irrespective of Caste, Creed, or Religion to facilitate the construction of houses for the homeless poor. The process of issue of House Site Pattas will be taken up on mission mode and distribution to all eligible houseless poor will be taken up. This scheme is also known as the \"YSR Housing Scheme\" and \"YSR Awaas Yojana\".",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Launched by the Hon’ble Chief Minister of Andhra Pradesh, the \"Pedalandariki Illu\" is a Housing Scheme by the Revenue Department, Govt. of Andhra P...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the identified Below Poverty Line (BPL) category household",
+      "y shall belong to the identified Below Poverty Line (BPL) category household",
+      "y shall not have their own House/House Site anywhere in the State of Andhra Pradesh",
+      "y shall not have been covered in any previous Housing Scheme of the State/Central Government",
+      "y shall not have more than 2"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Andhra Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhar Card White Ration Card Address Proof Bank A",
+        "description": "Aadhar Card White Ration Card Address Proof Bank Account PassBook Domicile Certificate Income Certificate Mobile Number Photograph",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: The Applications shall be invited at Village/Ward Level considering the village/town as a unit respectively. Step 2: All applications shall be enquired by the Village/Ward Volunteers for adherence to the eligibility conditions. Step 3: The draft List of identified eligible beneficiaries shall be published at Village/Ward Secretariat calling for further claims & objections. Step 4: Grama/Ward Sabha shall be conducted to finalize the list of beneficiaries duly redressing the claims & objections. Step 5: The final list of beneficiaries shall be submitted for approval of the District Collector by the Tahsildars and Municipal Commissioners in the Rural and Urban areas respectively. Step 6: The final list of beneficiaries approved by the District Collector shall be published in the respective Village/Ward Secretariat. Step 7: In case of any further claims or objections, the Tahsildar/Municipal Commissioner shall function as the redressal officer duly taking approval from the District Collector.",
+    "channelPartnerTypes": [
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "pmay-g",
+    "name": {
+      "en": "Pradhan Mantri Awaas Yojana - Gramin",
+      "hi": ""
+    },
+    "ministry": "(PMAY-G) is centre's flagship mission by the Ministry of Rural Development (MoRD)",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Launch on 1st April 2016, Pradhan Mantri Awaas Yojana Gramin (PMAY-G) is centre's flagship mission by the Ministry of Rural Development (MoRD), implemented by the Ministry of Housing and Urban Affairs (MoHUA). PMAY-G aims at providing a pucca house, with basic amenities, to all houseless households and those households living in kutcha and dilapidated house. PMAY-G addresses the rural housing shortage and bridges the housing deficit in rural areas of India, contributing significantly to the mission of \"Housing for All\". The minimum size of the houses under PMAY-G is 25 sq m including a dedicated area for hygienic cooking. As of 27th Sept 2022, 2.00 crore houses have been constructed out of the total target of 2.72 crores. The beneficiaries are identified using the Socio-Economic and Caste Census (SECC) parameters and verified by the Gram Sabhas. The amount is transferred directly to the Aadhaar-Linked Bank Account / Post-Office Account of the beneficiary. PMAY-G has been extended for another two years, i.e. till 31st March 2024. Aim and Objective: PMAY-G aims to provide a pucca house with basic amenities to all houseless households and households living in kutcha and dilapidated house in rural areas by 2024. The immediate objective is to cover 1.00 Crore households in rural areas, that are houseless or living in kutcha / dilapidated house, in three years from 2016-17 to 2018-19 and enable construction of quality houses by the beneficiaries using local materials, designs and trained masons. For houses to become homes, adoption of a habitat approach through convergence is proposed.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Launch on 1st April 2016, Pradhan Mantri Awaas Yojana Gramin (PMAY-G) is centre's flagship mission by the Ministry of Rural Development (MoRD), imp...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the exclusion process)",
+      "Automatic/Compulsory Inclusion -  1",
+      "begin with",
+      "59 ii",
+      "59 iii"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 90,
+      "maxAmount": 200000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Andaman and Nicobar",
+        "Chandigarh",
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Delhi",
+        "Jammu and Kashmir",
+        "Ladakh",
+        "Lakshadweep",
+        "Puducherry"
+      ],
+      "categories": [
+        "SC",
+        "ST"
+      ],
+      "minAge": 25,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "poultry",
+        "housing",
+        "transport"
+      ],
+      "education": [],
+      "gender": "female",
+      "disabilityRequired": true
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhaar number and a self",
+        "description": "Aadhaar number and a self-attested copy of the Aadhaar Card (If the applicant is illiterate",
+        "mandatory": true
+      },
+      {
+        "name": "then in such case a consent letter has to be obtai",
+        "description": "then in such case a consent letter has to be obtained along with the thumbprint of the applicant) Job Card (duly registered with MGNREGA) Bank account details – both originals and duplicates",
+        "mandatory": true
+      },
+      {
+        "name": "Swachh Bharat Mission (SBM) number",
+        "description": "Swachh Bharat Mission (SBM) number",
+        "mandatory": true
+      },
+      {
+        "name": "Affidavit stating the beneficiaries",
+        "description": "Affidavit stating the beneficiaries",
+        "mandatory": true
+      },
+      {
+        "name": "or their family members do not own a pucca house",
+        "description": "or their family members do not own a pucca house",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Beneficiary Registration Manual - https://pmayg.nic.in/netiayHome/Document/Document-PMAYG-Registratio-Manual.pdf ﻿ There are four sections to the beneficiary registration process: Personal details, Bank account details, Convergence details, and Details from the concerned office. To successfully register or add the beneficiary, follow the steps given below: Visit the official website for login PMAY-G. Fill in the details required in the personal details section (such as gender, mobile number, Aadhaar number, etc.) Upload the consent form required to use the Aadhaar number. Click on the search button to find the beneficiary name, PMAY ID, and priority. Click on ‘'Select to Register’'. The beneficiary details will be automatically generated and displayed. The remaining beneficiary details can now be filled in, such as ownership type, relation, Aadhaar number, etc. Upload the consent form required to use the Aadhaar number on behalf of the beneficiary In the next section, add the beneficiary account details in the required fields, such as beneficiary name, bank account number, etc. If the beneficiary wants to avail a loan, select ‘'Yes’' and enter the required loan amount. In the next section, enter the MGNREGA job card number and Swachh Bharat Mission (SBM) number of the beneficiary The next section will be filled in by the concerned office.",
+    "channelPartnerTypes": [
+      "Bank",
+      "office",
+      "bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  },
+  {
+    "slug": "ps-west-bengal",
+    "name": {
+      "en": "Pratyasha Scheme- West Bengal",
+      "hi": ""
+    },
+    "ministry": "West Bengal has undertaken a housing project scheme named \" PRATYASHA\" for Police Personnel (from In",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Govt. of West Bengal has undertaken a housing project scheme named \" PRATYASHA\" for Police Personnel (from Inspectors to Constables) working in the West Bengal Police to materialize their dreams of owning houses. The West Bengal State Police Housing Corporation will construct various types of flats with the financial assistance of Housing and Urban Development Corporation Ltd (HUDCO) and all Police Personnel would be welcome to fill in forms for their required housing assistance. Procedure of allotment: The flats will be allotted to the applicants through a lottery on a random selection basis. Unallotted flats, if any, after the lottery, will be allotted to the eligible allottees on a \"first come first served\" basis or through lottery on a random selection basis. In case the applications remain less than the no of flats of this project, then the allotments will be made on a first come first served basis",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Govt. of West Bengal has undertaken a housing project scheme named \" PRATYASHA\" for Police Personnel (from Inspectors to Constables) working in...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "“A” category of dwelling units having flat area (approximate) 1123 sq",
+      "“B” category of dwelling units having flat area (approximate) 926 sq",
+      "“C” category of dwelling units having flat area (approximate) 794 sq",
+      "submit only one application for this Scheme (No other family member may apply separately)",
+      "be the second applicant"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "West Bengal"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Self-employed"
+      ],
+      "purposes": [
+        "manufacturing",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Demand Draft/ Pay Order/ Banker’s Cheque as per ca",
+        "description": "Demand Draft/ Pay Order/ Banker’s Cheque as per category dwelling unit",
+        "mandatory": true
+      },
+      {
+        "name": "Demand Draft/ Pay Order/ Banker’s Cheque for an ad",
+        "description": "Demand Draft/ Pay Order/ Banker’s Cheque for an additional amount only for parking space",
+        "mandatory": true
+      },
+      {
+        "name": "One self",
+        "description": "One self-attested photocopy of the PAN Card of the applicant and of joint applicants (if any) Salary Certificate of the applicant (s) issued by the DDO (as per proforma annexed with the application fo",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Two sets of passport",
+        "description": "Two sets of passport-size photographs with signatures on the back side of the photographs",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "One canceled cheque of the applicant Copy of the f",
+        "description": "One canceled cheque of the applicant Copy of the first page of the Bank A/C Pass Book of the applicant showing address",
+        "mandatory": true
+      },
+      {
+        "name": "A/C No",
+        "description": "A/C No",
+        "mandatory": true
+      },
+      {
+        "name": "Branch Code No",
+        "description": "Branch Code No",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 01: The application form along with Information Guide and General Terms & Conditions may be downloaded from the website of West Bengal Police and Kolkata Police ( https://www.kolkatapolice.gov.in/ ). https://kolkatapolice.gov.in/images/PratyashaProject.pdf ﻿ Step 02: Application shall be accompanied by an A/C Payee Demand Draft/ Pay Order/Banker’s Cheque drawn in favour of the “Managing Director, West Bengal Police Housing & Infrastructure Development Corporation Limited” on any Bank payable at Kolkata as per application money. Application with instruments payable outside Kolkata may be rejected at the discretion of WBPH & IDC Ltd. without citing any reason. Step 03: The applicants should provide the details of his/ her Name, Father’s/ Husband’s Name, and Telephone No. on the reverse of the Demand Draft/ Pay Order/ Banker’s Cheque for application money. Step 04: Application Form duly filled in and completed in all respect, duly signed by the applicant along with Demand Draft/ Pay Order/Banker’s Cheque for the amount as mentioned above and other documents of the General Terms & Conditions may be submitted at the office of West Bengal Police Housing & Infrastructure Development Corporation Limited, Araksha Bhawan (3rd Floor), BlockDJ, Sector-II, Salt Lake City, Kolkata- 700 091. Step 05: Applicants who wish to send their application by post, must send the application form along with application money as mentioned above, and other documents of General Terms & Conditions in the prescribed form, to the following address:- The Managing Director, West Bengal Police Housing & Infrastructure Development Corporation Limited, Araksha Bhawan (3rd Floor), Block-DJ, Sector-II, Salt Lake City, Kolkata- 700091.",
+    "channelPartnerTypes": [
+      "Bank",
+      "office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "pgy",
+    "name": {
+      "en": "Pucca Ghar Yojana (Mining)",
+      "hi": ""
+    },
+    "ministry": "A \"Kutcha\" house is one in which walls and/or roof are made of materials such as un-burnt bricks",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The government of Odisha is committed to providing \"Pucca Houses\" to all the eligible kutcha households in all the mining-affected blocks of nine mineral-bearing Districts: Angul, Dhenkanal, Jajpur, Jharsuguda, Keonjhar, Koraput, Mayurbhanj, Sundargarh & Rayagada. Assistance to construct Pucca houses will be sanctioned to eligible households in these areas under the \"Pucca Ghar Yojana (Mining)\" Scheme. ﻿ Objectives of the Scheme: The objective of the Scheme is to convert all Kutcha houses into Pucca houses. The HHs residing in Blocks affected by mining activities will be covered in saturation mode. A Pucca house means that it should be able to withstand normal wear & tear due to usage and natural forces, including climatic conditions. ﻿ A \"Pucca\" house is one with the following characteristics: Material: It should have a foundation, wall and roof of permanent material. Wall material: Fly ash bricks, burnt bricks, stones (packed with lime or cement), cement concrete, etc. Roof Material: Tiles, GCI (Galvanized Corrugated Iron) sheets, asbestos cement sheets, RBC (Reinforced Brick Concrete), RCC (Reinforced Cement Concrete) etc. Lifetime: The expected life of the structure must be a minimum of 30 years. It is clarified that the above definition is only for verification of households with Pucca houses. The roofs of the houses that shall be constructed under this Scheme shall be of RCC or any other material of equivalent strength approved by the PR & DW Department. ﻿ A \"Kutcha\" house is one in which walls and/or roof are made of materials such as un-burnt bricks, bamboo, mud, grass, reeds, thatch, loosely packed stones etc. and materials not mentioned in the above pucca house characteristics which are not durable due to inappropriate application of techniques and are not able to withstand normal wear and tear.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The government of Odisha is committed to providing \"Pucca Houses\" to all the eligible kutcha households in all the mining-affected blocks of nine m...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the households belonging to the following categories; Households",
+      "36 Blocks of 9 mining-affected districts"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 10000,
+      "maxAmount": 130000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "poultry",
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhar Card Passport size photograph Ration Card R",
+        "description": "Aadhar Card Passport size photograph Ration Card Residence certificate Income certificate Proof of age Bank details",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Step 1: Visit the official website of Rural Housing Odisha . Step 2: Click on \"Registration\" and complete all required details in the Beneficiary Registration Form . Receive an OTP by entering your mobile number. Step 3: Submit the form after filling it out. Step 4: Check for announcements or notifications regarding the beneficiary list. ﻿ Selection Process: BDO will survey field functionaries to ascertain eligible households residing in the Block area. The list of eligible households will be verified with that of beneficiaries sanctioned houses earlier under any of the Schemes. Those who have a house that has been sanctioned house should be deleted from the list. After that, BDO will sanction the houses to the eligible beneficiaries. BDO will intimate the number of eligible households to DRDA. PD, DRDA will communicate the number of eligible households in respect of his District to the PR&DW Department. PR&DW Department will set online targets in AwaasSoft or any other software developed by the State for sanction of houses in favour of eligible households by BDO. BDO will obtain from eligible households a copy of RoR, a declaration as to staying in a Kutcha house and construction of a house on the recorded land of the concerned household, a copy of the Bank Account to which the household intends to credit the housing and other assistance, photograph of the beneficiary, her/his Aadhar UID/ EID, mobile number and will keep those in the case record opened for the beneficiaries. The BDO will issue work orders to all the eligible beneficiaries.",
+    "channelPartnerTypes": [
+      "Bank"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "rosch",
+    "name": {
+      "en": "Running of Scheduled Caste Hostel",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh, aims to provide housing and a conducive study environment for Scheduled Caste studen",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Running of Scheduled Caste Hostels\" scheme by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, aims to provide housing and a conducive study environment for Scheduled Caste students. Separate junior, senior, and college hostels are operated for boys and girls, offering free accommodation and food facilities to support their education.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Running of Scheduled Caste Hostels\" scheme by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, aims to pr...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "admission to senior hostels"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "occupations": [
+        "Student"
+      ],
+      "purposes": [],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size Photograph Aadhaar card Domicile Certificate Caste Certificate Previous Class Passing Certificate / Marksheet Samagra ID Bank account Details",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Application Step 1: Obtain the application form from the Divisional District Office or the Designated Hostel. Step 2: Fill in all the mandatory fields and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the completed application to the concerned hostel within the stipulated deadline fixed by the District President. Ensure the application is forwarded by the Head of the Institution before submission. Verification and Approval Step 1: The concerned Divisional District Officer will verify the application and supporting documents. Step 12: Upon approval, admission will be granted based on hostel capacity and compliance with prerequisites. Timeline Applications must be submitted within one month after the date fixed for admission in schools.",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "spay",
+    "name": {
+      "en": "Sardar Patel Awas Yojana",
+      "hi": ""
+    },
+    "ministry": "provides financial assistance to eligible beneficiaries for the construction of their own house",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Detailed Under the Sardar Patel Awas Yojana, the government provides financial assistance to eligible beneficiaries for the construction of their own house. The scheme is implemented by Gujarat Housing Board (GHB) and Gujarat Urban Development Mission (GUDM) in urban areas, and by Gujarat Rural Housing Corporation (GRHC) in rural areas. Sardar Patel Awas Yojana is a housing scheme launched by the government of Gujarat in India to provide affordable housing to economically weaker sections and low-income groups of the society. The scheme provides financial assistance to eligible beneficiaries for the construction of their own house, and is implemented by Gujarat Housing Board and Gujarat Urban Development Mission in urban areas, and by Gujarat Rural Housing Corporation in rural areas. The scheme aims to improve the living standards of the underprivileged sections of society by providing them with their own homes.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Detailed Under the Sardar Patel Awas Yojana, the government provides financial assistance to eligible beneficiaries for the construction of their o...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "the last five years",
+      "the villager living Below Poverty Line only once"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "housing",
+        "transport"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "List of required documents Proof of registration a",
+        "description": "List of required documents Proof of registration as below the poverty line in a rural area Identity proof such as Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "name": "Voter ID",
+        "description": "Voter ID",
+        "mandatory": true
+      },
+      {
+        "name": "Address proof such as ration card",
+        "description": "Address proof such as ration card",
+        "mandatory": true
+      },
+      {
+        "name": "electricity bill",
+        "description": "electricity bill",
+        "mandatory": true
+      },
+      {
+        "name": "Land documents to prove that the applicant does no",
+        "description": "Land documents to prove that the applicant does not own a house or plot Certificate from the Sarpanch of the native village stating that the applicant has not previously taken advantage of the Sardar ",
+        "mandatory": true
+      },
+      {
+        "name": "L criteria Income certificates or proof of income ",
+        "description": "L criteria Income certificates or proof of income such as salary slips",
+        "mandatory": true
+      },
+      {
+        "name": "bank statements",
+        "description": "bank statements",
+        "mandatory": true
+      },
+      {
+        "name": "Any other documents that may be required by the au",
+        "description": "Any other documents that may be required by the authorities for the application process",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Process Download the application from the official website or click here . Fill out the application form with the required details. Include all the required documents. Applicant should apply to Nearest Taluka Vistar Adhikari/Taluka Panchayat/Jila Panchayat with the application form.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "scbshas",
+    "name": {
+      "en": "Scheduled Caste Boys/Girls Housing Assistance Scheme",
+      "hi": ""
+    },
+    "ministry": "Madhya Pradesh, provides financial support for residential facilities to Scheduled Caste students wh",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The scheme \"Scheduled Caste Boys/Girls Housing Assistance Scheme\" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, provides financial support for residential facilities to Scheduled Caste students who are studying in colleges outside their native village/city, enabling them to continue their college education.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The scheme \"Scheduled Caste Boys/Girls Housing Assistance Scheme\" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya P...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1000,
+      "maxAmount": 2000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Andaman and Nicobar",
+        "Chandigarh",
+        "Dadra and Nagar Haveli and Daman and Diu",
+        "Delhi",
+        "Jammu and Kashmir",
+        "Ladakh",
+        "Lakshadweep",
+        "Puducherry"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "occupations": [
+        "Student"
+      ],
+      "purposes": [
+        "education"
+      ],
+      "education": [
+        "Matriculation"
+      ]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Proof of Identity Caste Certificate Income Certifi",
+        "description": "Proof of Identity Caste Certificate Income Certificate Proof of College Admission Bank Account Details",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Registration Step 1: The applicant should visit the Madhya Pradesh Tribal Affairs & Scheduled Caste Welfare Automation System MPTAAS portal. ﻿ Step 2: Click on \"New Beneficiary Profile Registration .\" Step 3: Fill in all the required details. Fields marked with * are mandatory. Complete the form by entering all necessary information. Step 4: Upload all required documents, such as ID proof and other relevant certificates. Step 5: After completing the form and uploading the documents, click \"Submit\". Step 6: After successful payment and submission, you will receive a registration number. Application Step 1: The applicant should visit the Madhya Pradesh Tribal Affairs & Scheduled Caste Welfare Automation System MPTAAS portal. ﻿ Step 2: Enter your user ID, password, and captcha code, then click \"Login.\" Step 3: Choose the scheme you wish to apply for to avail the benefits. Step 4: Enter all required information and upload the necessary documents as prompted. Step 5: Finally, click on \"Submit Application\" to complete the process.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "slabch",
+    "name": {
+      "en": "Scheme For Loan And Advances to the Beneficiary For Construction Of House",
+      "hi": ""
+    },
+    "ministry": "Tripura",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Scheme For Loan And Advances to the Beneficiary For Construction Of House was launched by the Tripura Building and Other Construction Workers Welfare Board, under the Labour Department of Tripura. This scheme offers registered construction workers a credit-linked interest subsidy for the construction of dwelling house.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Scheme For Loan And Advances to the Beneficiary For Construction Of House was launched by the Tripura Building and Other Construction Workers W...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "at least 5 years",
+      "the construction of Houses",
+      "the economically weaker section (EWS) category"
+    ],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 6,
+      "maxAmount": 6
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Tripura"
+      ],
+      "categories": [
+        "General"
+      ],
+      "maxIncome": 300000,
+      "minAge": 5,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Copy of BOC Worker Registration Card",
+        "description": "Copy of BOC Worker Registration Card",
+        "mandatory": true
+      },
+      {
+        "name": "Aadhaar Number (or Aadhaar/ Aadhaar Enrolment ID)",
+        "description": "Aadhaar Number (or Aadhaar/ Aadhaar Enrolment ID)",
+        "mandatory": true
+      },
+      {
+        "name": "Self",
+        "description": "Self-Certificate / Affidavit as Proof of Income",
+        "mandatory": true
+      },
+      {
+        "name": "Identity and Residential Proof (PAN card",
+        "description": "Identity and Residential Proof (PAN card",
+        "mandatory": true
+      },
+      {
+        "name": "Voter ID",
+        "description": "Voter ID",
+        "mandatory": true
+      },
+      {
+        "name": "Driving License)",
+        "description": "Driving License)",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of Minority Community (if the applicant belo",
+        "description": "Proof of Minority Community (if the applicant belongs to a Minority Community)",
+        "mandatory": true
+      },
+      {
+        "name": "Proof of Nationality",
+        "description": "Proof of Nationality",
+        "mandatory": true
+      },
+      {
+        "name": "EWS Certificate / LIG Certificate / MIG Certificat",
+        "description": "EWS Certificate / LIG Certificate / MIG Certificate (as applicable)",
+        "mandatory": true
+      },
+      {
+        "name": "Salary Slips",
+        "description": "Salary Slips",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: The applicant should gather copies of the necessary documents needed to apply for the concerned scheme. Step 2: The applicant should visit the nearest Common Service Center (CSC) and complete the Biometric Verification Process. Step 3: The applicant should ensure that the CSC agent completes all mandatory fields in the application form and uploads copies of all required documents. Step 4: Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "Center",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "sbygbocwwb",
+    "name": {
+      "en": "Shramik Basera Yojana (GBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Gujarat",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The “Shramik Basera Yojana” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Development & Employment Department, Government of Gujarat. Under the scheme, accommodation facilities will be provided to registered construction workers in temporary prefabricated housing with basic amenities that can be dismantled.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The “Shramik Basera Yojana” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Developme...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "get the benefit of this scheme",
+      "to get the benefit of this scheme"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5,
+      "maxAmount": 5
+    },
+    "eligibilityRules": {
+      "states": [
+        "Assam",
+        "Gujarat"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Aadhaar card 2",
+        "description": "Aadhaar card 2",
+        "mandatory": true
+      },
+      {
+        "name": "e",
+        "description": "e-Nirman Card",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Process for ‘E-Nirman Card’ under the GBOCWWB: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Login to Portal’, click on ‘ Please Register Here ’. Step 03: Enter all the mandatory information and then click on ‘Register’. Step 04 : After successful registration, the applicants can login through their User ID and Password. Step 05: Now, update your profile by entering all the necessary details as required and click on ‘Update’. Step 06: Select the ‘Construction Works Form’ and fill out all the mandatory information in the form. Step 07: Upload all the relevant documents, agree with the terms & conditions, and submit the form. Step 08: Once the application has been submitted, an application Number is generated which can be kept for future reference. Process to track Application Status: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, click on ‘View Citizen Application Status’. Step 03: Enter the Application Number and Date of Birth. Step 04: Now click on ‘View Status’. Application Process for Scheme Benefit: Prefabricated temporary accommodation for the laborers/workers will be constructed near their workplace/Kadianaka. The registered construction workers can avail the benefits by visiting there.",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "sndaygbocwwb",
+    "name": {
+      "en": "Shree Nanaji Deshmukh Awas Yojana (GBOCWWB)",
+      "hi": ""
+    },
+    "ministry": "Gujarat",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The “Shree Nanaji Deshmukh Awas Yojana” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Development & Employment Department, Government of Gujarat. In urban areas, where EWS/LIG houses have been allotted by the Local Self-Government Organization/Urban Development Authority and Gujarat Housing Board under the Chief Minister/Prime Minister Awas Yojana, the benefit of this scheme is given once per family to the construction worker registered in the board.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The “Shree Nanaji Deshmukh Awas Yojana” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Ski...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "get the benefit of this scheme",
+      "the registered construction worker",
+      "at least 2 years",
+      "this scheme has to be made after one year of house allotment",
+      "to get the benefit of this scheme"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 160000,
+      "maxAmount": 160000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Gujarat"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "minAge": 2,
+      "occupations": [
+        "Salaried"
+      ],
+      "purposes": [
+        "housing"
+      ],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Documents required for ‘E",
+        "description": "Documents required for ‘E-Nirman Card’ under the GBOCWWB: 1",
+        "mandatory": true
+      },
+      {
+        "name": "Photograph of the worker 2",
+        "description": "Photograph of the worker 2",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Aadhaar Card 3",
+        "description": "Aadhaar Card 3",
+        "mandatory": true
+      },
+      {
+        "name": "Ration Card 4",
+        "description": "Ration Card 4",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Category certificate",
+        "description": "Caste Category certificate",
+        "mandatory": true
+      },
+      {
+        "name": "if applicable 5",
+        "description": "if applicable 5",
+        "mandatory": false
+      },
+      {
+        "name": "Proof of age (Birth certificate/Driving Licence/PA",
+        "description": "Proof of age (Birth certificate/Driving Licence/PAN Card/Voter ID Card) 6",
+        "mandatory": true
+      },
+      {
+        "name": "Self",
+        "description": "Self-declaration certificate 7",
+        "mandatory": true
+      },
+      {
+        "name": "Employer Certificate 8",
+        "description": "Employer Certificate 8",
+        "mandatory": true
+      },
+      {
+        "name": "Bank Passbook/cancelled Cheque 9",
+        "description": "Bank Passbook/cancelled Cheque 9",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Application Process for ‘E-Nirman Card’ under the GBOCWWB: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Login to Portal’, click on ‘ Please Register Here ’. Step 03: Enter all the mandatory information and then click on ‘Register’. Step 04: After successful registration, the applicants can login through their User ID and Password. Step 05: Now, update your profile by entering all the necessary details as required and click on ‘Update’. Step 06: Select the ‘Construction Works Form’ and fill out all the mandatory information in the form. Step 07: Upload all the relevant documents, agree with the terms & conditions, and submit the form. Step 08: Once the application has been submitted, an application Number is generated which can be kept for future reference. Process to track Application Status: Step 01: The applicant may visit the e-Nirman Portal: https://enirmanbocw.gujarat.gov.in/ ﻿ Step 02: On the home page, click on ‘View Citizen Application Status’. Step 03: Enter the Application Number and Date of Birth. Step 04: Now click on ‘View Status’. Application Process for Scheme Benefit: Step 01: The applicant may visit the Sanman Portal: https://sanman.gujarat.gov.in/ ﻿ Step 02: On the home page, under the tab ‘Citizen Login’, click on ‘ Please Register Here ’. Step 03: Enter your Aadhaar Card Number, select user type, and then enter E-Nirman Card Number. Step 04: Now, click on ‘Fetch’ & submit the details. Step 05: After successful registration, the applicants can login through their User ID and Password. Step 06: Now, select the scheme and read the instructions carefully for the selected scheme. Step 07: Fill out the application form and upload all the relevant documents. Step 08: Agree with the Rules & Regulations and submit the application form. A confirmation email with the application Number will be sent to the registered email ID. Post Application Process: Step 01: After the application form is submitted by the construction worker, the application will be verified and approved by the District Project Manager. Step 02: After that, the application will be verified and approved by the district inspector and sent to the head office. Step 03: The State Project Manager of the Head Office will verify the application and send it to the Government Labour Officer (GLO). Step 04: After that, the application will be verified and approved by the Government Labour Officer of the Head Office and then by the Member Secretary. Step 05: After approval of the application through DD (Demand Draft) assisted by the Accounts Officer. It will be sent to the Authority.",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "sjay-hp",
+    "name": {
+      "en": "Swaran Jayanti Ashray Yojana - Himachal Pradesh",
+      "hi": ""
+    },
+    "ministry": "Social Justice and Empowerment",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Swaran Jayanti Ashray Yojana\" was launched by the Department of Social Justice and Empowerment, Government of Himachal Pradesh aims to provide financial assistance for the construction of houses who are permanent residents of Himachal Pradesh belonging to Scheduled Castes, Scheduled Tribes, Other Backward Classes.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Swaran Jayanti Ashray Yojana\" was launched by the Department of Social Justice and Empowerment, Government of Himachal Pradesh aims to provide...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [
+      "Scheduled Castes (SC)",
+      "the construction of the house"
+    ],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 150000,
+      "maxAmount": 150000
+    },
+    "eligibilityRules": {
+      "states": [
+        "Himachal Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "maxIncome": 50000,
+      "occupations": [],
+      "purposes": [
+        "housing"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Himachali Certificate (issued by the Executive Mag",
+        "description": "Himachali Certificate (issued by the Executive Magistrate)",
+        "mandatory": true
+      },
+      {
+        "name": "Caste Certificate",
+        "description": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Annual Income Certificate",
+        "description": "Annual Income Certificate",
+        "mandatory": true
+      },
+      {
+        "name": "Tatima and Jamabandi of the land on which the hous",
+        "description": "Tatima and Jamabandi of the land on which the house is proposed to be constructed and the proposal of the Gram Sabha",
+        "mandatory": true
+      },
+      {
+        "name": "Spot Report",
+        "description": "Spot Report",
+        "mandatory": true
+      },
+      {
+        "name": "No Objection Certificate (NOC)",
+        "description": "No Objection Certificate (NOC)",
+        "mandatory": true
+      },
+      {
+        "name": "Proposal",
+        "description": "Proposal",
+        "mandatory": true
+      },
+      {
+        "name": "Photo of House (verified by Pradhan)",
+        "description": "Photo of House (verified by Pradhan)",
+        "mandatory": true,
+        "format": "JPEG"
+      }
+    ],
+    "applicationProcess": "Application Process: Step 1: The interested applicant can download the application form from the official website. Step 2: In the application form, fill in all the mandatory fields, and attach copies of all the mandatory documents (self-attest, if required). Step 3: Submit the duly filled and signed application form along with the documents to the Concerned District Welfare Officer/Tehsil Welfare Officer. Step 4: Request a receipt or acknowledgment from the Concerned District Welfare Officer/Tehsil Welfare Officer to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).",
+    "channelPartnerTypes": [
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "uky",
+    "name": {
+      "en": "Usha Kiran Yojana",
+      "hi": ""
+    },
+    "ministry": "has started the \"Usha Kiran Yojana\" to provide protection and assistance against domestic violence",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "Violence against women and their children below the age of 18 years by a family member/members, which includes physical, sexual, mental, emotional, economic, threats or coercive or arbitrary deprivation of liberty, whether at home or in a public place, comes under the category of domestic violence. For all these protection and assistance, the state government has started the \"Usha Kiran Yojana\" to provide protection and assistance against domestic violence. To implement the Women's Protection from Domestic Violence Act 2005, Rule 2006.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "Violence against women and their children below the age of 18 years by a family member/members, which includes physical, sexual, mental, emotional,...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "insurance",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [],
+      "education": [],
+      "gender": "female"
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Passport",
+        "description": "Passport-size photograph",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "Aadhaar card",
+        "description": "Aadhaar card",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Applicants have to visit the following centers Protection Officer (Project Officer-Integrated Child Development Project Office). One Stop Center operated in the district. Police Station.",
+    "channelPartnerTypes": [
+      "center",
+      "Office",
+      "Center"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "vsbgks",
+    "name": {
+      "en": "Vadh Se Bachaye Govansh Ko Sahayata Yojana",
+      "hi": ""
+    },
+    "ministry": "Government of India",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The \"Vadh Se Bachaye Govansh Ko Sahayata Yojana\" scheme, by the Animal Husbandry Department, Rajasthan, aims to ensure the welfare of cattle saved from illegal slaughter or smuggling. Registered cow shelters (gaushalas), municipal bodies, Panchayati Raj institutions, or other approved organizations are entrusted with the custody of such cattle. Financial assistance is provided for their fodder and care for the duration of custody or up to one year, whichever is shorter.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The \"Vadh Se Bachaye Govansh Ko Sahayata Yojana\" scheme, by the Animal Husbandry Department, Rajasthan, aims to ensure the welfare of cattle saved ...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 20,
+      "maxAmount": 40
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "dairy",
+        "housing",
+        "transport"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Copy of the FIR related to cattle rescue",
+        "description": "Copy of the FIR related to cattle rescue",
+        "mandatory": true
+      },
+      {
+        "name": "Approval copy from a competent authority",
+        "description": "Approval copy from a competent authority",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Step 1: Collect the application form from the office of the District Joint Director, Department of Animal Husbandry. Step 2: Fill in the details and attach the required documents (FIR copy and approval). Step 3: Submit the application to the office of the District Joint Director, Department of Animal Husbandry. Step 4: The application will be reviewed and approved by the District-level Gopalan Committee. Step 5: Upon approval, funds will be disbursed to the organization. Scheme Contact Details: Nodal Officer Name & Designation: Dr Kaushal Kumar Verma; Joint Director Phone Number: 9414207430 Email: dir.dgs@rajasthan.gov.in",
+    "channelPartnerTypes": [
+      "office",
+      "Office"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "State",
+    "needsReview": false
+  },
+  {
+    "slug": "yhs",
+    "name": {
+      "en": "Youth Hostel Scheme",
+      "hi": ""
+    },
+    "ministry": "Youth Affairs & Sports",
+    "category": [
+      "housing"
+    ],
+    "description": {
+      "en": "The Youth Hostel Scheme is managed by the Department of Youth Affairs & Sports under the Ministry of Youth Affairs & Sports, Government of India. The Central Government provides financial assistance to the State Governments for the construction and maintenance of youth hostels. The State Governments are responsible for the day-to-day management of youth hostels.",
+      "hi": ""
+    },
+    "shortDescription": {
+      "en": "The Youth Hostel Scheme is managed by the Department of Youth Affairs & Sports under the Ministry of Youth Affairs & Sports, Government of India. T...",
+      "hi": ""
+    },
+    "purpose": "Various purposes",
+    "targetBeneficiaries": [],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "states": [],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC",
+        "General"
+      ],
+      "occupations": [],
+      "purposes": [
+        "poultry"
+      ],
+      "education": []
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      {
+        "name": "Completed YHAI membership application form Passpor",
+        "description": "Completed YHAI membership application form Passport size photograph Proof of identity",
+        "mandatory": true,
+        "format": "JPEG"
+      },
+      {
+        "name": "such as a copy of your passport",
+        "description": "such as a copy of your passport",
+        "mandatory": true
+      },
+      {
+        "name": "driver's license",
+        "description": "driver's license",
+        "mandatory": true
+      },
+      {
+        "name": "or Aadhaar card",
+        "description": "or Aadhaar card",
+        "mandatory": true
+      }
+    ],
+    "applicationProcess": "Applicant must visit the official website . Click on \" Apply Now \" under the Youth Hostel scheme. Select the user type and scheme name. Now fill out the require details. Upload the recent photograph. Give the consent for the Aadhaar to use as biometric and KYC .",
+    "channelPartnerTypes": [
+      "Banks",
+      "CSC"
+    ],
+    "source": "kaggle",
+    "lastUpdated": "2026-08-26",
+    "verified": false,
+    "isActive": true,
+    "level": "Central",
+    "needsReview": false
+  }
+]

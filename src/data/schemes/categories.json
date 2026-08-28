@@ -1,0 +1,56 @@
+[
+  {
+    "id": "business",
+    "name": { "en": "Business & Entrepreneurship", "hi": "व्यवसाय और उद्यमिता" },
+    "icon": "briefcase",
+    "schemeCount": 8
+  },
+  {
+    "id": "education",
+    "name": { "en": "Education & Skill Development", "hi": "शिक्षा और कौशल विकास" },
+    "icon": "graduation-cap",
+    "schemeCount": 8
+  },
+  {
+    "id": "agriculture",
+    "name": { "en": "Agriculture & Rural Development", "hi": "कृषि और ग्रामीण विकास" },
+    "icon": "leaf",
+    "schemeCount": 7
+  },
+  {
+    "id": "transport",
+    "name": { "en": "Transport & Infrastructure", "hi": "परिवहन और अवसंरचना" },
+    "icon": "truck",
+    "schemeCount": 5
+  },
+  {
+    "id": "housing",
+    "name": { "en": "Housing & Urban Development", "hi": "आवास और शहरी विकास" },
+    "icon": "home",
+    "schemeCount": 6
+  },
+  {
+    "id": "health",
+    "name": { "en": "Health & Wellness", "hi": "स्वास्थ्य और कल्याण" },
+    "icon": "heart-pulse",
+    "schemeCount": 5
+  },
+  {
+    "id": "social-welfare",
+    "name": { "en": "Social Welfare & Protection", "hi": "सामाजिक कल्याण और संरक्षण" },
+    "icon": "users",
+    "schemeCount": 6
+  },
+  {
+    "id": "employment",
+    "name": { "en": "Employment & Livelihood", "hi": "रोजगार और जीविका" },
+    "icon": "briefcase",
+    "schemeCount": 5
+  },
+  {
+    "id": "other",
+    "name": { "en": "Other Schemes", "hi": "अन्य योजनाएँ" },
+    "icon": "grid",
+    "schemeCount": 0
+  }
+]

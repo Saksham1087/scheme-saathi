@@ -1,0 +1,239 @@
+[
+  {
+    "slug": "pradhan-mantri-awas-yojana-urban",
+    "name": { "en": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)", "hi": "प्रधानमंत्री आवास योजना - शहरी (पीएमएवाई-यू)" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["housing"],
+    "description": {
+      "en": "Provides financial assistance for construction of pucca houses for eligible urban households. Covers EWS, LIG, MIG I, and MIG II categories with interest subsidy on housing loans.",
+      "hi": "पात्र शहरी परिवारों के लिए पक्के मकान निर्माण के लिए वित्तीय सहायता प्रदान करता है। ब्याज सब्सिडी के साथ ईडब्ल्यूएस, एलआईजी, एमआईजी I और एमआईजी II श्रेणियों को कवर करता है।"
+    },
+    "shortDescription": {
+      "en": "Financial assistance for pucca house construction in urban areas with interest subsidy.",
+      "hi": "शहरी क्षेत्रों में पक्के मकान निर्माण के लिए ब्याज सब्सिडी के साथ वित्तीय सहायता।"
+    },
+    "purpose": "Providing housing for all urban families by 2024",
+    "targetBeneficiaries": ["EWS families", "LIG families", "MIG families", "Urban poor"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 100000,
+      "maxAmount": 267000,
+      "interestRate": { "min": 3, "max": 6.5 },
+      "coverageMaxPct": 67
+    },
+    "eligibilityRules": {
+      "maxIncome": 1800000,
+      "states": ["All States"],
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Land Documents", "description": "Land ownership or lease documents", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" },
+      { "name": "Affidavit", "description": "Declaration of non-ownership of pucca house", "mandatory": true, "format": "PDF" },
+      { "name": "Photograph", "description": "Passport-size photograph", "mandatory": true, "format": "JPEG" }
+    ],
+    "applicationProcess": "Apply through PMAY-U portal or urban local body. Interest subsidy of 3-6.5% on housing loan depending on income category. Direct benefit transfer to loan account.",
+    "channelPartnerTypes": ["Banks", "HFCs", "Urban Local Bodies", "CSC"],
+    "officialUrl": "https://pmaymis.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pradhan-mantri-awas-yojana-rural",
+    "name": { "en": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)", "hi": "प्रधानमंत्री आवास योजना - ग्रामीण (पीएमएवाई-जी)" },
+    "ministry": "Ministry of Rural Development",
+    "category": ["housing"],
+    "description": {
+      "en": "Provides financial assistance of ₹1,20,000 in plain areas and ₹1,30,000 in hilly/difficult areas for construction of pucca houses with basic amenities for rural BPL families.",
+      "hi": "ग्रामीण बीपीएल परिवारों के लिए मूलभूत सुविधाओं के साथ पक्के मकान निर्माण के लिए मैदानी क्षेत्रों में ₹1,20,000 और पहाड़ी/कठिन क्षेत्रों में ₹1,30,000 की वित्तीय सहायता।"
+    },
+    "shortDescription": {
+      "en": "₹1.2-1.3 lakh assistance for rural BPL families to build pucca houses.",
+      "hi": "ग्रामीण बीपीएल परिवारों के लिए पक्के मकान बनाने के लिए ₹1.2-1.3 लाख की सहायता।"
+    },
+    "purpose": "Providing pucca houses to rural families living in kutcha houses",
+    "targetBeneficiaries": ["Rural BPL families", "SC/ST households", "Disabled persons", "Widows"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 120000,
+      "maxAmount": 130000
+    },
+    "eligibilityRules": {
+      "categories": ["BPL"],
+      "states": ["All States"],
+      "occupations": ["Rural households"]
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "SECC 2011 BPL registration", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Land Documents", "description": "Land ownership documents", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Joint bank account with husband", "mandatory": true, "format": "PDF" },
+      { "name": "Muster Roll", "description": "100 days MGNREGA job card", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through Gram Panchayat or PMAY-G portal. Verification through SECC data. ₹1.2 lakh assistance in 3 installments through DBT.",
+    "channelPartnerTypes": ["Gram Panchayats", "Banks", "State Rural Development Departments"],
+    "officialUrl": "https://pmayg.nic.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-01",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "credit-linked-subsidy-scheme-clss",
+    "name": { "en": "Credit Linked Subsidy Scheme (CLSS)", "hi": "क्रेडिट लिंक्ड सब्सिडी योजना (सीएलएसएस)" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["housing"],
+    "description": {
+      "en": "Interest subsidy on home loans for EWS, LIG, MIG-I, and MIG-II categories. Up to 6.5% interest subsidy on loan amounts up to ₹12 lakh for EWS/LIG.",
+      "hi": "ईडब्ल्यूएस, एलआईजी, एमआईजी-I और एमआईजी-II श्रेणियों के लिए होम लोन पर ब्याज सब्सिडी। ईडब्ल्यूएस/एलआईजी के लिए ₹12 लाख तक के ऋण पर 6.5% तक ब्याज सब्सिडी।"
+    },
+    "shortDescription": {
+      "en": "3-6.5% interest subsidy on home loans for EWS/LIG/MIG categories.",
+      "hi": "ईडब्ल्यूएस/एलआईजी/एमआईजी श्रेणियों के लिए होम लोन पर 3-6.5% ब्याज सब्सिडी।"
+    },
+    "purpose": "Making housing affordable through interest subsidy on home loans",
+    "targetBeneficiaries": ["EWS families", "LIG families", "MIG families"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 50000,
+      "maxAmount": 267000,
+      "interestRate": { "min": 3, "max": 6.5 },
+      "coverageMaxPct": 67
+    },
+    "eligibilityRules": {
+      "maxIncome": 1800000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Loan Sanction Letter", "description": "Bank loan sanction letter", "mandatory": true, "format": "PDF" },
+      { "name": "Property Documents", "description": "Property registration documents", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through PMAY-U portal after availing housing loan. Interest subsidy credited directly to loan account through CSC.",
+    "channelPartnerTypes": ["Banks", "HFCs", "CSC"],
+    "officialUrl": "https://pmaymis.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "ews-housing-scheme",
+    "name": { "en": "Economically Weaker Section (EWS) Housing Scheme", "hi": "आर्थिक रूप से कमजोर वर्ग (ईडब्ल्यूएस) आवास योजना" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["housing"],
+    "description": {
+      "en": "Dedicated housing scheme for EWS families with annual income up to ₹3 lakh. Provides 1 BHK or 2 BHK houses at subsidized rates under PMAY-U.",
+      "hi": "₹3 लाख तक वार्षिक आय वाले ईडब्ल्यूएस परिवारों के लिए समर्पित आवास योजना। पीएमएवाई-यू के तहत सब्सिडी वाली दरों पर 1 बीएचके या 2 बीएचके मकान।"
+    },
+    "shortDescription": {
+      "en": "Subsidized 1-2 BHK housing for families with income up to ₹3 lakh.",
+      "hi": "₹3 लाख तक आय वाले परिवारों के लिए सब्सिडी वाले 1-2 बीएचके आवास।"
+    },
+    "purpose": "Providing affordable housing to economically weaker sections",
+    "targetBeneficiaries": ["EWS families", "Homeless urban poor"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 100000,
+      "maxAmount": 267000
+    },
+    "eligibilityRules": {
+      "maxIncome": 300000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Annual income certificate up to ₹3 lakh", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "BPL certificate if available", "mandatory": false, "format": "PDF/JPEG" },
+      { "name": "Affidavit", "description": "Declaration of not owning a pucca house", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through state housing department or PMAY portal. Selection based on SECC data and local surveys. Houses allotted through draw of lots.",
+    "channelPartnerTypes": ["State Housing Departments", "Urban Local Bodies", "HUDCO"],
+    "officialUrl": "https://pmaymis.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-04-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "rrajiv-awas-yojana",
+    "name": { "en": "Rajiv Awas Yojana (RAY)", "hi": "राजीव आवास योजना (राय)" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["housing"],
+    "description": {
+      "en": "Slum redevelopment scheme providing assistance for constructing houses for slum dwellers. Aims to make India slum-free through in-situ slum redevelopment.",
+      "hi": "झुग्गी बस्ती के निवासियों के लिए मकान निर्माण के लिए सहायता प्रदान करने वाली झुग्गी पुनर्विकास योजना। इन-सिटू झुग्गी पुनर्विकास के माध्यम से भारत को झुग्गी मुक्त बनाने का लक्ष्य।"
+    },
+    "shortDescription": {
+      "en": "Slum redevelopment scheme for in-situ rehabilitation of slum dwellers.",
+      "hi": "झुग्गी बस्ती निवासियों के इन-सिटू पुनर्वास के लिए झुग्गी पुनर्विकास योजना।"
+    },
+    "purpose": "Redevelopment of slums for slum dwellers",
+    "targetBeneficiaries": ["Slum dwellers", "Urban homeless"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 100000,
+      "maxAmount": 500000
+    },
+    "eligibilityRules": {
+      "maxIncome": 200000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Proof of Residence", "description": "Proof of residing in slum for 3+ years", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Apply through state housing department. Slum survey conducted. Houses allotted through slum redevelopment board.",
+    "channelPartnerTypes": ["State Housing Departments", "Slum Redevelopment Boards", "HUDCO"],
+    "officialUrl": "https://mohua.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "housing-for-all-urban-ppp",
+    "name": { "en": "Housing for All - Urban PPP Mode", "hi": "सबके लिए आवास - शहरी पीपीपी मोड" },
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "category": ["housing"],
+    "description": {
+      "en": "Public-Private Partnership model for affordable housing in urban areas. Provides viability gap funding to private developers for constructing EWS and LIG housing.",
+      "hi": "शहरी क्षेत्रों में किफायती आवास के लिए सार्वजनिक-निजी भागीदारी मॉडल। ईडब्ल्यूएस और एलआईजी आवास निर्माण के लिए निजी डेवलपर्स को व्यवहार्यता अंतर निधि।"
+    },
+    "shortDescription": {
+      "en": "PPP model with viability gap funding for affordable urban housing.",
+      "hi": "किफायती शहरी आवास के लिए व्यवहार्यता अंतर निधि के साथ पीपीपी मॉडल।"
+    },
+    "purpose": "Promoting affordable housing through private sector participation",
+    "targetBeneficiaries": ["EWS families", "LIG families", "Private developers"],
+    "financialAssistance": {
+      "type": "subsidy",
+      "minAmount": 50000,
+      "maxAmount": 250000
+    },
+    "eligibilityRules": {
+      "maxIncome": 600000
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Applicant's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Income Certificate", "description": "Family income certificate", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Application Form", "description": "PPP housing application form", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Apply through state housing department or designated PPP cell. Selection based on income verification and lottery system.",
+    "channelPartnerTypes": ["State Housing Departments", "Private Developers", "HFCs"],
+    "officialUrl": "https://pmaymis.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-03-20",
+    "verified": true,
+    "isActive": true
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "slug": "ayushman-bharat-pradhan-mantri-jan-arogya-yojana",
+    "name": { "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)", "hi": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना (एबी-पीएमजेएवाई)" },
+    "ministry": "Ministry of Health and Family Welfare",
+    "category": ["health"],
+    "description": {
+      "en": "World's largest health insurance scheme providing ₹5 lakh per family per year for secondary and tertiary hospitalization. Covers 1,929 treatment packages including surgery, day care, and ICU.",
+      "hi": "दुनिया की सबसे बड़ी स्वास्थ्य बीमा योजना जो द्वितीयक और तृतीयक अस्पताल के लिए प्रति परिवार प्रति वर्ष ₹5 लाख प्रदान करती है।"
+    },
+    "shortDescription": {
+      "en": "₹5 lakh health cover per family for 1,929 treatment packages.",
+      "hi": "1,929 उपचार पैकेज के लिए प्रति परिवार ₹5 लाख स्वास्थ्य कवर।"
+    },
+    "purpose": "Providing health coverage to poor and vulnerable families",
+    "targetBeneficiaries": ["BPL families", "SECC-identified families", "SC/ST households"],
+    "financialAssistance": {
+      "type": "insurance",
+      "minAmount": 500000,
+      "maxAmount": 500000,
+      "coverageMaxPct": 100
+    },
+    "eligibilityRules": {
+      "maxIncome": 0,
+      "categories": ["BPL"],
+      "existingBusiness": false
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Beneficiary's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Ration Card", "description": "Family ration card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Ayushman Card", "description": "Ayushman Bharat Health Account (ABHA)", "mandatory": false, "format": "PDF" }
+    ],
+    "applicationProcess": "Check eligibility on pmjay.gov.in. Visit empaneled hospital with Aadhaar card. No pre-registration required for eligible families. Cashless and paperless treatment.",
+    "channelPartnerTypes": ["Empaneled Hospitals", "CSC", "Health Departments"],
+    "officialUrl": "https://pmjay.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "janani-suraksha-yojana",
+    "name": { "en": "Janani Suraksha Yojana (JSY)", "hi": "जननी सुरक्षा योजना (जेएसवाई)" },
+    "ministry": "Ministry of Health and Family Welfare",
+    "category": ["health"],
+    "description": {
+      "en": "Safe motherhood intervention providing cash assistance to poor pregnant women for institutional delivery. Covers transportation and delivery expenses at government health facilities.",
+      "hi": "संस्थागत प्रसव के लिए गरीब गर्भवती महिलाओं को नकद सहायता प्रदान करने वाली सुरक्षित मातृत्व हस्तक्षेप।"
+    },
+    "shortDescription": {
+      "en": "Cash assistance for institutional delivery to poor pregnant women.",
+      "hi": "गरीब गर्भवती महिलाओं को संस्थागत प्रसव के लिए नकद सहायता।"
+    },
+    "purpose": "Promoting institutional delivery and reducing maternal mortality",
+    "targetBeneficiaries": ["Pregnant women", "BPL families", "SC/ST pregnant women"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 1400,
+      "maxAmount": 1400
+    },
+    "eligibilityRules": {
+      "categories": ["BPL", "SC", "ST"],
+      "gender": "female",
+      "maxIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Pregnant woman's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Certificate", "description": "BPL/Ration card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Mother-Child Protection Card", "description": "MCP card from health center", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Bank account details", "mandatory": true, "format": "PDF" }
+    ],
+    "applicationProcess": "Register at nearest government health facility. Delivery at government hospital or empaneled facility. Cash incentive disbursed through DBT after delivery.",
+    "channelPartnerTypes": ["Health Facilities", "ASHA Workers", "ANM", "PHCs"],
+    "officialUrl": "https://nrhm-mis.nic.in/pnd.aspx",
+    "source": "official",
+    "lastUpdated": "2025-05-15",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pradhan-mantri-jan-aushadhi-yojana",
+    "name": { "en": "Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP)", "hi": "प्रधानमंत्री भारतीय जनऔषधि परियोजना (पीएमबीजेपी)" },
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "category": ["health"],
+    "description": {
+      "en": "Provides quality generic medicines at affordable prices through Janaushadhi Kendras across the country. Medicines available at 50-90% less than branded drug prices.",
+      "hi": "देश भर में जनऔषधि केंद्रों के माध्यम से सस्ती कीमतों पर गुणवत्ता वाली जेनेरिक दवाएं प्रदान करता है। ब्रांडेड दवा की कीमतों से 50-90% कम पर दवाएं उपलब्ध।"
+    },
+    "shortDescription": {
+      "en": "Quality generic medicines at 50-90% less than branded prices.",
+      "hi": "ब्रांडेड कीमतों से 50-90% कम पर गुणवत्ता वाली जेनेरिक दवाएं।"
+    },
+    "purpose": "Making quality medicines affordable for all",
+    "targetBeneficiaries": ["General public", "BPL families", "Chronic disease patients"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Prescription", "description": "Doctor's prescription", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Aadhaar Card", "description": "Buyer's Aadhaar card (optional)", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Visit any Jan Aushadhi Kendra with doctor's prescription. Purchase medicines at subsidized rates. No registration required.",
+    "channelPartnerTypes": ["Jan Aushadhi Kendras", "Pharmacies", "Hospitals"],
+    "officialUrl": "https://janaushadhi.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-06-10",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "national-health-mission",
+    "name": { "en": "National Health Mission (NHM)", "hi": "राष्ट्रीय स्वास्थ्य मिशन (एनएचएम)" },
+    "ministry": "Ministry of Health and Family Welfare",
+    "category": ["health"],
+    "description": {
+      "en": "Umbrella scheme for health services including RMNCH+A, communicable diseases, non-communicable diseases, and health system strengthening. Provides free treatment at public health facilities.",
+      "hi": "स्वास्थ्य सेवाओं के लिए छत्र योजना जिसमें आरएमएनसीएच+ए, संचारी रोग, गैर-संचारी रोग और स्वास्थ्य प्रणाली सुदृढ़ीकरण शामिल है।"
+    },
+    "shortDescription": {
+      "en": "Umbrella scheme for comprehensive health services at public facilities.",
+      "hi": "सार्वजनिक सुविधाओं पर व्यापक स्वास्थ्य सेवाओं के लिए छत्र योजना।"
+    },
+    "purpose": "Providing accessible and affordable healthcare to rural and urban populations",
+    "targetBeneficiaries": ["Rural population", "Urban poor", "Women and children"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 0,
+      "maxAmount": 0
+    },
+    "eligibilityRules": {
+      "minIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Patient's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "BPL Card", "description": "BPL certificate if applicable", "mandatory": false, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Access free treatment at any government health facility under NHM. No separate registration required.",
+    "channelPartnerTypes": ["PHCs", "CHCs", "District Hospitals", "ASHA Workers"],
+    "officialUrl": "https://nhm.gov.in/",
+    "source": "official",
+    "lastUpdated": "2025-05-20",
+    "verified": true,
+    "isActive": true
+  },
+  {
+    "slug": "pradhan-mantri-matre-vandana-yojana",
+    "name": { "en": "Pradhan Mantri Matru Vandana Yojana (PMMVY)", "hi": "प्रधानमंत्री मातृ वंदना योजना (पीएमएमवीवाई)" },
+    "ministry": "Ministry of Women and Child Development",
+    "category": ["health"],
+    "description": {
+      "en": "Maternity benefit scheme providing ₹5,000 cash incentive in three installments to pregnant and lactating mothers for first living child. Covers wages loss during pregnancy.",
+      "hi": "गर्भवती और स्तनपान कराने वाली माताओं को पहले जीवित बच्चे के लिए तीन किश्तों में ₹5,000 नकद प्रोत्साहन प्रदान करने वाली मातृत्व लाभ योजना।"
+    },
+    "shortDescription": {
+      "en": "₹5,000 maternity benefit in three installments for first child.",
+      "hi": "पहले बच्चे के लिए तीन किश्तों में ₹5,000 मातृत्व लाभ।"
+    },
+    "purpose": "Providing maternity benefit and compensating wage loss during pregnancy",
+    "targetBeneficiaries": ["Pregnant women", "Lactating mothers", "First-time mothers"],
+    "financialAssistance": {
+      "type": "grant",
+      "minAmount": 5000,
+      "maxAmount": 5000
+    },
+    "eligibilityRules": {
+      "gender": "female",
+      "maxIncome": 0
+    },
+    "eligibilityRuleIds": [],
+    "requiredDocuments": [
+      { "name": "Aadhaar Card", "description": "Mother's Aadhaar card", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "Bank Account", "description": "Mother's bank account", "mandatory": true, "format": "PDF" },
+      { "name": "Birth Registration", "description": "Child birth registration", "mandatory": true, "format": "PDF/JPEG" },
+      { "name": "MCP Card", "description": "Mother-Child Protection card", "mandatory": true, "format": "PDF/JPEG" }
+    ],
+    "applicationProcess": "Register at nearest Anganwadi Centre or health facility. ₹1,000 on registration, ₹2,000 after 6 months pregnancy, ₹2,000 after child birth. DBT to bank account.",
+    "channelPartnerTypes": ["Anganwadi Centres", "Health Facilities", "CSC"],
+    "officialUrl": "https://wcd.nic.in/schemes/pradhan-mantri-matru-vandana-yojana",
+    "source": "official",
+    "lastUpdated": "2025-04-10",
+    "verified": true,
+    "isActive": true
+  }
+]

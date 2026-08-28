@@ -32,9 +32,13 @@ if (!onEmulator && !process.env.GOOGLE_APPLICATION_CREDENTIALS) {
 }
 
 if (!getApps().length) {
-  initializeApp(onEmulator ? { projectId: "scheme-saathi-demo" } : {
-    credential: cert(process.env.GOOGLE_APPLICATION_CREDENTIALS!),
-  })
+  initializeApp(
+    onEmulator
+      ? { projectId: process.env.GCLOUD_PROJECT || "scheme-saathi-demo" }
+      : {
+          credential: cert(process.env.GOOGLE_APPLICATION_CREDENTIALS!),
+        },
+  )
 }
 
 const db = getFirestore()

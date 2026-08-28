@@ -6,8 +6,6 @@ import { useLocaleStore, type Lang } from "@/stores/localeStore"
 
 export const supportedLangs: Lang[] = ["en", "hi"]
 
-// Architecture ready for more regional languages: add a JSON file per locale
-// (mr, ta, bn, te) and register it here — components need zero changes.
 const resources = {
   en: { translation: en },
   hi: { translation: hi },
