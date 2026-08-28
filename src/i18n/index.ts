@@ -2,15 +2,13 @@ import i18next from "i18next"
 import { initReactI18next } from "react-i18next"
 import en from "./en.json"
 import hi from "./hi.json"
-import mr from "./mr.json"
 import { useLocaleStore, type Lang } from "@/stores/localeStore"
 
-export const supportedLangs: Lang[] = ["en", "hi", "mr"]
+export const supportedLangs: Lang[] = ["en", "hi"]
 
 const resources = {
   en: { translation: en },
   hi: { translation: hi },
-  mr: { translation: mr },
 }
 
 void i18next.use(initReactI18next).init({

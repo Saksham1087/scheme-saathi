@@ -1,0 +1,75 @@
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created, ready for development
+#   - in-progress: Developer actively working on implementation
+#   - review: Implementation complete, ready for review
+#   - done: Story completed
+
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+
+# Action Item Status:
+#   - open: Committed during a retrospective, not yet addressed
+#   - in-progress: Actively being worked on
+#   - done: Completed
+
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when its first story starts (via build's sprint sync)
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates the next story after the previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+# - Retrospective appends its action items to action_items; the status view surfaces open ones
+generated: '2026-08-27'
+last_updated: '2026-08-28'
+project: scheme-saathi
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts/stories
+development_status:
+  epic-1: done
+  1-1-faceted-scheme-catalog-multi-dimension-filtering: review
+  1-2-standardized-14-section-scheme-details-page: review
+  1-3-multi-scheme-side-by-side-comparison-matrix: review
+  epic-1-retrospective: optional
+
+  epic-2: done
+  2-1-demographic-and-financial-intake-flow: review
+  2-2-100-point-deterministic-eligibility-scoring-engine: review
+  2-3-explainable-matching-why-not-alternatives: review
+  epic-2-retrospective: optional
+
+  epic-3: done
+  3-1-standard-scheme-aware-emi-amortization-calculator: review
+  3-2-moratorium-interest-capitalization-simulation: review
+  3-3-project-cost-planner-financing-breakdown: review
+  epic-3-retrospective: optional
+
+  epic-4: done
+  4-1-react-leaflet-partner-map-geo-spatial-search: review
+  4-2-5-factor-partner-match-scoring-nearest-partner-routing: review
+  4-3-partner-profile-details-synthetic-data-guardrails: review
+  epic-4-retrospective: optional
+
+  epic-5: done
+  5-1-scheme-specific-interactive-document-checklist: review
+  5-2-digilocker-certificate-sync-with-manual-upload-fallback: review
+  epic-5-retrospective: optional
+
+  epic-6: done
+  6-1-web-speech-api-multilingual-voice-intake: review
+  6-2-grounded-conversational-scheme-assistant: review
+  epic-6-retrospective: optional
+
+  epic-7: done
+  7-1-8-stage-post-discovery-application-milestone-tracker: review
+  7-2-unified-beneficiary-dashboard-saved-entities: review
+  epic-7-retrospective: optional

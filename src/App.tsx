@@ -1,52 +1,43 @@
-import { Route, Routes, Navigate } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import { Toaster } from "@/components/ui/sonner"
 import { AppShell } from "@/components/layout/AppShell"
-import { FloatingChatWidget } from "@/components/FloatingChatWidget"
-import { appConfig } from "@/lib/appConfig"
 import Home from "@/pages/Home"
+import SchemesCatalog from "@/pages/SchemesCatalog"
+import SchemeDetailsPage from "@/pages/SchemeDetailsPage"
+import ComparePage from "@/pages/ComparePage"
+import IntakeWizard from "@/pages/IntakeWizard"
+import Results from "@/pages/Results"
 import CalculatorPage from "@/pages/CalculatorPage"
+import PlannerPage from "@/pages/PlannerPage"
 import PartnersPage from "@/pages/PartnersPage"
-import PartnerDetail from "@/pages/PartnerDetail"
 import HowItWorks from "@/pages/HowItWorks"
 import TrackApplication from "@/pages/TrackApplication"
+import DocumentsPage from "@/pages/DocumentsPage"
+import AssistantPage from "@/pages/AssistantPage"
+import DashboardPage from "@/pages/DashboardPage"
 import Login from "@/pages/Login"
-import Schemes from "@/pages/Schemes"
-import SchemeDetail from "@/pages/SchemeDetail"
-import Recommend from "@/pages/Recommend"
-import Compare from "@/pages/Compare"
-import Application from "@/pages/Application"
-import Dashboard from "@/pages/Dashboard"
-import AdminLayout from "@/pages/admin/AdminLayout"
-import AdminSchemes from "@/pages/admin/AdminSchemes"
-import AdminPartners from "@/pages/admin/AdminPartners"
-import AdminAnalytics from "@/pages/admin/AdminAnalytics"
 
 export default function App() {
   return (
     <>
-      {appConfig.hasChat && <FloatingChatWidget />}
       <Routes>
         <Route element={<AppShell />}>
           <Route path="/" element={<Home />} />
-          <Route path="/schemes" element={<Schemes />} />
-          <Route path="/schemes/:slug" element={<SchemeDetail />} />
-          <Route path="/recommend" element={<Recommend />} />
-          <Route path="/find-schemes" element={<Navigate to="/recommend" replace />} />
-          <Route path="/results" element={<Navigate to="/recommend" replace />} />
-          <Route path="/compare" element={<Compare />} />
-          <Route path="/application/:id" element={<Application />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<AdminSchemes />} />
-            <Route path="schemes" element={<AdminSchemes />} />
-            <Route path="partners" element={<AdminPartners />} />
-            <Route path="analytics" element={<AdminAnalytics />} />
-          </Route>
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/schemes" element={<SchemesCatalog />} />
+          <Route path="/schemes/:id" element={<SchemeDetailsPage />} />
+          <Route path="/compare" element={<ComparePage />} />
+          <Route path="/find-schemes" element={<IntakeWizard />} />
+          <Route path="/recommend" element={<IntakeWizard />} />
+          <Route path="/results" element={<Results />} />
           <Route path="/calculator" element={<CalculatorPage />} />
+          <Route path="/planner" element={<PlannerPage />} />
           <Route path="/partners" element={<PartnersPage />} />
-          <Route path="/partners/:id" element={<PartnerDetail />} />
+          <Route path="/documents" element={<DocumentsPage />} />
+          <Route path="/assistant" element={<AssistantPage />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/track" element={<TrackApplication />} />
+          <Route path="/application/:id" element={<TrackApplication />} />
           <Route path="/login" element={<Login />} />
         </Route>
       </Routes>

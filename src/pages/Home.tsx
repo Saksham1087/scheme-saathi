@@ -364,6 +364,9 @@ export default function Home() {
                 <ArrowRight className="ml-2 size-4" />
               </Link>
             </Button>
+            <Button size="lg" variant="secondary" asChild>
+              <Link to="/schemes">{t("nav.schemes")}</Link>
+            </Button>
             <Button size="lg" variant="outline" asChild>
               <Link to="/how-it-works">{t("home.heroSecondaryCta")}</Link>
             </Button>

@@ -11,6 +11,9 @@ export default defineConfig({
       "@seed": path.resolve(import.meta.dirname, "./functions/src/data"),
     },
   },
+  server: {
+    allowedHosts: ["saathi.rairahulr1.com"],
+  },
   build: {
     chunkSizeWarningLimit: 1600,
   },

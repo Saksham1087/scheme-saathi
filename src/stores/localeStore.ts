@@ -1,11 +1,10 @@
 import { create } from "zustand"
 
-export type Lang = "en" | "hi" | "mr"
+export type Lang = "en" | "hi"
 
 export const langLabels: Record<Lang, string> = {
   en: "English",
   hi: "हिन्दी",
-  mr: "मराठी",
 }
 
 interface LocaleState {
@@ -13,14 +12,13 @@ interface LocaleState {
   setLang: (lang: Lang) => void
 }
 
-const SUPPORTED: Lang[] = ["en", "hi", "mr"]
+const SUPPORTED: Lang[] = ["en", "hi"]
 
 function initialLang(): Lang {
   const saved = localStorage.getItem("ss-lang") as Lang | null
   if (saved && SUPPORTED.includes(saved)) return saved
   const browser = navigator.language
   if (browser.startsWith("hi")) return "hi"
-  if (browser.startsWith("mr")) return "mr"
   return "en"
 }
 

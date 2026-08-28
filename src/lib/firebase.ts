@@ -18,13 +18,15 @@ const demoConfig: FirebaseOptions = {
   appId: "1:0:web:demo",
 }
 
+const env = typeof import.meta !== "undefined" && import.meta.env ? import.meta.env : ({} as Record<string, string | boolean>)
+
 const envConfig: Partial<FirebaseOptions> = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: env.VITE_FIREBASE_API_KEY as string | undefined,
+  authDomain: env.VITE_FIREBASE_AUTH_DOMAIN as string | undefined,
+  projectId: env.VITE_FIREBASE_PROJECT_ID as string | undefined,
+  storageBucket: env.VITE_FIREBASE_STORAGE_BUCKET as string | undefined,
+  messagingSenderId: env.VITE_FIREBASE_MESSAGING_SENDER_ID as string | undefined,
+  appId: env.VITE_FIREBASE_APP_ID as string | undefined,
 }
 
 const useEnvConfig = Boolean(envConfig.apiKey && envConfig.projectId)
@@ -38,35 +40,20 @@ export const db = getFirestore(firebaseApp)
 export const functions = getFunctions(firebaseApp)
 export const storage = getStorage(firebaseApp)
 
-async function isReachable(url: string): Promise<boolean> {
-  try {
-    const res = await fetch(url, { method: "HEAD" })
-    return res.ok || res.status === 200 || res.status === 404
-  } catch {
-    return false
-  }
-}
+const useEmulators =
+  !useEnvConfig ||
+  Boolean(env.DEV && env.VITE_USE_EMULATORS !== "false")
 
-async function tryConnectEmulators() {
-  const shouldUseEmulators =
-    import.meta.env.VITE_USE_EMULATORS === "true" && import.meta.env.DEV
-
-  if (!shouldUseEmulators) return
-
-  if (await isReachable("http://127.0.0.1:9099")) {
+if (useEmulators && typeof window !== "undefined") {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const anyWindow = window as any
+  if (!anyWindow.__schemesaathi_emulators_connected) {
+    anyWindow.__schemesaathi_emulators_connected = true
     connectAuthEmulator(auth, "http://127.0.0.1:9099", {
       disableWarnings: true,
     })
-  }
-  if (await isReachable("http://127.0.0.1:8080")) {
     connectFirestoreEmulator(db, "127.0.0.1", 8080)
-  }
-  if (await isReachable("http://127.0.0.1:5001")) {
     connectFunctionsEmulator(functions, "127.0.0.1", 5001)
-  }
-  if (await isReachable("http://127.0.0.1:9199")) {
     connectStorageEmulator(storage, "127.0.0.1", 9199)
   }
 }
-
-tryConnectEmulators()

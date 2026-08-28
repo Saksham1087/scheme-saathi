@@ -1,12 +1,13 @@
 import { NavLink, Link, Outlet, useNavigate } from "react-router-dom"
-import { LogOut, MapPin, MessageSquareText } from "lucide-react"
+import { LogOut, MapPin } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
+import { SchemeCompareTray } from "@/components/schemes/SchemeCompareTray"
+import { VoiceFloatingButton } from "@/components/voice/VoiceFloatingButton"
+import { AssistantDrawer } from "@/components/assistant/AssistantDrawer"
+import { useLocaleStore } from "@/stores/localeStore"
 import { useAuthStore } from "@/stores/authStore"
 import { auth } from "@/lib/firebase"
-import { LanguageSelector } from "@/components/LanguageSelector"
-import { AccessibilityControls } from "@/components/AccessibilityControls"
-import { ComparisonBar } from "@/components/ComparisonBar"
 
 function Wordmark() {
   return (
@@ -22,9 +23,43 @@ function Wordmark() {
   )
 }
 
+function LanguageToggle() {
+  const { lang, setLang } = useLocaleStore()
+  return (
+    <div
+      role="group"
+      aria-label="Language"
+      className="flex rounded-md border border-border overflow-hidden text-sm font-semibold"
+    >
+      <button
+        onClick={() => setLang("en")}
+        aria-pressed={lang === "en"}
+        className={`px-2.5 py-1.5 transition-colors ${
+          lang === "en" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
+        }`}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => setLang("hi")}
+        aria-pressed={lang === "hi"}
+        className={`px-2.5 py-1.5 transition-colors ${
+          lang === "hi" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
+        }`}
+      >
+        हिंदी
+      </button>
+    </div>
+  )
+}
+
 const navKeys = [
+  { to: "/dashboard", key: "nav.dashboard" },
+  { to: "/schemes", key: "nav.schemes" },
   { to: "/find-schemes", key: "nav.findSchemes" },
   { to: "/calculator", key: "nav.calculator" },
+  { to: "/documents", key: "nav.documents" },
+  { to: "/assistant", key: "nav.assistant" },
   { to: "/partners", key: "nav.partners" },
   { to: "/how-it-works", key: "nav.howItWorks" },
   { to: "/track", key: "nav.track" },
@@ -55,35 +90,23 @@ export function AppShell() {
               </NavLink>
             ))}
           </nav>
-<div className="ml-auto lg:ml-0 flex items-center gap-3">
-            <LanguageSelector />
+          <div className="ml-auto lg:ml-0 flex items-center gap-3">
+            <LanguageToggle />
             {user ? (
-              <>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="hidden sm:flex items-center gap-2"
-                  onClick={() => window.dispatchEvent(new CustomEvent("open-chat-drawer"))}
-                >
-                  <MessageSquareText className="size-4" />
-                  {t("nav.talkToSathi")}
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => void auth.signOut()}
-                >
-                  <LogOut className="size-4 mr-1" />
-                  {t("nav.logout")}
-                </Button>
-              </>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => void auth.signOut()}
+              >
+                <LogOut className="size-4 mr-1" />
+                {t("nav.logout")}
+              </Button>
             ) : (
               <Button size="sm" onClick={() => navigate("/login")}>
                 {t("nav.login")}
               </Button>
             )}
-        <ComparisonBar />
-    </div>
+          </div>
         </div>
         <nav
           aria-label={t("nav.home")}
@@ -111,6 +134,10 @@ export function AppShell() {
         <Outlet />
       </main>
 
+      <SchemeCompareTray />
+      <VoiceFloatingButton />
+      <AssistantDrawer />
+
       <footer className="border-t border-border/70 mt-16">
         <div className="mx-auto max-w-6xl px-4 py-8 flex flex-col sm:flex-row gap-4 items-start justify-between text-sm text-muted-foreground">
           <p className="font-display font-semibold text-base text-foreground">
@@ -120,7 +147,6 @@ export function AppShell() {
             <MapPin className="size-4 shrink-0 mt-0.5 text-accent" />
             {t("home.privacyNote")}
           </p>
-          <AccessibilityControls />
         </div>
       </footer>
     </div>
