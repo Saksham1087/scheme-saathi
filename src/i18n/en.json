@@ -365,6 +365,41 @@
       "PSB": "Public Sector Bank",
       "RRB": "Regional Rural Bank",
       "NBFC_MFI": "NBFC–Micro Finance Institution"
+    },
+    "sort": {
+      "label": "Sort by",
+      "bestMatch": "Best Match (Suitability)",
+      "nearest": "Nearest Distance",
+      "speed": "Fastest Processing (~Days)"
+    },
+    "scoring": {
+      "topRecommendation": "Top Recommendation",
+      "bestMatchTier": "Best Match",
+      "topMatch": "Match",
+      "strongMatch": "Strong Match",
+      "moderateMatch": "Moderate Match",
+      "matchPct": "{{score}}% Match",
+      "scoreOutOf": "Suitability Score",
+      "pts": "pts",
+      "overallScore": "Total Suitability Score",
+      "breakdownTitle": "5-Factor Suitability Breakdown",
+      "breakdownDesc": "Deterministic suitability score evaluated across 5 statutory and operational dimensions.",
+      "proximityTitle": "Proximity & Distance",
+      "proximityDesc": "Max 30 pts based on GPS distance",
+      "channelTitle": "Channel Institution Alignment",
+      "channelDesc": "Statutory mandate & direct SC channel priority (25 pts max)",
+      "schemeTitle": "Scheme Category Support",
+      "schemeDesc": "Coverage of required scheme loan categories (20 pts max)",
+      "speedTitle": "Sanction & Processing Speed",
+      "speedDesc": "Historical turnaround days (15 pts max)",
+      "healthTitle": "Fund Utilization & Health Track Record",
+      "healthDesc": "Active fund capacity deployed (10 pts max)",
+      "npaPenaltyTitle": "High NPA Risk Deduction",
+      "npaPenaltyDesc": "This partner has high overdue NPA rates which may cause delays in loan sanctions.",
+      "highNpaWarning": "High NPA Review — Possible Sanction Delays",
+      "viewBreakdown": "Click to view 5-factor scoring breakdown",
+      "topExplainer": "Top tier recommendation based on direct institutional alignment, high proximity, and fast processing.",
+      "tierExplainer": "Standard authorized channel partner for NSFDC concessional credit deployment."
     }
   },
   "how": {

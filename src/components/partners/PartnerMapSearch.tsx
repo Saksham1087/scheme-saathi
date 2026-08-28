@@ -1,13 +1,35 @@
 import { useTranslation } from "react-i18next"
-import { Crosshair, Loader2, RotateCcw, Search, TriangleAlert, X } from "lucide-react"
+import {
+  ArrowUpDown,
+  Clock,
+  Crosshair,
+  Loader2,
+  MapPin,
+  RotateCcw,
+  Search,
+  Sparkles,
+  TriangleAlert,
+  X,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { PARTNER_TYPE_VISUALS } from "@/lib/maps/types"
+import type { PartnerSortOption } from "@/lib/maps/scoring"
 import type { PartnerType, SchemeType } from "@/types"
 
 const CATEGORIES: Array<SchemeType | "all"> = ["all", "micro", "term", "education"]
 const PARTNER_TYPES: Array<PartnerType | "all"> = ["all", "SCA", "PSB", "RRB", "NBFC_MFI"]
+
+const SORT_OPTIONS: Array<{
+  id: PartnerSortOption
+  labelKey: string
+  icon: typeof Sparkles
+}> = [
+  { id: "best_match", labelKey: "partners.sort.bestMatch", icon: Sparkles },
+  { id: "nearest", labelKey: "partners.sort.nearest", icon: MapPin },
+  { id: "speed", labelKey: "partners.sort.speed", icon: Clock },
+]
 
 export interface PartnerMapSearchProps {
   searchQuery: string
@@ -16,6 +38,8 @@ export interface PartnerMapSearchProps {
   onCategoryFilterChange: (cat: SchemeType | "all") => void
   partnerTypeFilter: PartnerType | "all"
   onPartnerTypeFilterChange: (type: PartnerType | "all") => void
+  sortBy: PartnerSortOption
+  onSortByChange: (sort: PartnerSortOption) => void
   includeFlagged: boolean
   onIncludeFlaggedChange: (include: boolean) => void
   onUseMyLocation: () => void
@@ -32,6 +56,8 @@ export function PartnerMapSearch({
   onCategoryFilterChange,
   partnerTypeFilter,
   onPartnerTypeFilterChange,
+  sortBy,
+  onSortByChange,
   includeFlagged,
   onIncludeFlaggedChange,
   onUseMyLocation,
@@ -46,6 +72,7 @@ export function PartnerMapSearch({
     searchQuery.trim().length > 0 ||
     categoryFilter !== "all" ||
     partnerTypeFilter !== "all" ||
+    sortBy !== "best_match" ||
     includeFlagged
 
   return (
@@ -90,6 +117,36 @@ export function PartnerMapSearch({
         </Button>
       </div>
 
+      {/* Sort Options Selector */}
+      <div className="flex flex-wrap items-center gap-2 pt-1 border-t border-border/40">
+        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mr-1 flex items-center gap-1">
+          <ArrowUpDown className="size-3.5" />
+          {t("partners.sort.label", "Sort By")}:
+        </span>
+        <div className="flex flex-wrap items-center gap-1.5">
+          {SORT_OPTIONS.map((opt) => {
+            const isSelected = sortBy === opt.id
+            const Icon = opt.icon
+            return (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => onSortByChange(opt.id)}
+                aria-pressed={isSelected}
+                className={`rounded-full border px-3 py-1 text-xs font-medium min-h-[32px] inline-flex items-center gap-1.5 transition-all cursor-pointer ${
+                  isSelected
+                    ? "border-primary bg-primary text-primary-foreground font-semibold shadow-xs"
+                    : "border-border/80 bg-background text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
+                }`}
+              >
+                <Icon className="size-3.5" />
+                <span>{t(opt.labelKey)}</span>
+              </button>
+            )
+          })}
+        </div>
+      </div>
+
       {/* Scheme Category Filter Chips */}
       <div className="flex flex-wrap items-center gap-1.5 pt-1">
         <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mr-1.5">
@@ -103,7 +160,7 @@ export function PartnerMapSearch({
               type="button"
               onClick={() => onCategoryFilterChange(cat)}
               aria-pressed={isSelected}
-              className={`rounded-full border px-3.5 py-1.5 text-xs font-medium min-h-[36px] transition-all ${
+              className={`rounded-full border px-3.5 py-1.5 text-xs font-medium min-h-[36px] transition-all cursor-pointer ${
                 isSelected
                   ? "border-primary bg-primary text-primary-foreground shadow-xs"
                   : "border-border/80 bg-secondary/50 text-secondary-foreground hover:bg-secondary"
@@ -132,7 +189,7 @@ export function PartnerMapSearch({
               type="button"
               onClick={() => onPartnerTypeFilterChange(type)}
               aria-pressed={isSelected}
-              className={`rounded-full border px-3 py-1 text-xs font-medium min-h-[32px] inline-flex items-center gap-1.5 transition-all ${
+              className={`rounded-full border px-3 py-1 text-xs font-medium min-h-[32px] inline-flex items-center gap-1.5 transition-all cursor-pointer ${
                 isSelected
                   ? "border-foreground bg-foreground text-background font-semibold shadow-xs"
                   : "border-border/70 bg-background text-muted-foreground hover:bg-secondary/60 hover:text-foreground"

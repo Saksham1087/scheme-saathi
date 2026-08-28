@@ -9,7 +9,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { PartnerCard } from "@/components/partners/PartnerCard"
 import { PartnerMapSearch } from "@/components/partners/PartnerMapSearch"
 import { db } from "@/lib/firebase"
-import { distanceKm } from "@/lib/emi"
+import {
+  type PartnerSortOption,
+  type ScoredPartner,
+  scoreAndRankPartners,
+} from "@/lib/maps/scoring"
 import { createLeafletMap } from "@/lib/maps/leaflet"
 import { type GeoPoint, type MapService, PARTNER_TYPE_VISUALS } from "@/lib/maps/types"
 import type { ChannelPartner, PartnerType, SchemeType } from "@/types"
@@ -30,17 +34,26 @@ export default function PartnersPage() {
 
   // Initialize filter from URL query param if present
   const initialCategory = useMemo<SchemeType | "all">(() => {
-    const type = searchParams.get("type")
+    const type = searchParams.get("type") || searchParams.get("category")
     if (type === "micro" || type === "term" || type === "education") {
       return type
     }
     return "all"
   }, [searchParams])
 
+  const initialSort = useMemo<PartnerSortOption>(() => {
+    const s = searchParams.get("sort")
+    if (s === "best_match" || s === "nearest" || s === "speed") {
+      return s
+    }
+    return "best_match"
+  }, [searchParams])
+
   const [partners, setPartners] = useState<ChannelPartner[] | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
   const [filter, setFilter] = useState<SchemeType | "all">(initialCategory)
   const [partnerTypeFilter, setPartnerTypeFilter] = useState<PartnerType | "all">("all")
+  const [sortBy, setSortBy] = useState<PartnerSortOption>(initialSort)
   const [includeFlagged, setIncludeFlagged] = useState(false)
   const [userLoc, setUserLoc] = useState<GeoPoint>(DEFAULT_LOCATION)
   const [isLocating, setIsLocating] = useState(false)
@@ -102,13 +115,13 @@ export default function PartnersPage() {
     return () => clearTimeout(timer)
   }, [mobileTab])
 
-  // Filter and sort partners
-  const filteredSorted = useMemo(() => {
+  // Filter and score partners using deterministic 5-factor scoring model
+  const filteredSorted = useMemo<ScoredPartner[]>(() => {
     if (!partners) return []
 
     const q = searchQuery.trim().toLowerCase()
 
-    const result = partners.filter((p) => {
+    const candidatePartners = partners.filter((p) => {
       // 1. Category filter
       if (filter !== "all" && !p.schemeCategories.includes(filter)) {
         return false
@@ -138,14 +151,9 @@ export default function PartnersPage() {
       return true
     })
 
-    return result.sort((a, b) => {
-      // High-NPA partners deprioritized to the bottom when included
-      const npaA = a.npaFlag === "high" ? 1 : 0
-      const npaB = b.npaFlag === "high" ? 1 : 0
-      if (npaA !== npaB) return npaA - npaB
-      return distanceKm(userLoc, a.geo) - distanceKm(userLoc, b.geo)
-    })
-  }, [partners, filter, partnerTypeFilter, includeFlagged, searchQuery, userLoc])
+    // Score and rank all candidate partners with 5-factor scoring engine
+    return scoreAndRankPartners(candidatePartners, userLoc, filter, sortBy)
+  }, [partners, filter, partnerTypeFilter, includeFlagged, searchQuery, userLoc, sortBy])
 
   // Update map markers when filtered list or focus changes
   useEffect(() => {
@@ -189,6 +197,7 @@ export default function PartnersPage() {
     setSearchQuery("")
     setFilter("all")
     setPartnerTypeFilter("all")
+    setSortBy("best_match")
     setIncludeFlagged(false)
     setFocusId(null)
   }
@@ -210,7 +219,7 @@ export default function PartnersPage() {
             NSFDC Channel Network
           </span>
           <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
-            Zero-API OpenStreetMap
+            5-Factor Match Scoring & Routing
           </span>
         </div>
         <h1 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tight text-foreground">
@@ -230,6 +239,8 @@ export default function PartnersPage() {
           onCategoryFilterChange={setFilter}
           partnerTypeFilter={partnerTypeFilter}
           onPartnerTypeFilterChange={setPartnerTypeFilter}
+          sortBy={sortBy}
+          onSortByChange={setSortBy}
           includeFlagged={includeFlagged}
           onIncludeFlaggedChange={setIncludeFlagged}
           onUseMyLocation={handleLocateMe}
@@ -337,11 +348,13 @@ export default function PartnersPage() {
             </Card>
           )}
 
-          {filteredSorted.map((p) => (
+          {filteredSorted.map((p, idx) => (
             <PartnerCard
               key={p.id}
               partner={p}
               userLocation={userLoc}
+              score={p.score}
+              isTopRanked={idx === 0}
               isSelected={focusId === p.id}
               onSelect={() => setFocusId(p.id)}
               onFocusOnMap={handleFocusOnMap}
@@ -361,4 +374,3 @@ export default function PartnersPage() {
     </div>
   )
 }
-
