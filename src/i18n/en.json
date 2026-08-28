@@ -9,7 +9,9 @@
     "cancel": "Cancel",
     "close": "Close",
     "loading": "Loading…",
-    "perMonth": "/month"
+    "perMonth": "/month",
+    "hide": "Hide",
+    "stop": "Stop"
   },
   "nav": {
     "home": "Home",
@@ -17,6 +19,7 @@
     "findSchemes": "Find Schemes",
     "calculator": "EMI Calculator",
     "documents": "Document Checklist",
+    "assistant": "Saathi AI",
     "partners": "Find a Partner",
     "howItWorks": "How It Works",
     "track": "Track Application",
@@ -1030,6 +1033,42 @@
     "errorInvalidType": "Invalid file format. Only PDF, JPG, and PNG are allowed.",
     "toastUploadSuccess": "Document uploaded successfully!",
     "toastDeleteSuccess": "Uploaded document removed."
+  },
+  "assistant": {
+    "pageBadge": "Grounded Scheme Intelligence",
+    "verifiedGrounding": "100% Source-Grounded",
+    "pageTitle": "Saathi AI Scheme Assistant",
+    "pageSubtitle": "Ask detailed questions about concessional government schemes, interest rates, eligibility criteria, and required documents. Responses are strictly grounded in official guidelines.",
+    "floatingBtnLabel": "Open Saathi AI Scheme Assistant",
+    "floatingTooltip": "Ask Saathi AI about schemes, loans & interest rates",
+    "badgeName": "Saathi AI",
+    "dialogAria": "Saathi AI Conversational Assistant",
+    "groundedTag": "Grounded",
+    "headerSub": "Verified Scheme Guidance",
+    "fullPage": "Open Full Page",
+    "resetChat": "Reset Conversation",
+    "retrieving": "Retrieving official guidelines…",
+    "suggestedPrompts": "Suggested Questions",
+    "voiceListening": "Listening… Speak your question clearly",
+    "stopVoice": "Stop Listening",
+    "startVoice": "Speak your question (Hindi / English)",
+    "voiceDictationAria": "Voice Dictation",
+    "speakingPlaceholder": "Listening…",
+    "inputPlaceholder": "Ask about schemes, loans, interest…",
+    "sendAria": "Send Message",
+    "guardrailBadge": "Safety Guardrail",
+    "verifiedBadge": "Verified Grounding",
+    "readAloud": "Read Aloud",
+    "stopAudio": "Stop Audio",
+    "listen": "Listen",
+    "speaking": "Stop",
+    "sourcesLabel": "Verified Sources & Statutory Citations:",
+    "suggestedActions": "Recommended Next Steps:",
+    "safetyTitle": "Mandatory AI Safety Guardrail",
+    "safetyBody1": "Saathi AI strictly refuses to hallucinate policies or fabricate loan approvals. All quotes reflect official gazetted rates under NSFDC and Ministry regulations.",
+    "safetyBody2": "Final loan approvals are subject to document appraisal by designated State Channelizing Agencies (SCAs) and Bank branches.",
+    "relatedTools": "Self-Service Tools",
+    "disclaimerCopy": "I couldn't verify this information from official government scheme guidelines. SchemeSathi provides indicative guidance; final loan approval is subject to appraisal by designated Channel Partners (SCAs/Banks)."
   }
 }
 

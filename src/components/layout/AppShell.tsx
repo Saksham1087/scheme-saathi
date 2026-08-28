@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
 import { SchemeCompareTray } from "@/components/schemes/SchemeCompareTray"
 import { VoiceFloatingButton } from "@/components/voice/VoiceFloatingButton"
+import { AssistantDrawer } from "@/components/assistant/AssistantDrawer"
 import { useLocaleStore } from "@/stores/localeStore"
 import { useAuthStore } from "@/stores/authStore"
 import { auth } from "@/lib/firebase"
@@ -57,6 +58,7 @@ const navKeys = [
   { to: "/find-schemes", key: "nav.findSchemes" },
   { to: "/calculator", key: "nav.calculator" },
   { to: "/documents", key: "nav.documents" },
+  { to: "/assistant", key: "nav.assistant" },
   { to: "/partners", key: "nav.partners" },
   { to: "/how-it-works", key: "nav.howItWorks" },
   { to: "/track", key: "nav.track" },
@@ -133,6 +135,7 @@ export function AppShell() {
 
       <SchemeCompareTray />
       <VoiceFloatingButton />
+      <AssistantDrawer />
 
       <footer className="border-t border-border/70 mt-16">
         <div className="mx-auto max-w-6xl px-4 py-8 flex flex-col sm:flex-row gap-4 items-start justify-between text-sm text-muted-foreground">
