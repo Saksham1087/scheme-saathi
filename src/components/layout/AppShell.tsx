@@ -3,6 +3,7 @@ import { LogOut, MapPin } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
 import { SchemeCompareTray } from "@/components/schemes/SchemeCompareTray"
+import { VoiceFloatingButton } from "@/components/voice/VoiceFloatingButton"
 import { useLocaleStore } from "@/stores/localeStore"
 import { useAuthStore } from "@/stores/authStore"
 import { auth } from "@/lib/firebase"
@@ -131,6 +132,7 @@ export function AppShell() {
       </main>
 
       <SchemeCompareTray />
+      <VoiceFloatingButton />
 
       <footer className="border-t border-border/70 mt-16">
         <div className="mx-auto max-w-6xl px-4 py-8 flex flex-col sm:flex-row gap-4 items-start justify-between text-sm text-muted-foreground">

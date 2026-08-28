@@ -39,6 +39,7 @@ import { functions } from "@/lib/firebase"
 import { STATES } from "@/lib/states"
 import { fmtINR } from "@/lib/format"
 import { useVoiceInput } from "@/lib/voice"
+import { VoiceIntakeModal } from "@/components/voice/VoiceIntakeModal"
 import { useIntakeStore } from "@/stores/intakeStore"
 import { matchApplicantProfile } from "@/services/matchingEngine"
 import type {
@@ -93,6 +94,7 @@ export default function IntakeWizard() {
   const store = useIntakeStore()
   const [busy, setBusy] = useState(false)
   const [stepError, setStepError] = useState<string | null>(null)
+  const [voiceModalOpen, setVoiceModalOpen] = useState(false)
 
   const {
     step,
@@ -281,6 +283,34 @@ export default function IntakeWizard() {
             )
           })}
         </div>
+      </div>
+
+      {/* Multilingual Voice Intake CTA Banner */}
+      <div className="mb-6 rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent p-4 shadow-xs flex items-center justify-between gap-4 flex-wrap sm:flex-nowrap">
+        <div className="flex items-center gap-3">
+          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
+            <Mic className="size-5" />
+          </div>
+          <div>
+            <h2 className="text-sm font-display font-bold text-foreground flex items-center gap-1.5">
+              <span>{t("voice.bannerTitle", "Speak Your Needs / बोलकर भरें")}</span>
+              <Badge variant="secondary" className="bg-primary/20 text-primary border-transparent text-[10px] py-0 px-1.5">
+                {t("voice.badgeNew", "Voice AI")}
+              </Badge>
+            </h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              {t("voice.bannerSubtitle", "Fill your details easily in Hindi, Marathi, or English using voice input.")}
+            </p>
+          </div>
+        </div>
+        <Button
+          type="button"
+          onClick={() => setVoiceModalOpen(true)}
+          className="w-full sm:w-auto shrink-0 bg-primary hover:bg-primary/90 text-primary-foreground text-xs font-semibold shadow-xs min-h-[40px] px-4"
+        >
+          <Mic className="size-3.5 mr-1.5" />
+          {t("voice.bannerCta", "Start Voice Intake")}
+        </Button>
       </div>
 
       {/* Main Step Card Container */}
@@ -792,6 +822,11 @@ export default function IntakeWizard() {
           </div>
         )}
       </IntakeStepCard>
+
+      <VoiceIntakeModal
+        open={voiceModalOpen}
+        onOpenChange={setVoiceModalOpen}
+      />
     </div>
   )
 }
