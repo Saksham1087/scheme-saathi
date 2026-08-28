@@ -14,6 +14,8 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
+import { useCompareStore } from "@/stores/useCompareStore"
 import { fmtINR } from "@/lib/format"
 import type { Scheme } from "@/types"
 
@@ -24,6 +26,8 @@ interface SchemeCardProps {
 export function SchemeCard({ scheme }: SchemeCardProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language === "hi" ? "hi" : "en") as "en" | "hi"
+  const { isComparing, toggleScheme } = useCompareStore()
+  const comparing = isComparing(scheme.id)
 
   const schemeName = scheme.name[lang] || scheme.name.en
   const schemeDesc = scheme.description[lang] || scheme.description.en
@@ -69,7 +73,13 @@ export function SchemeCard({ scheme }: SchemeCardProps) {
       : `${Math.max(1, Math.round(minTenure / 12))} – ${Math.max(1, Math.round(maxTenure / 12))} ${t("schemes.years", "years")}`
 
   return (
-    <Card className="flex flex-col justify-between border-border/80 shadow-xs hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-primary">
+    <Card
+      className={`flex flex-col justify-between border transition-all duration-200 focus-within:ring-2 focus-within:ring-primary ${
+        comparing
+          ? "border-primary/60 bg-primary/[0.02] shadow-md ring-1 ring-primary/30"
+          : "border-border/80 shadow-xs hover:shadow-md"
+      }`}
+    >
       <CardHeader className="space-y-2.5 pb-3">
         {/* Top Badges Row */}
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -87,9 +97,31 @@ export function SchemeCard({ scheme }: SchemeCardProps) {
               </span>
             )}
           </div>
-          <span className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
-            {t(`schemeTypes.${scheme.type}`, scheme.type)}
-          </span>
+          <div className="flex items-center gap-2">
+            <label
+              className={`flex items-center gap-1.5 rounded-md border px-2 py-1 text-xs font-medium cursor-pointer transition-colors select-none ${
+                comparing
+                  ? "border-primary bg-primary/10 text-primary font-semibold"
+                  : "border-border/70 bg-background/80 text-muted-foreground hover:bg-muted hover:text-foreground"
+              }`}
+            >
+              <Checkbox
+                checked={comparing}
+                onCheckedChange={() => toggleScheme(scheme.id)}
+                aria-label={t("compare.compareCheckboxAria", "Select {{name}} for comparison", {
+                  name: schemeName,
+                })}
+              />
+              <span className="text-[11px]">
+                {comparing
+                  ? t("compare.comparing", "Comparing")
+                  : t("compare.compareCheckbox", "Compare")}
+              </span>
+            </label>
+            <span className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+              {t(`schemeTypes.${scheme.type}`, scheme.type)}
+            </span>
+          </div>
         </div>
 
         {/* Scheme Name */}

@@ -11,9 +11,11 @@ import {
   Check,
   ListTree,
   Headphones,
+  Layers,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { useCompareStore } from "@/stores/useCompareStore"
 import type { Scheme } from "@/types"
 
 interface SchemeActionSidebarProps {
@@ -23,6 +25,8 @@ interface SchemeActionSidebarProps {
 
 export function SchemeActionSidebar({ scheme, sections }: SchemeActionSidebarProps) {
   const { t } = useTranslation()
+  const { isComparing, toggleScheme } = useCompareStore()
+  const comparing = isComparing(scheme.id)
   const [copied, setCopied] = useState(false)
   const [activeSection, setActiveSection] = useState<string>("")
 
@@ -149,6 +153,23 @@ export function SchemeActionSidebar({ scheme, sections }: SchemeActionSidebarPro
               <Compass className="size-4 mr-2.5 text-primary" />
               {t("schemes.findPartners", "Find Channel Partners")}
             </Link>
+          </Button>
+
+          {/* Add to Compare CTA */}
+          <Button
+            variant={comparing ? "secondary" : "outline"}
+            size="lg"
+            onClick={() => toggleScheme(scheme.id)}
+            className={`w-full justify-start text-sm font-semibold min-h-[44px] ${
+              comparing
+                ? "border-primary/50 bg-primary/10 text-primary hover:bg-primary/20"
+                : ""
+            }`}
+          >
+            <Layers className={`size-4 mr-2.5 ${comparing ? "text-primary" : "text-accent"}`} />
+            {comparing
+              ? t("compare.inComparison", "Added to Comparison")
+              : t("compare.addToCompare", "Add to Compare")}
           </Button>
 
           {/* Print & Share CTAs */}

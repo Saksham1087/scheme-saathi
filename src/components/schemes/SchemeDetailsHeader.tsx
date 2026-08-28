@@ -11,9 +11,11 @@ import {
   FileCheck2,
   MapPin,
   Tag,
+  Layers,
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { useCompareStore } from "@/stores/useCompareStore"
 import { fmtINR } from "@/lib/format"
 import type { Scheme } from "@/types"
 
@@ -24,6 +26,8 @@ interface SchemeDetailsHeaderProps {
 export function SchemeDetailsHeader({ scheme }: SchemeDetailsHeaderProps) {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language === "hi" ? "hi" : "en") as "en" | "hi"
+  const { isComparing, toggleScheme } = useCompareStore()
+  const comparing = isComparing(scheme.id)
 
   const schemeName = scheme.name?.[lang] || scheme.name?.en || scheme.id
   const ministryName = scheme.ministry?.[lang] || scheme.ministry?.en
@@ -84,13 +88,32 @@ export function SchemeDetailsHeader({ scheme }: SchemeDetailsHeaderProps) {
             )}
           </div>
 
-          {/* Applicable States */}
-          {scheme.applicableStates && scheme.applicableStates.length > 0 && (
-            <div className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted/60 px-2.5 py-1 rounded-md">
-              <MapPin className="size-3 text-muted-foreground" />
-              <span>{scheme.applicableStates.join(", ")}</span>
-            </div>
-          )}
+          {/* Right Header Actions (Compare & States) */}
+          <div className="flex flex-wrap items-center gap-2">
+            <Button
+              variant={comparing ? "secondary" : "outline"}
+              size="sm"
+              onClick={() => toggleScheme(scheme.id)}
+              className={`h-8 text-xs font-semibold px-2.5 ${
+                comparing
+                  ? "border-primary/50 bg-primary/10 text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <Layers className={`size-3.5 mr-1.5 ${comparing ? "text-primary" : "text-accent"}`} />
+              {comparing
+                ? t("compare.inComparison", "In Comparison")
+                : t("compare.addToCompare", "Add to Compare")}
+            </Button>
+
+            {/* Applicable States */}
+            {scheme.applicableStates && scheme.applicableStates.length > 0 && (
+              <div className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted/60 px-2.5 py-1 rounded-md">
+                <MapPin className="size-3 text-muted-foreground" />
+                <span>{scheme.applicableStates.join(", ")}</span>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Scheme Title */}
