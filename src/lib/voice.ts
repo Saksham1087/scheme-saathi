@@ -1,13 +1,4 @@
-// TODO(voice-intake): Web Speech API voice input for low-literacy users.
-//
-// Integration point: `useVoiceInput` below is designed to attach to any
-// intake text field. Wire-up plan:
-//   1. Feature-detect window.SpeechRecognition || window.webkitSpeechRecognition
-//   2. recognition.lang = lang === "hi" ? "hi-IN" : "en-IN"
-//   3. continuous = false, interimResults = true → stream into field state
-//   4. Render a mic <Button> next to IntakeWizard free-text fields
-//      (projectDetails first), gated on `supported`.
-// Stretch goal per spec — UI slot exists, engine intentionally stubbed.
+import { useState, useEffect, useRef } from "react"
 
 export interface VoiceInputController {
   supported: boolean
@@ -16,11 +7,93 @@ export interface VoiceInputController {
   stop: () => void
 }
 
-export function useVoiceInput(_onResult: (text: string) => void): VoiceInputController {
+export function useVoiceInput(
+  onResult: (text: string) => void,
+  lang: string = "en-IN",
+): VoiceInputController {
+  const [listening, setListening] = useState(false)
+  const recognitionRef = useRef<any>(null)
+
+  const isSupported =
+    typeof window !== "undefined" &&
+    Boolean(
+      (window as any).SpeechRecognition ||
+        (window as any).webkitSpeechRecognition,
+    )
+
+  useEffect(() => {
+    if (!isSupported) return
+
+    const SpeechRecognitionClass =
+      (window as any).SpeechRecognition ||
+      (window as any).webkitSpeechRecognition
+
+    try {
+      const recognition = new SpeechRecognitionClass()
+      recognition.continuous = false
+      recognition.interimResults = true
+      recognition.lang = lang === "hi" ? "hi-IN" : "en-IN"
+
+      recognition.onresult = (event: any) => {
+        let transcript = ""
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          transcript += event.results[i][0].transcript
+        }
+        if (transcript) {
+          onResult(transcript)
+        }
+      }
+
+      recognition.onend = () => {
+        setListening(false)
+      }
+
+      recognition.onerror = () => {
+        setListening(false)
+      }
+
+      recognitionRef.current = recognition
+    } catch (err) {
+      console.warn("Speech recognition initialization failed:", err)
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.abort()
+        } catch {
+          // ignore
+        }
+      }
+    }
+  }, [isSupported, lang, onResult])
+
+  const start = () => {
+    if (recognitionRef.current && !listening) {
+      try {
+        recognitionRef.current.start()
+        setListening(true)
+      } catch (err) {
+        console.warn("Speech start failed:", err)
+      }
+    }
+  }
+
+  const stop = () => {
+    if (recognitionRef.current && listening) {
+      try {
+        recognitionRef.current.stop()
+        setListening(false)
+      } catch (err) {
+        console.warn("Speech stop failed:", err)
+      }
+    }
+  }
+
   return {
-    supported: false,
-    listening: false,
-    start: () => {},
-    stop: () => {},
+    supported: isSupported,
+    listening,
+    start,
+    stop,
   }
 }

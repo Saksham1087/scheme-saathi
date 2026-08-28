@@ -23,6 +23,7 @@ export default function App() {
           <Route path="/schemes/:id" element={<SchemeDetailsPage />} />
           <Route path="/compare" element={<ComparePage />} />
           <Route path="/find-schemes" element={<IntakeWizard />} />
+          <Route path="/recommend" element={<IntakeWizard />} />
           <Route path="/results" element={<Results />} />
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/partners" element={<PartnersPage />} />

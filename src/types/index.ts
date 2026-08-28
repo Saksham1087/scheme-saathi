@@ -15,6 +15,8 @@ export type EducationStatus =
 
 export type ApplicantCategory = "sc" | "other"
 
+export type Gender = "male" | "female" | "transgender" | "other"
+
 export interface LocalizedText {
   en: string
   hi: string
@@ -166,12 +168,15 @@ export interface Scheme {
 }
 
 export interface MatchInput {
+  state: string
+  category: ApplicantCategory | string
+  gender: Gender | string
+  age: number
+  educationStatus: EducationStatus
+  annualFamilyIncome: number
   projectType: string
   estimatedCost: number
-  annualFamilyIncome: number
-  educationStatus: EducationStatus
-  category: ApplicantCategory
-  state: string
+  consentAt?: string | null
 }
 
 export interface MatchReason {
