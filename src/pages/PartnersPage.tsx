@@ -1,56 +1,51 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { toast } from "sonner"
-import { BadgeCheck, Crosshair, Phone, TriangleAlert } from "lucide-react"
+import { List, Map as MapIcon, RotateCcw, ShieldAlert, Sparkles } from "lucide-react"
 import { collection, getDocs } from "firebase/firestore"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Checkbox } from "@/components/ui/checkbox"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import { Progress } from "@/components/ui/progress"
+import { Card, CardContent } from "@/components/ui/card"
+import { PartnerCard } from "@/components/partners/PartnerCard"
+import { PartnerMapSearch } from "@/components/partners/PartnerMapSearch"
 import { db } from "@/lib/firebase"
 import { distanceKm } from "@/lib/emi"
 import { createLeafletMap } from "@/lib/maps/leaflet"
-import type { MapService } from "@/lib/maps/types"
-import type { ChannelPartner, SchemeType } from "@/types"
+import { type GeoPoint, type MapService, PARTNER_TYPE_VISUALS } from "@/lib/maps/types"
+import type { ChannelPartner, PartnerType, SchemeType } from "@/types"
 import partnersSeed from "@seed/partners.seed.json"
 
-const DEFAULT_LOCATION = { lat: 26.8467, lng: 80.9462 }
-
-const FILTERS: Array<SchemeType | "all"> = ["all", "micro", "term", "education"]
+const DEFAULT_LOCATION: GeoPoint = { lat: 26.8467, lng: 80.9462 } // Lucknow / UP Capital Center
 
 function loadSeedPartners(): ChannelPartner[] {
   return partnersSeed as unknown as ChannelPartner[]
 }
 
 export default function PartnersPage() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const [searchParams] = useSearchParams()
 
   const mapElRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MapService | null>(null)
 
-  const [partners, setPartners] = useState<ChannelPartner[] | null>(null)
-  const [filter, setFilter] = useState<SchemeType | "all">("all")
-  const [includeFlagged, setIncludeFlagged] = useState(false)
-  const [userLoc, setUserLoc] = useState(DEFAULT_LOCATION)
-  const [focusId, setFocusId] = useState<string | null>(null)
-
-  // URL param preset from Results CTA (?type=micro|term|education)
-  useEffect(() => {
+  // Initialize filter from URL query param if present
+  const initialCategory = useMemo<SchemeType | "all">(() => {
     const type = searchParams.get("type")
     if (type === "micro" || type === "term" || type === "education") {
-      setFilter(type)
+      return type
     }
+    return "all"
   }, [searchParams])
+
+  const [partners, setPartners] = useState<ChannelPartner[] | null>(null)
+  const [searchQuery, setSearchQuery] = useState("")
+  const [filter, setFilter] = useState<SchemeType | "all">(initialCategory)
+  const [partnerTypeFilter, setPartnerTypeFilter] = useState<PartnerType | "all">("all")
+  const [includeFlagged, setIncludeFlagged] = useState(false)
+  const [userLoc, setUserLoc] = useState<GeoPoint>(DEFAULT_LOCATION)
+  const [isLocating, setIsLocating] = useState(false)
+  const [focusId, setFocusId] = useState<string | null>(null)
+  const [mobileTab, setMobileTab] = useState<"list" | "map">("list")
 
   // Load partners: Firestore first, bundled seed fallback for demo resilience.
   useEffect(() => {
@@ -75,212 +70,292 @@ export default function PartnersPage() {
     }
   }, [])
 
+  const handleMarkerClick = useCallback((partnerId: string) => {
+    setFocusId(partnerId)
+    // If on mobile map view, switch to list or scroll
+    const el = document.getElementById(`partner-card-${partnerId}`)
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "nearest" })
+    }
+  }, [])
+
   // Mount / unmount map
   useEffect(() => {
     if (!mapElRef.current) return
     const service = createLeafletMap()
-    service.mount(mapElRef.current)
+    service.mount(mapElRef.current, {
+      onMarkerClick: handleMarkerClick,
+    })
     mapRef.current = service
+
     return () => {
       service.destroy()
       mapRef.current = null
     }
-  }, [])
+  }, [handleMarkerClick])
 
+  // Invalidate map size when mobile view switches or window resizes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      mapRef.current?.invalidateSize()
+    }, 150)
+    return () => clearTimeout(timer)
+  }, [mobileTab])
+
+  // Filter and sort partners
   const filteredSorted = useMemo(() => {
     if (!partners) return []
-    const byCategory = partners.filter((p) =>
-      filter === "all" ? true : p.schemeCategories.includes(filter),
-    )
-    const visible = includeFlagged
-      ? byCategory
-      : byCategory.filter((p) => p.npaFlag !== "high")
 
-    return [...visible].sort((a, b) => {
-      // High-NPA partners deprioritized to the bottom when included.
+    const q = searchQuery.trim().toLowerCase()
+
+    const result = partners.filter((p) => {
+      // 1. Category filter
+      if (filter !== "all" && !p.schemeCategories.includes(filter)) {
+        return false
+      }
+
+      // 2. Partner type filter
+      if (partnerTypeFilter !== "all" && p.type !== partnerTypeFilter) {
+        return false
+      }
+
+      // 3. High-NPA flag filter
+      if (!includeFlagged && p.npaFlag === "high") {
+        return false
+      }
+
+      // 4. Text search query
+      if (q) {
+        const nameMatch = p.name.toLowerCase().includes(q)
+        const cityMatch = p.city.toLowerCase().includes(q)
+        const stateMatch = p.state.toLowerCase().includes(q)
+        const addressMatch = p.address.toLowerCase().includes(q)
+        if (!nameMatch && !cityMatch && !stateMatch && !addressMatch) {
+          return false
+        }
+      }
+
+      return true
+    })
+
+    return result.sort((a, b) => {
+      // High-NPA partners deprioritized to the bottom when included
       const npaA = a.npaFlag === "high" ? 1 : 0
       const npaB = b.npaFlag === "high" ? 1 : 0
       if (npaA !== npaB) return npaA - npaB
-      return (
-        distanceKm(userLoc, a.geo) - distanceKm(userLoc, b.geo)
-      )
+      return distanceKm(userLoc, a.geo) - distanceKm(userLoc, b.geo)
     })
-  }, [partners, filter, includeFlagged, userLoc])
+  }, [partners, filter, partnerTypeFilter, includeFlagged, searchQuery, userLoc])
 
+  // Update map markers when filtered list or focus changes
   useEffect(() => {
     mapRef.current?.setMarkers(filteredSorted, focusId)
   }, [filteredSorted, focusId])
 
+  // Update user location pin on map
   useEffect(() => {
     mapRef.current?.setUserLocation(userLoc)
-  }, [userLoc]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [userLoc])
 
-  function locateMe() {
-    if (!navigator.geolocation) return
+  function handleLocateMe() {
+    if (!navigator.geolocation) {
+      toast.error(t("partners.locationError"))
+      return
+    }
+
+    setIsLocating(true)
     toast.info(t("partners.locating"))
+
     navigator.geolocation.getCurrentPosition(
-      (pos) =>
-        setUserLoc({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-      () => toast.error(t("partners.loadError")),
-      { timeout: 8000 },
+      (pos) => {
+        setIsLocating(false)
+        const newLoc = {
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude,
+        }
+        setUserLoc(newLoc)
+        toast.success(t("partners.locationSuccess"))
+      },
+      () => {
+        setIsLocating(false)
+        toast.error(t("partners.locationError"))
+        // Safe fallback already set to state capital default
+      },
+      { timeout: 10000, enableHighAccuracy: true },
     )
   }
 
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="font-display font-bold text-3xl tracking-tight">
-        {t("partners.title")}
-      </h1>
-      <p className="mt-1 text-sm text-muted-foreground mb-7">
-        {t("partners.subtitle")}
-      </p>
+  function handleResetFilters() {
+    setSearchQuery("")
+    setFilter("all")
+    setPartnerTypeFilter("all")
+    setIncludeFlagged(false)
+    setFocusId(null)
+  }
 
-      {/* Filters */}
-      <div className="mb-5 flex flex-wrap items-center gap-2">
-        {FILTERS.map((f) => (
-          <button
-            key={f}
-            onClick={() => setFilter(f)}
-            aria-pressed={filter === f}
-            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
-              filter === f
-                ? "border-primary bg-primary text-primary-foreground"
-                : "border-border hover:bg-secondary"
-            }`}
-          >
-            {f === "all"
-              ? t("partners.filterAll")
-              : t(`partners.filter${f[0].toUpperCase()}${f.slice(1)}`)}
-          </button>
-        ))}
-        <Button variant="outline" size="sm" onClick={locateMe} className="ml-auto">
-          <Crosshair className="mr-1.5 size-4" />
-          {t("partners.useMyLocation")}
-        </Button>
-        <label className="flex items-center gap-2 cursor-pointer text-sm">
-          <Checkbox
-            checked={includeFlagged}
-            onCheckedChange={(v) => setIncludeFlagged(v === true)}
-          />
-          {t("partners.includeFlagged")}
-        </label>
+  function handleFocusOnMap(partner: ChannelPartner) {
+    setFocusId(partner.id)
+    mapRef.current?.focusPartner(partner)
+    // On mobile, jump to map view to view the focused partner pin
+    setMobileTab("map")
+  }
+
+  return (
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10">
+      {/* Header */}
+      <div className="mb-6 space-y-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+            <Sparkles className="size-3.5" />
+            NSFDC Channel Network
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+            Zero-API OpenStreetMap
+          </span>
+        </div>
+        <h1 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tight text-foreground">
+          {t("partners.title")}
+        </h1>
+        <p className="text-sm sm:text-base text-muted-foreground max-w-3xl">
+          {t("partners.subtitle")}
+        </p>
       </div>
 
-      <div className="grid lg:grid-cols-[1fr_1.1fr] gap-6 items-start">
-        {/* Map */}
-        <div className="rounded-xl overflow-hidden border border-border h-[380px] lg:h-[640px] lg:sticky lg:top-24 z-0">
-          <div ref={mapElRef} className="w-full h-full bg-muted" />
-        </div>
+      {/* Search and Filters Bar */}
+      <div className="mb-6">
+        <PartnerMapSearch
+          searchQuery={searchQuery}
+          onSearchQueryChange={setSearchQuery}
+          categoryFilter={filter}
+          onCategoryFilterChange={setFilter}
+          partnerTypeFilter={partnerTypeFilter}
+          onPartnerTypeFilterChange={setPartnerTypeFilter}
+          includeFlagged={includeFlagged}
+          onIncludeFlaggedChange={setIncludeFlagged}
+          onUseMyLocation={handleLocateMe}
+          isLocating={isLocating}
+          totalCount={partners ? partners.length : 0}
+          filteredCount={filteredSorted.length}
+          onResetFilters={handleResetFilters}
+        />
+      </div>
 
-        {/* Partner cards */}
-        <div className="space-y-4">
-          {partners === null && (
-            <Card>
-              <CardContent className="py-10 text-center text-muted-foreground">
-                {t("common.loading")}
-              </CardContent>
-            </Card>
-          )}
-          {partners !== null && filteredSorted.length === 0 && (
-            <Card>
-              <CardContent className="py-10 text-center text-muted-foreground">
-                {t("partners.emptyList")}
-              </CardContent>
-            </Card>
-          )}
-          {filteredSorted.map((p) => {
-            const highNpa = p.npaFlag === "high"
+      {/* Visual Legend Bar */}
+      <div className="mb-6 rounded-lg bg-card border border-border/70 px-4 py-2.5 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2 text-muted-foreground font-medium">
+          <span className="font-semibold text-foreground uppercase tracking-wider text-[11px]">
+            {t("partners.legendTitle")}:
+          </span>
+        </div>
+        <div className="flex flex-wrap items-center gap-3 sm:gap-5">
+          {(["SCA", "PSB", "RRB", "NBFC_MFI"] as PartnerType[]).map((type) => {
+            const visual = PARTNER_TYPE_VISUALS[type]
             return (
-              <Card
-                key={p.id}
-                onMouseEnter={() => setFocusId(p.id)}
-                onFocus={() => setFocusId(p.id)}
-                tabIndex={0}
-                className={`cursor-pointer transition-shadow ${
-                  highNpa ? "border-destructive/50 opacity-90" : ""
-                }`}
-              >
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between gap-3">
-                    <CardTitle className="font-display text-base leading-snug">
-                      {p.name}
-                    </CardTitle>
-                    <span className="text-xs font-semibold text-primary whitespace-nowrap mt-1">
-                      {t("partners.distanceAway", {
-                        km: distanceKm(userLoc, p.geo).toFixed(1),
-                      })}
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {p.address}, {p.city}, {p.state}
-                  </p>
-                  {highNpa && (
-                    <Badge variant="destructive" className="mt-1 w-fit gap-1">
-                      <TriangleAlert className="size-3" />
-                      {t("partners.highNpaBadge")}
-                    </Badge>
-                  )}
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex flex-wrap gap-1.5">
-                    {p.schemeCategories.map((c) => (
-                      <Badge key={c} variant="secondary" className="font-medium">
-                        {t(`schemeTypes.${c}`)}
-                      </Badge>
-                    ))}
-                    <span className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                      <BadgeCheck className="size-3" />
-                      {t(`partners.typeNames.${p.type}`)}
-                    </span>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs text-muted-foreground mb-1">
-                      <span>{t("partners.capacity")}</span>
-                      <span className="tabular-nums">{p.fundUtilizationPct}%</span>
-                    </div>
-                    <Progress value={p.fundUtilizationPct} className="h-2" />
-                  </div>
-                  {typeof p.avgProcessingDays === "number" && (
-                    <p className="text-xs text-muted-foreground">
-                      {t("partners.processingTime", { days: p.avgProcessingDays })}
-                    </p>
-                  )}
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button size="sm" variant="outline">
-                        {t("partners.docsRequired")}
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-sm">
-                      <DialogHeader>
-                        <DialogTitle className="font-display">
-                          {p.name}
-                        </DialogTitle>
-                      </DialogHeader>
-                      <p className="text-sm font-semibold">
-                        {t("partners.docsRequired")}
-                      </p>
-                      <ul className="list-disc pl-5 space-y-1 text-sm">
-                        {p.docsRequired.map((d) => (
-                          <li key={d.en}>
-                            {d[i18n.language as "en" | "hi"] ?? d.en}
-                          </li>
-                        ))}
-                      </ul>
-                      {p.phone && (
-                        <Button asChild>
-                          <a href={`tel:${p.phone}`}>
-                            <Phone className="mr-1.5 size-4" />
-                            {t("partners.callNow")} · {p.phone}
-                          </a>
-                        </Button>
-                      )}
-                    </DialogContent>
-                  </Dialog>
-                </CardContent>
-              </Card>
+              <div key={type} className="flex items-center gap-1.5">
+                <span
+                  className="size-3 rounded-full border border-white/80 shadow-xs"
+                  style={{ backgroundColor: visual.color }}
+                />
+                <span className="font-medium text-foreground">{visual.shortLabel}</span>
+                <span className="text-muted-foreground hidden md:inline">({t(visual.labelKey)})</span>
+              </div>
             )
           })}
+          <div className="flex items-center gap-1.5 pl-2 border-l border-border/70">
+            <span className="size-3 rounded-full bg-orange-600 border border-white shadow-xs" />
+            <span className="font-medium text-foreground">{t("partners.userLocation")}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Map / List Toggle */}
+      <div className="lg:hidden mb-4 flex items-center justify-center">
+        <div className="inline-flex rounded-lg border border-border bg-muted/60 p-1 shadow-xs">
+          <Button
+            type="button"
+            size="sm"
+            variant={mobileTab === "list" ? "default" : "ghost"}
+            onClick={() => setMobileTab("list")}
+            className="h-9 px-4 text-xs font-semibold gap-1.5"
+          >
+            <List className="size-4" />
+            {t("partners.mobileToggleList")} ({filteredSorted.length})
+          </Button>
+          <Button
+            type="button"
+            size="sm"
+            variant={mobileTab === "map" ? "default" : "ghost"}
+            onClick={() => setMobileTab("map")}
+            className="h-9 px-4 text-xs font-semibold gap-1.5"
+          >
+            <MapIcon className="size-4" />
+            {t("partners.mobileToggleMap")}
+          </Button>
+        </div>
+      </div>
+
+      {/* Split-screen Responsive Layout */}
+      <div className="grid lg:grid-cols-[1fr_1.15fr] gap-6 items-start">
+        {/* Left Column: Partner List */}
+        <div
+          className={`space-y-4 ${
+            mobileTab === "map" ? "hidden lg:block" : "block"
+          }`}
+        >
+          {partners === null && (
+            <Card className="border-dashed">
+              <CardContent className="py-12 text-center text-muted-foreground text-sm">
+                <div className="inline-block animate-spin rounded-full size-6 border-2 border-primary border-t-transparent mb-3" />
+                <p>{t("common.loading")}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {partners !== null && filteredSorted.length === 0 && (
+            <Card className="border-dashed bg-muted/20">
+              <CardContent className="py-12 px-6 text-center space-y-3">
+                <div className="mx-auto size-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground">
+                  <ShieldAlert className="size-5" />
+                </div>
+                <h3 className="font-display font-semibold text-base text-foreground">
+                  {t("partners.emptyList")}
+                </h3>
+                <p className="text-xs sm:text-sm text-muted-foreground max-w-md mx-auto">
+                  {t("partners.emptyPrompt")}
+                </p>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  onClick={handleResetFilters}
+                  className="mt-2 text-xs font-semibold gap-1.5"
+                >
+                  <RotateCcw className="size-3.5" />
+                  {t("partners.resetFilters")}
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+
+          {filteredSorted.map((p) => (
+            <PartnerCard
+              key={p.id}
+              partner={p}
+              userLocation={userLoc}
+              isSelected={focusId === p.id}
+              onSelect={() => setFocusId(p.id)}
+              onFocusOnMap={handleFocusOnMap}
+            />
+          ))}
+        </div>
+
+        {/* Right Column: Sticky Interactive Leaflet Map */}
+        <div
+          className={`rounded-xl overflow-hidden border border-border shadow-sm bg-muted relative h-[420px] sm:h-[480px] lg:h-[calc(100vh-140px)] lg:sticky lg:top-20 z-0 ${
+            mobileTab === "list" ? "hidden lg:block" : "block"
+          }`}
+        >
+          <div ref={mapElRef} className="w-full h-full" />
         </div>
       </div>
     </div>
