@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ["saathi.rairahulr1.com"],
+    allowedHosts: ["https://saksham1087.github.io/scheme-saathi/"],
   },
   build: {
     chunkSizeWarningLimit: 1600,
