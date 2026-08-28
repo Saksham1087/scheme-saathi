@@ -9,6 +9,8 @@ import {
   TrendingDown,
   CheckCircle2,
   X,
+  Calculator,
+  FileSpreadsheet,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -290,6 +292,25 @@ export default function CalculatorPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:py-10 space-y-8 print:p-0 print:m-0 print:max-w-none">
+      {/* Tab Switcher between EMI Calculator and Project Cost Planner */}
+      <div className="flex items-center gap-2 border-b border-border pb-4 print:hidden">
+        <Link
+          to="/calculator"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-colors bg-primary text-primary-foreground shadow-xs"
+        >
+          <Calculator className="size-4" />
+          <span>{t("calculator.tabTitle", "EMI & Moratorium Calculator")}</span>
+        </Link>
+
+        <Link
+          to="/planner"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-transparent text-muted-foreground hover:text-foreground hover:bg-muted/50"
+        >
+          <FileSpreadsheet className="size-4" />
+          <span>{t("planner.tabTitle", "Project Cost & Financing Planner")}</span>
+        </Link>
+      </div>
+
       {/* Header & Quick Action Buttons */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-6">
         <div>

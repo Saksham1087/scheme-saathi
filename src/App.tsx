@@ -8,6 +8,7 @@ import ComparePage from "@/pages/ComparePage"
 import IntakeWizard from "@/pages/IntakeWizard"
 import Results from "@/pages/Results"
 import CalculatorPage from "@/pages/CalculatorPage"
+import PlannerPage from "@/pages/PlannerPage"
 import PartnersPage from "@/pages/PartnersPage"
 import HowItWorks from "@/pages/HowItWorks"
 import TrackApplication from "@/pages/TrackApplication"
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/recommend" element={<IntakeWizard />} />
           <Route path="/results" element={<Results />} />
           <Route path="/calculator" element={<CalculatorPage />} />
+          <Route path="/planner" element={<PlannerPage />} />
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/track" element={<TrackApplication />} />

@@ -322,7 +322,8 @@
     "scheduleScenarioADesc": "Showing Scenario A: Unpaid interest capitalized monthly during moratorium",
     "scheduleScenarioBDesc": "Showing Scenario B: Simple interest serviced monthly during moratorium",
     "tabCapitalize": "Scenario A (Capitalized)",
-    "tabService": "Scenario B (Serviced)"
+    "tabService": "Scenario B (Serviced)",
+    "tabTitle": "EMI & Moratorium Calculator"
   },
   "partners": {
     "title": "Channel Partner Locator",
@@ -477,11 +478,6 @@
     "eduAll": "All Education Levels",
     "purpose": "Project / Business Purpose",
     "applyFilters": "Show Results"
-  },
-  "schemeTypes": {
-    "micro": "Micro Finance",
-    "term": "Term Loan",
-    "education": "Education Loan"
   },
   "schemeDetails": {
     "backToCatalog": "Back to Scheme Catalog",
@@ -647,5 +643,149 @@
     "quickActions": "Quick Actions",
     "matrixNoteTitle": "Understanding Scheme Comparisons:",
     "matrixNoteBody": "Direct loan sanctioning is handled through designated Channel Partners (SCAs, Banks, RRBs). Exact interest rates and subsidy eligibility may vary based on applicant category verification and project appraisal."
+  },
+  "planner": {
+    "tabTitle": "Project Cost & Financing Planner",
+    "pageTitle": "Project Cost Planner & Financing Breakdown",
+    "pageSubtitle": "Itemize startup machinery, stock, and working capital across 6 statutory categories to calculate exact government loan share vs required promoter equity.",
+    "badge": "Micro-Enterprise & Startup Budgeting",
+    "resetBtn": "Reset Plan",
+    "resetTitle": "Reset all inputs to default",
+    "printBtn": "Print",
+    "printTitle": "Print or export project budget",
+    "presetsTitle": "One-Click Enterprise Starter Templates",
+    "presetsHelper": "Load authentic budget models tailored for Indian schemes",
+    "itemizedSubtext": "Itemize equipment, stock, lease, and working capital below.",
+    "reset": "Reset Template",
+    "clear": "Clear All",
+    "addNewItem": "Add Budget Expense Line Item",
+    "nonNegative": "All values in ₹ INR",
+    "categoryLabel": "Expense Category",
+    "itemTitleLabel": "Item Description / Asset Name",
+    "itemPlaceholder": "e.g. Industrial Sewing Machine or FMCG Stock",
+    "amountLabel": "Estimated Cost (₹)",
+    "addBtn": "Add",
+    "itemizedHeader": "Itemized Budget Items ({{count}})",
+    "totalExpenses": "Total: {{total}}",
+    "noItemsTitle": "No line items added yet",
+    "noItemsDesc": "Add custom expense items above or click any starter template to pre-populate verified business estimates.",
+    "loadStarterPreset": "Load Starter Kirana Template",
+    "editItem": "Edit item {{name}}",
+    "removeItem": "Delete item {{name}}",
+    "categoryBreakdownTitle": "Category Cost Allocation",
+    "breakdownTitle": "Financing & Equity Breakdown",
+    "statutoryRatios": "Statutory Ratios",
+    "breakdownSubtitle": "Government concessional financing pattern vs required beneficiary margin contribution.",
+    "totalBudgetLabel": "Total Project Budget",
+    "approvedCoverage": "Scheme Approved Coverage",
+    "loanFunded": "Concessional Loan",
+    "capitalDistribution": "Capital Distribution",
+    "funded": "Funded",
+    "loanShare": "Scheme Loan",
+    "subsidyGrant": "Subsidy",
+    "promoterMargin": "Own Margin",
+    "concessionalLoan": "Govt Concessional Loan",
+    "beneficiaryMargin": "Promoter Own Margin",
+    "selectRatioPattern": "Select Financing Scheme Pattern",
+    "schemeLoanShare": "Scheme Concessional Loan",
+    "schemeLoanNote": "Disbursed via SCA / Bank at 2%–6% concessional interest",
+    "promoterEquityShare": "Promoter Margin (Your Equity)",
+    "promoterMarginNote": "Arranged by applicant / State SCA margin money grant",
+    "whyMarginTitle": "Why does the scheme require Promoter Margin?",
+    "whyMarginDesc": "Government corporations fund up to 90%–95% of unit cost. The 5%–10% promoter contribution proves applicant commitment. For SC/BPL beneficiaries, some states also provide special margin subsidy grants.",
+    "findSchemesCta": "Find Matching Schemes for {{amount}}",
+    "simulateEmiCta": "Simulate Repayment EMI for {{amount}} Loan",
+    "literacyTitle": "Financial Guidelines & Scheme Appraisal Rules",
+    "errors": {
+      "nameRequired": "Please provide a title for the expense.",
+      "amountRequired": "Please enter a valid expense amount greater than ₹0."
+    },
+    "categories": {
+      "equipment": {
+        "name": "Equipment & Machinery",
+        "desc": "Tools, machinery, workstations, hardware, and operational assets."
+      },
+      "rawMaterials": {
+        "name": "Raw Materials & Inventory",
+        "desc": "Initial trade stock, wholesale goods, inputs, and consumables."
+      },
+      "rent": {
+        "name": "Commercial Rent & Security Deposit",
+        "desc": "Advance lease deposits, shop renovation, and commercial rent."
+      },
+      "workingCapital": {
+        "name": "Working Capital & Utilities",
+        "desc": "First 2-3 months utility bills, staff wages, and day-to-day liquidity."
+      },
+      "licenses": {
+        "name": "Licenses, Certifications & Skills",
+        "desc": "Trade licenses, GST/Udyam registrations, and skill certification."
+      },
+      "contingency": {
+        "name": "Contingency / Miscellaneous",
+        "desc": "Buffer fund for unforeseen operational repairs or price variances."
+      }
+    },
+    "ratios": {
+      "standard": "90% Loan / 10% Margin (Standard)",
+      "priority": "95% Loan / 5% Margin (Micro / Women)",
+      "term": "85% Loan / 15% Margin (Term Loan)"
+    },
+    "presets": {
+      "kirana": {
+        "name": "Small Retail Kirana Shop",
+        "desc": "Complete startup budget for a neighborhood grocery and daily FMCG retail store.",
+        "items": {
+          "equipment": "Display Racks, Counters & Digital Weighing Scale",
+          "stock": "Initial FMCG & Groceries Wholesale Inventory",
+          "rent": "Shop Rental Advance & Security Deposit",
+          "workingCapital": "Initial Working Capital & Electricity Setup"
+        }
+      },
+      "garments": {
+        "name": "Garment & Apparel Manufacturing Unit",
+        "desc": "Micro-apparel production unit with industrial sewing machines, fabrics, and workshop lease.",
+        "items": {
+          "machinery": "Industrial High-Speed Sewing Machines & Overlock Unit",
+          "fabrics": "Fabric Rolls, Threads, Zippers & Accessories",
+          "rent": "Workshop Space Security Deposit & Lighting Setup",
+          "wages": "Initial Tailor Stipends & Operational Running Costs",
+          "licenses": "Udyam MSME Registration, GST & Trade License",
+          "contingency": "Machine Spares, Needles & Maintenance Buffer"
+        }
+      },
+      "repair": {
+        "name": "Mobile Repair & Electronics Service",
+        "desc": "Service shop setup with diagnostic tools, soldering stations, replacement screens, and test kits.",
+        "items": {
+          "tools": "SMD Rework Station, Digital Multimeter & Toolkits",
+          "spares": "Replacement Displays, Batteries & IC Spares Inventory",
+          "rent": "Market Kiosk / Booth Rental Advance",
+          "software": "Software Flashing Dongles & High-Speed Broadband"
+        }
+      },
+      "dairy": {
+        "name": "Dairy & Animal Husbandry Mini-Farm",
+        "desc": "Small dairy unit with 2 high-yield milch cattle, cattle feed stock, and milk cans.",
+        "items": {
+          "cattle": "2 High-Yield Milch Buffaloes / Cows & Shed Fixtures",
+          "feed": "Nutritional Cattle Feed, Silage & Mineral Mixtures",
+          "cans": "Stainless Steel Milk Cans, Chilling & Milking Buckets",
+          "fodder": "Fodder Water Supply Setup & Farm Maintenance",
+          "vet": "Veterinary Care, Vaccination & Livestock Insurance"
+        }
+      },
+      "education": {
+        "name": "Higher Technical Education & Skills Course",
+        "desc": "Comprehensive educational budget including tuition fees, laptop workstation, hostel, and study material.",
+        "items": {
+          "tuition": "Degree / Polytechnic Course Tuition Fees (Annual)",
+          "laptop": "Laptop Workstation & Engineering Instruments",
+          "hostel": "Campus Hostel Accommodation & Mess Deposit",
+          "books": "Reference Textbooks, Lab Kits & Software Subscriptions",
+          "contingency": "Exam Fees, Medical Insurance & Contingency Allowance"
+        }
+      }
+    }
   }
 }
