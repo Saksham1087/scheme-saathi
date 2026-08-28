@@ -8,15 +8,63 @@
     "state": "Uttar Pradesh",
     "geo": { "lat": 26.8497, "lng": 80.9409 },
     "phone": "+91-522-400-1100",
+    "email": "nodal.lucknow@upsdfc.gov.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro", "term"],
     "npaFlag": "low",
     "fundUtilizationPct": 62,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
-      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    "avgProcessingDays": 30,
+    "nodalOfficer": {
+      "name": "Shri Rajesh Kumar Verma",
+      "designation": {
+        "en": "Assistant General Manager (SCA Operations)",
+        "hi": "सहायक महाप्रबंधक (एससीए संचालन)"
+      },
+      "phone": "+91-522-400-1105",
+      "email": "rajesh.verma@upsdfc.gov.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 5:00 PM, 1st & 3rd Sat: 10:00 AM – 2:00 PM (Closed on Sun & Public Holidays)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 5:00 अपराह्न, 1ला और 3रा शनि: 10:00 पूर्वाह्न – 2:00 अपराह्न (रवि व अवकाश बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      },
+      {
+        "schemeId": "mahila-samriddhi",
+        "schemeName": {
+          "en": "Mahila Samriddhi Yojana (MSY)",
+          "hi": "महिला समृद्धि योजना"
+        },
+        "interestRate": "4.0% – 6.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      }
     ],
-    "avgProcessingDays": 30
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "सक्षम प्राधिकारी से वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project business proposal / cost estimate", "hi": "प्रोजेक्ट व्यावसायिक प्रस्ताव / लागत अनुमान" },
+      { "en": "Aadhaar Card & Proof of Residence", "hi": "आधार कार्ड एवं निवास प्रमाण" }
+    ]
   },
   {
     "id": "sbi-kanpur-main",
@@ -27,15 +75,63 @@
     "state": "Uttar Pradesh",
     "geo": { "lat": 26.4609, "lng": 80.3219 },
     "phone": "+91-512-250-2200",
+    "email": "leadbank.kanpur@sbi.co.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro", "term", "education"],
     "npaFlag": "low",
     "fundUtilizationPct": 48,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
-      { "en": "Project proposal / admission letter", "hi": "प्रोजेक्ट प्रस्ताव / प्रवेश पत्र" }
+    "avgProcessingDays": 45,
+    "nodalOfficer": {
+      "name": "Smt. Sunita Sharma",
+      "designation": {
+        "en": "Chief Manager (Priority Sector & Concessional Lending)",
+        "hi": "मुख्य प्रबंधक (प्राथमिकता क्षेत्र एवं रियायती ऋण)"
+      },
+      "phone": "+91-512-250-2212",
+      "email": "sunita.sharma@sbi.co.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 4:00 PM, 1st/3rd/5th Sat: 10:00 AM – 4:00 PM (Closed 2nd/4th Sat & Sun)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 4:00 अपराह्न, 1/3/5वां शनि: 10:00 पूर्वाह्न – 4:00 अपराह्न (2/4वां शनि व रवि बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      },
+      {
+        "schemeId": "education-loan",
+        "schemeName": {
+          "en": "Education Loan Scheme (ELS)",
+          "hi": "शिक्षा ऋण योजना (एजुकेशन लोन)"
+        },
+        "interestRate": "3.5% – 6.0%",
+        "maxLimit": "₹20.00 Lakh",
+        "category": "education"
+      }
     ],
-    "avgProcessingDays": 45
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project proposal / college admission letter", "hi": "प्रोजेक्ट प्रस्ताव / कॉलेज प्रवेश पत्र" },
+      { "en": "Last 6 months Bank account statement", "hi": "पिछले 6 महीने का बैंक खाता विवरण" }
+    ]
   },
   {
     "id": "pnb-patna-gandhi",
@@ -46,14 +142,52 @@
     "state": "Bihar",
     "geo": { "lat": 25.6146, "lng": 85.138 },
     "phone": "+91-612-250-3300",
+    "email": "lead.patna@pnb.co.in",
+    "isSynthetic": true,
     "schemeCategories": ["term", "education"],
     "npaFlag": "medium",
     "fundUtilizationPct": 71,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    "avgProcessingDays": 40,
+    "nodalOfficer": {
+      "name": "Shri Amit Kumar Jha",
+      "designation": {
+        "en": "Senior Manager (MSME & Govt Schemes Desk)",
+        "hi": "वरिष्ठ प्रबंधक (एमएसएमई व सरकारी योजना डेस्क)"
+      },
+      "phone": "+91-612-250-3315",
+      "email": "amit.jha@pnb.co.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 4:00 PM, 1st/3rd/5th Sat: 10:00 AM – 4:00 PM (Closed 2nd/4th Sat & Sun)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 4:00 अपराह्न, 1/3/5वां शनि: 10:00 पूर्वाह्न – 4:00 अपराह्न (2/4वां शनि व रवि बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      },
+      {
+        "schemeId": "education-loan",
+        "schemeName": {
+          "en": "Education Loan Scheme (ELS)",
+          "hi": "शिक्षा ऋण योजना (एजुकेशन लोन)"
+        },
+        "interestRate": "3.5% – 6.0%",
+        "maxLimit": "₹20.00 Lakh",
+        "category": "education"
+      }
     ],
-    "avgProcessingDays": 40
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project DPR / Fee structure schedule", "hi": "प्रोजेक्ट डीपीआर / शुल्क संरचना विवरण" }
+    ]
   },
   {
     "id": "rrb-gorakhpur-kshetriya",
@@ -64,15 +198,52 @@
     "state": "Uttar Pradesh",
     "geo": { "lat": 26.7606, "lng": 83.3732 },
     "phone": "+91-551-220-4400",
+    "email": "gorakhpur.rrb@purvanchalbank.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro"],
     "npaFlag": "low",
     "fundUtilizationPct": 35,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
-      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    "avgProcessingDays": 25,
+    "nodalOfficer": {
+      "name": "Shri Dinesh Chandra Pandey",
+      "designation": {
+        "en": "Rural Credit Development Officer",
+        "hi": "ग्रामीण ऋण विकास अधिकारी"
+      },
+      "phone": "+91-551-220-4418",
+      "email": "dinesh.pandey@purvanchalbank.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 4:30 PM, 1st/3rd/5th Sat: 10:00 AM – 2:30 PM (Closed 2nd/4th Sat & Sun)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 4:30 अपराह्न, 1/3/5वां शनि: 10:00 पूर्वाह्न – 2:30 अपराह्न (2/4वां शनि व रवि बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "mahila-samriddhi",
+        "schemeName": {
+          "en": "Mahila Samriddhi Yojana (MSY)",
+          "hi": "महिला समृद्धि योजना"
+        },
+        "interestRate": "4.0% – 6.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      }
     ],
-    "avgProcessingDays": 25
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project proposal / Quotation", "hi": "प्रोजेक्ट प्रस्ताव / कोटेशन" }
+    ]
   },
   {
     "id": "rrb-marathwada",
@@ -83,14 +254,52 @@
     "state": "Maharashtra",
     "geo": { "lat": 19.8762, "lng": 75.3433 },
     "phone": "+91-240-248-5500",
+    "email": "credit.cidco@mgbank.co.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro", "term"],
     "npaFlag": "medium",
     "fundUtilizationPct": 58,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    "avgProcessingDays": 35,
+    "nodalOfficer": {
+      "name": "Dr. Vijay Shinde",
+      "designation": {
+        "en": "Lead Officer (Social Welfare Credit)",
+        "hi": "प्रमुख अधिकारी (समाज कल्याण ऋण)"
+      },
+      "phone": "+91-240-248-5520",
+      "email": "vijay.shinde@mgbank.co.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 4:30 PM, 1st/3rd/5th Sat: 10:00 AM – 2:00 PM (Closed 2nd/4th Sat & Sun)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 4:30 अपराह्न, 1/3/5वां शनि: 10:00 पूर्वाह्न – 2:00 अपराह्न (2/4वां शनि व रवि बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      }
     ],
-    "avgProcessingDays": 35
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Aadhaar Card & Bank Passbook copy", "hi": "आधार कार्ड एवं बैंक पासबुक प्रति" }
+    ]
   },
   {
     "id": "nbfc-sarthak-mfi",
@@ -101,14 +310,42 @@
     "state": "Maharashtra",
     "geo": { "lat": 18.5913, "lng": 73.7389 },
     "phone": "+91-20-6789-6600",
+    "email": "desk.pune@sarthakmfi.org",
+    "isSynthetic": true,
     "schemeCategories": ["micro"],
     "npaFlag": "high",
     "fundUtilizationPct": 88,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    "avgProcessingDays": 15,
+    "nodalOfficer": {
+      "name": "Smt. Priyanka Kulkarni",
+      "designation": {
+        "en": "Branch Manager (Field Credit & SHG)",
+        "hi": "शाखा प्रबंधक (फील्ड ऋण एवं एसएचजी)"
+      },
+      "phone": "+91-20-6789-6611",
+      "email": "priyanka.k@sarthakmfi.org"
+    },
+    "operatingHours": {
+      "en": "Mon–Sat: 9:30 AM – 6:00 PM (Closed on Sundays)",
+      "hi": "सोम–शनि: 9:30 पूर्वाह्न – 6:00 अपराह्न (रविवार बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      }
     ],
-    "avgProcessingDays": 15
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "SHG Group Resolution / Identity proof", "hi": "एसएचजी समूह प्रस्ताव / पहचान प्रमाण" }
+    ]
   },
   {
     "id": "tscdfc-chennai",
@@ -119,15 +356,63 @@
     "state": "Tamil Nadu",
     "geo": { "lat": 13.0655, "lng": 80.2641 },
     "phone": "+91-44-2852-7700",
+    "email": "chennai.desk@tadhco.tn.gov.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro", "term", "education"],
     "npaFlag": "low",
     "fundUtilizationPct": 54,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
-      { "en": "Project proposal / admission letter", "hi": "प्रोजेक्ट प्रस्ताव / प्रवेश पत्र" }
+    "avgProcessingDays": 30,
+    "nodalOfficer": {
+      "name": "Thiru K. Murugan",
+      "designation": {
+        "en": "Joint Director & Nodal SCA Officer",
+        "hi": "संयुक्त निदेशक एवं नोडल एससीए अधिकारी"
+      },
+      "phone": "+91-44-2852-7715",
+      "email": "k.murugan@tadhco.tn.gov.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 5:45 PM (Closed on Sat, Sun & Govt Holidays)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 5:45 अपराह्न (शनिवार, रविवार व सरकारी अवकाश बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      },
+      {
+        "schemeId": "education-loan",
+        "schemeName": {
+          "en": "Education Loan Scheme (ELS)",
+          "hi": "शिक्षा ऋण योजना (एजुकेशन लोन)"
+        },
+        "interestRate": "3.5% – 6.0%",
+        "maxLimit": "₹20.00 Lakh",
+        "category": "education"
+      }
     ],
-    "avgProcessingDays": 30
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Community certificate (SC)", "hi": "सामुदायिक प्रमाण पत्र (एससी)" },
+      { "en": "Project proposal / admission letter", "hi": "प्रोजेक्ट प्रस्ताव / प्रवेश पत्र" },
+      { "en": "Aadhaar Card & Bank account copy", "hi": "आधार कार्ड एवं बैंक खाता प्रति" }
+    ]
   },
   {
     "id": "boi-nagpur-sitabuldi",
@@ -138,14 +423,52 @@
     "state": "Maharashtra",
     "geo": { "lat": 21.1497, "lng": 79.0882 },
     "phone": "+91-712-253-8800",
+    "email": "sitabuldi.nagpur@bankofindia.co.in",
+    "isSynthetic": true,
     "schemeCategories": ["term", "education"],
     "npaFlag": "low",
     "fundUtilizationPct": 41,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" }
+    "avgProcessingDays": 42,
+    "nodalOfficer": {
+      "name": "Shri Anant Meshram",
+      "designation": {
+        "en": "Chief Manager & Concessional Finance Officer",
+        "hi": "मुख्य प्रबंधक एवं रियायती वित्त अधिकारी"
+      },
+      "phone": "+91-712-253-8812",
+      "email": "anant.meshram@bankofindia.co.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 4:00 PM, 1st/3rd/5th Sat: 10:00 AM – 4:00 PM (Closed 2nd/4th Sat & Sun)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 4:00 अपराह्न, 1/3/5वां शनि: 10:00 पूर्वाह्न – 4:00 अपराह्न (2/4वां शनि व रवि बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      },
+      {
+        "schemeId": "education-loan",
+        "schemeName": {
+          "en": "Education Loan Scheme (ELS)",
+          "hi": "शिक्षा ऋण योजना (एजुकेशन लोन)"
+        },
+        "interestRate": "3.5% – 6.0%",
+        "maxLimit": "₹20.00 Lakh",
+        "category": "education"
+      }
     ],
-    "avgProcessingDays": 42
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project proposal / college letter", "hi": "प्रोजेक्ट प्रस्ताव / कॉलेज पत्र" }
+    ]
   },
   {
     "id": "ssc-bhilai-corp",
@@ -156,14 +479,51 @@
     "state": "Chhattisgarh",
     "geo": { "lat": 21.2094, "lng": 81.4309 },
     "phone": "+91-788-235-9900",
+    "email": "desk.bhilai@cgscfdc.gov.in",
+    "isSynthetic": true,
     "schemeCategories": ["micro", "term"],
     "npaFlag": "medium",
     "fundUtilizationPct": 77,
-    "docsRequired": [
-      { "en": "Income certificate", "hi": "आय प्रमाण पत्र" },
-      { "en": "Caste certificate", "hi": "जाति प्रमाण पत्र" },
-      { "en": "Project proposal", "hi": "प्रोजेक्ट प्रस्ताव" }
+    "avgProcessingDays": 33,
+    "nodalOfficer": {
+      "name": "Shri Rameshwar Sahu",
+      "designation": {
+        "en": "District Manager (SC Development)",
+        "hi": "ज़िला प्रबंधक (अनुसूचित जाति विकास)"
+      },
+      "phone": "+91-788-235-9914",
+      "email": "rameshwar.sahu@cgscfdc.gov.in"
+    },
+    "operatingHours": {
+      "en": "Mon–Fri: 10:00 AM – 5:30 PM (Closed on Sat, Sun & State Holidays)",
+      "hi": "सोम–शुक्र: 10:00 पूर्वाह्न – 5:30 अपराह्न (शनिवार, रविवार व राज्य अवकाश बंद)"
+    },
+    "supportedSchemeDetails": [
+      {
+        "schemeId": "micro-finance",
+        "schemeName": {
+          "en": "Micro Credit Scheme (MCS)",
+          "hi": "लघु ऋण योजना (माइक्रो क्रेडिट)"
+        },
+        "interestRate": "6.5% – 9.0%",
+        "maxLimit": "₹1.40 Lakh",
+        "category": "micro"
+      },
+      {
+        "schemeId": "term-loan",
+        "schemeName": {
+          "en": "Term Loan Scheme (TLS)",
+          "hi": "सावधि ऋण योजना (टर्म लोन)"
+        },
+        "interestRate": "5.0% – 9.0%",
+        "maxLimit": "₹50.00 Lakh",
+        "category": "term"
+      }
     ],
-    "avgProcessingDays": 33
+    "docsRequired": [
+      { "en": "Income certificate (< ₹5.00L/yr)", "hi": "आय प्रमाण पत्र (< ₹5.00 लाख/वर्ष)" },
+      { "en": "Valid SC Caste certificate", "hi": "वैध एससी जाति प्रमाण पत्र" },
+      { "en": "Project proposal / Machinery quotes", "hi": "प्रोजेक्ट प्रस्ताव / मशीनरी कोटेशन" }
+    ]
   }
 ]

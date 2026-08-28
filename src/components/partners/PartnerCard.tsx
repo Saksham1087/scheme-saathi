@@ -10,6 +10,7 @@ import {
   Phone,
   Sparkles,
   TriangleAlert,
+  UserCheck,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -36,6 +37,7 @@ export interface PartnerCardProps {
   isSelected?: boolean
   onSelect?: (partner: ChannelPartner) => void
   onFocusOnMap?: (partner: ChannelPartner) => void
+  onViewProfile?: (partner: ChannelPartner) => void
 }
 
 export function PartnerCard({
@@ -46,6 +48,7 @@ export function PartnerCard({
   isSelected = false,
   onSelect,
   onFocusOnMap,
+  onViewProfile,
 }: PartnerCardProps) {
   const { t, i18n } = useTranslation()
   const highNpa = partner.npaFlag === "high"
@@ -183,11 +186,24 @@ export function PartnerCard({
           className="flex flex-wrap items-center gap-2 pt-2 border-t border-border/50"
           onClick={(e) => e.stopPropagation()}
         >
+          {onViewProfile && (
+            <Button
+              type="button"
+              size="sm"
+              variant="default"
+              onClick={() => onViewProfile(partner)}
+              className="h-9 text-xs font-semibold gap-1.5 min-w-[44px] min-h-[36px]"
+            >
+              <UserCheck className="size-3.5" />
+              {t("partners.viewProfile", "View Profile")}
+            </Button>
+          )}
+
           {partner.phone && (
             <Button
               asChild
               size="sm"
-              variant="default"
+              variant={onViewProfile ? "outline" : "default"}
               className="h-9 text-xs font-semibold gap-1.5 min-w-[44px] min-h-[36px]"
             >
               <a href={`tel:${partner.phone}`}>

@@ -255,6 +255,21 @@ export interface MatchResponse {
   generatedAt: number
 }
 
+export interface NodalOfficer {
+  name: string
+  designation: LocalizedText
+  phone: string
+  email: string
+}
+
+export interface PartnerSchemeDetail {
+  schemeId?: string
+  schemeName: LocalizedText
+  interestRate: string
+  maxLimit: string | number
+  category: SchemeType
+}
+
 export interface ChannelPartner {
   id: string
   name: string
@@ -264,12 +279,17 @@ export interface ChannelPartner {
   state: string
   geo: { lat: number; lng: number }
   phone: string
+  email?: string
   schemeCategories: SchemeType[]
   npaFlag: NpaFlag
   /** 0–100, how much of allocated channel funds is already deployed */
   fundUtilizationPct: number
   docsRequired: LocalizedText[]
   avgProcessingDays?: number
+  nodalOfficer?: NodalOfficer
+  operatingHours?: LocalizedText
+  isSynthetic?: boolean
+  supportedSchemeDetails?: PartnerSchemeDetail[]
 }
 
 export type ApplicationStatus = "submitted" | "under_review" | "disbursed"

@@ -7,6 +7,7 @@ import { collection, getDocs } from "firebase/firestore"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { PartnerCard } from "@/components/partners/PartnerCard"
+import { PartnerDetailDialog } from "@/components/partners/PartnerDetailDialog"
 import { PartnerMapSearch } from "@/components/partners/PartnerMapSearch"
 import { db } from "@/lib/firebase"
 import {
@@ -59,6 +60,8 @@ export default function PartnersPage() {
   const [isLocating, setIsLocating] = useState(false)
   const [focusId, setFocusId] = useState<string | null>(null)
   const [mobileTab, setMobileTab] = useState<"list" | "map">("list")
+  const [detailPartner, setDetailPartner] = useState<ChannelPartner | null>(null)
+  const [isDetailOpen, setIsDetailOpen] = useState(false)
 
   // Load partners: Firestore first, bundled seed fallback for demo resilience.
   useEffect(() => {
@@ -82,6 +85,19 @@ export default function PartnersPage() {
       cancelled = true
     }
   }, [])
+
+  // Support URL deep-linking /partners?id=partner-id or /partners?partner=partner-id
+  const urlPartnerId = searchParams.get("id") || searchParams.get("partner")
+  useEffect(() => {
+    if (!partners || !urlPartnerId) return
+    const matched = partners.find((p) => p.id === urlPartnerId)
+    if (matched) {
+      setFocusId(matched.id)
+      setDetailPartner(matched)
+      setIsDetailOpen(true)
+      mapRef.current?.focusPartner(matched)
+    }
+  }, [partners, urlPartnerId])
 
   const handleMarkerClick = useCallback((partnerId: string) => {
     setFocusId(partnerId)
@@ -207,6 +223,12 @@ export default function PartnersPage() {
     mapRef.current?.focusPartner(partner)
     // On mobile, jump to map view to view the focused partner pin
     setMobileTab("map")
+  }
+
+  function handleViewProfile(partner: ChannelPartner) {
+    setFocusId(partner.id)
+    setDetailPartner(partner)
+    setIsDetailOpen(true)
   }
 
   return (
@@ -358,6 +380,7 @@ export default function PartnersPage() {
               isSelected={focusId === p.id}
               onSelect={() => setFocusId(p.id)}
               onFocusOnMap={handleFocusOnMap}
+              onViewProfile={handleViewProfile}
             />
           ))}
         </div>
@@ -371,6 +394,14 @@ export default function PartnersPage() {
           <div ref={mapElRef} className="w-full h-full" />
         </div>
       </div>
+
+      {/* Partner Detail Dialog with Synthetic Demonstration Guardrails */}
+      <PartnerDetailDialog
+        partner={detailPartner}
+        open={isDetailOpen}
+        onOpenChange={setIsDetailOpen}
+        userLocation={userLoc}
+      />
     </div>
   )
 }
