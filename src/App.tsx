@@ -35,6 +35,7 @@ export default function App() {
           <Route path="/assistant" element={<AssistantPage />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/track" element={<TrackApplication />} />
+          <Route path="/application/:id" element={<TrackApplication />} />
           <Route path="/login" element={<Login />} />
         </Route>
       </Routes>

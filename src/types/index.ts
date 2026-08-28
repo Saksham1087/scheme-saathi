@@ -322,4 +322,5 @@ export interface Application {
 export * from "./planner"
 export * from "./document"
 export * from "./assistant"
+export * from "./application"
 
