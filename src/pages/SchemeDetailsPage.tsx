@@ -657,6 +657,15 @@ export default function SchemeDetailsPage() {
                   {t("schemeDetails.defaultDocsText", "Standard KYC, Caste Certificate, Income Certificate, and Project Quotation.")}
                 </p>
               )}
+
+              <div className="pt-2">
+                <Button asChild variant="outline" size="sm" className="font-semibold text-xs gap-1.5 border-primary/40 hover:bg-primary/5">
+                  <Link to={`/documents?scheme=${scheme.id}`}>
+                    <FileCheck2 className="size-3.5 text-primary" />
+                    <span>{t("documents.openInteractiveChecklist", "Open Interactive Document Checklist & Tracker")}</span>
+                  </Link>
+                </Button>
+              </div>
             </div>
           </SchemeSectionCard>
 

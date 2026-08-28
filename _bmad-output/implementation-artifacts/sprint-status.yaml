@@ -59,8 +59,8 @@ development_status:
   4-3-partner-profile-details-synthetic-data-guardrails: review
   epic-4-retrospective: optional
 
-  epic-5: backlog
-  5-1-scheme-specific-interactive-document-checklist: backlog
+  epic-5: in-progress
+  5-1-scheme-specific-interactive-document-checklist: review
   5-2-digilocker-certificate-sync-with-manual-upload-fallback: backlog
   epic-5-retrospective: optional
 

@@ -12,6 +12,7 @@ import {
   ListTree,
   Headphones,
   Layers,
+  FileCheck2,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -152,6 +153,19 @@ export function SchemeActionSidebar({ scheme, sections }: SchemeActionSidebarPro
             <Link to={`/partners?${partnerParams}`}>
               <Compass className="size-4 mr-2.5 text-primary" />
               {t("schemes.findPartners", "Find Channel Partners")}
+            </Link>
+          </Button>
+
+          {/* Document Checklist CTA */}
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="w-full justify-start text-sm font-semibold min-h-[44px]"
+          >
+            <Link to={`/documents?scheme=${scheme.id}`}>
+              <FileCheck2 className="size-4 mr-2.5 text-emerald-600 dark:text-emerald-400" />
+              {t("schemes.documentChecklist", "Document Checklist")}
             </Link>
           </Button>
 

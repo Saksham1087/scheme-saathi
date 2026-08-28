@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Compass,
   FileText,
+  FileCheck2,
   HelpCircle,
   MapPin,
   RotateCcw,
@@ -315,6 +316,16 @@ export default function Results() {
                           >
                             <MapPin className="mr-1.5 size-4" />
                             {t("results.partnersCta")}
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() =>
+                              navigate(`/documents?scheme=${m.schemeId}`)
+                            }
+                          >
+                            <FileCheck2 className="mr-1.5 size-4 text-emerald-600 dark:text-emerald-400" />
+                            {t("schemes.documentChecklist", "Document Checklist")}
                           </Button>
                           <Button
                             size="sm"

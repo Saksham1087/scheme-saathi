@@ -55,6 +55,7 @@ const navKeys = [
   { to: "/schemes", key: "nav.schemes" },
   { to: "/find-schemes", key: "nav.findSchemes" },
   { to: "/calculator", key: "nav.calculator" },
+  { to: "/documents", key: "nav.documents" },
   { to: "/partners", key: "nav.partners" },
   { to: "/how-it-works", key: "nav.howItWorks" },
   { to: "/track", key: "nav.track" },

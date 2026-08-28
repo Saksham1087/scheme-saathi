@@ -12,6 +12,7 @@ import PlannerPage from "@/pages/PlannerPage"
 import PartnersPage from "@/pages/PartnersPage"
 import HowItWorks from "@/pages/HowItWorks"
 import TrackApplication from "@/pages/TrackApplication"
+import DocumentsPage from "@/pages/DocumentsPage"
 import Login from "@/pages/Login"
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/planner" element={<PlannerPage />} />
           <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/track" element={<TrackApplication />} />
           <Route path="/login" element={<Login />} />
