@@ -1,6 +1,11 @@
 import { create } from "zustand"
 import { persist, createJSONStorage } from "zustand/middleware"
-import type { DocumentCategory } from "@/types"
+import type {
+  DocumentCategory,
+  DocumentVerificationStatus,
+  VerificationMetadata,
+  UploadedFileRecord,
+} from "@/types"
 
 export interface DocumentStoreState {
   selectedSchemeId: string
@@ -8,6 +13,8 @@ export interface DocumentStoreState {
   searchQuery: string
   checkedDocMap: Record<string, boolean>
   docNotesMap: Record<string, string>
+  digiLockerVerifications: Record<string, VerificationMetadata>
+  manualUploads: Record<string, UploadedFileRecord>
 
   // Actions
   setSelectedSchemeId: (schemeId: string) => void
@@ -16,10 +23,17 @@ export interface DocumentStoreState {
   toggleDocCheck: (docId: string) => void
   setDocChecked: (docId: string, checked: boolean) => void
   setDocNote: (docId: string, note: string) => void
+  syncDigiLockerDocument: (docId: string, metadata: VerificationMetadata) => void
+  unlinkDigiLockerDocument: (docId: string) => void
+  uploadManualDocument: (docId: string, fileRecord: UploadedFileRecord) => void
+  removeManualDocument: (docId: string) => void
   resetChecklistForScheme: (docIds: string[]) => void
   markAllCheckedForScheme: (docIds: string[]) => void
   isDocChecked: (docId: string) => boolean
   getDocNote: (docId: string) => string
+  getDocVerificationStatus: (docId: string) => DocumentVerificationStatus
+  getDigiLockerMetadata: (docId: string) => VerificationMetadata | undefined
+  getManualUpload: (docId: string) => UploadedFileRecord | undefined
   clearAllChecklistData: () => void
 }
 
@@ -31,6 +45,8 @@ export const useDocumentStore = create<DocumentStoreState>()(
       searchQuery: "",
       checkedDocMap: {},
       docNotesMap: {},
+      digiLockerVerifications: {},
+      manualUploads: {},
 
       setSelectedSchemeId: (selectedSchemeId: string) => {
         set({ selectedSchemeId })
@@ -75,13 +91,81 @@ export const useDocumentStore = create<DocumentStoreState>()(
         })
       },
 
+      syncDigiLockerDocument: (docId: string, metadata: VerificationMetadata) => {
+        const { checkedDocMap, digiLockerVerifications } = get()
+        set({
+          digiLockerVerifications: {
+            ...digiLockerVerifications,
+            [docId]: metadata,
+          },
+          checkedDocMap: {
+            ...checkedDocMap,
+            [docId]: true,
+          },
+        })
+      },
+
+      unlinkDigiLockerDocument: (docId: string) => {
+        const { checkedDocMap, digiLockerVerifications, manualUploads } = get()
+        const nextVerifications = { ...digiLockerVerifications }
+        delete nextVerifications[docId]
+
+        const hasManual = Boolean(manualUploads[docId])
+        set({
+          digiLockerVerifications: nextVerifications,
+          checkedDocMap: {
+            ...checkedDocMap,
+            [docId]: hasManual,
+          },
+        })
+      },
+
+      uploadManualDocument: (docId: string, fileRecord: UploadedFileRecord) => {
+        const { checkedDocMap, manualUploads } = get()
+        set({
+          manualUploads: {
+            ...manualUploads,
+            [docId]: fileRecord,
+          },
+          checkedDocMap: {
+            ...checkedDocMap,
+            [docId]: true,
+          },
+        })
+      },
+
+      removeManualDocument: (docId: string) => {
+        const { checkedDocMap, digiLockerVerifications, manualUploads } = get()
+        const nextUploads = { ...manualUploads }
+        delete nextUploads[docId]
+
+        const hasDigiLocker = Boolean(digiLockerVerifications[docId])
+        set({
+          manualUploads: nextUploads,
+          checkedDocMap: {
+            ...checkedDocMap,
+            [docId]: hasDigiLocker,
+          },
+        })
+      },
+
       resetChecklistForScheme: (docIds: string[]) => {
-        const { checkedDocMap } = get()
-        const next = { ...checkedDocMap }
+        const { checkedDocMap, digiLockerVerifications, manualUploads } = get()
+        const nextChecked = { ...checkedDocMap }
+        const nextVerifications = { ...digiLockerVerifications }
+        const nextUploads = { ...manualUploads }
+
         for (const id of docIds) {
-          next[id] = false
+          nextChecked[id] = false
+          delete nextVerifications[id]
+          delete nextUploads[id]
         }
-        set({ checkedDocMap: next })
+
+        set({
+          checkedDocMap: nextChecked,
+          digiLockerVerifications: nextVerifications,
+          manualUploads: nextUploads,
+        })
       },
 
       markAllCheckedForScheme: (docIds: string[]) => {
@@ -101,10 +185,31 @@ export const useDocumentStore = create<DocumentStoreState>()(
         return get().docNotesMap[docId] || ""
       },
 
+      getDocVerificationStatus: (docId: string): DocumentVerificationStatus => {
+        const state = get()
+        if (state.digiLockerVerifications[docId]) {
+          return "verified_digilocker"
+        }
+        if (state.manualUploads[docId]) {
+          return "uploaded_manual"
+        }
+        return "pending"
+      },
+
+      getDigiLockerMetadata: (docId: string) => {
+        return get().digiLockerVerifications[docId]
+      },
+
+      getManualUpload: (docId: string) => {
+        return get().manualUploads[docId]
+      },
+
       clearAllChecklistData: () => {
         set({
           checkedDocMap: {},
           docNotesMap: {},
+          digiLockerVerifications: {},
+          manualUploads: {},
         })
       },
     }),
@@ -116,7 +221,10 @@ export const useDocumentStore = create<DocumentStoreState>()(
         activeCategory: state.activeCategory,
         checkedDocMap: state.checkedDocMap,
         docNotesMap: state.docNotesMap,
+        digiLockerVerifications: state.digiLockerVerifications,
+        manualUploads: state.manualUploads,
       }),
     }
   )
 )
+

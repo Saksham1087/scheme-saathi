@@ -46,6 +46,8 @@ export default function DocumentsPage() {
     setSearchQuery,
     checkedDocMap,
     docNotesMap,
+    digiLockerVerifications,
+    manualUploads,
     toggleDocCheck,
     setDocNote,
     markAllCheckedForScheme,
@@ -208,11 +210,29 @@ export default function DocumentsPage() {
           <tbody>
             {documents.map((doc) => {
               const isChecked = Boolean(checkedDocMap[doc.id])
-              const note = docNotesMap[doc.id] || "—"
+              const isDigiLocker = Boolean(digiLockerVerifications[doc.id])
+              const isUploaded = Boolean(manualUploads[doc.id])
+              const note =
+                docNotesMap[doc.id] ||
+                (isDigiLocker
+                  ? `DigiLocker Cert: ${digiLockerVerifications[doc.id].certificateNo}`
+                  : isUploaded
+                    ? `Uploaded: ${manualUploads[doc.id].fileName}`
+                    : "—")
+
+              let statusText = "[   PENDING ]"
+              if (isDigiLocker) {
+                statusText = "[ ✓ DIGILOCKER VERIFIED ]"
+              } else if (isUploaded) {
+                statusText = "[ ✓ FILE ATTACHED ]"
+              } else if (isChecked) {
+                statusText = "[ ✓ READY ]"
+              }
+
               return (
                 <tr key={doc.id} className="border-b border-gray-200">
                   <td className="py-2 px-1">
-                    <span className="font-bold">{isChecked ? "[ ✓ READY ]" : "[   PENDING ]"}</span>
+                    <span className="font-bold">{statusText}</span>
                   </td>
                   <td className="py-2 px-2 font-semibold">
                     {doc.name[lang] || doc.name.en}
