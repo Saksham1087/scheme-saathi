@@ -43,7 +43,7 @@ development_status:
 
   epic-2: in-progress
   2-1-demographic-and-financial-intake-flow: review
-  2-2-100-point-deterministic-eligibility-scoring-engine: backlog
+  2-2-100-point-deterministic-eligibility-scoring-engine: review
   2-3-explainable-matching-why-not-alternatives: backlog
   epic-2-retrospective: optional
 

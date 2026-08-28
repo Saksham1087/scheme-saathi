@@ -179,6 +179,15 @@ export interface MatchInput {
   consentAt?: string | null
 }
 
+export interface ScoreBreakdown {
+  income: number
+  category: number
+  purpose: number
+  cost: number
+  age: number
+  state: number
+}
+
 export interface MatchReason {
   key:
     | "within_cost"
@@ -189,6 +198,11 @@ export interface MatchReason {
     | "income_exceeds"
     | "not_student"
     | "category_note"
+    | "category_mismatch"
+    | "female_only"
+    | "age_out_of_bounds"
+    | "state_not_applicable"
+    | string
   params?: Record<string, string | number>
 }
 
@@ -197,6 +211,8 @@ export interface SchemeMatch {
   schemeType: SchemeType
   eligible: boolean
   rank: number
+  score: number
+  breakdown: ScoreBreakdown
   /** recommended coverage % of cost (never above scheme cap) */
   coveragePct: number
   suggestedAmount: number

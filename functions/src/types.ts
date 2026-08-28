@@ -9,11 +9,25 @@ export interface LocalizedText {
   hi: string
 }
 
+export interface ScoreBreakdown {
+  income: number
+  category: number
+  purpose: number
+  cost: number
+  age: number
+  state: number
+}
+
 export interface Scheme {
   id: string
   name: LocalizedText
   description: LocalizedText
   type: SchemeType
+  category?: string
+  purpose?: LocalizedText
+  purposeTags?: string[]
+  applicableStates?: string[]
+  eligibleEducation?: string[]
   maxProjectCost: number
   incomeCeiling: number
   coverageMaxPct: number
@@ -25,6 +39,12 @@ export interface Scheme {
     interestAccrues: boolean
   }
   source: "seed" | "mcp"
+  eligibilityCriteria?: {
+    ageRange?: { min: number; max?: number }
+    targetCaste?: LocalizedText
+    gender?: LocalizedText
+    [key: string]: any
+  }
 }
 
 export interface ChannelPartner {
@@ -42,3 +62,4 @@ export interface ChannelPartner {
   docsRequired: LocalizedText[]
   avgProcessingDays?: number
 }
+

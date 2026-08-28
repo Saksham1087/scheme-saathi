@@ -153,6 +153,11 @@
     "subtitle": "Ranked by fit. Only schemes whose rules you satisfy are marked eligible.",
     "eligibleStamp": "Eligible",
     "notEligibleStamp": "Not eligible",
+    "topMatchBadge": "Top Recommended Match",
+    "rankLabel": "Rank",
+    "suggestedAmountLabel": "Suggested Loan Amount",
+    "coverageLabel": "Coverage",
+    "interestRateLabel": "Interest Rate",
     "coverage": "Funds up to {{pct}}% of cost",
     "rateRange": "Interest approx. {{min}}%–{{max}}% p.a.",
     "suggestedAmount": "You could get up to ₹{{amount}}",
@@ -161,17 +166,47 @@
     "calcCta": "Calculate EMI",
     "partnersCta": "Find partners",
     "restartCta": "Start over",
-    "empty": "No match yet. Start with a few questions about your plan."
+    "empty": "No match yet. Start with a few questions about your plan.",
+    "indicativeScoreBadge": "Indicative matching score",
+    "indicativeDisclaimer": "Scores are deterministic guidelines based on declared profile inputs. Sanctions remain subject to statutory bank/SCA appraisal.",
+    "scoreOutOf": "{{score}} / 100",
+    "fitHigh": "High Fit",
+    "fitMedium": "Moderate Fit",
+    "fitLow": "Partial Fit",
+    "scoreBreakdown": "100-Point Score Breakdown",
+    "viewBreakdown": "View Score Breakdown",
+    "hideBreakdown": "Hide Breakdown",
+    "totalPoints": "Total: {{points}} / 100 Points",
+    "criteria": {
+      "income": "Income Ceiling Fit",
+      "category": "Social Category Fit",
+      "purpose": "Purpose & Sector Fit",
+      "cost": "Loan / Project Cost Band",
+      "age": "Age Criteria",
+      "state": "Location & State Match"
+    },
+    "criteriaDesc": {
+      "income": "Within ₹5 Lakh annual family income ceiling",
+      "category": "Scheduled Caste (SC) target group verification",
+      "purpose": "Alignment with eligible trade and activity profile",
+      "cost": "Within scheme maximum project investment limits",
+      "age": "Applicant age within statutory eligible bounds",
+      "state": "Valid within State or All-India operations"
+    }
   },
   "reasons": {
     "within_cost": "Project cost is within this scheme's limit of ₹{{limit}}.",
-    "income_ok": "Family income ₹{{income}} is within the ₹5 lakh eligibility ceiling.",
+    "income_ok": "Family income {{income}}is within the ₹5 lakh eligibility ceiling.",
     "coverage_capped": "Funding covers {{pct}}% of project cost; you arrange the rest.",
     "student_eligible": "Course cost can be financed for students based on admission.",
     "cost_above_tier": "Cost ₹{{cost}} is above this scheme's limit of ₹{{limit}}.",
-    "income_exceeds": "Family income ₹{{income}} exceeds the ₹5 lakh ceiling for concessional schemes.",
+    "income_exceeds": "Family income {{income}}exceeds the ₹5 lakh ceiling for concessional schemes.",
     "not_student": "This scheme funds education courses only.",
-    "category_note": "Open to SC applicants through channel finance routes."
+    "category_note": "Open to SC applicants through channel finance routes.",
+    "category_mismatch": "This concessional scheme is reserved for Scheduled Caste (SC) applicants.",
+    "female_only": "This scheme is exclusively reserved for women entrepreneurs.",
+    "age_out_of_bounds": "Applicant age {{age}} is outside eligible age band ({{min}}–{{max}} years).",
+    "state_not_applicable": "Scheme is not currently operational in {{state}}."
   },
   "calculator": {
     "title": "EMI Calculator",

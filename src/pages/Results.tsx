@@ -1,17 +1,18 @@
 import { useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import { ArrowRight, Check, Calculator, MapPin } from "lucide-react"
+import { ArrowRight, Check, Calculator, MapPin, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { InfoNote } from "@/components/literacy/InfoNote"
+import { ScoreBreakdownCard } from "@/components/results/ScoreBreakdownCard"
 import { fmtINR } from "@/lib/format"
 import { useIntakeStore } from "@/stores/intakeStore"
 import { useCalculatorStore } from "@/stores/calculatorStore"
 
 export default function Results() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const match = useIntakeStore((s) => s.match)
   const reset = useIntakeStore((s) => s.reset)
@@ -44,6 +45,8 @@ export default function Results() {
     navigate("/calculator")
   }
 
+  const isHindi = i18n.language === "hi"
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -67,10 +70,19 @@ export default function Results() {
         </Button>
       </div>
 
-      <div className="mt-8 space-y-5">
-        {matches.map((m) =>
-          m.eligible ? (
-            <Card key={m.schemeId} className="relative border-primary/40">
+      <div className="mt-8 space-y-6">
+        {matches.map((m, idx) => {
+          const schemeNameText = isHindi ? m.schemeName.hi || m.schemeName.en : m.schemeName.en
+          const isTopRanked = idx === 0 && m.eligible
+
+          return m.eligible ? (
+            <Card key={m.schemeId} className="relative border-primary/40 overflow-hidden shadow-sm">
+              {isTopRanked && (
+                <div className="bg-primary/10 border-b border-primary/20 px-6 py-1.5 flex items-center gap-1.5 text-xs font-semibold text-primary">
+                  <Sparkles className="size-3.5" />
+                  <span>{t("results.topMatchBadge")}</span>
+                </div>
+              )}
               <span
                 aria-hidden
                 className="absolute top-4 right-5 stamp text-success text-sm font-bold select-none"
@@ -78,50 +90,86 @@ export default function Results() {
               >
                 {t("results.eligibleStamp")}
               </span>
-              <CardContent className="pt-6 pr-28">
-                <Badge variant="secondary" className="mb-2 font-semibold">
-                  {t(`schemeTypes.${m.schemeType}`)}
-                </Badge>
-                <h2 className="font-display font-bold text-xl">
-                  {m.schemeName.en}
-                </h2>
-                <ul className="mt-3 space-y-1.5 text-sm text-foreground/85">
+              <CardContent className="pt-6 pr-6 sm:pr-28 space-y-4">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <Badge variant="secondary" className="font-semibold">
+                      {t(`schemeTypes.${m.schemeType}`)}
+                    </Badge>
+                    <Badge variant="outline" className="text-xs text-muted-foreground">
+                      #{m.rank} {t("results.rankLabel")}
+                    </Badge>
+                  </div>
+                  <h2 className="font-display font-bold text-xl text-foreground">
+                    {schemeNameText}
+                  </h2>
+                </div>
+
+                {/* 100-Point Deterministic Score Card */}
+                <ScoreBreakdownCard
+                  score={m.score ?? 100}
+                  breakdown={m.breakdown ?? {
+                    income: 20,
+                    category: 20,
+                    purpose: 20,
+                    cost: 20,
+                    age: 10,
+                    state: 10,
+                  }}
+                  defaultExpanded={isTopRanked}
+                />
+
+                <ul className="grid grid-cols-1 sm:grid-cols-3 gap-2 rounded-lg bg-muted/40 p-3 text-sm text-foreground/85">
                   <li>
-                    <strong className="font-semibold">
-                      {t("results.suggestedAmount", {
-                        amount: fmtINR(m.suggestedAmount),
-                      })}
+                    <span className="block text-xs text-muted-foreground">
+                      {t("results.suggestedAmountLabel")}
+                    </span>
+                    <strong className="font-semibold text-primary">
+                      {fmtINR(m.suggestedAmount)}
                     </strong>
                   </li>
-                  <li>{t("results.coverage", { pct: m.coveragePct })}</li>
                   <li>
-                    {t("results.rateRange", {
-                      min: m.rateRange.min,
-                      max: m.rateRange.max,
-                    })}
+                    <span className="block text-xs text-muted-foreground">
+                      {t("results.coverageLabel")}
+                    </span>
+                    <span className="font-medium">{t("results.coverage", { pct: m.coveragePct })}</span>
+                  </li>
+                  <li>
+                    <span className="block text-xs text-muted-foreground">
+                      {t("results.interestRateLabel")}
+                    </span>
+                    <span className="font-medium">
+                      {t("results.rateRange", {
+                        min: m.rateRange.min,
+                        max: m.rateRange.max,
+                      })}
+                    </span>
                   </li>
                 </ul>
 
-                <Separator className="my-4" />
-                <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  {t("results.whyHeading")}
-                </p>
-                <ul className="space-y-1.5">
-                  {m.reasons.map((r) => (
-                    <li
-                      key={r.key}
-                      className="flex gap-2 text-sm"
-                    >
-                      <Check
-                        className="size-4 shrink-0 mt-0.5 text-success"
-                        aria-hidden
-                      />
-                      <span>{t(`reasons.${r.key}`, r.params)}</span>
-                    </li>
-                  ))}
-                </ul>
+                <Separator />
 
-                <div className="mt-5 flex flex-wrap gap-2.5">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+                    {t("results.whyHeading")}
+                  </p>
+                  <ul className="space-y-1.5">
+                    {m.reasons.map((r) => (
+                      <li
+                        key={r.key}
+                        className="flex gap-2 text-sm"
+                      >
+                        <Check
+                          className="size-4 shrink-0 mt-0.5 text-success"
+                          aria-hidden
+                        />
+                        <span>{t(`reasons.${r.key}`, r.params)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-2 flex flex-wrap gap-2.5">
                   <Button size="sm" onClick={() => openCalculator(m)}>
                     <Calculator className="mr-1.5 size-4" />
                     {t("results.calcCta")}
@@ -140,39 +188,61 @@ export default function Results() {
               </CardContent>
             </Card>
           ) : (
-            <Card key={m.schemeId} className="opacity-70 bg-muted/50">
-              <CardContent className="pt-6">
-                <span className="float-right stamp text-muted-foreground/70 text-xs font-bold select-none">
-                  {t("results.notEligibleStamp")}
-                </span>
-                <Badge variant="outline" className="mb-2">
-                  {t(`schemeTypes.${m.schemeType}`)}
-                </Badge>
-                <h2 className="font-display font-bold text-lg">
-                  {m.schemeName.en}
-                </h2>
-                <Separator className="my-3" />
-                <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  {t("results.blockersHeading")}
-                </p>
-                <ul className="space-y-1.5">
-                  {m.reasons.map((r) => (
-                    <li
-                      key={r.key}
-                      className="flex gap-2 text-sm text-foreground/75"
-                    >
-                      <ArrowRight
-                        className="size-4 shrink-0 mt-0.5 text-destructive"
-                        aria-hidden
-                      />
-                      <span>{t(`reasons.${r.key}`, r.params)}</span>
-                    </li>
-                  ))}
-                </ul>
+            <Card key={m.schemeId} className="opacity-80 bg-muted/40 border-muted">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <Badge variant="outline" className="mb-2">
+                      {t(`schemeTypes.${m.schemeType}`)}
+                    </Badge>
+                    <h2 className="font-display font-bold text-lg text-foreground">
+                      {schemeNameText}
+                    </h2>
+                  </div>
+                  <span className="stamp text-muted-foreground/70 text-xs font-bold select-none shrink-0">
+                    {t("results.notEligibleStamp")}
+                  </span>
+                </div>
+
+                {/* Score breakdown for non-eligible scheme showing reasons/criteria gaps */}
+                <ScoreBreakdownCard
+                  score={m.score ?? 0}
+                  breakdown={m.breakdown ?? {
+                    income: 0,
+                    category: 0,
+                    purpose: 0,
+                    cost: 0,
+                    age: 0,
+                    state: 0,
+                  }}
+                  defaultExpanded={false}
+                />
+
+                <Separator />
+
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+                    {t("results.blockersHeading")}
+                  </p>
+                  <ul className="space-y-1.5">
+                    {m.reasons.map((r) => (
+                      <li
+                        key={r.key}
+                        className="flex gap-2 text-sm text-foreground/80"
+                      >
+                        <ArrowRight
+                          className="size-4 shrink-0 mt-0.5 text-destructive"
+                          aria-hidden
+                        />
+                        <span>{t(`reasons.${r.key}`, r.params)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
             </Card>
-          ),
-        )}
+          )
+        })}
       </div>
 
       <div className="mt-8">
