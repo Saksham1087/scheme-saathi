@@ -47,8 +47,8 @@ development_status:
   2-3-explainable-matching-why-not-alternatives: review
   epic-2-retrospective: optional
 
-  epic-3: backlog
-  3-1-standard-scheme-aware-emi-amortization-calculator: backlog
+  epic-3: in-progress
+  3-1-standard-scheme-aware-emi-amortization-calculator: review
   3-2-moratorium-interest-capitalization-simulation: backlog
   3-3-project-cost-planner-financing-breakdown: backlog
   epic-3-retrospective: optional
